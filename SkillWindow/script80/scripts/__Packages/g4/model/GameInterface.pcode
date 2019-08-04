@@ -1,0 +1,170 @@
+ConstantPool "_global" "g4" "Object" "model" "GameInterface" "_gameInterfaceListener" "EventBroadCaster" "addListener" "core" "EventDispatcher" "prototype" "getInstance" "_instance" "registerGameInterface" "callGameInterface" "shift" "FSCommand:" "dispatchEvent" "ASSetPropFlags"
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Not
+Not
+If loc0115
+Push "_global"
+GetVariable
+Push "g4" 0.0 "Object"
+NewObject
+SetMember
+loc0115:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "model"
+GetMember
+Not
+Not
+If loc014d
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "model" 0.0 "Object"
+NewObject
+SetMember
+loc014d:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "model"
+GetMember
+Push "GameInterface"
+GetMember
+Not
+Not
+If loc0379
+Push "g4"
+GetVariable
+Push "model"
+GetMember
+Push "GameInterface"
+DefineFunction2 "" 0 4 false false false true true false false true true  {
+Push 0.0 register2 undefined
+CallMethod
+Pop
+Push register1 "_gameInterfaceListener" 0.0
+InitObject
+SetMember
+Push register1 "_gameInterfaceListener"
+GetMember
+Push 1 register3 "EventBroadCaster"
+GetMember
+Push "addListener"
+CallMethod
+Pop
+}
+StoreRegister 1
+SetMember
+Push "g4"
+GetVariable
+Push "model"
+GetMember
+Push "GameInterface"
+GetMember
+Push "g4"
+GetVariable
+Push "core"
+GetMember
+Push "EventDispatcher"
+GetMember
+Extends
+Push register1 "prototype"
+GetMember
+StoreRegister 2
+Pop
+Push register1 "getInstance"
+DefineFunction "" 0  {
+Push "g4"
+GetVariable
+Push "model"
+GetMember
+Push "GameInterface"
+GetMember
+Push "_instance" "g4"
+GetVariable
+Push "model"
+GetMember
+Push "GameInterface"
+GetMember
+Push "_instance"
+GetMember
+Push null
+Equals2
+If loc0261
+Push "g4"
+GetVariable
+Push "model"
+GetMember
+Push "GameInterface"
+GetMember
+Push "_instance"
+GetMember
+Jump loc027c
+loc0261:Push 0.0 "g4"
+GetVariable
+Push "model"
+GetMember
+Push "GameInterface"
+NewMethod
+loc027c:StoreRegister 0
+SetMember
+Push register0
+Return
+}
+SetMember
+Push register1 "registerGameInterface"
+DefineFunction2 "" 2 3 false false true false true false true false false 2 "methodName" 1 "callback"  {
+Push 0.0 "g4"
+GetVariable
+Push "model"
+GetMember
+Push "GameInterface"
+GetMember
+Push "getInstance"
+CallMethod
+Push "_gameInterfaceListener"
+GetMember
+Push register2 register1
+SetMember
+}
+SetMember
+Push register1 "callGameInterface"
+DefineFunction2 "" 1 3 false false true false false true true false false 2 "command"  {
+Push 0.0 register1 "shift"
+CallMethod
+Pop
+Push "FSCommand:" register2
+StringAdd
+Push register1
+GetURL2 false false 0
+Push register1 register2 2 0.0 "g4"
+GetVariable
+Push "model"
+GetMember
+Push "GameInterface"
+GetMember
+Push "getInstance"
+CallMethod
+Push "dispatchEvent"
+CallMethod
+Pop
+}
+SetMember
+Push 1 null "g4"
+GetVariable
+Push "model"
+GetMember
+Push "GameInterface"
+GetMember
+Push "prototype"
+GetMember
+Push 3 "ASSetPropFlags"
+CallFunction
+loc0379:Pop

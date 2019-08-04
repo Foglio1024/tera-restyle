@@ -1,0 +1,854 @@
+ConstantPool "_global" "g4" "Object" "manager" "TooltipManager" "prototype" "getInstance" "_instance" "__get__tooltipList" "_tooltiplist" "init" "_tooltipmodule" "add" "tg" "val" "type" "iconhas" "getSelectTarget" "showToolTip" "ic" "remove" "directHide" "refresh" "show" "directShow" "hide" "move" "toolTipMove" "clear" "invalidateTooltipList" "invalidationIntervalID" "refreshNow" "setInterval" "clearInterval" "enabled" "addUiTooltip" "core" "G4UIComponent" "showUiTooltip" "util" "Delegate" "create" "gfx" "events" "EventTypes" "ROLL_OVER" "addEventListener" "DISABLED_ROLL_OVER" "hideTooltip" "ROLL_OUT" "DISABLED_ROLL_OUT" "DRAG_OUT" "onRollOver" "onRollOut" "onDragOut" "addMessageTooltip" "showMessageTooltip" "removeTooltip" "removeEventListenerByScope" "removeEventListener" "TOOL_TIP_TYPE_PREMIUM_WINDOW" "TOOL_TIP_TYPE_DELIVERY" "tooltipList" "addProperty" "ASSetPropFlags"
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Not
+Not
+If loc0317
+Push "_global"
+GetVariable
+Push "g4" 0.0 "Object"
+NewObject
+SetMember
+loc0317:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "manager"
+GetMember
+Not
+Not
+If loc034f
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "manager" 0.0 "Object"
+NewObject
+SetMember
+loc034f:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "manager"
+GetMember
+Push "TooltipManager"
+GetMember
+Not
+Not
+If loc101a
+Push "g4"
+GetVariable
+Push "manager"
+GetMember
+Push "TooltipManager"
+DefineFunction "" 0  {
+}
+StoreRegister 1
+SetMember
+Push register1 "prototype"
+GetMember
+StoreRegister 2
+Pop
+Push register1 "getInstance"
+DefineFunction "" 0  {
+Push "g4"
+GetVariable
+Push "manager"
+GetMember
+Push "TooltipManager"
+GetMember
+Push "_instance" "g4"
+GetVariable
+Push "manager"
+GetMember
+Push "TooltipManager"
+GetMember
+Push "_instance"
+GetMember
+Push null
+Equals2
+If loc03fc
+Push "g4"
+GetVariable
+Push "manager"
+GetMember
+Push "TooltipManager"
+GetMember
+Push "_instance"
+GetMember
+Jump loc0417
+loc03fc:Push 0.0 "g4"
+GetVariable
+Push "manager"
+GetMember
+Push "TooltipManager"
+NewMethod
+loc0417:StoreRegister 0
+SetMember
+Push register0
+Return
+}
+SetMember
+Push register2 "__get__tooltipList"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push register1 "_tooltiplist"
+GetMember
+Return
+}
+SetMember
+Push register2 "init"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "tooltipmodule"  {
+Push register1 "_tooltipmodule" register2
+SetMember
+}
+SetMember
+Push register2 "add"
+DefineFunction2 "" 4 9 false false true false true false false true false 2 "targetMc" 8 "value" 7 "type" 3 "iconmc"  {
+Push register1 "_tooltiplist"
+GetMember
+Push undefined
+Equals2
+Not
+If loc04c1
+Push register1 "_tooltiplist" 0.0
+InitObject
+SetMember
+loc04c1:Push register1 "_tooltiplist"
+GetMember
+Push register2
+ToString
+Push "tg" register2 "val" register8 "type" register7 "iconhas" register3 undefined
+Equals2
+Not
+Push 4
+InitObject
+SetMember
+Push register2
+PushDuplicate
+Not
+If loc051f
+Pop
+Push 0.0 register1 "_tooltipmodule"
+GetMember
+Push "getSelectTarget"
+CallMethod
+Push "tg"
+GetMember
+Push register2
+Equals2
+loc051f:Not
+If loc0548
+Push register1 "_tooltiplist"
+GetMember
+Push register2
+ToString
+GetMember
+Push 1 register1 "_tooltipmodule"
+GetMember
+Push "showToolTip"
+CallMethod
+Pop
+loc0548:Push register3 undefined
+Equals2
+Not
+Not
+If loc056d
+Push register1 "_tooltiplist"
+GetMember
+Push register2
+ToString
+GetMember
+Push "ic" register3
+SetMember
+}
+loc056d:SetMember
+Push register2 "remove"
+DefineFunction2 "" 1 4 false false true false true false false true false 3 "targetMc"  {
+Push register1 "_tooltiplist"
+GetMember
+Push register3
+ToString
+GetMember
+StoreRegister 2
+Pop
+Push register2 undefined
+Equals2
+Not
+Not
+If loc0609
+Push 0.0 register1 "_tooltipmodule"
+GetMember
+Push "getSelectTarget"
+CallMethod
+Push register2
+Equals2
+Not
+If loc05e7
+Push 0.0 register1 "_tooltipmodule"
+GetMember
+Push "directHide"
+CallMethod
+Pop
+loc05e7:Push register1 "_tooltiplist"
+GetMember
+Push register3
+ToString
+Delete
+Pop
+Push 0.0 register1 "refresh"
+CallMethod
+Pop
+}
+loc0609:SetMember
+Push register2 "show"
+DefineFunction2 "" 3 5 false false true false true false false true false 3 "object" 4 "type" 2 "value"  {
+Push register2 register4 register3 3 register1 "_tooltipmodule"
+GetMember
+Push "directShow"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "hide"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push 0.0 register1 "_tooltipmodule"
+GetMember
+Push "directHide"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "move"
+DefineFunction2 "" 2 4 false false true false true false false true false 3 "x" 2 "y"  {
+Push register2 register3 2 register1 "_tooltipmodule"
+GetMember
+Push "toolTipMove"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "clear"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push register1 "_tooltiplist" 0.0
+InitObject
+SetMember
+}
+SetMember
+Push register2 "refresh"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push 0.0 register1 "invalidateTooltipList"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "invalidateTooltipList"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push "g4"
+GetVariable
+Push "manager"
+GetMember
+Push "TooltipManager"
+GetMember
+Push "_instance"
+GetMember
+Not
+Not
+If loc0753
+Push "g4"
+GetVariable
+Push "manager"
+GetMember
+Push "TooltipManager"
+GetMember
+Push "_instance" 0.0 "g4"
+GetVariable
+Push "manager"
+GetMember
+Push "TooltipManager"
+NewMethod
+SetMember
+loc0753:Push register1 "invalidationIntervalID"
+GetMember
+Not
+If loc0766
+Push undefined
+Return
+loc0766:Push register1 "invalidationIntervalID" 1 "refreshNow" "g4"
+GetVariable
+Push "manager"
+GetMember
+Push "TooltipManager"
+GetMember
+Push "_instance"
+GetMember
+Push 3 "setInterval"
+CallFunction
+SetMember
+}
+SetMember
+Push register2 "refreshNow"
+DefineFunction2 "" 0 4 false false true false true false false true false  {
+Push register1 "invalidationIntervalID"
+GetMember
+Push 1 "clearInterval"
+CallFunction
+Pop
+Push register1 "invalidationIntervalID"
+Delete
+Pop
+Push register1 "_tooltiplist"
+GetMember
+Enumerate2
+loc07ce:StoreRegister 0
+Push null
+Equals2
+If loc0847
+Push register0
+StoreRegister 3
+Pop
+Push register1 "_tooltiplist"
+GetMember
+Push register3
+GetMember
+StoreRegister 2
+Pop
+Push register2 "tg"
+GetMember
+Push "enabled"
+GetMember
+Push undefined
+Equals2
+PushDuplicate
+If loc0836
+Pop
+Push register2 "iconhas"
+GetMember
+PushDuplicate
+Not
+If loc0836
+Pop
+Push register2 "ic"
+GetMember
+Push "enabled"
+GetMember
+Push undefined
+Equals2
+loc0836:Not
+If loc0842
+Push false
+Pop
+loc0842:Jump loc07ce
+}
+loc0847:SetMember
+Push register2 "addUiTooltip"
+DefineFunction2 "" 4 6 false false true false true false false true false 4 "viewId" 2 "mc_target" 3 "value" 5 "type"  {
+Push register2 "g4"
+GetVariable
+Push "core"
+GetMember
+Push "G4UIComponent"
+GetMember
+InstanceOf
+Not
+If loc0a46
+Push register5 register3 register2 register4 register1 "showUiTooltip"
+GetMember
+Push register1 6 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+Push register1 "gfx"
+GetVariable
+Push "events"
+GetMember
+Push "EventTypes"
+GetMember
+Push "ROLL_OVER"
+GetMember
+Push 3 "g4"
+GetVariable
+Push "core"
+GetMember
+Push "G4UIComponent"
+GetMember
+Push register2
+CastOp
+Push "addEventListener"
+CallMethod
+Pop
+Push register5 register3 register2 register4 register1 "showUiTooltip"
+GetMember
+Push register1 6 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+Push register1 "gfx"
+GetVariable
+Push "events"
+GetMember
+Push "EventTypes"
+GetMember
+Push "DISABLED_ROLL_OVER"
+GetMember
+Push 3 "g4"
+GetVariable
+Push "core"
+GetMember
+Push "G4UIComponent"
+GetMember
+Push register2
+CastOp
+Push "addEventListener"
+CallMethod
+Pop
+Push register1 "hideTooltip"
+GetMember
+Push register1 "gfx"
+GetVariable
+Push "events"
+GetMember
+Push "EventTypes"
+GetMember
+Push "ROLL_OUT"
+GetMember
+Push 3 "g4"
+GetVariable
+Push "core"
+GetMember
+Push "G4UIComponent"
+GetMember
+Push register2
+CastOp
+Push "addEventListener"
+CallMethod
+Pop
+Push register1 "hideTooltip"
+GetMember
+Push register1 "gfx"
+GetVariable
+Push "events"
+GetMember
+Push "EventTypes"
+GetMember
+Push "DISABLED_ROLL_OUT"
+GetMember
+Push 3 "g4"
+GetVariable
+Push "core"
+GetMember
+Push "G4UIComponent"
+GetMember
+Push register2
+CastOp
+Push "addEventListener"
+CallMethod
+Pop
+Push register1 "hideTooltip"
+GetMember
+Push register1 "gfx"
+GetVariable
+Push "events"
+GetMember
+Push "EventTypes"
+GetMember
+Push "DRAG_OUT"
+GetMember
+Push 3 "g4"
+GetVariable
+Push "core"
+GetMember
+Push "G4UIComponent"
+GetMember
+Push register2
+CastOp
+Push "addEventListener"
+CallMethod
+Pop
+Jump loc0ad2
+loc0a46:Push register2 "onRollOver" register5 register3 register2 register4 register1 "showUiTooltip"
+GetMember
+Push register1 6 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+SetMember
+Push register2 "onRollOut" register1 "hideTooltip"
+GetMember
+Push register1 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+SetMember
+Push register2 "onDragOut" register1 "hideTooltip"
+GetMember
+Push register1 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+SetMember
+}
+loc0ad2:SetMember
+Push register2 "addMessageTooltip"
+DefineFunction2 "" 2 4 false false true false true false false true false 2 "mc_target" 3 "message"  {
+Push register2 "g4"
+GetVariable
+Push "core"
+GetMember
+Push "G4UIComponent"
+GetMember
+InstanceOf
+Not
+If loc0cbd
+Push register3 register2 register1 "showMessageTooltip"
+GetMember
+Push register1 4 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+Push register1 "gfx"
+GetVariable
+Push "events"
+GetMember
+Push "EventTypes"
+GetMember
+Push "ROLL_OVER"
+GetMember
+Push 3 "g4"
+GetVariable
+Push "core"
+GetMember
+Push "G4UIComponent"
+GetMember
+Push register2
+CastOp
+Push "addEventListener"
+CallMethod
+Pop
+Push register3 register2 register1 "showMessageTooltip"
+GetMember
+Push register1 4 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+Push register1 "gfx"
+GetVariable
+Push "events"
+GetMember
+Push "EventTypes"
+GetMember
+Push "DISABLED_ROLL_OVER"
+GetMember
+Push 3 "g4"
+GetVariable
+Push "core"
+GetMember
+Push "G4UIComponent"
+GetMember
+Push register2
+CastOp
+Push "addEventListener"
+CallMethod
+Pop
+Push register1 "hideTooltip"
+GetMember
+Push register1 "gfx"
+GetVariable
+Push "events"
+GetMember
+Push "EventTypes"
+GetMember
+Push "ROLL_OUT"
+GetMember
+Push 3 "g4"
+GetVariable
+Push "core"
+GetMember
+Push "G4UIComponent"
+GetMember
+Push register2
+CastOp
+Push "addEventListener"
+CallMethod
+Pop
+Push register1 "hideTooltip"
+GetMember
+Push register1 "gfx"
+GetVariable
+Push "events"
+GetMember
+Push "EventTypes"
+GetMember
+Push "DISABLED_ROLL_OUT"
+GetMember
+Push 3 "g4"
+GetVariable
+Push "core"
+GetMember
+Push "G4UIComponent"
+GetMember
+Push register2
+CastOp
+Push "addEventListener"
+CallMethod
+Pop
+Push register1 "hideTooltip"
+GetMember
+Push register1 "gfx"
+GetVariable
+Push "events"
+GetMember
+Push "EventTypes"
+GetMember
+Push "DRAG_OUT"
+GetMember
+Push 3 "g4"
+GetVariable
+Push "core"
+GetMember
+Push "G4UIComponent"
+GetMember
+Push register2
+CastOp
+Push "addEventListener"
+CallMethod
+Pop
+Jump loc0d45
+loc0cbd:Push register2 "onRollOver" register3 register2 register1 "showMessageTooltip"
+GetMember
+Push register1 4 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+SetMember
+Push register2 "onRollOut" register1 "hideTooltip"
+GetMember
+Push register1 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+SetMember
+Push register2 "onDragOut" register1 "hideTooltip"
+GetMember
+Push register1 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+SetMember
+}
+loc0d45:SetMember
+Push register2 "removeTooltip"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "mc_target"  {
+Push register2 "g4"
+GetVariable
+Push "core"
+GetMember
+Push "G4UIComponent"
+GetMember
+InstanceOf
+Not
+If loc0ed1
+Push register1 "gfx"
+GetVariable
+Push "events"
+GetMember
+Push "EventTypes"
+GetMember
+Push "ROLL_OVER"
+GetMember
+Push 2 "g4"
+GetVariable
+Push "core"
+GetMember
+Push "G4UIComponent"
+GetMember
+Push register2
+CastOp
+Push "removeEventListenerByScope"
+CallMethod
+Pop
+Push register1 "gfx"
+GetVariable
+Push "events"
+GetMember
+Push "EventTypes"
+GetMember
+Push "DISABLED_ROLL_OVER"
+GetMember
+Push 2 "g4"
+GetVariable
+Push "core"
+GetMember
+Push "G4UIComponent"
+GetMember
+Push register2
+CastOp
+Push "removeEventListenerByScope"
+CallMethod
+Pop
+Push register1 "hideTooltip"
+GetMember
+Push register1 "gfx"
+GetVariable
+Push "events"
+GetMember
+Push "EventTypes"
+GetMember
+Push "ROLL_OUT"
+GetMember
+Push 3 "g4"
+GetVariable
+Push "core"
+GetMember
+Push "G4UIComponent"
+GetMember
+Push register2
+CastOp
+Push "removeEventListener"
+CallMethod
+Pop
+Push register1 "hideTooltip"
+GetMember
+Push register1 "gfx"
+GetVariable
+Push "events"
+GetMember
+Push "EventTypes"
+GetMember
+Push "DISABLED_ROLL_OUT"
+GetMember
+Push 3 "g4"
+GetVariable
+Push "core"
+GetMember
+Push "G4UIComponent"
+GetMember
+Push register2
+CastOp
+Push "removeEventListener"
+CallMethod
+Pop
+Push register1 "hideTooltip"
+GetMember
+Push register1 "gfx"
+GetVariable
+Push "events"
+GetMember
+Push "EventTypes"
+GetMember
+Push "DRAG_OUT"
+GetMember
+Push 3 "g4"
+GetVariable
+Push "core"
+GetMember
+Push "G4UIComponent"
+GetMember
+Push register2
+CastOp
+Push "removeEventListener"
+CallMethod
+Pop
+Jump loc0eec
+loc0ed1:Push register2 "onRollOver" null
+SetMember
+Push register2 "onRollOut" null
+SetMember
+Push register2 "onDragOut" null
+SetMember
+}
+loc0eec:SetMember
+Push register2 "showUiTooltip"
+DefineFunction2 "" 4 6 false false true false true false false true false 3 "viewId" 4 "mc_target" 2 "value" 5 "type"  {
+Push register5 register2 register4 register3 4 register1 "_tooltipmodule"
+GetMember
+Push "showUiTooltip"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "showMessageTooltip"
+DefineFunction2 "" 2 4 false false true false true false false true false 3 "mc_target" 2 "message"  {
+Push register2 register3 2 register1 "_tooltipmodule"
+GetMember
+Push "showMessageTooltip"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "hideTooltip"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push 0.0 register1 "_tooltipmodule"
+GetMember
+Push "hideTooltip"
+CallMethod
+Pop
+}
+SetMember
+Push register1 "TOOL_TIP_TYPE_PREMIUM_WINDOW" 13
+SetMember
+Push register1 "TOOL_TIP_TYPE_DELIVERY" 14
+SetMember
+Push register2 "_tooltiplist" 0.0
+InitObject
+SetMember
+DefineFunction "" 0  {
+}
+Push register2 "__get__tooltipList"
+GetMember
+Push "tooltipList" 3 register2 "addProperty"
+CallMethod
+Push 1 null "g4"
+GetVariable
+Push "manager"
+GetMember
+Push "TooltipManager"
+GetMember
+Push "prototype"
+GetMember
+Push 3 "ASSetPropFlags"
+CallFunction
+loc101a:Pop

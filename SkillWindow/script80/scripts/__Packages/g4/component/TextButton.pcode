@@ -1,0 +1,218 @@
+ConstantPool "_global" "g4" "Object" "component" "TextButton" "G4Button" "prototype" "updateAfterStateChange" "initialized" "validateNow" "textField" "_label" "isHtml" "html" "htmlText" "text" "verticalAlign" "textAutoSize" "getTextFormat" "align" "textAlign" "fontSize" "size" "setTextFormat" "constraints" "__get__height" "__get__width" "update" "state" "gfx" "events" "EventTypes" "STATE_CHANGE" "dispatchEvent" "ROLL_OVER" "rollOver" "ROLL_OUT" "rollOut" "CLICK" "click" "soundID" "center" "shrink" "ASSetPropFlags"
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Not
+Not
+If loc01d3
+Push "_global"
+GetVariable
+Push "g4" 0.0 "Object"
+NewObject
+SetMember
+loc01d3:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "component"
+GetMember
+Not
+Not
+If loc020b
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "component" 0.0 "Object"
+NewObject
+SetMember
+loc020b:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "component"
+GetMember
+Push "TextButton"
+GetMember
+Not
+Not
+If loc04e3
+Push "g4"
+GetVariable
+Push "component"
+GetMember
+Push "TextButton"
+DefineFunction2 "" 0 2 false false false true true false true false false  {
+Push 0.0 register1 undefined
+CallMethod
+Pop
+}
+StoreRegister 1
+SetMember
+Push "g4"
+GetVariable
+Push "component"
+GetMember
+Push "TextButton"
+GetMember
+Push "g4"
+GetVariable
+Push "component"
+GetMember
+Push "G4Button"
+GetMember
+Extends
+Push register1 "prototype"
+GetMember
+StoreRegister 2
+Pop
+Push register2 "updateAfterStateChange"
+DefineFunction2 "" 0 3 false false true false true false false true false  {
+Push register1 "initialized"
+GetMember
+Not
+Not
+If loc02b5
+Push undefined
+Return
+loc02b5:Push 0.0 register1 "validateNow"
+CallMethod
+Pop
+Push register1 "textField"
+GetMember
+Push null
+Equals2
+Not
+PushDuplicate
+Not
+If loc02eb
+Pop
+Push register1 "_label"
+GetMember
+Push null
+Equals2
+Not
+loc02eb:Not
+If loc03d4
+Push register1 "isHtml"
+GetMember
+Not
+If loc0327
+Push register1 "textField"
+GetMember
+Push "html" true
+SetMember
+Push register1 "textField"
+GetMember
+Push "htmlText" register1 "_label"
+GetMember
+SetMember
+Jump loc034a
+loc0327:Push register1 "textField"
+GetMember
+Push "html" false
+SetMember
+Push register1 "textField"
+GetMember
+Push "text" register1 "_label"
+GetMember
+SetMember
+loc034a:Push register1 "textField"
+GetMember
+Push "verticalAlign" register1 "verticalAlign"
+GetMember
+SetMember
+Push register1 "textField"
+GetMember
+Push "textAutoSize" register1 "textAutoSize"
+GetMember
+SetMember
+Push 0.0 register1 "textField"
+GetMember
+Push "getTextFormat"
+CallMethod
+StoreRegister 2
+Pop
+Push register2 "align" register1 "textAlign"
+GetMember
+SetMember
+Push register1 "fontSize"
+GetMember
+Push -1
+Equals2
+Not
+Not
+If loc03be
+Push register2 "size" register1 "fontSize"
+GetMember
+SetMember
+loc03be:Push register2 1 register1 "textField"
+GetMember
+Push "setTextFormat"
+CallMethod
+Pop
+loc03d4:Push register1 "constraints"
+GetMember
+Push null
+Equals2
+Not
+Not
+If loc041e
+Push 0.0 register1 "__get__height"
+CallMethod
+Push 0.0 register1 "__get__width"
+CallMethod
+Push 2 register1 "constraints"
+GetMember
+Push "update"
+CallMethod
+Pop
+loc041e:Push register1 "state"
+GetMember
+Push 1
+InitArray
+Push "gfx"
+GetVariable
+Push "events"
+GetMember
+Push "EventTypes"
+GetMember
+Push "STATE_CHANGE"
+GetMember
+Push 2 register1 "dispatchEvent"
+CallMethod
+Pop
+}
+SetMember
+Push register1 "ROLL_OVER" "rollOver"
+SetMember
+Push register1 "ROLL_OUT" "rollOut"
+SetMember
+Push register1 "CLICK" "click"
+SetMember
+Push register2 "soundID" 0.0
+SetMember
+Push register2 "isHtml" false
+SetMember
+Push register2 "verticalAlign" "center"
+SetMember
+Push register2 "textAlign" "center"
+SetMember
+Push register2 "textAutoSize" "shrink"
+SetMember
+Push register2 "fontSize" -1
+SetMember
+Push 1 null "g4"
+GetVariable
+Push "component"
+GetMember
+Push "TextButton"
+GetMember
+Push "prototype"
+GetMember
+Push 3 "ASSetPropFlags"
+CallFunction
+loc04e3:Pop

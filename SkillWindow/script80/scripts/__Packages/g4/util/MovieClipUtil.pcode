@@ -1,0 +1,456 @@
+ConstantPool "_global" "g4" "Object" "util" "MovieClipUtil" "prototype" "playMovieClip" "" "movieClip" "_currentframe" "_totalframes" "num_targetFrame" "onEnterFrame" "isNaN" "gotoAndStop" "isReverse" "prevFrame" "nextFrame" "callbackParams" "callback" "apply" "nextFrameCall" "scope" "loadClip" "container" "MovieClipLoader" "addListener" "onLoadInit" "Array" "push" "checkHadRoot" "_parent" "createModalBackground" "getNextHighestDepth" "modalBackground" "createEmptyMovieClip" "beginFill" "moveTo" "Stage" "height" "lineTo" "width" "endFill" "tabEnabled" "useHandCursor" "onRelease" "ASSetPropFlags"
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Not
+Not
+If loc0220
+Push "_global"
+GetVariable
+Push "g4" 0.0 "Object"
+NewObject
+SetMember
+loc0220:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "util"
+GetMember
+Not
+Not
+If loc0258
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "util" 0.0 "Object"
+NewObject
+SetMember
+loc0258:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "util"
+GetMember
+Push "MovieClipUtil"
+GetMember
+Not
+Not
+If loc090e
+Push "g4"
+GetVariable
+Push "util"
+GetMember
+Push "MovieClipUtil"
+DefineFunction "" 0  {
+}
+StoreRegister 1
+SetMember
+Push register1 "prototype"
+GetMember
+StoreRegister 2
+Pop
+Push register1 "playMovieClip"
+DefineFunction2 "" 5 4 false false true false true false true false false 0 "movieClip" 3 "startFrame" 2 "targetFrame" 0 "callback" 0 "callbackParams"  {
+Push register3 null
+Equals2
+PushDuplicate
+Not
+If loc0311
+Pop
+Push register3
+ToNumber
+Push -1
+Equals2
+loc0311:PushDuplicate
+Not
+If loc0325
+Pop
+Push register3
+ToString
+Push ""
+Equals2
+loc0325:Not
+If loc033c
+Push "movieClip"
+GetVariable
+Push "_currentframe"
+GetMember
+StoreRegister 3
+Pop
+loc033c:Push register2 null
+Equals2
+PushDuplicate
+Not
+If loc035a
+Pop
+Push register2
+ToNumber
+Push -1
+Equals2
+loc035a:PushDuplicate
+Not
+If loc036e
+Pop
+Push register2
+ToString
+Push ""
+Equals2
+loc036e:Not
+If loc0385
+Push "movieClip"
+GetVariable
+Push "_totalframes"
+GetMember
+StoreRegister 2
+Pop
+loc0385:Push register3
+ToNumber
+StoreRegister 1
+Pop
+Push "num_targetFrame" register2
+ToNumber
+DefineLocal
+Push "movieClip"
+GetVariable
+Push "onEnterFrame" null
+SetMember
+Push "num_targetFrame"
+GetVariable
+Push 1 "isNaN"
+CallFunction
+Push true
+Equals2
+Not
+If loc03e6
+Push register2 1 "movieClip"
+GetVariable
+Push "gotoAndStop"
+CallMethod
+Pop
+Push "num_targetFrame" "movieClip"
+GetVariable
+Push "_currentframe"
+GetMember
+SetVariable
+loc03e6:Push register1 1 "isNaN"
+CallFunction
+Push true
+Equals2
+Not
+If loc0424
+Push register3 1 "movieClip"
+GetVariable
+Push "gotoAndStop"
+CallMethod
+Pop
+Push "movieClip"
+GetVariable
+Push "_currentframe"
+GetMember
+StoreRegister 1
+Pop
+loc0424:Push register1 1 "movieClip"
+GetVariable
+Push "gotoAndStop"
+CallMethod
+Pop
+Push register1 "num_targetFrame"
+GetVariable
+Equals2
+Not
+If loc044c
+Push undefined
+Return
+loc044c:Push "isReverse" "num_targetFrame"
+GetVariable
+Push 1
+Equals2
+PushDuplicate
+If loc046d
+Pop
+Push register1 "num_targetFrame"
+GetVariable
+Greater
+loc046d:DefineLocal
+Push "movieClip"
+GetVariable
+Push "onEnterFrame"
+DefineFunction "" 0  {
+Push "isReverse"
+GetVariable
+Push true
+Equals2
+Not
+If loc04ae
+Push 0.0 "movieClip"
+GetVariable
+Push "prevFrame"
+CallMethod
+Pop
+Jump loc04c4
+loc04ae:Push 0.0 "movieClip"
+GetVariable
+Push "nextFrame"
+CallMethod
+Pop
+loc04c4:Push "movieClip"
+GetVariable
+Push "_currentframe"
+GetMember
+Push "num_targetFrame"
+GetVariable
+Equals2
+PushDuplicate
+If loc04f3
+Pop
+Push "movieClip"
+GetVariable
+Push "_currentframe"
+GetMember
+Push 1
+Equals2
+loc04f3:PushDuplicate
+If loc0513
+Pop
+Push "movieClip"
+GetVariable
+Push "_currentframe"
+GetMember
+Push "movieClip"
+GetVariable
+Push "_totalframes"
+GetMember
+Equals2
+loc0513:Not
+If loc053f
+Push "movieClip"
+GetVariable
+Push "onEnterFrame" null
+SetMember
+Push "callbackParams"
+GetVariable
+Push null 2 "callback"
+GetVariable
+Push "apply"
+CallMethod
+Pop
+}
+loc053f:SetMember
+}
+SetMember
+Push register1 "nextFrameCall"
+DefineFunction "" 4 "movieClip" "callback" "callbackParams" "scope"  {
+Push "movieClip"
+GetVariable
+Push "onEnterFrame"
+GetMember
+Push null
+Equals2
+Not
+Not
+If loc0596
+Push false
+Return
+loc0596:Push "movieClip"
+GetVariable
+Push "onEnterFrame"
+DefineFunction "" 0  {
+Push "movieClip"
+GetVariable
+Push "onEnterFrame" null
+SetMember
+Push "callbackParams"
+GetVariable
+Push "scope"
+GetVariable
+Push 2 "callback"
+GetVariable
+Push "apply"
+CallMethod
+Pop
+}
+SetMember
+Push true
+Return
+}
+SetMember
+Push register1 "loadClip"
+DefineFunction2 "" 5 4 false false true false true false true false false 3 "url" 0 "container" 0 "callback" 0 "callbackParams" 0 "scope"  {
+Push "scope"
+GetVariable
+Push null
+Equals2
+Not
+If loc0639
+Push "scope" "container"
+GetVariable
+SetVariable
+loc0639:Push 0.0 "Object"
+NewObject
+StoreRegister 2
+Pop
+Push 0.0 "MovieClipLoader"
+NewObject
+StoreRegister 1
+Pop
+Push register2 1 register1 "addListener"
+CallMethod
+Pop
+Push "container"
+GetVariable
+Push register3 2 register1 "loadClip"
+CallMethod
+Pop
+Push register2 "onLoadInit"
+DefineFunction2 "" 1 2 false false true false true false true false false 1 "mc"  {
+Push "container"
+GetVariable
+Push null
+Equals2
+Not
+Not
+If loc0704
+Push "callbackParams"
+GetVariable
+Push null
+Equals2
+Not
+If loc06d2
+Push "callbackParams" 0.0 "Array"
+NewObject
+SetVariable
+loc06d2:Push register1 1 "callbackParams"
+GetVariable
+Push "push"
+CallMethod
+Pop
+Push "callbackParams"
+GetVariable
+Push "scope"
+GetVariable
+Push 2 "callback"
+GetVariable
+Push "apply"
+CallMethod
+Pop
+}
+loc0704:SetMember
+}
+SetMember
+Push register1 "checkHadRoot"
+DefineFunction2 "" 1 3 false true true false true false true false false 2 "mc"  {
+Push register2 "_parent"
+GetMember
+Push undefined
+Equals2
+Not
+If loc074c
+Push register2 register1
+Equals2
+If loc0746
+Push false
+Jump loc074b
+loc0746:Push true
+loc074b:Return
+loc074c:Push register2 "_parent"
+GetMember
+Push 1 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "MovieClipUtil"
+GetMember
+Push "checkHadRoot"
+CallMethod
+Return
+}
+SetMember
+Push register1 "createModalBackground"
+DefineFunction2 "" 3 5 false false true false true false true false false 4 "container" 3 "alpha" 2 "depth"  {
+Push register2 null
+Equals2
+Not
+If loc07c1
+Push 0.0 register4 "getNextHighestDepth"
+CallMethod
+StoreRegister 2
+Pop
+loc07c1:Push register3 null
+Equals2
+Not
+If loc07db
+Push 50
+StoreRegister 3
+Pop
+loc07db:Push register2 "modalBackground" 2 register4 "createEmptyMovieClip"
+CallMethod
+StoreRegister 1
+Pop
+Push register3 0.0 2 register1 "beginFill"
+CallMethod
+Pop
+Push -200 0.0 2 register1 "moveTo"
+CallMethod
+Pop
+Push "Stage"
+GetVariable
+Push "height"
+GetMember
+Push 0.0 2 register1 "lineTo"
+CallMethod
+Pop
+Push "Stage"
+GetVariable
+Push "height"
+GetMember
+Push "Stage"
+GetVariable
+Push "height"
+GetMember
+Push 0.5
+Multiply
+Add2
+Push "Stage"
+GetVariable
+Push "width"
+GetMember
+Push 2 register1 "lineTo"
+CallMethod
+Pop
+Push -200 "Stage"
+GetVariable
+Push "width"
+GetMember
+Push 2 register1 "lineTo"
+CallMethod
+Pop
+Push 0.0 register1 "endFill"
+CallMethod
+Pop
+Push register1 "tabEnabled" false
+SetMember
+Push register1 "useHandCursor" false
+SetMember
+Push register1 "onRelease"
+DefineFunction "" 0  {
+}
+SetMember
+Push register1
+Return
+}
+SetMember
+Push 1 null "g4"
+GetVariable
+Push "util"
+GetMember
+Push "MovieClipUtil"
+GetMember
+Push "prototype"
+GetMember
+Push 3 "ASSetPropFlags"
+CallFunction
+loc090e:Pop

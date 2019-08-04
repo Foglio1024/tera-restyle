@@ -1,0 +1,317 @@
+ConstantPool "_global" "g4" "Object" "util" "TeraParser" "prototype" "stringify" "" "object" "number" "string" "boolean" "Array" "length" "\n" "\t" "isFinite" "1" "parse" "indexOf" "split" "pop" "ASSetPropFlags"
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Not
+Not
+If loc00c7
+Push "_global"
+GetVariable
+Push "g4" 0.0 "Object"
+NewObject
+SetMember
+loc00c7:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "util"
+GetMember
+Not
+Not
+If loc00ff
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "util" 0.0 "Object"
+NewObject
+SetMember
+loc00ff:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "util"
+GetMember
+Push "TeraParser"
+GetMember
+Not
+Not
+If loc0553
+Push "g4"
+GetVariable
+Push "util"
+GetMember
+Push "TeraParser"
+DefineFunction "" 0  {
+}
+StoreRegister 1
+SetMember
+Push register1 "prototype"
+GetMember
+StoreRegister 2
+Pop
+Push register1 "stringify"
+DefineFunction2 "" 1 7 false false true false true false true false false 2 "arg"  {
+Push undefined
+StoreRegister 5
+Pop
+Push undefined
+StoreRegister 1
+Pop
+Push undefined
+StoreRegister 6
+Pop
+Push ""
+StoreRegister 4
+Pop
+Push undefined
+StoreRegister 3
+Pop
+Push register2
+TypeOf
+StoreRegister 0
+Push "object"
+StrictEquals
+If loc01d0
+Push register0 "number"
+StrictEquals
+If loc028c
+Push register0 "string"
+StrictEquals
+If loc02af
+Push register0 "boolean"
+StrictEquals
+If loc02b6
+Jump loc02da
+loc01d0:Push register2
+Not
+If loc0286
+Push register2 "Array"
+GetVariable
+InstanceOf
+Not
+If loc0286
+Push 0.0
+StoreRegister 1
+Pop
+loc01fb:Push register1 register2 "length"
+GetMember
+Less2
+Not
+If loc0280
+Push register2 register1
+GetMember
+Push 1 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "TeraParser"
+GetMember
+Push "stringify"
+CallMethod
+StoreRegister 3
+Pop
+Push register2 register1
+GetMember
+Push "Array"
+GetVariable
+InstanceOf
+Not
+If loc0260
+Push register4 register3 "\n"
+Add2
+Add2
+StoreRegister 4
+Pop
+Jump loc0270
+loc0260:Push register4 register3 "\t"
+Add2
+Add2
+StoreRegister 4
+Pop
+loc0270:Push register1
+Increment
+StoreRegister 1
+Pop
+Jump loc01fb
+loc0280:Push register4
+Return
+loc0286:Push ""
+Return
+loc028c:Push register2 1 "isFinite"
+CallFunction
+If loc02a8
+Push ""
+Jump loc02ae
+loc02a8:Push register2
+ToString
+loc02ae:Return
+loc02af:Push register2
+ToString
+Return
+loc02b6:Push register2 true
+Equals2
+If loc02d4
+Push 0.0
+Jump loc02d9
+loc02d4:Push "1"
+loc02d9:Return
+loc02da:Push ""
+Return
+}
+SetMember
+Push register1 "parse"
+DefineFunction2 "" 1 4 false false true false true false true false false 3 "text"  {
+Push undefined
+StoreRegister 2
+Pop
+Push register3 ""
+Equals2
+Not
+If loc0315
+Push null
+Return
+loc0315:Push 0.0 "\n" 2 register3 "indexOf"
+CallMethod
+Push -1
+Equals2
+Not
+Not
+If loc0498
+Push "\n" 1 register3 "split"
+CallMethod
+StoreRegister 2
+Pop
+Push register2 register2 "length"
+GetMember
+Push 1
+Subtract
+GetMember
+Push ""
+Equals2
+Not
+If loc0383
+Push 0.0 register2 "pop"
+CallMethod
+Pop
+loc0383:Push register2 "length"
+GetMember
+Push 2
+Equals2
+PushDuplicate
+Not
+If loc03b0
+Pop
+Push register2 0.0
+GetMember
+Push null
+Equals2
+loc03b0:PushDuplicate
+Not
+If loc03c8
+Pop
+Push register2 1
+GetMember
+Push null
+Equals2
+loc03c8:Not
+If loc03d3
+Push null
+Return
+loc03d3:Push 0.0
+StoreRegister 1
+Pop
+loc03e4:Push register1 register2 "length"
+GetMember
+Less2
+Not
+If loc0493
+Push 0.0 "\t" 2 register2 register1
+GetMember
+ToString
+Push "indexOf"
+CallMethod
+Push -1
+Equals2
+Not
+Not
+If loc0483
+Push register2 register1 "\t" 1 register2 register1
+GetMember
+ToString
+Push "split"
+CallMethod
+SetMember
+Push register2 register1
+GetMember
+Push register2 register1
+GetMember
+Push "length"
+GetMember
+Push 1
+Subtract
+GetMember
+Push ""
+Equals2
+Not
+If loc0483
+Push 0.0 register2 register1
+GetMember
+Push "pop"
+CallMethod
+Pop
+loc0483:Push register1
+Increment
+StoreRegister 1
+Pop
+Jump loc03e4
+loc0493:Jump loc0506
+loc0498:Push 0.0 "\t" 2 register3 "indexOf"
+CallMethod
+Push -1
+Equals2
+Not
+Not
+If loc0506
+Push "\t" 1 register3 "split"
+CallMethod
+StoreRegister 2
+Pop
+Push register2 register2 "length"
+GetMember
+Push 1
+Subtract
+GetMember
+Push ""
+Equals2
+Not
+If loc0506
+Push 0.0 register2 "pop"
+CallMethod
+Pop
+loc0506:Push register2 null
+Equals2
+Not
+If loc0523
+Push register3 1
+InitArray
+StoreRegister 2
+Pop
+loc0523:Push register2
+Return
+}
+SetMember
+Push 1 null "g4"
+GetVariable
+Push "util"
+GetMember
+Push "TeraParser"
+GetMember
+Push "prototype"
+GetMember
+Push 3 "ASSetPropFlags"
+CallFunction
+loc0553:Pop
