@@ -1,0 +1,692 @@
+ConstantPool "_global" "g4" "Object" "core" "G4UIComponent" "_eventDispatcher" "EventDispatcher" "MovieClip" "prototype" "addEventListener" "removeEventListener" "dispatchEvent" "removeAllEventListener" "onLoad" "onLoadImpl" "initialized" "__width" "isNaN" "_width" "__height" "_height" "configUI" "validateNow" "_focused" "Selection" "getFocus" "gfx" "managers" "FocusHandler" "__get__instance" "onSetFocus" "createInstance" "attachMovie" "invalidate" "__get__disabled" "_disabled" "__set__disabled" "enabled" "useHandCursor" "__get__visible" "_visible" "__set__visible" "hide" "show" "__get__width" "__set__width" "setSize" "__get__height" "__set__height" "sizeIsInvalid" "__get__focused" "__set__focused" "setFocus" "changeFocus" "focusOut" "focusIn" "__get__displayFocus" "_displayFocus" "__set__displayFocus" "handleInput" "length" "slice" "invalidationIntervalID" "setInterval" "clearInterval" "draw" "toString" "[Scaleform UIComponent " "_name" "]" "dispatchEventToGame" "_isConfigUIComplete" "initSize" "_xscale" "_yscale" "onMouseWheel" "_ymouse" "_xmouse" "hitTest" "Mouse" "getTopMostEntity" "scrollWheel" "_parent" "disabled" "addProperty" "displayFocus" "focused" "height" "visible" "width" "ASSetPropFlags"
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Not
+Not
+If loc0432
+Push "_global"
+GetVariable
+Push "g4" 0.0 "Object"
+NewObject
+SetMember
+loc0432:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "core"
+GetMember
+Not
+Not
+If loc046a
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "core" 0.0 "Object"
+NewObject
+SetMember
+loc046a:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "core"
+GetMember
+Push "G4UIComponent"
+GetMember
+Not
+Not
+If loc1084
+Push "g4"
+GetVariable
+Push "core"
+GetMember
+Push "G4UIComponent"
+DefineFunction2 "" 0 3 false false false true true false false true false  {
+Push 0.0 register2 undefined
+CallMethod
+Pop
+Push register1 "_eventDispatcher" 0.0 "g4"
+GetVariable
+Push "core"
+GetMember
+Push "EventDispatcher"
+NewMethod
+SetMember
+}
+StoreRegister 1
+SetMember
+Push "g4"
+GetVariable
+Push "core"
+GetMember
+Push "G4UIComponent"
+GetMember
+Push "MovieClip"
+GetVariable
+Extends
+Push register1 "prototype"
+GetMember
+StoreRegister 2
+Pop
+Push register2 "addEventListener"
+DefineFunction2 "" 3 5 false false true false true false false true false 2 "eventType" 4 "scope" 3 "callBack"  {
+Push register3 register4 register2 3 register1 "_eventDispatcher"
+GetMember
+Push "addEventListener"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "removeEventListener"
+DefineFunction2 "" 2 4 false false true false true false false true false 2 "eventType" 3 "scope"  {
+Push register3 register2 2 register1 "_eventDispatcher"
+GetMember
+Push "removeEventListener"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "dispatchEvent"
+DefineFunction2 "" 2 4 false false true false true false false true false 2 "eventType" 3 "params"  {
+Push register3 register2 2 register1 "_eventDispatcher"
+GetMember
+Push "dispatchEvent"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "removeAllEventListener"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "scope"  {
+Push register2 1 register1 "_eventDispatcher"
+GetMember
+Push "removeAllEventListener"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "onLoad"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push 0.0 register1 "onLoadImpl"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "onLoadImpl"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push register1 "initialized"
+GetMember
+Not
+If loc0640
+Push undefined
+Return
+loc0640:Push register1 "__width"
+GetMember
+Push 1 "isNaN"
+CallFunction
+Not
+If loc0666
+Push register1 "__width" register1 "_width"
+GetMember
+SetMember
+loc0666:Push register1 "__height"
+GetMember
+Push 1 "isNaN"
+CallFunction
+Not
+If loc068c
+Push register1 "__height" register1 "_height"
+GetMember
+SetMember
+loc068c:Push register1 "initialized" true
+SetMember
+Push 0.0 register1 "configUI"
+CallMethod
+Pop
+Push 0.0 register1 "validateNow"
+CallMethod
+Pop
+Push register1 "_focused"
+GetMember
+PushDuplicate
+Not
+If loc06e4
+Pop
+Push 0.0 "Selection"
+GetVariable
+Push "getFocus"
+CallMethod
+Push null
+Equals2
+loc06e4:Not
+If loc071a
+Push register1 null 2 0.0 "gfx"
+GetVariable
+Push "managers"
+GetMember
+Push "FocusHandler"
+GetMember
+Push "__get__instance"
+CallMethod
+Push "onSetFocus"
+CallMethod
+Pop
+}
+loc071a:SetMember
+Push register1 "createInstance"
+DefineFunction2 "" 5 7 false false true false true false true false false 6 "context" 3 "symbol" 2 "name" 5 "depth" 4 "initObj"  {
+Push register4 register5 register2 register3 4 register6 "attachMovie"
+CallMethod
+StoreRegister 1
+Pop
+Push register1 "invalidate"
+GetMember
+Not
+If loc078e
+Push 0.0 register1 "invalidate"
+CallMethod
+Pop
+loc078e:Push register1
+Return
+}
+SetMember
+Push register2 "__get__disabled"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push register1 "_disabled"
+GetMember
+Return
+}
+SetMember
+Push register2 "__set__disabled"
+DefineFunction2 "" 1 4 false false false true true false false true false 3 "value"  {
+Push register1 "_disabled" register3
+SetMember
+Push register2 "enabled" register3
+Not
+SetMember
+Push register1 "useHandCursor" register3
+Not
+SetMember
+Push 0.0 register1 "invalidate"
+CallMethod
+Pop
+Push 0.0 register1 "__get__disabled"
+CallMethod
+Return
+}
+SetMember
+Push register2 "__get__visible"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push register1 "_visible"
+GetMember
+Return
+}
+SetMember
+Push register2 "__set__visible"
+DefineFunction2 "" 1 4 false false true false true false false true false 2 "value"  {
+Push register1 "_visible"
+GetMember
+Push register2
+Equals2
+Not
+If loc085d
+Push undefined
+Return
+loc085d:Push register1 "_visible" register2
+SetMember
+Push register1 "initialized"
+GetMember
+Not
+Not
+If loc087b
+Push undefined
+Return
+loc087b:Push register2
+If loc088f
+Push "hide"
+Jump loc0894
+loc088f:Push "show"
+loc0894:StoreRegister 3
+Pop
+Push register1 1
+InitArray
+Push register3 2 register1 "dispatchEvent"
+CallMethod
+Pop
+Push 0.0 register1 "__get__visible"
+CallMethod
+Return
+}
+SetMember
+Push register2 "__get__width"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push register1 "__width"
+GetMember
+Return
+}
+SetMember
+Push register2 "__set__width"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "value"  {
+Push register1 "__height"
+GetMember
+PushDuplicate
+If loc0913
+Pop
+Push register1 "_height"
+GetMember
+loc0913:Push register2 2 register1 "setSize"
+CallMethod
+Pop
+Push 0.0 register1 "__get__width"
+CallMethod
+Return
+}
+SetMember
+Push register2 "__get__height"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push register1 "__height"
+GetMember
+Return
+}
+SetMember
+Push register2 "__set__height"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "value"  {
+Push register2 register1 "__width"
+GetMember
+PushDuplicate
+If loc0984
+Pop
+Push register1 "_width"
+GetMember
+loc0984:Push 2 register1 "setSize"
+CallMethod
+Pop
+Push 0.0 register1 "__get__height"
+CallMethod
+Return
+}
+SetMember
+Push register2 "setSize"
+DefineFunction2 "" 2 4 false false true false true false false true false 2 "width" 3 "height"  {
+Push register1 "__width"
+GetMember
+Push register2
+Equals2
+PushDuplicate
+Not
+If loc09ea
+Pop
+Push register1 "__height"
+GetMember
+Push register3
+Equals2
+loc09ea:Not
+If loc09f5
+Push undefined
+Return
+loc09f5:Push register1 "__width" register2
+SetMember
+Push register1 "__height" register3
+SetMember
+Push register1 "sizeIsInvalid" true
+SetMember
+Push 0.0 register1 "invalidate"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "__get__focused"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push register1 "_focused"
+GetMember
+Return
+}
+SetMember
+Push register2 "__set__focused"
+DefineFunction2 "" 1 4 false false true false true false false true false 2 "value"  {
+Push register2 register1 "_focused"
+GetMember
+Equals2
+Not
+If loc0a71
+Push undefined
+Return
+loc0a71:Push register1 "_focused" register2
+SetMember
+Push register2
+Not
+PushDuplicate
+Not
+If loc0aa4
+Pop
+Push 0.0 "Selection"
+GetVariable
+Push "getFocus"
+CallMethod
+Push register1
+Equals2
+loc0aa4:Not
+If loc0ac2
+Push null 1 "Selection"
+GetVariable
+Push "setFocus"
+CallMethod
+Pop
+Jump loc0b05
+loc0ac2:Push register2
+PushDuplicate
+Not
+If loc0aeb
+Pop
+Push 0.0 "Selection"
+GetVariable
+Push "getFocus"
+CallMethod
+Push register1
+Equals2
+Not
+loc0aeb:Not
+If loc0b05
+Push register1 1 "Selection"
+GetVariable
+Push "setFocus"
+CallMethod
+Pop
+loc0b05:Push 0.0 register1 "changeFocus"
+CallMethod
+Pop
+Push register2
+If loc0b2b
+Push "focusOut"
+Jump loc0b30
+loc0b2b:Push "focusIn"
+loc0b30:StoreRegister 3
+Pop
+Push register1 1
+InitArray
+Push register3 2 register1 "dispatchEvent"
+CallMethod
+Pop
+Push 0.0 register1 "__get__focused"
+CallMethod
+Return
+}
+SetMember
+Push register2 "__get__displayFocus"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push register1 "_displayFocus"
+GetMember
+Return
+}
+SetMember
+Push register2 "__set__displayFocus"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "value"  {
+Push register2 register1 "_displayFocus"
+GetMember
+Equals2
+Not
+If loc0bae
+Push undefined
+Return
+loc0bae:Push register1 "_displayFocus" register2
+SetMember
+Push 0.0 register1 "changeFocus"
+CallMethod
+Pop
+Push 0.0 register1 "__get__displayFocus"
+CallMethod
+Return
+}
+SetMember
+Push register2 "handleInput"
+DefineFunction2 "" 2 4 false false true false true false true false false 3 "details" 1 "pathToFocus"  {
+Push register1 null
+Equals2
+Not
+PushDuplicate
+Not
+If loc0c2a
+Pop
+Push register1 "length"
+GetMember
+Push 0.0
+Greater
+loc0c2a:Not
+If loc0c74
+Push 1 1 register1 "slice"
+CallMethod
+Push register3 2 register1 0.0
+GetMember
+Push "handleInput"
+CallMethod
+StoreRegister 2
+Pop
+Push register2
+Not
+If loc0c74
+Push register2
+Return
+loc0c74:Push false
+Return
+}
+SetMember
+Push register2 "invalidate"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push register1 "invalidationIntervalID"
+GetMember
+Not
+If loc0ca0
+Push undefined
+Return
+loc0ca0:Push register1 "invalidationIntervalID" 1 "validateNow" register1 3 "setInterval"
+CallFunction
+SetMember
+}
+SetMember
+Push register2 "validateNow"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push register1 "invalidationIntervalID"
+GetMember
+Push 1 "clearInterval"
+CallFunction
+Pop
+Push register1 "invalidationIntervalID"
+Delete
+Pop
+Push register1 "initialized"
+GetMember
+Not
+Not
+If loc0d0f
+Push 0.0 register1 "onLoadImpl"
+CallMethod
+Pop
+Push undefined
+Return
+loc0d0f:Push 0.0 register1 "draw"
+CallMethod
+Pop
+Push register1 "sizeIsInvalid" false
+SetMember
+}
+SetMember
+Push register2 "toString"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push "[Scaleform UIComponent " register1 "_name"
+GetMember
+Add2
+Push "]"
+Add2
+Return
+}
+SetMember
+Push register2 "dispatchEventToGame"
+DefineFunction "" 1 "event"  {
+}
+SetMember
+Push register2 "configUI"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push register1 "_isConfigUIComplete" true
+SetMember
+}
+SetMember
+Push register2 "initSize"
+DefineFunction2 "" 0 4 false false true false true false false true false  {
+Push register1 "__width"
+GetMember
+Push 0.0
+Equals2
+If loc0dbd
+Push register1 "__width"
+GetMember
+Jump loc0dc5
+loc0dbd:Push register1 "_width"
+GetMember
+loc0dc5:StoreRegister 3
+Pop
+Push register1 "__height"
+GetMember
+Push 0.0
+Equals2
+If loc0df1
+Push register1 "__height"
+GetMember
+Jump loc0df9
+loc0df1:Push register1 "_height"
+GetMember
+loc0df9:StoreRegister 2
+Pop
+Push register1 "_xscale" register1 "_yscale" 100
+StoreRegister 0
+SetMember
+Push register0
+SetMember
+Push register2 register3 2 register1 "setSize"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "draw"
+DefineFunction "" 0  {
+}
+SetMember
+Push register2 "changeFocus"
+DefineFunction "" 0  {
+}
+SetMember
+Push register2 "onMouseWheel"
+DefineFunction2 "" 2 5 false true true false true false false true false 4 "delta" 0 "target"  {
+Push 0.0 register1 "__get__visible"
+CallMethod
+PushDuplicate
+Not
+If loc0ea5
+Pop
+Push true register2 "_ymouse"
+GetMember
+Push register2 "_xmouse"
+GetMember
+Push 3 register1 "hitTest"
+CallMethod
+loc0ea5:Not
+If loc0f2c
+Push 0.0 "Mouse"
+GetVariable
+Push "getTopMostEntity"
+CallMethod
+StoreRegister 3
+Pop
+loc0ec5:Push register3
+Not
+If loc0f2c
+Push register3 register1
+Equals2
+Not
+If loc0f1a
+Push register4 0.0
+Greater
+If loc0eff
+Push -1
+Jump loc0f07
+loc0eff:Push 1
+loc0f07:Push 1 register1 "scrollWheel"
+CallMethod
+Pop
+Jump loc0f2c
+loc0f1a:Push register3 "_parent"
+GetMember
+StoreRegister 3
+Pop
+Jump loc0ec5
+}
+loc0f2c:SetMember
+Push register2 "scrollWheel"
+DefineFunction "" 1 "delta"  {
+}
+SetMember
+Push register2 "initialized" false
+SetMember
+Push register2 "__width" NaN
+SetMember
+Push register2 "__height" NaN
+SetMember
+Push register2 "_disabled" false
+SetMember
+Push register2 "_focused" false
+SetMember
+Push register2 "_displayFocus" false
+SetMember
+Push register2 "sizeIsInvalid" false
+SetMember
+Push register2 "_isConfigUIComplete" false
+SetMember
+Push register2 "__set__disabled"
+GetMember
+Push register2 "__get__disabled"
+GetMember
+Push "disabled" 3 register2 "addProperty"
+CallMethod
+Push register2 "__set__displayFocus"
+GetMember
+Push register2 "__get__displayFocus"
+GetMember
+Push "displayFocus" 3 register2 "addProperty"
+CallMethod
+Push register2 "__set__focused"
+GetMember
+Push register2 "__get__focused"
+GetMember
+Push "focused" 3 register2 "addProperty"
+CallMethod
+Push register2 "__set__height"
+GetMember
+Push register2 "__get__height"
+GetMember
+Push "height" 3 register2 "addProperty"
+CallMethod
+Push register2 "__set__visible"
+GetMember
+Push register2 "__get__visible"
+GetMember
+Push "visible" 3 register2 "addProperty"
+CallMethod
+Push register2 "__set__width"
+GetMember
+Push register2 "__get__width"
+GetMember
+Push "width" 3 register2 "addProperty"
+CallMethod
+Push 1 null "g4"
+GetVariable
+Push "core"
+GetMember
+Push "G4UIComponent"
+GetMember
+Push "prototype"
+GetMember
+Push 3 "ASSetPropFlags"
+CallFunction
+loc1084:Pop

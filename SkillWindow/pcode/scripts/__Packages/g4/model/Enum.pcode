@@ -1,0 +1,152 @@
+ConstantPool "_global" "g4" "Object" "model" "Enum" "id" "prototype" "parse" "" "toLowerCase" "toString" "ASSetPropFlags"
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Not
+Not
+If loc0085
+Push "_global"
+GetVariable
+Push "g4" 0.0 "Object"
+NewObject
+SetMember
+loc0085:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "model"
+GetMember
+Not
+Not
+If loc00bd
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "model" 0.0 "Object"
+NewObject
+SetMember
+loc00bd:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "model"
+GetMember
+Push "Enum"
+GetMember
+Not
+Not
+If loc027e
+Push "g4"
+GetVariable
+Push "model"
+GetMember
+Push "Enum"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "id"  {
+Push register1 "id" register2
+SetMember
+}
+StoreRegister 1
+SetMember
+Push register1 "prototype"
+GetMember
+StoreRegister 2
+Pop
+Push register1 "parse"
+DefineFunction2 "" 2 5 false false true false true false true false false 3 "id" 2 "enumType"  {
+Push register3 ""
+Equals2
+PushDuplicate
+If loc014f
+Pop
+Push register3 null
+Equals2
+loc014f:Not
+If loc015a
+Push undefined
+Return
+loc015a:Push register2 register3
+GetMember
+Not
+If loc0171
+Push register2 register3
+GetMember
+Return
+loc0171:Push 0.0 register3 "toLowerCase"
+CallMethod
+StoreRegister 3
+Pop
+Push register2 register3
+GetMember
+Not
+If loc019e
+Push register2 register3
+GetMember
+Return
+loc019e:Push register2
+Enumerate2
+loc01a4:StoreRegister 0
+Push null
+Equals2
+If loc0233
+Push register0
+StoreRegister 4
+Pop
+Push register2 register4
+GetMember
+StoreRegister 1
+Pop
+Push register1 register2
+InstanceOf
+Not
+If loc022e
+Push 0.0 register4
+ToString
+Push "toLowerCase"
+CallMethod
+Push register3
+Equals2
+PushDuplicate
+If loc0217
+Pop
+Push 0.0 register1 "id"
+GetMember
+ToString
+Push "toLowerCase"
+CallMethod
+Push register3
+Equals2
+loc0217:Not
+If loc022e
+loc021d:Push null
+Equals2
+Not
+If loc021d
+Push register1
+Return
+loc022e:Jump loc01a4
+loc0233:Push undefined
+Return
+}
+SetMember
+Push register2 "toString"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push register1 "id"
+GetMember
+Return
+}
+SetMember
+Push 1 null "g4"
+GetVariable
+Push "model"
+GetMember
+Push "Enum"
+GetMember
+Push "prototype"
+GetMember
+Push 3 "ASSetPropFlags"
+CallFunction
+loc027e:Pop

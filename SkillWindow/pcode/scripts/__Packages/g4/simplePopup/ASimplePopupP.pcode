@@ -1,0 +1,86 @@
+ConstantPool "_global" "g4" "Object" "simplePopup" "ASimplePopupP" "gameInterface" "dataP" "BasicDataP" "prototype" "Id" "" "ASSetPropFlags"
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Not
+Not
+If loc0098
+Push "_global"
+GetVariable
+Push "g4" 0.0 "Object"
+NewObject
+SetMember
+loc0098:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "simplePopup"
+GetMember
+Not
+Not
+If loc00d0
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "simplePopup" 0.0 "Object"
+NewObject
+SetMember
+loc00d0:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "simplePopup"
+GetMember
+Push "ASimplePopupP"
+GetMember
+Not
+Not
+If loc0191
+Push "g4"
+GetVariable
+Push "simplePopup"
+GetMember
+Push "ASimplePopupP"
+DefineFunction2 "" 1 3 false false false true true false true false false 2 "data"  {
+Push register2 1 register1 undefined
+CallMethod
+Pop
+}
+StoreRegister 1
+SetMember
+Push "g4"
+GetVariable
+Push "simplePopup"
+GetMember
+Push "ASimplePopupP"
+GetMember
+Push "g4"
+GetVariable
+Push "gameInterface"
+GetMember
+Push "dataP"
+GetMember
+Push "BasicDataP"
+GetMember
+Extends
+Push register1 "prototype"
+GetMember
+StoreRegister 2
+Pop
+Push register2 "Id" ""
+SetMember
+Push 1 null "g4"
+GetVariable
+Push "simplePopup"
+GetMember
+Push "ASimplePopupP"
+GetMember
+Push "prototype"
+GetMember
+Push 3 "ASSetPropFlags"
+CallFunction
+loc0191:Pop

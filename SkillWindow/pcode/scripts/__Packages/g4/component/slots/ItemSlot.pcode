@@ -1,0 +1,633 @@
+ConstantPool "_global" "g4" "Object" "component" "slots" "ItemSlot" "BasicSlot" "prototype" "__get__itemSlotP" "_itemSloP" "configUI" "_tf_amount" "tf_amount" "textAutoSize" "shrink" "_tf_enchant" "tf_enchant" "_iconContainer" "iconContainer" "_bitmapContainer" "bitmapContainer" "_visible" "setData" "updateSlot" "gameInterface" "dataP" "ItemSlotP" "_isConfigUIComplete" "_data" "iconPath" "IconPath" "clear" "lib" "display" "DrawBitmapData" "draw" "Impossible" "Disabled" "Amount" "text" "textColor" "Enchant" "+" "shadowColor" "SlotComponent_Impossible" "flash" "BitmapData" "loadBitmap" "SlotComponent_Disabled" "Grade" "SlotComponent_IconGrade" "Master" "SlotComponent_Master" "SealType" "SlotComponent_IconSeal" "New" "SlotComponent_New" "Durability" "SlotComponent_Durability" "itemSlotP" "addProperty" "ASSetPropFlags"
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Not
+Not
+If loc02e2
+Push "_global"
+GetVariable
+Push "g4" 0.0 "Object"
+NewObject
+SetMember
+loc02e2:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "component"
+GetMember
+Not
+Not
+If loc031a
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "component" 0.0 "Object"
+NewObject
+SetMember
+loc031a:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "component"
+GetMember
+Push "slots"
+GetMember
+Not
+Not
+If loc035e
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "component"
+GetMember
+Push "slots" 0.0 "Object"
+NewObject
+SetMember
+loc035e:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "component"
+GetMember
+Push "slots"
+GetMember
+Push "ItemSlot"
+GetMember
+Not
+Not
+If loc0d9d
+Push "g4"
+GetVariable
+Push "component"
+GetMember
+Push "slots"
+GetMember
+Push "ItemSlot"
+DefineFunction2 "" 0 2 false false false true true false true false false  {
+Push 0.0 register1 undefined
+CallMethod
+Pop
+}
+StoreRegister 1
+SetMember
+Push "g4"
+GetVariable
+Push "component"
+GetMember
+Push "slots"
+GetMember
+Push "ItemSlot"
+GetMember
+Push "g4"
+GetVariable
+Push "component"
+GetMember
+Push "slots"
+GetMember
+Push "BasicSlot"
+GetMember
+Extends
+Push register1 "prototype"
+GetMember
+StoreRegister 2
+Pop
+Push register2 "__get__itemSlotP"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push register1 "_itemSloP"
+GetMember
+Return
+}
+SetMember
+Push register2 "configUI"
+DefineFunction2 "" 0 3 false false false true true false false true false  {
+Push 0.0 register2 "configUI"
+CallMethod
+Pop
+Push register1 "_tf_amount" register1 "tf_amount"
+GetMember
+SetMember
+Push register1 "_tf_amount"
+GetMember
+Push "textAutoSize" "shrink"
+SetMember
+Push register1 "_tf_enchant" register1 "tf_enchant"
+GetMember
+SetMember
+Push register1 "_iconContainer" register1 "iconContainer"
+GetMember
+SetMember
+Push register1 "_bitmapContainer" register1 "bitmapContainer"
+GetMember
+SetMember
+Push register1 "_visible" false
+SetMember
+Push register1 "_itemSloP"
+GetMember
+Push null
+Equals2
+Not
+Not
+If loc04c4
+Push register1 "_itemSloP"
+GetMember
+Push 1 register1 "setData"
+CallMethod
+Pop
+Push 0.0 register1 "updateSlot"
+CallMethod
+Pop
+}
+loc04c4:SetMember
+Push register2 "setData"
+DefineFunction2 "" 1 4 false false false true true false false true false 3 "data"  {
+Push register1 "_itemSloP" "g4"
+GetVariable
+Push "gameInterface"
+GetMember
+Push "dataP"
+GetMember
+Push "ItemSlotP"
+GetMember
+Push register3
+CastOp
+SetMember
+Push register1 "_isConfigUIComplete"
+GetMember
+Push false
+Equals2
+Not
+If loc0519
+Push undefined
+Return
+loc0519:Push register3 1 register2 "setData"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "updateSlot"
+DefineFunction2 "" 0 4 false false true false true false false true false  {
+Push register1 "_isConfigUIComplete"
+GetMember
+Push false
+Equals2
+Not
+If loc0555
+Push undefined
+Return
+loc0555:Push register1 "_tf_amount"
+GetMember
+Push "_visible" false
+SetMember
+Push register1 "_data"
+GetMember
+Push null
+Equals2
+Not
+If loc0587
+Push register1 "_visible" false
+SetMember
+Push undefined
+Return
+loc0587:Push register1 "_visible" true
+SetMember
+Push register1 "_iconContainer"
+GetMember
+Push "iconPath"
+GetMember
+Push register1 "_itemSloP"
+GetMember
+Push "IconPath"
+GetMember
+Equals2
+Not
+Not
+If loc0649
+Push 0.0 register1 "_iconContainer"
+GetMember
+Push "clear"
+CallMethod
+Pop
+Push 0.78125 50 50 0.0 0.0 2 2 register1 "_itemSloP"
+GetMember
+Push "IconPath"
+GetMember
+Push register1 "_iconContainer"
+GetMember
+Push 9 "lib"
+GetVariable
+Push "display"
+GetMember
+Push "DrawBitmapData"
+GetMember
+Push "draw"
+CallMethod
+Pop
+Push register1 "_iconContainer"
+GetMember
+Push "iconPath" register1 "_itemSloP"
+GetMember
+Push "IconPath"
+GetMember
+SetMember
+loc0649:Push 0.0 register1 "_bitmapContainer"
+GetMember
+Push "clear"
+CallMethod
+Pop
+Push register1 "_itemSloP"
+GetMember
+Push "Impossible"
+GetMember
+Push true
+Equals2
+PushDuplicate
+If loc0690
+Pop
+Push register1 "_itemSloP"
+GetMember
+Push "Disabled"
+GetMember
+Push true
+Equals2
+loc0690:StoreRegister 2
+Pop
+Push register1 "_itemSloP"
+GetMember
+Push "Amount"
+GetMember
+Push 0.0
+Greater
+Not
+If loc070d
+Push register1 "_tf_amount"
+GetMember
+Push "_visible" true
+SetMember
+Push register1 "_tf_amount"
+GetMember
+Push "text" register1 "_itemSloP"
+GetMember
+Push "Amount"
+GetMember
+ToString
+SetMember
+Push register1 "_tf_amount"
+GetMember
+Push "textColor" register2 true
+Equals2
+If loc0704
+Push 16777215
+Jump loc070c
+loc0704:Push 7368816
+loc070c:SetMember
+loc070d:Push register1 "_itemSloP"
+GetMember
+Push "Enchant"
+GetMember
+Push 0.0
+Greater
+Not
+If loc083c
+Push register2 false
+Equals2
+If loc0748
+Push 21433
+Jump loc0750
+loc0748:Push 3615811
+loc0750:StoreRegister 3
+Pop
+Push 11 register1 "_itemSloP"
+GetMember
+Push "Enchant"
+GetMember
+Less2
+PushDuplicate
+Not
+If loc0788
+Pop
+Push register1 "_itemSloP"
+GetMember
+Push "Enchant"
+GetMember
+Push 15
+Less2
+loc0788:Not
+If loc07ba
+Push register2 false
+Equals2
+If loc07a8
+Push 8915599
+Jump loc07b0
+loc07a8:Push 2299429
+loc07b0:StoreRegister 3
+Pop
+Jump loc07fb
+loc07ba:Push 14 register1 "_itemSloP"
+GetMember
+Push "Enchant"
+GetMember
+Less2
+Not
+If loc07fb
+Push register2 false
+Equals2
+If loc07ee
+Push 10624002
+Jump loc07f6
+loc07ee:Push 4074792
+loc07f6:StoreRegister 3
+Pop
+loc07fb:Push register1 "_tf_enchant"
+GetMember
+Push "text" "+" register1 "_itemSloP"
+GetMember
+Push "Enchant"
+GetMember
+Add2
+SetMember
+Push register1 "_tf_enchant"
+GetMember
+Push "shadowColor" register3
+SetMember
+Push register1 "_tf_enchant"
+GetMember
+Push "_visible" true
+SetMember
+Jump loc084c
+loc083c:Push register1 "_tf_enchant"
+GetMember
+Push "_visible" false
+SetMember
+loc084c:Push register1 "_itemSloP"
+GetMember
+Push "Impossible"
+GetMember
+Push true
+Equals2
+Not
+If loc08de
+Push 1 54 54 0.0 0.0 0.0 0.0 "SlotComponent_Impossible" 1 "flash"
+GetVariable
+Push "display"
+GetMember
+Push "BitmapData"
+GetMember
+Push "loadBitmap"
+CallMethod
+Push register1 "_bitmapContainer"
+GetMember
+Push 9 "lib"
+GetVariable
+Push "display"
+GetMember
+Push "DrawBitmapData"
+GetMember
+Push "draw"
+CallMethod
+Pop
+loc08de:Push register1 "_itemSloP"
+GetMember
+Push "Disabled"
+GetMember
+Push true
+Equals2
+Not
+If loc0970
+Push 1 54 54 0.0 0.0 0.0 0.0 "SlotComponent_Disabled" 1 "flash"
+GetVariable
+Push "display"
+GetMember
+Push "BitmapData"
+GetMember
+Push "loadBitmap"
+CallMethod
+Push register1 "_bitmapContainer"
+GetMember
+Push 9 "lib"
+GetVariable
+Push "display"
+GetMember
+Push "DrawBitmapData"
+GetMember
+Push "draw"
+CallMethod
+Pop
+loc0970:Push register1 "_itemSloP"
+GetMember
+Push "Grade"
+GetMember
+Push 0.0
+Greater
+Not
+If loc0a10
+Push 1 11 11 0.0 0.0 2 2 "SlotComponent_IconGrade" register1 "_itemSloP"
+GetMember
+Push "Grade"
+GetMember
+Add2
+Push 1 "flash"
+GetVariable
+Push "display"
+GetMember
+Push "BitmapData"
+GetMember
+Push "loadBitmap"
+CallMethod
+Push register1 "_bitmapContainer"
+GetMember
+Push 9 "lib"
+GetVariable
+Push "display"
+GetMember
+Push "DrawBitmapData"
+GetMember
+Push "draw"
+CallMethod
+Pop
+loc0a10:Push register1 "_itemSloP"
+GetMember
+Push "Master"
+GetMember
+Push 0.0
+Greater
+Not
+If loc0b72
+Push register1 "_itemSloP"
+GetMember
+Push "Master"
+GetMember
+StoreRegister 0
+Push 1
+StrictEquals
+If loc0a66
+Push register0 2
+StrictEquals
+If loc0aee
+Jump loc0b72
+loc0a66:Push 0.69 19 15 0.0 0.0 34 37 "SlotComponent_Master" register1 "_itemSloP"
+GetMember
+Push "Master"
+GetMember
+Add2
+Push 1 "flash"
+GetVariable
+Push "display"
+GetMember
+Push "BitmapData"
+GetMember
+Push "loadBitmap"
+CallMethod
+Push register1 "_bitmapContainer"
+GetMember
+Push 9 "lib"
+GetVariable
+Push "display"
+GetMember
+Push "DrawBitmapData"
+GetMember
+Push "draw"
+CallMethod
+Pop
+Jump loc0b72
+loc0aee:Push 1 14 19 0.0 0.0 37 32 "SlotComponent_Master" register1 "_itemSloP"
+GetMember
+Push "Master"
+GetMember
+Add2
+Push 1 "flash"
+GetVariable
+Push "display"
+GetMember
+Push "BitmapData"
+GetMember
+Push "loadBitmap"
+CallMethod
+Push register1 "_bitmapContainer"
+GetMember
+Push 9 "lib"
+GetVariable
+Push "display"
+GetMember
+Push "DrawBitmapData"
+GetMember
+Push "draw"
+CallMethod
+Pop
+Jump loc0b72
+loc0b72:Push register1 "_itemSloP"
+GetMember
+Push "SealType"
+GetMember
+Push 0.0
+Greater
+Not
+If loc0c12
+Push 1 28 20 0.0 0.0 12 17 "SlotComponent_IconSeal" register1 "_itemSloP"
+GetMember
+Push "SealType"
+GetMember
+Add2
+Push 1 "flash"
+GetVariable
+Push "display"
+GetMember
+Push "BitmapData"
+GetMember
+Push "loadBitmap"
+CallMethod
+Push register1 "_bitmapContainer"
+GetMember
+Push 9 "lib"
+GetVariable
+Push "display"
+GetMember
+Push "DrawBitmapData"
+GetMember
+Push "draw"
+CallMethod
+Pop
+loc0c12:Push register1 "_itemSloP"
+GetMember
+Push "New"
+GetMember
+Not
+If loc0ca2
+Push 1.4210526315789473 54 54 0.0 0.0 0.0 0.0 "SlotComponent_New" 1 "flash"
+GetVariable
+Push "display"
+GetMember
+Push "BitmapData"
+GetMember
+Push "loadBitmap"
+CallMethod
+Push register1 "_bitmapContainer"
+GetMember
+Push 9 "lib"
+GetVariable
+Push "display"
+GetMember
+Push "DrawBitmapData"
+GetMember
+Push "draw"
+CallMethod
+Pop
+loc0ca2:Push register1 "_itemSloP"
+GetMember
+Push "Durability"
+GetMember
+Push 0.0
+Greater
+Not
+If loc0d4e
+Push 1.4210526315789473 54 54 0.0 0.0 0.0 0.0 "SlotComponent_Durability" register1 "_itemSloP"
+GetMember
+Push "Durability"
+GetMember
+Add2
+Push 1 "flash"
+GetVariable
+Push "display"
+GetMember
+Push "BitmapData"
+GetMember
+Push "loadBitmap"
+CallMethod
+Push register1 "_bitmapContainer"
+GetMember
+Push 9 "lib"
+GetVariable
+Push "display"
+GetMember
+Push "DrawBitmapData"
+GetMember
+Push "draw"
+CallMethod
+Pop
+}
+loc0d4e:SetMember
+DefineFunction "" 0  {
+}
+Push register2 "__get__itemSlotP"
+GetMember
+Push "itemSlotP" 3 register2 "addProperty"
+CallMethod
+Push 1 null "g4"
+GetVariable
+Push "component"
+GetMember
+Push "slots"
+GetMember
+Push "ItemSlot"
+GetMember
+Push "prototype"
+GetMember
+Push 3 "ASSetPropFlags"
+CallFunction
+loc0d9d:Pop

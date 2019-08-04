@@ -1,0 +1,303 @@
+ConstantPool "_global" "g4" "Object" "component" "slots" "SkillSlot" "BasicSlot" "prototype" "configUI" "_tf_num" "tf_num" "_mc_disable" "mc_disable" "_iconContainer" "iconContainer" "createEmptyMovieClip" "_visible" "_skillSlotP" "setData" "updateSlot" "gameInterface" "dataP" "SkillSlotP" "_isConfigUIComplete" "_data" "imgPath" "Img" "flash" "display" "BitmapData" "loadBitmap" "clear" "lib" "DrawBitmapData" "draw" "Num" "" "-1" "text" "Disable" "getNextHighestDepth" "swapDepths" "ASSetPropFlags"
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Not
+Not
+If loc01c3
+Push "_global"
+GetVariable
+Push "g4" 0.0 "Object"
+NewObject
+SetMember
+loc01c3:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "component"
+GetMember
+Not
+Not
+If loc01fb
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "component" 0.0 "Object"
+NewObject
+SetMember
+loc01fb:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "component"
+GetMember
+Push "slots"
+GetMember
+Not
+Not
+If loc023f
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "component"
+GetMember
+Push "slots" 0.0 "Object"
+NewObject
+SetMember
+loc023f:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "component"
+GetMember
+Push "slots"
+GetMember
+Push "SkillSlot"
+GetMember
+Not
+Not
+If loc060a
+Push "g4"
+GetVariable
+Push "component"
+GetMember
+Push "slots"
+GetMember
+Push "SkillSlot"
+DefineFunction2 "" 0 2 false false false true true false true false false  {
+Push 0.0 register1 undefined
+CallMethod
+Pop
+}
+StoreRegister 1
+SetMember
+Push "g4"
+GetVariable
+Push "component"
+GetMember
+Push "slots"
+GetMember
+Push "SkillSlot"
+GetMember
+Push "g4"
+GetVariable
+Push "component"
+GetMember
+Push "slots"
+GetMember
+Push "BasicSlot"
+GetMember
+Extends
+Push register1 "prototype"
+GetMember
+StoreRegister 2
+Pop
+Push register2 "configUI"
+DefineFunction2 "" 0 3 false false false true true false false true false  {
+Push 0.0 register2 "configUI"
+CallMethod
+Pop
+Push register1 "_tf_num" register1 "tf_num"
+GetMember
+SetMember
+Push register1 "_mc_disable" register1 "mc_disable"
+GetMember
+SetMember
+Push register1 "_iconContainer" 1 "iconContainer" 2 register1 "createEmptyMovieClip"
+CallMethod
+SetMember
+Push register1 "_visible" false
+SetMember
+Push register1 "_skillSlotP"
+GetMember
+Push null
+Equals2
+Not
+Not
+If loc0378
+Push register1 "_skillSlotP"
+GetMember
+Push 1 register1 "setData"
+CallMethod
+Pop
+Push 0.0 register1 "updateSlot"
+CallMethod
+Pop
+}
+loc0378:SetMember
+Push register2 "setData"
+DefineFunction2 "" 1 4 false false false true true false false true false 3 "data"  {
+Push register1 "_skillSlotP" "g4"
+GetVariable
+Push "gameInterface"
+GetMember
+Push "dataP"
+GetMember
+Push "SkillSlotP"
+GetMember
+Push register3
+CastOp
+SetMember
+Push register1 "_isConfigUIComplete"
+GetMember
+Push false
+Equals2
+Not
+If loc03cd
+Push undefined
+Return
+loc03cd:Push register3 1 register2 "setData"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "updateSlot"
+DefineFunction2 "" 0 3 false false true false true false false true false  {
+Push register1 "_isConfigUIComplete"
+GetMember
+Push false
+Equals2
+Not
+If loc0409
+Push undefined
+Return
+loc0409:Push register1 "_data"
+GetMember
+Push null
+Equals2
+Not
+If loc042b
+Push register1 "_visible" false
+SetMember
+Push undefined
+Return
+loc042b:Push register1 "_visible" true
+SetMember
+Push register1 "_iconContainer"
+GetMember
+Push "imgPath"
+GetMember
+Push register1 "_skillSlotP"
+GetMember
+Push "Img"
+GetMember
+StrictEquals
+Not
+Not
+If loc0519
+Push register1 "_skillSlotP"
+GetMember
+Push "Img"
+GetMember
+Push 1 "flash"
+GetVariable
+Push "display"
+GetMember
+Push "BitmapData"
+GetMember
+Push "loadBitmap"
+CallMethod
+StoreRegister 2
+Pop
+Push 0.0 register1 "_iconContainer"
+GetMember
+Push "clear"
+CallMethod
+Pop
+Push 0.84375 54 54 0.0 0.0 0.0 0.0 register2 register1 "_iconContainer"
+GetMember
+Push 9 "lib"
+GetVariable
+Push "display"
+GetMember
+Push "DrawBitmapData"
+GetMember
+Push "draw"
+CallMethod
+Pop
+Push register1 "_iconContainer"
+GetMember
+Push "imgPath" register1 "_skillSlotP"
+GetMember
+Push "Img"
+GetMember
+SetMember
+loc0519:Push register1 "_skillSlotP"
+GetMember
+Push "Num"
+GetMember
+Push undefined
+Equals2
+Not
+PushDuplicate
+Not
+If loc054a
+Pop
+Push register1 "_skillSlotP"
+GetMember
+Push "Num"
+GetMember
+Push ""
+Equals2
+Not
+loc054a:PushDuplicate
+Not
+If loc0567
+Pop
+Push register1 "_skillSlotP"
+GetMember
+Push "Num"
+GetMember
+Push "-1"
+Equals2
+Not
+loc0567:Not
+If loc058c
+Push register1 "_tf_num"
+GetMember
+Push "text" register1 "_skillSlotP"
+GetMember
+Push "Num"
+GetMember
+ToString
+SetMember
+Jump loc059c
+loc058c:Push register1 "_tf_num"
+GetMember
+Push "text" ""
+SetMember
+loc059c:Push register1 "_mc_disable"
+GetMember
+Push "_visible" register1 "_skillSlotP"
+GetMember
+Push "Disable"
+GetMember
+SetMember
+Push 0.0 register1 "getNextHighestDepth"
+CallMethod
+Push 1 register1 "_mc_disable"
+GetMember
+Push "swapDepths"
+CallMethod
+Pop
+}
+SetMember
+Push 1 null "g4"
+GetVariable
+Push "component"
+GetMember
+Push "slots"
+GetMember
+Push "SkillSlot"
+GetMember
+Push "prototype"
+GetMember
+Push 3 "ASSetPropFlags"
+CallFunction
+loc060a:Pop

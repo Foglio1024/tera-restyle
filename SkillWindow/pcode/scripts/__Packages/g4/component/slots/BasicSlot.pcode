@@ -1,0 +1,288 @@
+ConstantPool "_global" "g4" "Object" "component" "slots" "BasicSlot" "clickabled" "__set__mouseEnabled" "core" "G4UIComponent" "prototype" "__get__data" "_data" "__get__mouseEnabled" "enabled" "useHandCursor" "configUI" "setData" "updateSlot" "_visible" "onRollOver" "gfx" "events" "EventTypes" "ROLL_OVER" "dispatchEvent" "onRollOut" "ROLL_OUT" "onRelease" "CLICK" "onDragOut" "DRAG_OUT" "onPress" "PRESS" "onReleaseOutside" "RELEASE_OUTSIDE" "data" "addProperty" "mouseEnabled" "ASSetPropFlags"
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Not
+Not
+If loc01c4
+Push "_global"
+GetVariable
+Push "g4" 0.0 "Object"
+NewObject
+SetMember
+loc01c4:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "component"
+GetMember
+Not
+Not
+If loc01fc
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "component" 0.0 "Object"
+NewObject
+SetMember
+loc01fc:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "component"
+GetMember
+Push "slots"
+GetMember
+Not
+Not
+If loc0240
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "component"
+GetMember
+Push "slots" 0.0 "Object"
+NewObject
+SetMember
+loc0240:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "component"
+GetMember
+Push "slots"
+GetMember
+Push "BasicSlot"
+GetMember
+Not
+Not
+If loc05fe
+Push "g4"
+GetVariable
+Push "component"
+GetMember
+Push "slots"
+GetMember
+Push "BasicSlot"
+DefineFunction2 "" 0 3 false false false true true false false true false  {
+Push 0.0 register2 undefined
+CallMethod
+Pop
+Push register1 "clickabled" true
+SetMember
+Push true 1 register1 "__set__mouseEnabled"
+CallMethod
+Pop
+}
+StoreRegister 1
+SetMember
+Push "g4"
+GetVariable
+Push "component"
+GetMember
+Push "slots"
+GetMember
+Push "BasicSlot"
+GetMember
+Push "g4"
+GetVariable
+Push "core"
+GetMember
+Push "G4UIComponent"
+GetMember
+Extends
+Push register1 "prototype"
+GetMember
+StoreRegister 2
+Pop
+Push register2 "__get__data"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push register1 "_data"
+GetMember
+Return
+}
+SetMember
+Push register2 "__get__mouseEnabled"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push register1 "enabled"
+GetMember
+Return
+}
+SetMember
+Push register2 "__set__mouseEnabled"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "value"  {
+Push register1 "enabled" register2
+SetMember
+Push register1 "useHandCursor" register2
+SetMember
+Push 0.0 register1 "__get__mouseEnabled"
+CallMethod
+Return
+}
+SetMember
+Push register2 "configUI"
+DefineFunction2 "" 0 2 false false false true true false true false false  {
+Push 0.0 register1 "configUI"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "setData"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "data"  {
+Push register1 "_data" register2
+SetMember
+}
+SetMember
+Push register2 "updateSlot"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push register1 "_data"
+GetMember
+Push null
+Equals2
+Not
+If loc03e4
+Push register1 "_visible" false
+SetMember
+Push undefined
+Return
+}
+loc03e4:SetMember
+Push register2 "onRollOver"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push register1 1
+InitArray
+Push "gfx"
+GetVariable
+Push "events"
+GetMember
+Push "EventTypes"
+GetMember
+Push "ROLL_OVER"
+GetMember
+Push 2 register1 "dispatchEvent"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "onRollOut"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push register1 1
+InitArray
+Push "gfx"
+GetVariable
+Push "events"
+GetMember
+Push "EventTypes"
+GetMember
+Push "ROLL_OUT"
+GetMember
+Push 2 register1 "dispatchEvent"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "onRelease"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push register1 "clickabled"
+GetMember
+Push true
+Equals2
+Not
+If loc04c4
+Push register1 1
+InitArray
+Push "gfx"
+GetVariable
+Push "events"
+GetMember
+Push "EventTypes"
+GetMember
+Push "CLICK"
+GetMember
+Push 2 register1 "dispatchEvent"
+CallMethod
+Pop
+}
+loc04c4:SetMember
+Push register2 "onDragOut"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push register1 1
+InitArray
+Push "gfx"
+GetVariable
+Push "events"
+GetMember
+Push "EventTypes"
+GetMember
+Push "DRAG_OUT"
+GetMember
+Push 2 register1 "dispatchEvent"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "onPress"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push register1 1
+InitArray
+Push "gfx"
+GetVariable
+Push "events"
+GetMember
+Push "EventTypes"
+GetMember
+Push "PRESS"
+GetMember
+Push 2 register1 "dispatchEvent"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "onReleaseOutside"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push register1 1
+InitArray
+Push "gfx"
+GetVariable
+Push "events"
+GetMember
+Push "EventTypes"
+GetMember
+Push "RELEASE_OUTSIDE"
+GetMember
+Push 2 register1 "dispatchEvent"
+CallMethod
+Pop
+}
+SetMember
+DefineFunction "" 0  {
+}
+Push register2 "__get__data"
+GetMember
+Push "data" 3 register2 "addProperty"
+CallMethod
+Push register2 "__set__mouseEnabled"
+GetMember
+Push register2 "__get__mouseEnabled"
+GetMember
+Push "mouseEnabled" 3 register2 "addProperty"
+CallMethod
+Push 1 null "g4"
+GetVariable
+Push "component"
+GetMember
+Push "slots"
+GetMember
+Push "BasicSlot"
+GetMember
+Push "prototype"
+GetMember
+Push 3 "ASSetPropFlags"
+CallFunction
+loc05fe:Pop

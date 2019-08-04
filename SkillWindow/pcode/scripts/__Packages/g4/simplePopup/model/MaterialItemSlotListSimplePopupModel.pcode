@@ -1,0 +1,111 @@
+ConstantPool "_global" "g4" "Object" "simplePopup" "model" "MaterialItemSlotListSimplePopupModel" "ASimplePopupP" "prototype" "ASSetPropFlags"
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Not
+Not
+If loc00a0
+Push "_global"
+GetVariable
+Push "g4" 0.0 "Object"
+NewObject
+SetMember
+loc00a0:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "simplePopup"
+GetMember
+Not
+Not
+If loc00d8
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "simplePopup" 0.0 "Object"
+NewObject
+SetMember
+loc00d8:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "simplePopup"
+GetMember
+Push "model"
+GetMember
+Not
+Not
+If loc011c
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "simplePopup"
+GetMember
+Push "model" 0.0 "Object"
+NewObject
+SetMember
+loc011c:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "simplePopup"
+GetMember
+Push "model"
+GetMember
+Push "MaterialItemSlotListSimplePopupModel"
+GetMember
+Not
+Not
+If loc01e1
+Push "g4"
+GetVariable
+Push "simplePopup"
+GetMember
+Push "model"
+GetMember
+Push "MaterialItemSlotListSimplePopupModel"
+DefineFunction2 "" 0 2 false false false true true false true false false  {
+Push 0.0 register1 undefined
+CallMethod
+Pop
+}
+StoreRegister 1
+SetMember
+Push "g4"
+GetVariable
+Push "simplePopup"
+GetMember
+Push "model"
+GetMember
+Push "MaterialItemSlotListSimplePopupModel"
+GetMember
+Push "g4"
+GetVariable
+Push "simplePopup"
+GetMember
+Push "ASimplePopupP"
+GetMember
+Extends
+Push register1 "prototype"
+GetMember
+StoreRegister 2
+Pop
+Push 1 null "g4"
+GetVariable
+Push "simplePopup"
+GetMember
+Push "model"
+GetMember
+Push "MaterialItemSlotListSimplePopupModel"
+GetMember
+Push "prototype"
+GetMember
+Push 3 "ASSetPropFlags"
+CallFunction
+loc01e1:Pop

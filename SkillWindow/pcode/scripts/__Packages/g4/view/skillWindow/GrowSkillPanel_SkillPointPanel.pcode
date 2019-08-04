@@ -1,0 +1,321 @@
+ConstantPool "_global" "g4" "Object" "view" "skillWindow" "GrowSkillPanel_SkillPointPanel" "gfx" "core" "UIComponent" "prototype" "configUI" "_tf_totalSkillPoint" "tf_totalSkillPoint" "_tf_remainSkillPointValue" "tf_remainSkillPointValue" "_tf_remainSkillPointTitle" "tf_remainSkillPointTitle" "_tf_percent" "tf_percent" "_mc_gauge" "mc_gauge" "_mc_gaugeHit" "mc_gaugeHit" "_mc_hit" "mc_hit" "text" "$083033" "lib" "util" "UIString" "getUIString" "$083022" "getUIString2" "manager" "TooltipManager" "getInstance" "addMessageTooltip" "_xscale" "" "setSkillPoint" "setSkillPointExp" "Math" "round" "%" "$083023" "{currentExp}" "StringUtil" "replace" "{maxExp}" "{percent}" "-" "_x" "textWidth" "htmlText" "$083032" " <img src=\'SkillPointIcon\' width=\'16\' height=\'14\' vspace=\'0\'><font color=\'#f1b410\'>" "</font>" "_width" "ASSetPropFlags"
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Not
+Not
+If loc02f0
+Push "_global"
+GetVariable
+Push "g4" 0.0 "Object"
+NewObject
+SetMember
+loc02f0:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "view"
+GetMember
+Not
+Not
+If loc0328
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "view" 0.0 "Object"
+NewObject
+SetMember
+loc0328:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Not
+Not
+If loc036c
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "view"
+GetMember
+Push "skillWindow" 0.0 "Object"
+NewObject
+SetMember
+loc036c:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Push "GrowSkillPanel_SkillPointPanel"
+GetMember
+Not
+Not
+If loc07c0
+Push "g4"
+GetVariable
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Push "GrowSkillPanel_SkillPointPanel"
+DefineFunction2 "" 0 2 false false false true true false true false false  {
+Push 0.0 register1 undefined
+CallMethod
+Pop
+}
+StoreRegister 1
+SetMember
+Push "g4"
+GetVariable
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Push "GrowSkillPanel_SkillPointPanel"
+GetMember
+Push "gfx"
+GetVariable
+Push "core"
+GetMember
+Push "UIComponent"
+GetMember
+Extends
+Push register1 "prototype"
+GetMember
+StoreRegister 2
+Pop
+Push register2 "configUI"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push register1 "_tf_totalSkillPoint" register1 "tf_totalSkillPoint"
+GetMember
+SetMember
+Push register1 "_tf_remainSkillPointValue" register1 "tf_remainSkillPointValue"
+GetMember
+SetMember
+Push register1 "_tf_remainSkillPointTitle" register1 "tf_remainSkillPointTitle"
+GetMember
+SetMember
+Push register1 "_tf_percent" register1 "tf_percent"
+GetMember
+SetMember
+Push register1 "_mc_gauge" register1 "mc_gauge"
+GetMember
+SetMember
+Push register1 "_mc_gaugeHit" register1 "mc_gaugeHit"
+GetMember
+SetMember
+Push register1 "_mc_hit" register1 "mc_hit"
+GetMember
+SetMember
+Push register1 "_tf_remainSkillPointTitle"
+GetMember
+Push "text" "$083033" 1 "lib"
+GetVariable
+Push "util"
+GetMember
+Push "UIString"
+GetMember
+Push "getUIString"
+CallMethod
+SetMember
+Push "$083022" 1 "lib"
+GetVariable
+Push "util"
+GetMember
+Push "UIString"
+GetMember
+Push "getUIString2"
+CallMethod
+Push register1 "_mc_hit"
+GetMember
+Push 2 0.0 "g4"
+GetVariable
+Push "manager"
+GetMember
+Push "TooltipManager"
+GetMember
+Push "getInstance"
+CallMethod
+Push "addMessageTooltip"
+CallMethod
+Pop
+Push register1 "_mc_gauge"
+GetMember
+Push "_xscale" 0.0
+SetMember
+Push register1 "_tf_percent"
+GetMember
+Push "text" ""
+SetMember
+Push -1 -1 2 register1 "setSkillPoint"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "setSkillPointExp"
+DefineFunction2 "" 2 6 false false true false true false false true false 4 "currentExp" 5 "maxExp"  {
+Push register4 0.0
+Equals2
+If loc0597
+Push register4 register5
+Divide
+Push 10000
+Multiply
+Push 1 "Math"
+GetVariable
+Push "round"
+CallMethod
+Push 100
+Divide
+Jump loc05a3
+loc0597:Push 0.0
+loc05a3:StoreRegister 3
+Pop
+Push register1 "_mc_gauge"
+GetMember
+Push "_xscale" register3
+SetMember
+Push register1 "_tf_percent"
+GetMember
+Push "text" register3 "%"
+Add2
+SetMember
+Push "$083023" 1 "lib"
+GetVariable
+Push "util"
+GetMember
+Push "UIString"
+GetMember
+Push "getUIString"
+CallMethod
+StoreRegister 2
+Pop
+Push register4
+ToString
+Push "{currentExp}" register2 3 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "StringUtil"
+GetMember
+Push "replace"
+CallMethod
+StoreRegister 2
+Pop
+Push register5
+ToString
+Push "{maxExp}" register2 3 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "StringUtil"
+GetMember
+Push "replace"
+CallMethod
+StoreRegister 2
+Pop
+Push register3
+ToString
+Push "{percent}" register2 3 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "StringUtil"
+GetMember
+Push "replace"
+CallMethod
+StoreRegister 2
+Pop
+Push register2 register1 "_mc_gaugeHit"
+GetMember
+Push 2 0.0 "g4"
+GetVariable
+Push "manager"
+GetMember
+Push "TooltipManager"
+GetMember
+Push "getInstance"
+CallMethod
+Push "addMessageTooltip"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "setSkillPoint"
+DefineFunction2 "" 2 5 false false true false true false false true false 3 "currentPoint" 4 "maxPoint"  {
+Push register3 -1
+Equals2
+If loc06f0
+Push register3
+ToString
+Jump loc06f5
+loc06f0:Push "-"
+loc06f5:StoreRegister 2
+Pop
+Push register1 "_tf_remainSkillPointValue"
+GetMember
+Push "text" register2
+SetMember
+Push register1 "_tf_remainSkillPointTitle"
+GetMember
+Push "_x" 623 register1 "_tf_remainSkillPointValue"
+GetMember
+Push "textWidth"
+GetMember
+Subtract
+Push 10
+Subtract
+SetMember
+Push register1 "_tf_totalSkillPoint"
+GetMember
+Push "htmlText" "$083032" 1 "lib"
+GetVariable
+Push "util"
+GetMember
+Push "UIString"
+GetMember
+Push "getUIString"
+CallMethod
+Push " <img src=\'SkillPointIcon\' width=\'16\' height=\'14\' vspace=\'0\'><font color=\'#f1b410\'>"
+Add2
+Push register4
+Add2
+Push "</font>"
+Add2
+SetMember
+Push register1 "_mc_hit"
+GetMember
+Push "_width" register1 "_tf_totalSkillPoint"
+GetMember
+Push "textWidth"
+GetMember
+Push 10
+Add2
+SetMember
+}
+SetMember
+Push 1 null "g4"
+GetVariable
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Push "GrowSkillPanel_SkillPointPanel"
+GetMember
+Push "prototype"
+GetMember
+Push 3 "ASSetPropFlags"
+CallFunction
+loc07c0:Pop

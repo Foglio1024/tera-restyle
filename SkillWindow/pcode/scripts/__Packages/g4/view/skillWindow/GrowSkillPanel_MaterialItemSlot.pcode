@@ -1,0 +1,255 @@
+ConstantPool "_global" "g4" "Object" "view" "skillWindow" "GrowSkillPanel_MaterialItemSlot" "core" "G4UIComponent" "prototype" "configUI" "_itemSlot" "itemSlot" "_tf_amount" "tf_amount" "_growSkillDetailMaterialP" "setData" "showMaterialItemSlot" "_isConfigUIComplete" "itemSlotP" "manager" "TooltipManager" "getInstance" "removeTooltip" "Id" "ViewID" "SKILL_WINDOW" "addUiTooltip" "updateSlot" "HasCount" "NeedCount" "ffffff" "ff0000" "htmlText" "<font color=\'#" "\'>" "</font>/" "ASSetPropFlags"
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Not
+Not
+If loc01ca
+Push "_global"
+GetVariable
+Push "g4" 0.0 "Object"
+NewObject
+SetMember
+loc01ca:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "view"
+GetMember
+Not
+Not
+If loc0202
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "view" 0.0 "Object"
+NewObject
+SetMember
+loc0202:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Not
+Not
+If loc0246
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "view"
+GetMember
+Push "skillWindow" 0.0 "Object"
+NewObject
+SetMember
+loc0246:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Push "GrowSkillPanel_MaterialItemSlot"
+GetMember
+Not
+Not
+If loc0554
+Push "g4"
+GetVariable
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Push "GrowSkillPanel_MaterialItemSlot"
+DefineFunction2 "" 0 2 false false false true true false true false false  {
+Push 0.0 register1 undefined
+CallMethod
+Pop
+}
+StoreRegister 1
+SetMember
+Push "g4"
+GetVariable
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Push "GrowSkillPanel_MaterialItemSlot"
+GetMember
+Push "g4"
+GetVariable
+Push "core"
+GetMember
+Push "G4UIComponent"
+GetMember
+Extends
+Push register1 "prototype"
+GetMember
+StoreRegister 2
+Pop
+Push register2 "configUI"
+DefineFunction2 "" 0 3 false false false true true false false true false  {
+Push 0.0 register2 "configUI"
+CallMethod
+Pop
+Push register1 "_itemSlot" register1 "itemSlot"
+GetMember
+SetMember
+Push register1 "_tf_amount" register1 "tf_amount"
+GetMember
+SetMember
+Push register1 "_growSkillDetailMaterialP"
+GetMember
+Push null
+Equals2
+Not
+Not
+If loc0356
+Push register1 "_growSkillDetailMaterialP"
+GetMember
+Push 1 register1 "setData"
+CallMethod
+Pop
+Push 0.0 register1 "showMaterialItemSlot"
+CallMethod
+Pop
+}
+loc0356:SetMember
+Push register2 "setData"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "growSkillDetailMaterialP"  {
+Push register1 "_growSkillDetailMaterialP" register2
+SetMember
+Push register1 "_isConfigUIComplete"
+GetMember
+Push false
+Equals2
+Not
+If loc03a6
+Push undefined
+Return
+loc03a6:Push register1 "_growSkillDetailMaterialP"
+GetMember
+Push "itemSlotP"
+GetMember
+Push 1 register1 "_itemSlot"
+GetMember
+Push "setData"
+CallMethod
+Pop
+Push register1 "_growSkillDetailMaterialP" register2
+SetMember
+Push register1 "_itemSlot"
+GetMember
+Push 1 0.0 "g4"
+GetVariable
+Push "manager"
+GetMember
+Push "TooltipManager"
+GetMember
+Push "getInstance"
+CallMethod
+Push "removeTooltip"
+CallMethod
+Pop
+Push 2 register1 "_growSkillDetailMaterialP"
+GetMember
+Push "itemSlotP"
+GetMember
+Push "Id"
+GetMember
+Push register1 "_itemSlot"
+GetMember
+Push "g4"
+GetVariable
+Push "view"
+GetMember
+Push "ViewID"
+GetMember
+Push "SKILL_WINDOW"
+GetMember
+Push 4 0.0 "g4"
+GetVariable
+Push "manager"
+GetMember
+Push "TooltipManager"
+GetMember
+Push "getInstance"
+CallMethod
+Push "addUiTooltip"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "showMaterialItemSlot"
+DefineFunction2 "" 0 3 false false true false true false false true false  {
+Push register1 "_isConfigUIComplete"
+GetMember
+Push false
+Equals2
+Not
+If loc0499
+Push undefined
+Return
+loc0499:Push 0.0 register1 "_itemSlot"
+GetMember
+Push "updateSlot"
+CallMethod
+Pop
+Push register1 "_growSkillDetailMaterialP"
+GetMember
+Push "HasCount"
+GetMember
+Push register1 "_growSkillDetailMaterialP"
+GetMember
+Push "NeedCount"
+GetMember
+Less2
+If loc04dd
+Push "ffffff"
+Jump loc04e2
+loc04dd:Push "ff0000"
+loc04e2:StoreRegister 2
+Pop
+Push register1 "_tf_amount"
+GetMember
+Push "htmlText" "<font color=\'#" register2
+Add2
+Push "\'>"
+Add2
+Push register1 "_growSkillDetailMaterialP"
+GetMember
+Push "HasCount"
+GetMember
+Add2
+Push "</font>/"
+Add2
+Push register1 "_growSkillDetailMaterialP"
+GetMember
+Push "NeedCount"
+GetMember
+Add2
+SetMember
+}
+SetMember
+Push 1 null "g4"
+GetVariable
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Push "GrowSkillPanel_MaterialItemSlot"
+GetMember
+Push "prototype"
+GetMember
+Push 3 "ASSetPropFlags"
+CallFunction
+loc0554:Pop

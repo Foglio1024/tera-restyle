@@ -1,0 +1,941 @@
+ConstantPool "_global" "g4" "Object" "view" "skillWindow" "GrowSkillPanel_MaterialPanel" "SkillWindowController" "getInstance" "registerGrowSkillPanel_MaterialPanel" "gfx" "core" "UIComponent" "prototype" "configUI" "_mc_mask" "mc_mask" "_scrollBar" "scrollBar" "_mc_materialItemSlotGroup" "mc_materialItemSlotGroup" "_materialItemSlots" "_mc_gold" "mc_gold" "_tf_gold" "tf_gold" "_tf_effectTitle" "tf_effectTitle" "_tf_materialTitle" "tf_materialTitle" "_tf_effectDesc" "tf_effectDesc" "_mc_bg" "mc_bg" "_enhanceInfo" "enhanceInfo" "_tf_currentHeader" "tf_currentHeader" "_tf_nextHeader" "tf_nextHeader" "_tf_defaultDesc" "tf_defaultDesc" "verticalAutoSize" "top" "text" "$083026" "lib" "util" "UIString" "getUIString2" "$083027" "getUIString" "$083035" "$083036" "onScroll" "Delegate" "create" "_height" "__set__displaySize" "__set__rowHeight" "setWheel" "addListener" "tf_currentTitle" "tf_nextTitle" "tf_current" "tf_next" "_visible" "verticalAlign" "center" "$083037" "showGrowSkillDetailEnhance" "__set__scroll" "setAbilityInfo" "" "_y" "textHeight" "Math" "max" "mc_line" "length" "numLines" "\n" "moveArrow" "showGrowSkillDetailOptionSkillEffectDesc" "htmlText" "showGrowSkillDetailMaterialGroup" "removeMovieClip" "GrowSkillPanel_MaterialItemSlot" "getNextHighestDepth" "materialItemSlot" "g4.view.skillWindow.GrowSkillPanel_MaterialItemSlot" "attachMovie" "_x" "floor" "setData" "showMaterialItemSlot" "__set__pageSize" "GoldCurrency" "SetGoldText" "-1" "ASSetPropFlags"
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Not
+Not
+If loc0523
+Push "_global"
+GetVariable
+Push "g4" 0.0 "Object"
+NewObject
+SetMember
+loc0523:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "view"
+GetMember
+Not
+Not
+If loc055b
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "view" 0.0 "Object"
+NewObject
+SetMember
+loc055b:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Not
+Not
+If loc059f
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "view"
+GetMember
+Push "skillWindow" 0.0 "Object"
+NewObject
+SetMember
+loc059f:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Push "GrowSkillPanel_MaterialPanel"
+GetMember
+Not
+Not
+If loc13e9
+Push "g4"
+GetVariable
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Push "GrowSkillPanel_MaterialPanel"
+DefineFunction2 "" 0 3 false false false true true false false true false  {
+Push 0.0 register2 undefined
+CallMethod
+Pop
+Push register1 1 0.0 "g4"
+GetVariable
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Push "SkillWindowController"
+GetMember
+Push "getInstance"
+CallMethod
+Push "registerGrowSkillPanel_MaterialPanel"
+CallMethod
+Pop
+}
+StoreRegister 1
+SetMember
+Push "g4"
+GetVariable
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Push "GrowSkillPanel_MaterialPanel"
+GetMember
+Push "gfx"
+GetVariable
+Push "core"
+GetMember
+Push "UIComponent"
+GetMember
+Extends
+Push register1 "prototype"
+GetMember
+StoreRegister 2
+Pop
+Push register2 "configUI"
+DefineFunction2 "" 0 3 false false true false true false false true false  {
+Push register1 "_mc_mask" register1 "mc_mask"
+GetMember
+SetMember
+Push register1 "_scrollBar" register1 "scrollBar"
+GetMember
+SetMember
+Push register1 "_mc_materialItemSlotGroup" register1 "mc_materialItemSlotGroup"
+GetMember
+SetMember
+Push register1 "_materialItemSlots" 0.0
+InitArray
+SetMember
+Push register1 "_mc_gold" register1 "mc_gold"
+GetMember
+SetMember
+Push register1 "_tf_gold" register1 "_mc_gold"
+GetMember
+Push "tf_gold"
+GetMember
+SetMember
+Push register1 "_tf_effectTitle" register1 "_mc_materialItemSlotGroup"
+GetMember
+Push "tf_effectTitle"
+GetMember
+SetMember
+Push register1 "_tf_materialTitle" register1 "_mc_materialItemSlotGroup"
+GetMember
+Push "tf_materialTitle"
+GetMember
+SetMember
+Push register1 "_tf_effectDesc" register1 "_mc_materialItemSlotGroup"
+GetMember
+Push "tf_effectDesc"
+GetMember
+SetMember
+Push register1 "_mc_bg" register1 "_mc_materialItemSlotGroup"
+GetMember
+Push "mc_bg"
+GetMember
+SetMember
+Push register1 "_enhanceInfo" register1 "_mc_materialItemSlotGroup"
+GetMember
+Push "enhanceInfo"
+GetMember
+SetMember
+Push register1 "_tf_currentHeader" register1 "_enhanceInfo"
+GetMember
+Push "tf_currentHeader"
+GetMember
+SetMember
+Push register1 "_tf_nextHeader" register1 "_enhanceInfo"
+GetMember
+Push "tf_nextHeader"
+GetMember
+SetMember
+Push register1 "_tf_defaultDesc" register1 "tf_defaultDesc"
+GetMember
+SetMember
+Push register1 "_tf_effectTitle"
+GetMember
+Push "verticalAutoSize" "top"
+SetMember
+Push register1 "_tf_effectDesc"
+GetMember
+Push "verticalAutoSize" "top"
+SetMember
+Push register1 "_tf_effectTitle"
+GetMember
+Push "text" "$083026" 1 "lib"
+GetVariable
+Push "util"
+GetMember
+Push "UIString"
+GetMember
+Push "getUIString2"
+CallMethod
+SetMember
+Push register1 "_tf_materialTitle"
+GetMember
+Push "text" "$083027" 1 "lib"
+GetVariable
+Push "util"
+GetMember
+Push "UIString"
+GetMember
+Push "getUIString"
+CallMethod
+SetMember
+Push register1 "_tf_currentHeader"
+GetMember
+Push "text" "$083035" 1 "lib"
+GetVariable
+Push "util"
+GetMember
+Push "UIString"
+GetMember
+Push "getUIString"
+CallMethod
+SetMember
+Push register1 "_tf_nextHeader"
+GetMember
+Push "text" "$083036" 1 "lib"
+GetVariable
+Push "util"
+GetMember
+Push "UIString"
+GetMember
+Push "getUIString"
+CallMethod
+SetMember
+Push 0.0
+InitObject
+StoreRegister 2
+Pop
+Push register2 "onScroll" register1 "onScroll"
+GetMember
+Push register1 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+SetMember
+Push register1 "_mc_mask"
+GetMember
+Push "_height"
+GetMember
+Push 1 register1 "_scrollBar"
+GetMember
+Push "__set__displaySize"
+CallMethod
+Pop
+Push 10 1 register1 "_scrollBar"
+GetMember
+Push "__set__rowHeight"
+CallMethod
+Pop
+Push register1 "_mc_materialItemSlotGroup"
+GetMember
+Push 1 register1 "_scrollBar"
+GetMember
+Push "setWheel"
+CallMethod
+Pop
+Push register2 1 register1 "_scrollBar"
+GetMember
+Push "addListener"
+CallMethod
+Pop
+Push register1 "_enhanceInfo"
+GetMember
+Push "tf_currentTitle"
+GetMember
+Push "verticalAutoSize" "top"
+SetMember
+Push register1 "_enhanceInfo"
+GetMember
+Push "tf_nextTitle"
+GetMember
+Push "verticalAutoSize" "top"
+SetMember
+Push register1 "_enhanceInfo"
+GetMember
+Push "tf_current"
+GetMember
+Push "verticalAutoSize" "top"
+SetMember
+Push register1 "_enhanceInfo"
+GetMember
+Push "tf_next"
+GetMember
+Push "verticalAutoSize" "top"
+SetMember
+Push register1 "_tf_defaultDesc"
+GetMember
+Push "_visible" false
+SetMember
+Push register1 "_tf_defaultDesc"
+GetMember
+Push "verticalAlign" "center"
+SetMember
+Push register1 "_tf_defaultDesc"
+GetMember
+Push "text" "$083037" 1 "lib"
+GetVariable
+Push "util"
+GetMember
+Push "UIString"
+GetMember
+Push "getUIString2"
+CallMethod
+SetMember
+}
+SetMember
+Push register2 "showGrowSkillDetailEnhance"
+DefineFunction2 "" 3 6 false false true false true false false true false 4 "abilityNames" 5 "currentValues" 2 "nextValues"  {
+Push register1 "_tf_defaultDesc"
+GetMember
+Push "_visible" false
+SetMember
+Push 0.0 1 register1 "_scrollBar"
+GetMember
+Push "__set__scroll"
+CallMethod
+Pop
+Push register1 "_tf_effectTitle"
+GetMember
+Push "_visible" register1 "_tf_effectDesc"
+GetMember
+Push "_visible" false
+StoreRegister 0
+SetMember
+Push register0
+SetMember
+Push register1 "_enhanceInfo"
+GetMember
+Push "_visible" true
+SetMember
+Push register5 register4 register1 "_enhanceInfo"
+GetMember
+Push "tf_current"
+GetMember
+Push register1 "_enhanceInfo"
+GetMember
+Push "tf_currentTitle"
+GetMember
+Push 4 register1 "setAbilityInfo"
+CallMethod
+Pop
+Push register2 null
+Equals2
+PushDuplicate
+If loc0a69
+Pop
+Push register2 0.0
+GetMember
+Push null
+Equals2
+loc0a69:PushDuplicate
+If loc0a85
+Pop
+Push register2 0.0
+GetMember
+Push ""
+Equals2
+loc0a85:Not
+If loc0b5c
+Push register1 "_tf_nextHeader"
+GetMember
+Push "_visible" false
+SetMember
+Push register1 "_enhanceInfo"
+GetMember
+Push "tf_nextTitle"
+GetMember
+Push "_visible" false
+SetMember
+Push register1 "_enhanceInfo"
+GetMember
+Push "tf_next"
+GetMember
+Push "_visible" false
+SetMember
+Push register1 "_enhanceInfo"
+GetMember
+Push "tf_currentTitle"
+GetMember
+Push "_y"
+GetMember
+Push register1 "_enhanceInfo"
+GetMember
+Push "tf_currentTitle"
+GetMember
+Push "textHeight"
+GetMember
+Add2
+Push 20
+Add2
+Push register1 "_enhanceInfo"
+GetMember
+Push "tf_current"
+GetMember
+Push "_y"
+GetMember
+Push register1 "_enhanceInfo"
+GetMember
+Push "tf_current"
+GetMember
+Push "textHeight"
+GetMember
+Add2
+Push 20
+Add2
+Push 2 "Math"
+GetVariable
+Push "max"
+CallMethod
+StoreRegister 3
+Pop
+Push register1 "_enhanceInfo"
+GetMember
+Push "mc_line"
+GetMember
+Push "_y" register3
+SetMember
+Jump loc0d1c
+loc0b5c:Push register1 "_tf_currentHeader"
+GetMember
+Push "_visible" true
+SetMember
+Push register1 "_enhanceInfo"
+GetMember
+Push "tf_nextTitle"
+GetMember
+Push "_visible" true
+SetMember
+Push register1 "_enhanceInfo"
+GetMember
+Push "tf_next"
+GetMember
+Push "_visible" true
+SetMember
+Push register2 register4 register1 "_enhanceInfo"
+GetMember
+Push "tf_next"
+GetMember
+Push register1 "_enhanceInfo"
+GetMember
+Push "tf_nextTitle"
+GetMember
+Push 4 register1 "setAbilityInfo"
+CallMethod
+Pop
+Push register1 "_tf_nextHeader"
+GetMember
+Push "_y" register1 "_enhanceInfo"
+GetMember
+Push "tf_currentTitle"
+GetMember
+Push "_y"
+GetMember
+Push register1 "_enhanceInfo"
+GetMember
+Push "tf_currentTitle"
+GetMember
+Push "textHeight"
+GetMember
+Add2
+Push 16
+Add2
+Push register1 "_enhanceInfo"
+GetMember
+Push "tf_current"
+GetMember
+Push "_y"
+GetMember
+Push register1 "_enhanceInfo"
+GetMember
+Push "tf_current"
+GetMember
+Push "textHeight"
+GetMember
+Add2
+Push 16
+Add2
+Push 2 "Math"
+GetVariable
+Push "max"
+CallMethod
+SetMember
+Push register1 "_enhanceInfo"
+GetMember
+Push "tf_nextTitle"
+GetMember
+Push "_y" register1 "_tf_nextHeader"
+GetMember
+Push "_y"
+GetMember
+Push 17
+Add2
+SetMember
+Push register1 "_enhanceInfo"
+GetMember
+Push "tf_next"
+GetMember
+Push "_y" register1 "_tf_nextHeader"
+GetMember
+Push "_y"
+GetMember
+Push 17
+Add2
+SetMember
+Push register1 "_enhanceInfo"
+GetMember
+Push "mc_line"
+GetMember
+Push "_y" register1 "_enhanceInfo"
+GetMember
+Push "tf_nextTitle"
+GetMember
+Push "_y"
+GetMember
+Push register1 "_enhanceInfo"
+GetMember
+Push "tf_nextTitle"
+GetMember
+Push "textHeight"
+GetMember
+Add2
+Push 20
+Add2
+Push register1 "_enhanceInfo"
+GetMember
+Push "tf_next"
+GetMember
+Push "_y"
+GetMember
+Push register1 "_enhanceInfo"
+GetMember
+Push "tf_next"
+GetMember
+Push "textHeight"
+GetMember
+Add2
+Push 20
+Add2
+Push 2 "Math"
+GetVariable
+Push "max"
+CallMethod
+SetMember
+}
+loc0d1c:SetMember
+Push register2 "setAbilityInfo"
+DefineFunction2 "" 4 9 false false true false true false true false false 6 "tf_title" 5 "tf_value" 7 "abilityNames" 8 "abilityValues"  {
+Push ""
+StoreRegister 4
+Pop
+Push ""
+StoreRegister 3
+Pop
+Push 0.0
+StoreRegister 2
+Pop
+loc0d85:Push register2 register7 "length"
+GetMember
+Less2
+Not
+If loc0ee2
+Push register4 register7 register2
+GetMember
+Add2
+StoreRegister 4
+Pop
+Push register3 register8 register2
+GetMember
+Add2
+StoreRegister 3
+Pop
+Push register6 "text" register4
+SetMember
+Push register5 "text" register3
+SetMember
+Push register2 register7 "length"
+GetMember
+Push 1
+Subtract
+Less2
+Not
+If loc0ed2
+Push 0.0
+StoreRegister 1
+Pop
+Push register6 "numLines"
+GetMember
+Push register5 "numLines"
+GetMember
+Greater
+Not
+If loc0e59
+Push register6 "numLines"
+GetMember
+Push register5 "numLines"
+GetMember
+Subtract
+StoreRegister 1
+Pop
+loc0e22:Push register1 0.0
+Greater
+Not
+If loc0e54
+Push register3 "\n"
+Add2
+StoreRegister 3
+Pop
+Push register1
+Decrement
+StoreRegister 1
+Pop
+Jump loc0e22
+loc0e54:Jump loc0eb8
+loc0e59:Push register6 "numLines"
+GetMember
+Push register5 "numLines"
+GetMember
+Less2
+Not
+If loc0eb8
+Push register5 "numLines"
+GetMember
+Push register6 "numLines"
+GetMember
+Subtract
+StoreRegister 1
+Pop
+loc0e86:Push register1 0.0
+Greater
+Not
+If loc0eb8
+Push register4 "\n"
+Add2
+StoreRegister 4
+Pop
+Push register1
+Decrement
+StoreRegister 1
+Pop
+Jump loc0e86
+loc0eb8:Push register4 "\n"
+Add2
+StoreRegister 4
+Pop
+Push register3 "\n"
+Add2
+StoreRegister 3
+Pop
+loc0ed2:Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc0d85
+loc0ee2:Push register6 "text" register4
+SetMember
+Push register5 "text" register3
+SetMember
+}
+SetMember
+Push register2 "moveArrow"
+DefineFunction "" 1 "$index"  {
+}
+SetMember
+Push register2 "showGrowSkillDetailOptionSkillEffectDesc"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "$optionSkillEffectDesc"  {
+Push register2 ""
+Equals2
+Not
+If loc0f7f
+Push register1 "_tf_defaultDesc"
+GetMember
+Push "_visible" true
+SetMember
+Push register1 "_tf_effectTitle"
+GetMember
+Push "_visible" register1 "_tf_effectDesc"
+GetMember
+Push "_visible" false
+StoreRegister 0
+SetMember
+Push register0
+SetMember
+Jump loc0fc3
+loc0f7f:Push register1 "_tf_effectDesc"
+GetMember
+Push "htmlText" register2
+SetMember
+Push register1 "_tf_defaultDesc"
+GetMember
+Push "_visible" false
+SetMember
+Push register1 "_tf_effectTitle"
+GetMember
+Push "_visible" register1 "_tf_effectDesc"
+GetMember
+Push "_visible" true
+StoreRegister 0
+SetMember
+Push register0
+SetMember
+loc0fc3:Push register1 "_enhanceInfo"
+GetMember
+Push "_visible" false
+SetMember
+}
+SetMember
+Push register2 "showGrowSkillDetailMaterialGroup"
+DefineFunction2 "" 3 12 false false true false true false false true false 7 "tempNeedMaterials" 9 "needGold" 11 "hasGold"  {
+Push undefined
+StoreRegister 8
+Pop
+Push register1 "_enhanceInfo"
+GetMember
+Push "_visible"
+GetMember
+Push true
+Equals2
+Not
+If loc1056
+Push register1 "_enhanceInfo"
+GetMember
+Push "mc_line"
+GetMember
+Push "_y"
+GetMember
+Push 17
+Add2
+StoreRegister 8
+Pop
+Jump loc1081
+loc1056:Push register1 "_tf_effectDesc"
+GetMember
+Push "_y"
+GetMember
+Push register1 "_tf_effectDesc"
+GetMember
+Push "textHeight"
+GetMember
+Add2
+Push 25
+Add2
+StoreRegister 8
+Pop
+loc1081:Push register1 "_tf_materialTitle"
+GetMember
+Push "_y" register8
+SetMember
+Push 0.0
+StoreRegister 2
+Pop
+loc10a2:Push register2 register1 "_materialItemSlots"
+GetMember
+Push "length"
+GetMember
+Less2
+Not
+If loc10ee
+Push register1 "_materialItemSlots"
+GetMember
+Push register2
+GetMember
+StoreRegister 4
+Pop
+Push 0.0 register4 "removeMovieClip"
+CallMethod
+Pop
+Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc10a2
+loc10ee:Push 10
+StoreRegister 6
+Pop
+Push register1 "_materialItemSlots"
+GetMember
+Push "length" 0.0
+SetMember
+Push register7 null
+Equals2
+Not
+Not
+If loc1257
+Push 0.0
+StoreRegister 2
+Pop
+loc1131:Push register2 register7 "length"
+GetMember
+Less2
+Not
+If loc1242
+Push register7 register2
+GetMember
+StoreRegister 5
+Pop
+Push "g4"
+GetVariable
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Push "GrowSkillPanel_MaterialItemSlot"
+GetMember
+Push 0.0 register1 "_mc_materialItemSlotGroup"
+GetMember
+Push "getNextHighestDepth"
+CallMethod
+Push "materialItemSlot" register2
+Add2
+Push "g4.view.skillWindow.GrowSkillPanel_MaterialItemSlot" 3 register1 "_mc_materialItemSlotGroup"
+GetMember
+Push "attachMovie"
+CallMethod
+CastOp
+StoreRegister 3
+Pop
+Push register3 "_x" 71 register2 4
+Modulo
+Push 70
+Multiply
+Add2
+SetMember
+Push register8 2
+Add2
+Push register2 4
+Divide
+Push 1 "Math"
+GetVariable
+Push "floor"
+CallMethod
+Push 70
+Multiply
+Add2
+StoreRegister 6
+Pop
+Push register3 "_y" register6
+SetMember
+Push register1 "_materialItemSlots"
+GetMember
+Push register2 register3
+SetMember
+Push register5 1 register3 "setData"
+CallMethod
+Pop
+Push 0.0 register3 "showMaterialItemSlot"
+CallMethod
+Pop
+Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc1131
+loc1242:Push register1 "_tf_materialTitle"
+GetMember
+Push "_visible" true
+SetMember
+Jump loc1267
+loc1257:Push register1 "_tf_materialTitle"
+GetMember
+Push "_visible" false
+SetMember
+loc1267:Push register1 "_mc_bg"
+GetMember
+Push "_height" register6 53
+Add2
+SetMember
+Push register1 "_mc_bg"
+GetMember
+Push "_height"
+GetMember
+Push 1 register1 "_scrollBar"
+GetMember
+Push "__set__pageSize"
+CallMethod
+Pop
+Push register9 -1
+Equals2
+Not
+If loc12c5
+Push register1 "_mc_gold"
+GetMember
+Push "_visible" false
+SetMember
+Jump loc137b
+loc12c5:Push register11 register9
+Less2
+If loc131a
+Push 0.0 0.0 0.0 0.0 register9 5 "lib"
+GetVariable
+Push "util"
+GetMember
+Push "GoldCurrency"
+GetMember
+Push "SetGoldText"
+CallMethod
+Jump loc1356
+loc131a:Push 0.0 "-1" 0.0 0.0 register9 5 "lib"
+GetVariable
+Push "util"
+GetMember
+Push "GoldCurrency"
+GetMember
+Push "SetGoldText"
+CallMethod
+loc1356:StoreRegister 10
+Pop
+Push register1 "_tf_gold"
+GetMember
+Push "htmlText" register10
+SetMember
+Push register1 "_mc_gold"
+GetMember
+Push "_visible" true
+SetMember
+}
+loc137b:SetMember
+Push register2 "onScroll"
+DefineFunction2 "" 2 3 false false true false true false false true false 2 "postion" 0 "scroll"  {
+Push register1 "_mc_materialItemSlotGroup"
+GetMember
+Push "_y" 0.0 register2
+Subtract
+SetMember
+}
+SetMember
+Push 1 null "g4"
+GetVariable
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Push "GrowSkillPanel_MaterialPanel"
+GetMember
+Push "prototype"
+GetMember
+Push 3 "ASSetPropFlags"
+CallFunction
+loc13e9:Pop

@@ -1,0 +1,1850 @@
+ConstantPool "_global" "g4" "Object" "view" "skillWindow" "SkillWindowController" "prototype" "gameInterface" "ISkillWindow" "getInstance" "_instance" "registerSkillWindow" "_skillWindow" "registerGrowSkillPanel_EnhancePanel" "_growSkillPanel_EnhancePanel" "registerTotalViewPanel" "_totalViewPanel" "registerDefaultViewPanel" "_defaultViewPanel" "registerGrowSkillPanel" "_growSkillPanel" "registerGrowSkillPanel_MaterialPanel" "_growSkillPanel_MaterialPanel" "registerGrowSkillPanel_DetailPanel" "_growSkillPanel_DetailPanel" "registerGrowSkillPanel_OptionSkillPanel" "_growSkillPanel_OptionSkillPanel" "registerGameInterfaces" "OnGameEventShowWindow" "util" "Delegate" "create" "OnGameEventChangeUIMode" "OnGame_SkillWindow_SetCrestSaveBtn" "OnGame_SkillWindow_SetTab" "OnGame_SkillWindow_SetGuideText" "OnGame_SkillWindow_SetViewMode" "OnGame_SkillWindow_SetSkill" "OnGame_SkillWindow_SetCrest" "OnGame_SkillWindow_CoolTime" "OnGame_SkillWindow_SetToggle" "OnGame_SkillWindow_SetTitleText" "OnGame_SkillWindow_SetPathSkill" "OnGame_SkillWindow_SetDefaultText" "OnGame_SkillWindow_SetSkillInfo" "OnGame_SkillWindow_SetPage" "OnGame_MouseDown" "OnGame_MouseUp" "OnGame_SkillWindow_SetGrowSkillSlots" "OnGame_SkillWindow_SetGrowSkillSlotSelected" "OnGame_SkillWindow_SetGrowSkillDetailSlotInfo" "OnGame_SkillWindow_SetGrowSkillDetailEnhance" "OnGame_SkillWindow_SetGrowSkillDetailOptionSkills" "OnGame_SkillWindow_SetGrowSkillDetailOptionSkillEffectDesc" "OnGame_SkillWindow_SetGrowSkillDetailMaterialGroup" "OnGame_SkillWindow_SetGrowSkillCompleteEffect" "OnGame_SkillWindow_SetGrowSkillFunctionButton" "OnGame_SkillWindow_SetSkillPointExp" "OnGame_SkillWindow_SetSkillPoint" "OnGame_SkillWindow_SetGrowSkillOptionSlots" "OnGame_SkillWindow_SetGrowSkillDetailOptionSkillSelected" "OnGame_SkillWindow_ShowEnhanceSkillEffect" "OnGame_SkillWindow_ShowOptionSkillEffect" "TeraParser" "parse" "length" "setTitleText" "" "undefined" "clearPathSkill" "setPathSkill" "setDefaultText" "setSkillInfo" "setPage" "ToGame_SkillWindow_Init" "model" "GameInterface" "callGameInterface" "ToGame_SkillWindow_PopUp" "__get__popUpFocus" "ToGame_SkillWindow_CloseUI" "ToGame_SkillWindow_SelectTab" "ToGame_SkillWindow_ChangeCrestSaveBtn" "ToGame_SkillWindow_ChangeViewMode" "ToGame_SkillWindow_Path" "ToGame_SkillWindow_Reset" "ToGame_SkillWindow_Recommend" "ToGame_SkillWindow_ChangeCrestState" "slotIndex" "crestIndex" "crestId" "crestRealId" "crestState" "\t" "ToGame_SkillWindow_UseSlot" "ToGame_SkillWindow_ChangePathTime" "ToGame_SkillWindow_RequestSetPage" "ToGame_SkillWindow_ChangePathSkillCheck" "ToGame_SkillWindow_SelectSkill" "JSON" "dataP" "GrowSkillSlotP" "setGrowSkillSlots" "showGrowSkillSlotSelected" "SkillSlotP" "showGrowSkillDetailSlotInfo" "_visible" "hideBlankPanel" "showBlankPanel" "_isOptionSkill" "showGrowSkillDetailEnhance" "moveArrow" "GrowSkillOptionSlotP" "showGrowSkillDetailOptionSkills" "showGrowSkillDetailOptionSkillSelected" "showGrowSkillDetailOptionSkillEffectDesc" "_needMaterials" "_needGold" "GrowSkillDetailMaterialP" "itemSlotP" "Amount" "showGrowSkillDetailMaterialGroup" "showGrowSkillFunctionButton" "setSkillPointExp" "setSkillPoint" "showGrowSkillOptionSlots" "showGrowSkillSlotEffect" "showSkillEffect" "ToGame_SkillWindow_SelectGrowSkill" "ToGame_SkillWindow_SelectGrowSkillFunctionButton" "ToGame_SkillWindow_SelectGrowSkillOptionSkill" "ToGame_SKillWIndow_SelectGrowSkillOptionButton" "showMaterialItemSlotListSimplePopup" "simplePopup" "MaterialItemSlotListSimplePopupModel" "$083029" "lib" "UIString" "getUIString" "$083031" "$083028" "$083030" "GoldCurrency" "SetGoldText" "{gold}" "StringUtil" "replace" "title" "description" "confirmBtnName" "ButtonType" "CONFIRM" "getLocale" "cancelBtnName" "CANCEL" "push" "NeedCount" "itemSlotPs" "needCounts" "confirmCallback" "onMaterialItemSlotListSimplePopupConfirm" "SimplePopupType" "MATERIAL_ITEM_SLOT_LIST_SIMPLE_POPUP" "manager" "SimplePopupManager" "showSimplePopup" "hideSimplePopup" "ASSetPropFlags"
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Not
+Not
+If loc0e68
+Push "_global"
+GetVariable
+Push "g4" 0.0 "Object"
+NewObject
+SetMember
+loc0e68:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "view"
+GetMember
+Not
+Not
+If loc0ea0
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "view" 0.0 "Object"
+NewObject
+SetMember
+loc0ea0:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Not
+Not
+If loc0ee4
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "view"
+GetMember
+Push "skillWindow" 0.0 "Object"
+NewObject
+SetMember
+loc0ee4:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Push "SkillWindowController"
+GetMember
+Not
+Not
+If loc3009
+Push "g4"
+GetVariable
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Push "SkillWindowController"
+DefineFunction "" 0  {
+}
+StoreRegister 1
+SetMember
+Push register1 "prototype"
+GetMember
+StoreRegister 2
+Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "gameInterface"
+GetMember
+Push "ISkillWindow"
+GetMember
+Push 1 "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Push "SkillWindowController"
+GetMember
+ImplementsOp
+Push register1 "getInstance"
+DefineFunction "" 0  {
+Push "g4"
+GetVariable
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Push "SkillWindowController"
+GetMember
+Push "_instance" "g4"
+GetVariable
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Push "SkillWindowController"
+GetMember
+Push "_instance"
+GetMember
+Push null
+Equals2
+If loc0feb
+Push "g4"
+GetVariable
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Push "SkillWindowController"
+GetMember
+Push "_instance"
+GetMember
+Jump loc100c
+loc0feb:Push 0.0 "g4"
+GetVariable
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Push "SkillWindowController"
+NewMethod
+loc100c:StoreRegister 0
+SetMember
+Push register0
+Return
+}
+SetMember
+Push register2 "registerSkillWindow"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "skillWindow"  {
+Push register1 "_skillWindow" register2
+SetMember
+}
+SetMember
+Push register2 "registerGrowSkillPanel_EnhancePanel"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "growSkillPanel_EnhancePanel"  {
+Push register1 "_growSkillPanel_EnhancePanel" register2
+SetMember
+}
+SetMember
+Push register2 "registerTotalViewPanel"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "totalViewPanel"  {
+Push register1 "_totalViewPanel" register2
+SetMember
+}
+SetMember
+Push register2 "registerDefaultViewPanel"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "defaultViewPanel"  {
+Push register1 "_defaultViewPanel" register2
+SetMember
+}
+SetMember
+Push register2 "registerGrowSkillPanel"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "growSkillPanel"  {
+Push register1 "_growSkillPanel" register2
+SetMember
+}
+SetMember
+Push register2 "registerGrowSkillPanel_MaterialPanel"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "growSkillPanel_MaterialPanel"  {
+Push register1 "_growSkillPanel_MaterialPanel" register2
+SetMember
+}
+SetMember
+Push register2 "registerGrowSkillPanel_DetailPanel"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "growSkillPanel_DetailPanel"  {
+Push register1 "_growSkillPanel_DetailPanel" register2
+SetMember
+}
+SetMember
+Push register2 "registerGrowSkillPanel_OptionSkillPanel"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "growSkillPanel_OptionSkillPanel"  {
+Push register1 "_growSkillPanel_OptionSkillPanel" register2
+SetMember
+}
+SetMember
+Push register2 "registerGameInterfaces"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "registerGameInterface"  {
+Push register1 "OnGameEventShowWindow"
+GetMember
+Push register1 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+Push "OnGameEventShowWindow" 2 register2 undefined
+CallMethod
+Pop
+Push register1 "OnGameEventChangeUIMode"
+GetMember
+Push register1 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+Push "OnGameEventChangeUIMode" 2 register2 undefined
+CallMethod
+Pop
+Push register1 "OnGame_SkillWindow_SetCrestSaveBtn"
+GetMember
+Push register1 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+Push "OnGame_SkillWindow_SetCrestSaveBtn" 2 register2 undefined
+CallMethod
+Pop
+Push register1 "OnGame_SkillWindow_SetTab"
+GetMember
+Push register1 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+Push "OnGame_SkillWindow_SetTab" 2 register2 undefined
+CallMethod
+Pop
+Push register1 "OnGame_SkillWindow_SetGuideText"
+GetMember
+Push register1 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+Push "OnGame_SkillWindow_SetGuideText" 2 register2 undefined
+CallMethod
+Pop
+Push register1 "OnGame_SkillWindow_SetViewMode"
+GetMember
+Push register1 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+Push "OnGame_SkillWindow_SetViewMode" 2 register2 undefined
+CallMethod
+Pop
+Push register1 "OnGame_SkillWindow_SetSkill"
+GetMember
+Push register1 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+Push "OnGame_SkillWindow_SetSkill" 2 register2 undefined
+CallMethod
+Pop
+Push register1 "OnGame_SkillWindow_SetCrest"
+GetMember
+Push register1 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+Push "OnGame_SkillWindow_SetCrest" 2 register2 undefined
+CallMethod
+Pop
+Push register1 "OnGame_SkillWindow_CoolTime"
+GetMember
+Push register1 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+Push "OnGame_SkillWindow_CoolTime" 2 register2 undefined
+CallMethod
+Pop
+Push register1 "OnGame_SkillWindow_SetToggle"
+GetMember
+Push register1 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+Push "OnGame_SkillWindow_SetToggle" 2 register2 undefined
+CallMethod
+Pop
+Push register1 "OnGame_SkillWindow_SetTitleText"
+GetMember
+Push register1 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+Push "OnGame_SkillWindow_SetTitleText" 2 register2 undefined
+CallMethod
+Pop
+Push register1 "OnGame_SkillWindow_SetPathSkill"
+GetMember
+Push register1 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+Push "OnGame_SkillWindow_SetPathSkill" 2 register2 undefined
+CallMethod
+Pop
+Push register1 "OnGame_SkillWindow_SetDefaultText"
+GetMember
+Push register1 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+Push "OnGame_SkillWindow_SetDefaultText" 2 register2 undefined
+CallMethod
+Pop
+Push register1 "OnGame_SkillWindow_SetSkillInfo"
+GetMember
+Push register1 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+Push "OnGame_SkillWindow_SetSkillInfo" 2 register2 undefined
+CallMethod
+Pop
+Push register1 "OnGame_SkillWindow_SetPage"
+GetMember
+Push register1 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+Push "OnGame_SkillWindow_SetPage" 2 register2 undefined
+CallMethod
+Pop
+Push register1 "OnGame_MouseDown"
+GetMember
+Push register1 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+Push "OnGame_MouseDown" 2 register2 undefined
+CallMethod
+Pop
+Push register1 "OnGame_MouseUp"
+GetMember
+Push register1 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+Push "OnGame_MouseUp" 2 register2 undefined
+CallMethod
+Pop
+Push register1 "OnGame_SkillWindow_SetGrowSkillSlots"
+GetMember
+Push register1 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+Push "OnGame_SkillWindow_SetGrowSkillSlots" 2 register2 undefined
+CallMethod
+Pop
+Push register1 "OnGame_SkillWindow_SetGrowSkillSlotSelected"
+GetMember
+Push register1 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+Push "OnGame_SkillWindow_SetGrowSkillSlotSelected" 2 register2 undefined
+CallMethod
+Pop
+Push register1 "OnGame_SkillWindow_SetGrowSkillDetailSlotInfo"
+GetMember
+Push register1 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+Push "OnGame_SkillWindow_SetGrowSkillDetailSlotInfo" 2 register2 undefined
+CallMethod
+Pop
+Push register1 "OnGame_SkillWindow_SetGrowSkillDetailEnhance"
+GetMember
+Push register1 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+Push "OnGame_SkillWindow_SetGrowSkillDetailEnhance" 2 register2 undefined
+CallMethod
+Pop
+Push register1 "OnGame_SkillWindow_SetGrowSkillDetailOptionSkills"
+GetMember
+Push register1 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+Push "OnGame_SkillWindow_SetGrowSkillDetailOptionSkills" 2 register2 undefined
+CallMethod
+Pop
+Push register1 "OnGame_SkillWindow_SetGrowSkillDetailOptionSkillEffectDesc"
+GetMember
+Push register1 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+Push "OnGame_SkillWindow_SetGrowSkillDetailOptionSkillEffectDesc" 2 register2 undefined
+CallMethod
+Pop
+Push register1 "OnGame_SkillWindow_SetGrowSkillDetailMaterialGroup"
+GetMember
+Push register1 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+Push "OnGame_SkillWindow_SetGrowSkillDetailMaterialGroup" 2 register2 undefined
+CallMethod
+Pop
+Push register1 "OnGame_SkillWindow_SetGrowSkillCompleteEffect"
+GetMember
+Push register1 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+Push "OnGame_SkillWindow_SetGrowSkillCompleteEffect" 2 register2 undefined
+CallMethod
+Pop
+Push register1 "OnGame_SkillWindow_SetGrowSkillFunctionButton"
+GetMember
+Push register1 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+Push "OnGame_SkillWindow_SetGrowSkillFunctionButton" 2 register2 undefined
+CallMethod
+Pop
+Push register1 "OnGame_SkillWindow_SetSkillPointExp"
+GetMember
+Push register1 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+Push "OnGame_SkillWindow_SetSkillPointExp" 2 register2 undefined
+CallMethod
+Pop
+Push register1 "OnGame_SkillWindow_SetSkillPoint"
+GetMember
+Push register1 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+Push "OnGame_SkillWindow_SetSkillPoint" 2 register2 undefined
+CallMethod
+Pop
+Push register1 "OnGame_SkillWindow_SetGrowSkillOptionSlots"
+GetMember
+Push register1 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+Push "OnGame_SkillWindow_SetGrowSkillOptionSlots" 2 register2 undefined
+CallMethod
+Pop
+Push register1 "OnGame_SkillWindow_SetGrowSkillDetailOptionSkillSelected"
+GetMember
+Push register1 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+Push "OnGame_SkillWindow_SetGrowSkillDetailOptionSkillSelected" 2 register2 undefined
+CallMethod
+Pop
+Push register1 "OnGame_SkillWindow_ShowEnhanceSkillEffect"
+GetMember
+Push register1 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+Push "OnGame_SkillWindow_ShowEnhanceSkillEffect" 2 register2 undefined
+CallMethod
+Pop
+Push register1 "OnGame_SkillWindow_ShowOptionSkillEffect"
+GetMember
+Push register1 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+Push "OnGame_SkillWindow_ShowOptionSkillEffect" 2 register2 undefined
+CallMethod
+Pop
+}
+SetMember
+Push register2 "OnGameEventShowWindow"
+DefineFunction2 "" 2 4 false false true false true false false true false 2 "widgetName" 3 "bShow"  {
+Push register3 register2 2 register1 "_skillWindow"
+GetMember
+Push "OnGameEventShowWindow"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "OnGameEventChangeUIMode"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "bShow"  {
+Push register2 1 register1 "_skillWindow"
+GetMember
+Push "OnGameEventChangeUIMode"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "OnGame_SkillWindow_SetCrestSaveBtn"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "btnParam"  {
+Push register2 1 register1 "_skillWindow"
+GetMember
+Push "OnGame_SkillWindow_SetCrestSaveBtn"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "OnGame_SkillWindow_SetTab"
+DefineFunction2 "" 5 12 false false true false true false false true false 8 "$tabNames" 7 "$tagNums" 11 "$isAvtices" 9 "$selectedTab" 10 "$tooltipMessages"  {
+Push register8 1 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "TeraParser"
+GetMember
+Push "parse"
+CallMethod
+StoreRegister 5
+Pop
+Push register7 1 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "TeraParser"
+GetMember
+Push "parse"
+CallMethod
+StoreRegister 3
+Pop
+Push register11 1 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "TeraParser"
+GetMember
+Push "parse"
+CallMethod
+StoreRegister 4
+Pop
+Push register10 1 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "TeraParser"
+GetMember
+Push "parse"
+CallMethod
+StoreRegister 6
+Pop
+Push 0.0
+StoreRegister 2
+Pop
+loc1a36:Push register2 register3 "length"
+GetMember
+Less2
+Not
+If loc1a65
+Push register3 register2 register3 register2
+GetMember
+ToNumber
+SetMember
+Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc1a36
+loc1a65:Push 0.0
+StoreRegister 2
+Pop
+loc1a76:Push register2 register4 "length"
+GetMember
+Less2
+Not
+If loc1aae
+Push register4 register2 register4 register2
+GetMember
+ToNumber
+Push 1
+Equals2
+SetMember
+Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc1a76
+loc1aae:Push register6 register9 register4 register3 register5 5 register1 "_skillWindow"
+GetMember
+Push "OnGame_SkillWindow_SetTab"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "OnGame_SkillWindow_SetGuideText"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "guideText"  {
+Push register2 1 register1 "_skillWindow"
+GetMember
+Push "OnGame_SkillWindow_SetGuideText"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "OnGame_SkillWindow_SetViewMode"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "viewMode"  {
+Push register2 1 register1 "_skillWindow"
+GetMember
+Push "OnGame_SkillWindow_SetViewMode"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "OnGame_SkillWindow_SetSkill"
+DefineFunction2 "" 2 4 false false true false true false false true false 3 "skillData" 2 "selectedSlot"  {
+Push register2 register3 2 register1 "_skillWindow"
+GetMember
+Push "OnGame_SkillWindow_SetSkill"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "OnGame_SkillWindow_SetCrest"
+DefineFunction2 "" 3 5 false false true false true false false true false 2 "crestData" 3 "current" 4 "total"  {
+Push register4 register3 register2 3 register1 "_skillWindow"
+GetMember
+Push "OnGame_SkillWindow_SetCrest"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "OnGame_SkillWindow_CoolTime"
+DefineFunction2 "" 3 5 false false true false true false false true false 2 "slotIndex" 4 "remain" 3 "total"  {
+Push register3 register4 register2 3 register1 "_skillWindow"
+GetMember
+Push "OnGame_SkillWindow_CoolTime"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "OnGame_SkillWindow_SetToggle"
+DefineFunction2 "" 2 4 false false true false true false false true false 2 "slotIndex" 3 "bTrue"  {
+Push register3 register2 2 register1 "_skillWindow"
+GetMember
+Push "OnGame_SkillWindow_SetToggle"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "OnGame_SkillWindow_SetTitleText"
+DefineFunction2 "" 3 5 false false true false true false false true false 4 "title_0" 3 "title_1" 2 "title_2"  {
+Push register2 register3 register4 3 register1 "_defaultViewPanel"
+GetMember
+Push "setTitleText"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "OnGame_SkillWindow_SetPathSkill"
+DefineFunction2 "" 5 7 false false true false true false false true false 2 "pathSkillId" 6 "pathSkillName" 4 "pathSkillImg" 3 "pathSkillCheck" 5 "pathSkillTime"  {
+Push register2 undefined
+Equals2
+PushDuplicate
+If loc1cfd
+Pop
+Push register2 ""
+Equals2
+loc1cfd:PushDuplicate
+If loc1d0c
+Pop
+Push register2 "undefined"
+Equals2
+loc1d0c:PushDuplicate
+If loc1d1a
+Pop
+Push register2 null
+Equals2
+loc1d1a:Not
+If loc1d3b
+Push false 1 register1 "_defaultViewPanel"
+GetMember
+Push "clearPathSkill"
+CallMethod
+Pop
+Push undefined
+Return
+loc1d3b:Push register5 register3 register4 register6 register2 5 register1 "_defaultViewPanel"
+GetMember
+Push "setPathSkill"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "OnGame_SkillWindow_SetDefaultText"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "defaultText"  {
+Push register2 1 register1 "_defaultViewPanel"
+GetMember
+Push "setDefaultText"
+CallMethod
+Pop
+Push 0.0 register1 "_defaultViewPanel"
+GetMember
+Push "clearPathSkill"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "OnGame_SkillWindow_SetSkillInfo"
+DefineFunction2 "" 7 9 false false true false true false false true false 6 "skillId" 7 "skillName" 2 "skillImg" 3 "bActive" 4 "skillInfo" 5 "bPath" 8 "bBtn"  {
+Push register8 register5 register4 register3 register2 register7 register6 7 register1 "_defaultViewPanel"
+GetMember
+Push "setSkillInfo"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "OnGame_SkillWindow_SetPage"
+DefineFunction2 "" 2 4 false false true false true false false true false 2 "curPage" 3 "maxPage"  {
+Push register3
+ToNumber
+Push register2
+ToNumber
+Push 2 register1 "_totalViewPanel"
+GetMember
+Push "setPage"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "OnGame_MouseDown"
+DefineFunction2 "" 2 4 false false true false true false false true false 3 "button" 2 "target"  {
+Push register2 register3 2 register1 "_skillWindow"
+GetMember
+Push "OnGame_MouseDown"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "OnGame_MouseUp"
+DefineFunction2 "" 2 4 false false true false true false false true false 3 "button" 2 "target"  {
+Push register2 register3 2 register1 "_skillWindow"
+GetMember
+Push "OnGame_MouseUp"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "ToGame_SkillWindow_Init"
+DefineFunction "" 0  {
+Push "ToGame_SkillWindow_Init" 1 "g4"
+GetVariable
+Push "model"
+GetMember
+Push "GameInterface"
+GetMember
+Push "callGameInterface"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "ToGame_SkillWindow_PopUp"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push 0.0 register1 "_defaultViewPanel"
+GetMember
+Push "__get__popUpFocus"
+CallMethod
+Push "ToGame_SkillWindow_PopUp" 2 "g4"
+GetVariable
+Push "model"
+GetMember
+Push "GameInterface"
+GetMember
+Push "callGameInterface"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "ToGame_SkillWindow_CloseUI"
+DefineFunction "" 0  {
+Push "ToGame_SkillWindow_CloseUI" 1 "g4"
+GetVariable
+Push "model"
+GetMember
+Push "GameInterface"
+GetMember
+Push "callGameInterface"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "ToGame_SkillWindow_SelectTab"
+DefineFunction2 "" 2 2 false false true false true false true false false 1 "index" 0 "noRequestEvent"  {
+Push register1 "ToGame_SkillWindow_SelectTab" 2 "g4"
+GetVariable
+Push "model"
+GetMember
+Push "GameInterface"
+GetMember
+Push "callGameInterface"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "ToGame_SkillWindow_ChangeCrestSaveBtn"
+DefineFunction2 "" 1 2 false false true false true false true false false 1 "index"  {
+Push register1 "ToGame_SkillWindow_ChangeCrestSaveBtn" 2 "g4"
+GetVariable
+Push "model"
+GetMember
+Push "GameInterface"
+GetMember
+Push "callGameInterface"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "ToGame_SkillWindow_ChangeViewMode"
+DefineFunction2 "" 1 2 false false true false true false true false false 1 "index"  {
+Push register1 "ToGame_SkillWindow_ChangeViewMode" 2 "g4"
+GetVariable
+Push "model"
+GetMember
+Push "GameInterface"
+GetMember
+Push "callGameInterface"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "ToGame_SkillWindow_Path"
+DefineFunction "" 0  {
+Push "ToGame_SkillWindow_Path" 1 "g4"
+GetVariable
+Push "model"
+GetMember
+Push "GameInterface"
+GetMember
+Push "callGameInterface"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "ToGame_SkillWindow_Reset"
+DefineFunction "" 0  {
+Push "ToGame_SkillWindow_Reset" 1 "g4"
+GetVariable
+Push "model"
+GetMember
+Push "GameInterface"
+GetMember
+Push "callGameInterface"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "ToGame_SkillWindow_Recommend"
+DefineFunction "" 0  {
+Push "ToGame_SkillWindow_Recommend" 1 "g4"
+GetVariable
+Push "model"
+GetMember
+Push "GameInterface"
+GetMember
+Push "callGameInterface"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "ToGame_SkillWindow_ChangeCrestState"
+DefineFunction2 "" 1 8 false false true false true false true false false 1 "targetCrest"  {
+Push register1 "slotIndex"
+GetMember
+StoreRegister 2
+Pop
+Push register1 "crestIndex"
+GetMember
+StoreRegister 6
+Pop
+Push register1 "crestId"
+GetMember
+StoreRegister 3
+Pop
+Push register1 "crestRealId"
+GetMember
+StoreRegister 7
+Pop
+Push register1 "crestState"
+GetMember
+StoreRegister 4
+Pop
+Push register2 "\t"
+Add2
+Push register6
+Add2
+Push "\t"
+Add2
+Push register3
+Add2
+Push "\t"
+Add2
+Push register7
+Add2
+Push "\t"
+Add2
+Push register4
+Add2
+StoreRegister 5
+Pop
+Push register5 "ToGame_SkillWindow_ChangeCrestState" 2 "g4"
+GetVariable
+Push "model"
+GetMember
+Push "GameInterface"
+GetMember
+Push "callGameInterface"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "ToGame_SkillWindow_UseSlot"
+DefineFunction2 "" 2 4 false false true false true false true false false 2 "slotIndex" 3 "index"  {
+Push register2 "\t"
+Add2
+Push register3
+Add2
+StoreRegister 1
+Pop
+Push register1 "ToGame_SkillWindow_UseSlot" 2 "g4"
+GetVariable
+Push "model"
+GetMember
+Push "GameInterface"
+GetMember
+Push "callGameInterface"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "ToGame_SkillWindow_ChangePathTime"
+DefineFunction2 "" 1 2 false false true false true false true false false 1 "timeText"  {
+Push register1 "ToGame_SkillWindow_ChangePathTime" 2 "g4"
+GetVariable
+Push "model"
+GetMember
+Push "GameInterface"
+GetMember
+Push "callGameInterface"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "ToGame_SkillWindow_RequestSetPage"
+DefineFunction2 "" 1 2 false false true false true false true false false 1 "page"  {
+Push register1 "ToGame_SkillWindow_RequestSetPage" 2 "g4"
+GetVariable
+Push "model"
+GetMember
+Push "GameInterface"
+GetMember
+Push "callGameInterface"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "ToGame_SkillWindow_ChangePathSkillCheck"
+DefineFunction2 "" 1 2 false false true false true false true false false 1 "changed"  {
+Push register1 "ToGame_SkillWindow_ChangePathSkillCheck" 2 "g4"
+GetVariable
+Push "model"
+GetMember
+Push "GameInterface"
+GetMember
+Push "callGameInterface"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "ToGame_SkillWindow_SelectSkill"
+DefineFunction2 "" 1 2 false false true false true false true false false 1 "id"  {
+Push register1 "ToGame_SkillWindow_SelectSkill" 2 "g4"
+GetVariable
+Push "model"
+GetMember
+Push "GameInterface"
+GetMember
+Push "callGameInterface"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "OnGame_SkillWindow_SetGrowSkillSlots"
+DefineFunction2 "" 1 5 false false true false true false false true false 4 "growSkillSlots"  {
+Push register4 1 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "JSON"
+GetMember
+Push "parse"
+CallMethod
+StoreRegister 3
+Pop
+Push 0.0
+StoreRegister 2
+Pop
+loc2331:Push register2 register3 "length"
+GetMember
+Less2
+Not
+If loc2382
+Push register3 register2 register3 register2
+GetMember
+Push 1 "g4"
+GetVariable
+Push "gameInterface"
+GetMember
+Push "dataP"
+GetMember
+Push "skillWindow"
+GetMember
+Push "GrowSkillSlotP"
+NewMethod
+SetMember
+Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc2331
+loc2382:Push register3 1 register1 "_growSkillPanel"
+GetMember
+Push "setGrowSkillSlots"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "OnGame_SkillWindow_SetGrowSkillSlotSelected"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "selectedIndex"  {
+Push register2 1 register1 "_growSkillPanel"
+GetMember
+Push "showGrowSkillSlotSelected"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "OnGame_SkillWindow_SetGrowSkillDetailSlotInfo"
+DefineFunction2 "" 6 9 false false true false true false false true false 3 "skillSlot" 7 "currentEnhance" 4 "maxEnhance" 5 "cautionMessage" 8 "desc" 6 "userLevel"  {
+Push register3 ""
+Equals2
+Not
+Not
+If loc24ca
+Push register3 1 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "JSON"
+GetMember
+Push "parse"
+CallMethod
+Push 1 "g4"
+GetVariable
+Push "gameInterface"
+GetMember
+Push "dataP"
+GetMember
+Push "SkillSlotP"
+NewMethod
+StoreRegister 2
+Pop
+Push register6
+ToNumber
+Push register5 register4 register7 register2 5 register1 "_growSkillPanel_DetailPanel"
+GetMember
+Push "showGrowSkillDetailSlotInfo"
+CallMethod
+Pop
+Push register1 "_growSkillPanel_DetailPanel"
+GetMember
+Push "_visible" true
+SetMember
+Push 0.0 register1 "_growSkillPanel"
+GetMember
+Push "hideBlankPanel"
+CallMethod
+Pop
+Jump loc24f0
+loc24ca:Push register1 "_growSkillPanel_DetailPanel"
+GetMember
+Push "_visible" false
+SetMember
+Push register8 1 register1 "_growSkillPanel"
+GetMember
+Push "showBlankPanel"
+CallMethod
+Pop
+}
+loc24f0:SetMember
+Push register2 "OnGame_SkillWindow_SetGrowSkillDetailEnhance"
+DefineFunction2 "" 5 10 false false true false true false false true false 5 "currentLevel" 8 "nextLevel" 6 "$abilityNames" 9 "$currentValues" 7 "$nextValues"  {
+Push register6 1 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "JSON"
+GetMember
+Push "parse"
+CallMethod
+StoreRegister 4
+Pop
+Push register9 1 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "JSON"
+GetMember
+Push "parse"
+CallMethod
+StoreRegister 2
+Pop
+Push register7 1 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "JSON"
+GetMember
+Push "parse"
+CallMethod
+StoreRegister 3
+Pop
+Push register1 "_isOptionSkill" false
+SetMember
+Push register8 register5 2 register1 "_growSkillPanel_EnhancePanel"
+GetMember
+Push "showGrowSkillDetailEnhance"
+CallMethod
+Pop
+Push register3 register2 register4 3 register1 "_growSkillPanel_MaterialPanel"
+GetMember
+Push "showGrowSkillDetailEnhance"
+CallMethod
+Pop
+Push register1 "_growSkillPanel_OptionSkillPanel"
+GetMember
+Push "_visible" false
+SetMember
+Push register1 "_growSkillPanel_EnhancePanel"
+GetMember
+Push "_visible" true
+SetMember
+Push 1 1 register1 "_growSkillPanel_MaterialPanel"
+GetMember
+Push "moveArrow"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "OnGame_SkillWindow_SetGrowSkillDetailOptionSkills"
+DefineFunction2 "" 1 5 false false true false true false false true false 4 "$growSkillOptionSlots"  {
+Push register1 "_isOptionSkill" true
+SetMember
+Push register4 1 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "JSON"
+GetMember
+Push "parse"
+CallMethod
+StoreRegister 3
+Pop
+Push 0.0
+StoreRegister 2
+Pop
+loc2692:Push register2 register3 "length"
+GetMember
+Less2
+Not
+If loc26e3
+Push register3 register2 register3 register2
+GetMember
+Push 1 "g4"
+GetVariable
+Push "gameInterface"
+GetMember
+Push "dataP"
+GetMember
+Push "skillWindow"
+GetMember
+Push "GrowSkillOptionSlotP"
+NewMethod
+SetMember
+Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc2692
+loc26e3:Push register3 1 register1 "_growSkillPanel_OptionSkillPanel"
+GetMember
+Push "showGrowSkillDetailOptionSkills"
+CallMethod
+Pop
+Push register1 "_growSkillPanel_OptionSkillPanel"
+GetMember
+Push "_visible" true
+SetMember
+Push register1 "_growSkillPanel_EnhancePanel"
+GetMember
+Push "_visible" false
+SetMember
+}
+SetMember
+Push register2 "OnGame_SkillWindow_SetGrowSkillDetailOptionSkillSelected"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "selectedIndex"  {
+Push register2 1 register1 "_growSkillPanel_OptionSkillPanel"
+GetMember
+Push "showGrowSkillDetailOptionSkillSelected"
+CallMethod
+Pop
+Push register2 1 register1 "_growSkillPanel_MaterialPanel"
+GetMember
+Push "moveArrow"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "OnGame_SkillWindow_SetGrowSkillDetailOptionSkillEffectDesc"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "optionSkillEffectDesc"  {
+Push register2 1 register1 "_growSkillPanel_MaterialPanel"
+GetMember
+Push "showGrowSkillDetailOptionSkillEffectDesc"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "OnGame_SkillWindow_SetGrowSkillDetailMaterialGroup"
+DefineFunction2 "" 3 7 false false true false true false false true false 5 "needMaterials" 4 "needGold" 6 "hasGold"  {
+Push register5 ""
+Equals2
+If loc280d
+Push register5 1 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "JSON"
+GetMember
+Push "parse"
+CallMethod
+Jump loc2811
+loc280d:Push null
+loc2811:StoreRegister 3
+Pop
+Push register1 "_needMaterials" register3
+SetMember
+Push register1 "_needGold" register4
+SetMember
+Push 0.0
+StoreRegister 2
+Pop
+loc283b:Push register2 register3 "length"
+GetMember
+Less2
+Not
+If loc28c8
+Push register3 register2 register3 register2
+GetMember
+Push 1 "g4"
+GetVariable
+Push "gameInterface"
+GetMember
+Push "dataP"
+GetMember
+Push "skillWindow"
+GetMember
+Push "GrowSkillDetailMaterialP"
+NewMethod
+SetMember
+Push "g4"
+GetVariable
+Push "gameInterface"
+GetMember
+Push "dataP"
+GetMember
+Push "skillWindow"
+GetMember
+Push "GrowSkillDetailMaterialP"
+GetMember
+Push register3 register2
+GetMember
+CastOp
+Push "itemSlotP"
+GetMember
+Push "Amount" 0.0
+SetMember
+Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc283b
+loc28c8:Push register6
+ToNumber
+Push register4
+ToNumber
+Push register3 3 register1 "_growSkillPanel_MaterialPanel"
+GetMember
+Push "showGrowSkillDetailMaterialGroup"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "OnGame_SkillWindow_SetGrowSkillCompleteEffect"
+DefineFunction "" 0  {
+}
+SetMember
+Push register2 "OnGame_SkillWindow_SetGrowSkillFunctionButton"
+DefineFunction2 "" 2 4 false false true false true false false true false 3 "buttonName" 2 "isDisable"  {
+Push register2 register3 2 register1 "_growSkillPanel_DetailPanel"
+GetMember
+Push "showGrowSkillFunctionButton"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "OnGame_SkillWindow_SetSkillPointExp"
+DefineFunction2 "" 2 4 false false true false true false false true false 3 "currentExp" 2 "maxExp"  {
+Push register2 register3 2 register1 "_growSkillPanel"
+GetMember
+Push "setSkillPointExp"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "OnGame_SkillWindow_SetSkillPoint"
+DefineFunction2 "" 2 4 false false true false true false false true false 2 "currentPoint" 3 "maxPoint"  {
+Push register3 register2 2 register1 "_growSkillPanel"
+GetMember
+Push "setSkillPoint"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "OnGame_SkillWindow_SetGrowSkillOptionSlots"
+DefineFunction2 "" 3 7 false false true false true false false true false 5 "$index" 4 "$growSkillOptionSlots" 6 "$selectedIndex"  {
+Push register4 ""
+Equals2
+If loc2a31
+Push register4 1 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "JSON"
+GetMember
+Push "parse"
+CallMethod
+Jump loc2a35
+loc2a31:Push null
+loc2a35:StoreRegister 3
+Pop
+Push 0.0
+StoreRegister 2
+Pop
+loc2a4b:Push register2 register3 "length"
+GetMember
+Less2
+Not
+If loc2a9c
+Push register3 register2 register3 register2
+GetMember
+Push 1 "g4"
+GetVariable
+Push "gameInterface"
+GetMember
+Push "dataP"
+GetMember
+Push "skillWindow"
+GetMember
+Push "GrowSkillOptionSlotP"
+NewMethod
+SetMember
+Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc2a4b
+loc2a9c:Push register6 register3 register5 3 register1 "_growSkillPanel"
+GetMember
+Push "showGrowSkillOptionSlots"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "OnGame_SkillWindow_ShowEnhanceSkillEffect"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "$slotIndex"  {
+Push register2 1 register1 "_growSkillPanel"
+GetMember
+Push "showGrowSkillSlotEffect"
+CallMethod
+Pop
+Push 0.0 register1 "_growSkillPanel_EnhancePanel"
+GetMember
+Push "showGrowSkillSlotEffect"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "OnGame_SkillWindow_ShowOptionSkillEffect"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "$slotIndex"  {
+Push register2 1 register1 "_growSkillPanel_OptionSkillPanel"
+GetMember
+Push "showSkillEffect"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "ToGame_SkillWindow_SelectGrowSkill"
+DefineFunction2 "" 1 2 false false true false true false true false false 1 "growSkillId"  {
+Push register1 "ToGame_SkillWindow_SelectGrowSkill" 2 "g4"
+GetVariable
+Push "model"
+GetMember
+Push "GameInterface"
+GetMember
+Push "callGameInterface"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "ToGame_SkillWindow_SelectGrowSkillFunctionButton"
+DefineFunction "" 0  {
+Push "ToGame_SkillWindow_SelectGrowSkillFunctionButton" 1 "g4"
+GetVariable
+Push "model"
+GetMember
+Push "GameInterface"
+GetMember
+Push "callGameInterface"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "ToGame_SkillWindow_SelectGrowSkillOptionSkill"
+DefineFunction2 "" 1 2 false false true false true false true false false 1 "optionSkillId"  {
+Push register1 "ToGame_SkillWindow_SelectGrowSkillOptionSkill" 2 "g4"
+GetVariable
+Push "model"
+GetMember
+Push "GameInterface"
+GetMember
+Push "callGameInterface"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "ToGame_SKillWIndow_SelectGrowSkillOptionButton"
+DefineFunction2 "" 1 2 false false true false true false true false false 1 "growSkillId"  {
+Push register1
+ToString
+Push "ToGame_SKillWIndow_SelectGrowSkillOptionButton" 2 "g4"
+GetVariable
+Push "model"
+GetMember
+Push "GameInterface"
+GetMember
+Push "callGameInterface"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "showMaterialItemSlotListSimplePopup"
+DefineFunction2 "" 0 9 false false true false true false false true false  {
+Push 0.0 "g4"
+GetVariable
+Push "simplePopup"
+GetMember
+Push "model"
+GetMember
+Push "MaterialItemSlotListSimplePopupModel"
+NewMethod
+StoreRegister 3
+Pop
+Push undefined
+StoreRegister 7
+Pop
+Push undefined
+StoreRegister 6
+Pop
+Push register1 "_isOptionSkill"
+GetMember
+Push true
+Equals2
+Not
+If loc2ce0
+Push "$083029" 1 "lib"
+GetVariable
+Push "util"
+GetMember
+Push "UIString"
+GetMember
+Push "getUIString"
+CallMethod
+StoreRegister 7
+Pop
+Push "$083031" 1 "lib"
+GetVariable
+Push "util"
+GetMember
+Push "UIString"
+GetMember
+Push "getUIString"
+CallMethod
+StoreRegister 6
+Pop
+Jump loc2d28
+loc2ce0:Push "$083028" 1 "lib"
+GetVariable
+Push "util"
+GetMember
+Push "UIString"
+GetMember
+Push "getUIString"
+CallMethod
+StoreRegister 7
+Pop
+Push "$083030" 1 "lib"
+GetVariable
+Push "util"
+GetMember
+Push "UIString"
+GetMember
+Push "getUIString"
+CallMethod
+StoreRegister 6
+Pop
+loc2d28:Push 0.0 0.0 0.0 0.0 register1 "_needGold"
+GetMember
+Push 5 "lib"
+GetVariable
+Push "util"
+GetMember
+Push "GoldCurrency"
+GetMember
+Push "SetGoldText"
+CallMethod
+StoreRegister 8
+Pop
+Push register8 "{gold}" register6 3 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "StringUtil"
+GetMember
+Push "replace"
+CallMethod
+StoreRegister 6
+Pop
+Push register3 "title" register7
+SetMember
+Push register3 "description" register6
+SetMember
+Push register3 "confirmBtnName" 0.0 "g4"
+GetVariable
+Push "simplePopup"
+GetMember
+Push "ButtonType"
+GetMember
+Push "CONFIRM"
+GetMember
+Push "getLocale"
+CallMethod
+SetMember
+Push register3 "cancelBtnName" 0.0 "g4"
+GetVariable
+Push "simplePopup"
+GetMember
+Push "ButtonType"
+GetMember
+Push "CANCEL"
+GetMember
+Push "getLocale"
+CallMethod
+SetMember
+Push 0.0
+InitArray
+StoreRegister 5
+Pop
+Push 0.0
+InitArray
+StoreRegister 4
+Pop
+Push 0.0
+StoreRegister 2
+Pop
+loc2e3f:Push register2 register1 "_needMaterials"
+GetMember
+Push "length"
+GetMember
+Less2
+Not
+If loc2ee8
+Push "g4"
+GetVariable
+Push "gameInterface"
+GetMember
+Push "dataP"
+GetMember
+Push "skillWindow"
+GetMember
+Push "GrowSkillDetailMaterialP"
+GetMember
+Push register1 "_needMaterials"
+GetMember
+Push register2
+GetMember
+CastOp
+Push "itemSlotP"
+GetMember
+Push 1 register5 "push"
+CallMethod
+Pop
+Push "g4"
+GetVariable
+Push "gameInterface"
+GetMember
+Push "dataP"
+GetMember
+Push "skillWindow"
+GetMember
+Push "GrowSkillDetailMaterialP"
+GetMember
+Push register1 "_needMaterials"
+GetMember
+Push register2
+GetMember
+CastOp
+Push "NeedCount"
+GetMember
+Push 1 register4 "push"
+CallMethod
+Pop
+Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc2e3f
+loc2ee8:Push register3 "itemSlotPs" register5
+SetMember
+Push register3 "needCounts" register4
+SetMember
+Push register3 "confirmCallback" register1 "onMaterialItemSlotListSimplePopupConfirm"
+GetMember
+Push register1 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+SetMember
+Push register3 "g4"
+GetVariable
+Push "simplePopup"
+GetMember
+Push "SimplePopupType"
+GetMember
+Push "MATERIAL_ITEM_SLOT_LIST_SIMPLE_POPUP"
+GetMember
+Push 2 0.0 "g4"
+GetVariable
+Push "manager"
+GetMember
+Push "SimplePopupManager"
+GetMember
+Push "getInstance"
+CallMethod
+Push "showSimplePopup"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "onMaterialItemSlotListSimplePopupConfirm"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push 0.0 register1 "ToGame_SkillWindow_SelectGrowSkillFunctionButton"
+CallMethod
+Pop
+Push "g4"
+GetVariable
+Push "simplePopup"
+GetMember
+Push "SimplePopupType"
+GetMember
+Push "MATERIAL_ITEM_SLOT_LIST_SIMPLE_POPUP"
+GetMember
+Push 1 0.0 "g4"
+GetVariable
+Push "manager"
+GetMember
+Push "SimplePopupManager"
+GetMember
+Push "getInstance"
+CallMethod
+Push "hideSimplePopup"
+CallMethod
+Pop
+}
+SetMember
+Push 1 null "g4"
+GetVariable
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Push "SkillWindowController"
+GetMember
+Push "prototype"
+GetMember
+Push 3 "ASSetPropFlags"
+CallFunction
+loc3009:Pop

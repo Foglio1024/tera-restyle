@@ -1,0 +1,342 @@
+ConstantPool "_global" "g4" "Object" "view" "skillWindow" "GrowSkillPanel_DetailPanel" "SkillWindowController" "getInstance" "registerGrowSkillPanel_DetailPanel" "gfx" "core" "UIComponent" "prototype" "configUI" "_skillSlot" "skillSlot" "_tf_skillName" "tf_skillName" "_tf_enhance" "tf_enhance" "_enhancePanel" "enhancePanel" "_functionBtn" "functionBtn" "_tf_level" "tf_level" "_mc_enhanceHit" "mc_enhanceHit" "_optionSkillPanel" "optionSkillPanel" "_tf_cautionMessage" "tf_cautionMessage" "onFunctionBtnClick" "events" "EventTypes" "CLICK" "addEventListener" "$083021" "lib" "util" "UIString" "getUIString" "manager" "TooltipManager" "addMessageTooltip" "showGrowSkillDetailSlotInfo" "_skillSlotP" "setData" "updateSlot" "text" "Name" "_visible" "htmlText" "<font color=\'#ffffff\'>" "</font> / " "Level" "#6c7d8a" "#ea0000" "<font color=\'" "\'>Lv." "</font>" "removeTooltip" "Id" "ViewID" "SKILL_WINDOW" "addUiTooltip" "showGrowSkillFunctionButton" "" "__set__disabled" "__set__label" "showMaterialItemSlotListSimplePopup" "ASSetPropFlags"
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Not
+Not
+If loc03a3
+Push "_global"
+GetVariable
+Push "g4" 0.0 "Object"
+NewObject
+SetMember
+loc03a3:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "view"
+GetMember
+Not
+Not
+If loc03db
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "view" 0.0 "Object"
+NewObject
+SetMember
+loc03db:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Not
+Not
+If loc041f
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "view"
+GetMember
+Push "skillWindow" 0.0 "Object"
+NewObject
+SetMember
+loc041f:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Push "GrowSkillPanel_DetailPanel"
+GetMember
+Not
+Not
+If loc08e9
+Push "g4"
+GetVariable
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Push "GrowSkillPanel_DetailPanel"
+DefineFunction2 "" 0 3 false false false true true false false true false  {
+Push 0.0 register2 undefined
+CallMethod
+Pop
+Push register1 1 0.0 "g4"
+GetVariable
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Push "SkillWindowController"
+GetMember
+Push "getInstance"
+CallMethod
+Push "registerGrowSkillPanel_DetailPanel"
+CallMethod
+Pop
+}
+StoreRegister 1
+SetMember
+Push "g4"
+GetVariable
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Push "GrowSkillPanel_DetailPanel"
+GetMember
+Push "gfx"
+GetVariable
+Push "core"
+GetMember
+Push "UIComponent"
+GetMember
+Extends
+Push register1 "prototype"
+GetMember
+StoreRegister 2
+Pop
+Push register2 "configUI"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push register1 "_skillSlot" register1 "skillSlot"
+GetMember
+SetMember
+Push register1 "_tf_skillName" register1 "tf_skillName"
+GetMember
+SetMember
+Push register1 "_tf_enhance" register1 "tf_enhance"
+GetMember
+SetMember
+Push register1 "_enhancePanel" register1 "enhancePanel"
+GetMember
+SetMember
+Push register1 "_functionBtn" register1 "functionBtn"
+GetMember
+SetMember
+Push register1 "_tf_level" register1 "tf_level"
+GetMember
+SetMember
+Push register1 "_mc_enhanceHit" register1 "mc_enhanceHit"
+GetMember
+SetMember
+Push register1 "_optionSkillPanel" register1 "optionSkillPanel"
+GetMember
+SetMember
+Push register1 "_tf_cautionMessage" register1 "tf_cautionMessage"
+GetMember
+SetMember
+Push register1 "onFunctionBtnClick"
+GetMember
+Push register1 "gfx"
+GetVariable
+Push "events"
+GetMember
+Push "EventTypes"
+GetMember
+Push "CLICK"
+GetMember
+Push 3 register1 "_functionBtn"
+GetMember
+Push "addEventListener"
+CallMethod
+Pop
+Push "$083021" 1 "lib"
+GetVariable
+Push "util"
+GetMember
+Push "UIString"
+GetMember
+Push "getUIString"
+CallMethod
+Push register1 "_mc_enhanceHit"
+GetMember
+Push 2 0.0 "g4"
+GetVariable
+Push "manager"
+GetMember
+Push "TooltipManager"
+GetMember
+Push "getInstance"
+CallMethod
+Push "addMessageTooltip"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "showGrowSkillDetailSlotInfo"
+DefineFunction2 "" 5 8 false false true false true false false true false 2 "skillSlotP" 4 "currentEnhance" 5 "maxEnhance" 6 "cautionMessage" 7 "userLevel"  {
+Push register1 "_skillSlotP" register2
+SetMember
+Push register2 1 register1 "_skillSlot"
+GetMember
+Push "setData"
+CallMethod
+Pop
+Push 0.0 register1 "_skillSlot"
+GetMember
+Push "updateSlot"
+CallMethod
+Pop
+Push register1 "_tf_skillName"
+GetMember
+Push "text" register2 "Name"
+GetMember
+SetMember
+Push register4 -1
+Equals2
+Not
+If loc06c2
+Push register1 "_tf_enhance"
+GetMember
+Push "_visible" false
+SetMember
+Jump loc06f1
+loc06c2:Push register1 "_tf_enhance"
+GetMember
+Push "_visible" true
+SetMember
+Push register1 "_tf_enhance"
+GetMember
+Push "htmlText" "<font color=\'#ffffff\'>" register4
+Add2
+Push "</font> / "
+Add2
+Push register5
+Add2
+SetMember
+loc06f1:Push register2 "Level"
+GetMember
+Push register7
+Greater
+If loc070e
+Push "#6c7d8a"
+Jump loc0713
+loc070e:Push "#ea0000"
+loc0713:StoreRegister 3
+Pop
+Push register1 "_tf_level"
+GetMember
+Push "htmlText" "<font color=\'" register3
+Add2
+Push "\'>Lv."
+Add2
+Push register2 "Level"
+GetMember
+Add2
+Push "</font>"
+Add2
+SetMember
+Push register1 "_tf_cautionMessage"
+GetMember
+Push "htmlText" register6
+SetMember
+Push register1 "_skillSlot"
+GetMember
+Push 1 0.0 "g4"
+GetVariable
+Push "manager"
+GetMember
+Push "TooltipManager"
+GetMember
+Push "getInstance"
+CallMethod
+Push "removeTooltip"
+CallMethod
+Pop
+Push 0.0 register1 "_skillSlotP"
+GetMember
+Push "Id"
+GetMember
+Push register1 "_skillSlot"
+GetMember
+Push "g4"
+GetVariable
+Push "view"
+GetMember
+Push "ViewID"
+GetMember
+Push "SKILL_WINDOW"
+GetMember
+Push 4 0.0 "g4"
+GetVariable
+Push "manager"
+GetMember
+Push "TooltipManager"
+GetMember
+Push "getInstance"
+CallMethod
+Push "addUiTooltip"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "showGrowSkillFunctionButton"
+DefineFunction2 "" 2 4 false false true false true false false true false 2 "buttonName" 3 "isDisable"  {
+Push register2 ""
+Equals2
+Not
+If loc0836
+Push register1 "_functionBtn"
+GetMember
+Push "_visible" false
+SetMember
+Jump loc0872
+loc0836:Push register3 1 register1 "_functionBtn"
+GetMember
+Push "__set__disabled"
+CallMethod
+Pop
+Push register2 1 register1 "_functionBtn"
+GetMember
+Push "__set__label"
+CallMethod
+Pop
+Push register1 "_functionBtn"
+GetMember
+Push "_visible" true
+SetMember
+}
+loc0872:SetMember
+Push register2 "onFunctionBtnClick"
+DefineFunction "" 0  {
+Push 0.0 0.0 "g4"
+GetVariable
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Push "SkillWindowController"
+GetMember
+Push "getInstance"
+CallMethod
+Push "showMaterialItemSlotListSimplePopup"
+CallMethod
+Pop
+}
+SetMember
+Push 1 null "g4"
+GetVariable
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Push "GrowSkillPanel_DetailPanel"
+GetMember
+Push "prototype"
+GetMember
+Push 3 "ASSetPropFlags"
+CallFunction
+loc08e9:Pop

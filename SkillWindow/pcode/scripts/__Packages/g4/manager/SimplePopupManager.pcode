@@ -1,0 +1,737 @@
+ConstantPool "_global" "g4" "Object" "manager" "SimplePopupManager" "prototype" "gameInterface" "ISimplePopupManager" "getInstance" "_instance" "init" "_container" "_simplePopupList" "Array" "_simplePopupMap" "_modelBackgroundMap" "_keyListener" "onKeyUp" "util" "Delegate" "create" "registerGameInterfaces" "OnGame_SimplePopup_Show" "model" "GameInterface" "registerGameInterface" "OnGame_SimplePopup_Hide" "simplePopup" "SimplePopupType" "parse" "JSON" "showSimplePopup" "hideSimplePopup" "g4.manager.SimplePopupManager.showSimplePopup > simplePopupType : " ", simplePopupP : " "simplePopupP" "Debug" "log" "Id" "" "fileName" "id" "_" "MovieClipUtil" "createModalBackground" "_y" "getNextHighestDepth" "createEmptyMovieClip" "push" "MovieClipLoader" "addListener" "/package/S1UIRES_SimplePopup/" "loadClip" "onLoadInit" "ISimplePopup" "getAreaSize" "_x" "Stage" "width" "x" "lib" "info" "AlignInfo" "scaleRatio" "height" "y" "_xscale" "_yscale" "apply" "UISound" "UI_OPEN" "play" "modal" "freezeGame" "lockUI" "Key" "g4.manager.SimplePopupManager.hideSimplePopup > simplePopupType : " ", id : " "length" "splice" "destroy" "unloadMovie" "removeMovieClip" "UI_CLOSE" "removeListener" "checkShowSimplePopup" "getCode" "keyCode : " "onEnterKeyUp" "onEscKeyUp" "ASSetPropFlags"
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Not
+Not
+If loc0469
+Push "_global"
+GetVariable
+Push "g4" 0.0 "Object"
+NewObject
+SetMember
+loc0469:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "manager"
+GetMember
+Not
+Not
+If loc04a1
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "manager" 0.0 "Object"
+NewObject
+SetMember
+loc04a1:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "manager"
+GetMember
+Push "SimplePopupManager"
+GetMember
+Not
+Not
+If loc0f99
+Push "g4"
+GetVariable
+Push "manager"
+GetMember
+Push "SimplePopupManager"
+DefineFunction "" 0  {
+}
+StoreRegister 1
+SetMember
+Push register1 "prototype"
+GetMember
+StoreRegister 2
+Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "gameInterface"
+GetMember
+Push "ISimplePopupManager"
+GetMember
+Push 1 "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "manager"
+GetMember
+Push "SimplePopupManager"
+GetMember
+ImplementsOp
+Push register1 "getInstance"
+DefineFunction "" 0  {
+Push "g4"
+GetVariable
+Push "manager"
+GetMember
+Push "SimplePopupManager"
+GetMember
+Push "_instance" "g4"
+GetVariable
+Push "manager"
+GetMember
+Push "SimplePopupManager"
+GetMember
+Push "_instance"
+GetMember
+Push null
+Equals2
+If loc0584
+Push "g4"
+GetVariable
+Push "manager"
+GetMember
+Push "SimplePopupManager"
+GetMember
+Push "_instance"
+GetMember
+Jump loc059f
+loc0584:Push 0.0 "g4"
+GetVariable
+Push "manager"
+GetMember
+Push "SimplePopupManager"
+NewMethod
+loc059f:StoreRegister 0
+SetMember
+Push register0
+Return
+}
+SetMember
+Push register2 "init"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "container"  {
+Push register1 "_container" register2
+SetMember
+Push register1 "_simplePopupList" 0.0 "Array"
+NewObject
+SetMember
+Push register1 "_simplePopupMap" 0.0 "Object"
+NewObject
+SetMember
+Push register1 "_modelBackgroundMap" 0.0 "Object"
+NewObject
+SetMember
+Push register1 "_keyListener" 0.0 "Object"
+NewObject
+SetMember
+Push register1 "_keyListener"
+GetMember
+Push "onKeyUp" register1 "onKeyUp"
+GetMember
+Push register1 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+SetMember
+Push 0.0 register1 "registerGameInterfaces"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "registerGameInterfaces"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push register1 "OnGame_SimplePopup_Show"
+GetMember
+Push register1 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+Push "OnGame_SimplePopup_Show" 2 "g4"
+GetVariable
+Push "model"
+GetMember
+Push "GameInterface"
+GetMember
+Push "registerGameInterface"
+CallMethod
+Pop
+Push register1 "OnGame_SimplePopup_Hide"
+GetMember
+Push register1 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+Push "OnGame_SimplePopup_Hide" 2 "g4"
+GetVariable
+Push "model"
+GetMember
+Push "GameInterface"
+GetMember
+Push "registerGameInterface"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "OnGame_SimplePopup_Show"
+DefineFunction2 "" 2 6 false false true false true false false true false 4 "$simplePopupType" 5 "$simplePopupP"  {
+Push register4 1 "g4"
+GetVariable
+Push "simplePopup"
+GetMember
+Push "SimplePopupType"
+GetMember
+Push "parse"
+CallMethod
+StoreRegister 2
+Pop
+Push register5 1 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "JSON"
+GetMember
+Push "parse"
+CallMethod
+StoreRegister 3
+Pop
+Push register3 register2 2 register1 "showSimplePopup"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "OnGame_SimplePopup_Hide"
+DefineFunction2 "" 2 5 false false true false true false false true false 3 "$simplePopupType" 4 "$id"  {
+Push register3 1 "g4"
+GetVariable
+Push "simplePopup"
+GetMember
+Push "SimplePopupType"
+GetMember
+Push "parse"
+CallMethod
+StoreRegister 2
+Pop
+Push register4 register2 2 register1 "hideSimplePopup"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "showSimplePopup"
+DefineFunction2 "" 2 15 false true true false true false false true true 12 "simplePopupType" 0 "simplePopupP"  {
+Push "g4.manager.SimplePopupManager.showSimplePopup > simplePopupType : " register12
+Add2
+Push ", simplePopupP : "
+Add2
+Push "simplePopupP"
+GetVariable
+Add2
+Push 1 "Debug"
+GetVariable
+Push "log"
+CallMethod
+Pop
+Push "simplePopupP"
+GetVariable
+Push "Id"
+GetMember
+Push null
+Equals2
+PushDuplicate
+If loc0877
+Pop
+Push "simplePopupP"
+GetVariable
+Push "Id"
+GetMember
+Push undefined
+Equals2
+loc0877:If loc088d
+Push "simplePopupP"
+GetVariable
+Push "Id"
+GetMember
+Jump loc0892
+loc088d:Push ""
+loc0892:StoreRegister 13
+Pop
+Push register12 "fileName"
+GetMember
+StoreRegister 11
+Pop
+Push register12 "id"
+GetMember
+Push "_"
+Add2
+Push register13
+Add2
+StoreRegister 4
+Pop
+Push register1 "_simplePopupMap"
+GetMember
+Push register4
+GetMember
+Push null
+Equals2
+Not
+If loc0b39
+Push 50 register1 "_container"
+GetMember
+Push 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "MovieClipUtil"
+GetMember
+Push "createModalBackground"
+CallMethod
+StoreRegister 8
+Pop
+Push register8 "_y" register8 "_y"
+GetMember
+Push 60
+Subtract
+SetMember
+Push register1 "_modelBackgroundMap"
+GetMember
+Push register4 register8
+SetMember
+Push 0.0 register1 "_container"
+GetMember
+Push "getNextHighestDepth"
+CallMethod
+Push register4 2 register1 "_container"
+GetMember
+Push "createEmptyMovieClip"
+CallMethod
+StoreRegister 6
+Pop
+Push register6 1 register1 "_simplePopupList"
+GetMember
+Push "push"
+CallMethod
+Pop
+Push register1 "_simplePopupMap"
+GetMember
+Push register4 register6
+SetMember
+Push 0.0 "MovieClipLoader"
+NewObject
+StoreRegister 9
+Pop
+Push 0.0 "Object"
+NewObject
+StoreRegister 10
+Pop
+Push register10 1 register9 "addListener"
+CallMethod
+Pop
+Push "/package/S1UIRES_SimplePopup/"
+StoreRegister 14
+Pop
+Push register6 register14 register11
+Add2
+Push 2 register9 "loadClip"
+CallMethod
+Pop
+Push register10 "onLoadInit"
+DefineFunction2 "" 1 4 false false true false true false true false false 1 "target"  {
+Push "g4"
+GetVariable
+Push "simplePopup"
+GetMember
+Push "ISimplePopup"
+GetMember
+Push register1 "simplePopup"
+GetMember
+CastOp
+StoreRegister 2
+Pop
+Push 0.0 register2 "getAreaSize"
+CallMethod
+StoreRegister 3
+Pop
+Push register1 "_x" "Stage"
+GetVariable
+Push "width"
+GetMember
+Push register3 "x"
+GetMember
+Push "lib"
+GetVariable
+Push "info"
+GetMember
+Push "AlignInfo"
+GetMember
+Push "scaleRatio"
+GetMember
+Multiply
+Subtract
+Push 0.5
+Multiply
+SetMember
+Push register1 "_y" "Stage"
+GetVariable
+Push "height"
+GetMember
+Push register3 "y"
+GetMember
+Push "lib"
+GetVariable
+Push "info"
+GetMember
+Push "AlignInfo"
+GetMember
+Push "scaleRatio"
+GetMember
+Multiply
+Subtract
+Push 0.5
+Multiply
+SetMember
+Push register1 "_xscale" "lib"
+GetVariable
+Push "info"
+GetMember
+Push "AlignInfo"
+GetMember
+Push "scaleRatio"
+GetMember
+Push 100
+Multiply
+SetMember
+Push register1 "_yscale" "lib"
+GetVariable
+Push "info"
+GetMember
+Push "AlignInfo"
+GetMember
+Push "scaleRatio"
+GetMember
+Push 100
+Multiply
+SetMember
+Push register1 "_y" register1 "_y"
+GetMember
+Push 60
+Subtract
+SetMember
+Push "simplePopupP"
+GetVariable
+Push 1
+InitArray
+Push register2 2 register2 "init"
+GetMember
+Push "apply"
+CallMethod
+Pop
+}
+SetMember
+Jump loc0b6c
+loc0b39:Push "simplePopupP"
+GetVariable
+Push 1 "g4"
+GetVariable
+Push "simplePopup"
+GetMember
+Push "ISimplePopup"
+GetMember
+Push register1 "_simplePopupMap"
+GetMember
+Push register4
+GetMember
+CastOp
+Push "init"
+CallMethod
+Pop
+loc0b6c:Push "lib"
+GetVariable
+Push "manager"
+GetMember
+Push "UISound"
+GetMember
+Push "UI_OPEN"
+GetMember
+Push 1 "lib"
+GetVariable
+Push "manager"
+GetMember
+Push "UISound"
+GetMember
+Push "play"
+CallMethod
+Pop
+Push register3 "modal" true
+SetMember
+Push true 1 register2 "freezeGame"
+CallMethod
+Pop
+Push true 1 register2 "lockUI"
+CallMethod
+Pop
+Push register1 "_keyListener"
+GetMember
+Push 1 "Key"
+GetVariable
+Push "addListener"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "hideSimplePopup"
+DefineFunction2 "" 2 11 false true true false true false false true true 10 "simplePopupType" 7 "id"  {
+Push "g4.manager.SimplePopupManager.hideSimplePopup > simplePopupType : " register10
+Add2
+Push ", id : "
+Add2
+Push register7
+Add2
+Push 1 "Debug"
+GetVariable
+Push "log"
+CallMethod
+Pop
+Push register7 null
+Equals2
+PushDuplicate
+If loc0c49
+Pop
+Push register7 undefined
+Equals2
+loc0c49:Not
+If loc0c59
+Push ""
+StoreRegister 7
+Pop
+loc0c59:Push register10 "id"
+GetMember
+Push "_"
+Add2
+Push register7
+Add2
+StoreRegister 5
+Pop
+Push register1 "_simplePopupMap"
+GetMember
+Push register5
+GetMember
+StoreRegister 8
+Pop
+Push register8 null
+Equals2
+Not
+If loc0c97
+Push undefined
+Return
+loc0c97:Push register1 "_simplePopupMap"
+GetMember
+Push register5
+GetMember
+Push "simplePopup"
+GetMember
+StoreRegister 6
+Pop
+Push 0.0
+StoreRegister 4
+Pop
+loc0cc1:Push register4 register1 "_simplePopupList"
+GetMember
+Push "length"
+GetMember
+Less2
+Not
+If loc0d3b
+Push "g4"
+GetVariable
+Push "simplePopup"
+GetMember
+Push "ISimplePopup"
+GetMember
+Push register1 "_simplePopupList"
+GetMember
+Push register4
+GetMember
+Push "simplePopup"
+GetMember
+CastOp
+Push register6
+Equals2
+Not
+If loc0d2b
+Push 1 register4 2 register1 "_simplePopupList"
+GetMember
+Push "splice"
+CallMethod
+Pop
+Jump loc0d3b
+loc0d2b:Push register4
+Increment
+StoreRegister 4
+Pop
+Jump loc0cc1
+loc0d3b:Push 0.0 register6 "destroy"
+CallMethod
+Pop
+Push 0.0 register8 "unloadMovie"
+CallMethod
+Pop
+Push 0.0 register8 "removeMovieClip"
+CallMethod
+Pop
+Push register1 "_simplePopupMap"
+GetMember
+Push register5 null
+SetMember
+Push register1 "_simplePopupMap"
+GetMember
+Push register5
+Delete
+Pop
+Push register1 "_modelBackgroundMap"
+GetMember
+Push register5
+GetMember
+StoreRegister 9
+Pop
+Push 0.0 register9 "removeMovieClip"
+CallMethod
+Pop
+Push register1 "_modelBackgroundMap"
+GetMember
+Push register5 null
+SetMember
+Push register1 "_modelBackgroundMap"
+GetMember
+Push register5
+Delete
+Pop
+Push "lib"
+GetVariable
+Push "manager"
+GetMember
+Push "UISound"
+GetMember
+Push "UI_CLOSE"
+GetMember
+Push 1 "lib"
+GetVariable
+Push "manager"
+GetMember
+Push "UISound"
+GetMember
+Push "play"
+CallMethod
+Pop
+Push register1 "_simplePopupList"
+GetMember
+Push "length"
+GetMember
+Push 1
+Less2
+Not
+If loc0e69
+Push register3 "modal" false
+SetMember
+Push false 1 register2 "freezeGame"
+CallMethod
+Pop
+Push false 1 register2 "lockUI"
+CallMethod
+Pop
+Push register1 "_keyListener"
+GetMember
+Push 1 "Key"
+GetVariable
+Push "removeListener"
+CallMethod
+Pop
+}
+loc0e69:SetMember
+Push register2 "checkShowSimplePopup"
+DefineFunction2 "" 1 4 false false true false true false false true false 3 "$simplePopupType"  {
+Push register1 "_simplePopupMap"
+GetMember
+Push register3 "id"
+GetMember
+GetMember
+Push null
+Equals2
+Not
+StoreRegister 2
+Pop
+Push register2
+Return
+}
+SetMember
+Push register2 "onKeyUp"
+DefineFunction2 "" 0 4 false false true false true false false true false  {
+Push 0.0 "Key"
+GetVariable
+Push "getCode"
+CallMethod
+StoreRegister 2
+Pop
+Push "keyCode : " register2
+Add2
+Trace
+Push "g4"
+GetVariable
+Push "simplePopup"
+GetMember
+Push "ISimplePopup"
+GetMember
+Push register1 "_simplePopupList"
+GetMember
+Push register1 "_simplePopupList"
+GetMember
+Push "length"
+GetMember
+Push 1
+Subtract
+GetMember
+Push "simplePopup"
+GetMember
+CastOp
+StoreRegister 3
+Pop
+Push register2 13
+Equals2
+Not
+If loc0f4c
+Push 0.0 register3 "onEnterKeyUp"
+CallMethod
+Pop
+Jump loc0f6f
+loc0f4c:Push register2 27
+Equals2
+Not
+If loc0f6f
+Push 0.0 register3 "onEscKeyUp"
+CallMethod
+Pop
+}
+loc0f6f:SetMember
+Push 1 null "g4"
+GetVariable
+Push "manager"
+GetMember
+Push "SimplePopupManager"
+GetMember
+Push "prototype"
+GetMember
+Push 3 "ASSetPropFlags"
+CallFunction
+loc0f99:Pop

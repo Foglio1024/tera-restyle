@@ -1,0 +1,1101 @@
+ConstantPool "_global" "g4" "Object" "util" "JSON" "prototype" "stringify" "" "object" "number" "string" "boolean" "Array" "length" "," "[" "]" "toString" "undefined" "function" ":" "{" "}" "null" "isFinite" "\"" "charAt" " " "\\" "\b" "\f" "\n" "\r" "\t" "\\b" "\\f" "\\n" "\\r" "\\t" "charCodeAt" "\\u00" "Math" "floor" "parse" "text" "at" "ch" "_value" "_error" "name" "JSONError" "message" "_next" "_white" "/" "*" "Unterminated comment" "Syntax error" "_string" "b" "f" "n" "r" "t" "u" "parseInt" "String" "fromCharCode" "Bad string" "_array" "push" "Bad array" "_object" "Bad object" "_number" "-" "0" "9" "." "Bad number" "_word" "e" "a" "l" "s" "ASSetPropFlags"
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Not
+Not
+If loc0208
+Push "_global"
+GetVariable
+Push "g4" 0.0 "Object"
+NewObject
+SetMember
+loc0208:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "util"
+GetMember
+Not
+Not
+If loc0240
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "util" 0.0 "Object"
+NewObject
+SetMember
+loc0240:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "util"
+GetMember
+Push "JSON"
+GetMember
+Not
+Not
+If loc1232
+Push "g4"
+GetVariable
+Push "util"
+GetMember
+Push "JSON"
+DefineFunction "" 0  {
+}
+StoreRegister 1
+SetMember
+Push register1 "prototype"
+GetMember
+StoreRegister 2
+Pop
+Push register1 "stringify"
+DefineFunction2 "" 1 7 false false true false true false true false false 5 "arg"  {
+Push undefined
+StoreRegister 3
+Pop
+Push undefined
+StoreRegister 2
+Pop
+Push undefined
+StoreRegister 6
+Pop
+Push ""
+StoreRegister 1
+Pop
+Push undefined
+StoreRegister 4
+Pop
+Push register5
+TypeOf
+StoreRegister 0
+Push "object"
+StrictEquals
+If loc0311
+Push register0 "number"
+StrictEquals
+If loc04ad
+Push register0 "string"
+StrictEquals
+If loc04d0
+Push register0 "boolean"
+StrictEquals
+If loc0693
+Jump loc069a
+loc0311:Push register5
+Not
+If loc04a7
+Push register5 "Array"
+GetVariable
+InstanceOf
+Not
+If loc03bb
+Push 0.0
+StoreRegister 2
+Pop
+loc033c:Push register2 register5 "length"
+GetMember
+Less2
+Not
+If loc03ac
+Push register5 register2
+GetMember
+Push 1 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "JSON"
+GetMember
+Push "stringify"
+CallMethod
+StoreRegister 4
+Pop
+Push register1
+Not
+If loc038f
+Push register1 ","
+Add2
+StoreRegister 1
+Pop
+loc038f:Push register1 register4
+Add2
+StoreRegister 1
+Pop
+Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc033c
+loc03ac:Push "[" register1
+Add2
+Push "]"
+Add2
+Return
+loc03bb:Push register5 "toString"
+GetMember
+TypeOf
+Push "undefined"
+Equals2
+Not
+Not
+If loc04a7
+Push register5
+Enumerate2
+loc03d7:StoreRegister 0
+Push null
+Equals2
+If loc0498
+Push register0
+StoreRegister 2
+Pop
+Push register5 register2
+GetMember
+StoreRegister 4
+Pop
+Push register4
+TypeOf
+Push "undefined"
+Equals2
+Not
+PushDuplicate
+Not
+If loc041e
+Pop
+Push register4
+TypeOf
+Push "function"
+Equals2
+Not
+loc041e:Not
+If loc0493
+Push register4 1 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "JSON"
+GetMember
+Push "stringify"
+CallMethod
+StoreRegister 4
+Pop
+Push register1
+Not
+If loc0460
+Push register1 ","
+Add2
+StoreRegister 1
+Pop
+loc0460:Push register1 register2 1 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "JSON"
+GetMember
+Push "stringify"
+CallMethod
+Push ":"
+Add2
+Push register4
+Add2
+Add2
+StoreRegister 1
+Pop
+loc0493:Jump loc03d7
+loc0498:Push "{" register1
+Add2
+Push "}"
+Add2
+Return
+loc04a7:Push "null"
+Return
+loc04ad:Push register5 1 "isFinite"
+CallFunction
+If loc04c9
+Push "null"
+Jump loc04cf
+loc04c9:Push register5
+ToString
+loc04cf:Return
+loc04d0:Push register5 "length"
+GetMember
+StoreRegister 6
+Pop
+Push "\""
+StoreRegister 1
+Pop
+Push 0.0
+StoreRegister 2
+Pop
+loc04f8:Push register2 register6
+Less2
+Not
+If loc068a
+Push register2 1 register5 "charAt"
+CallMethod
+StoreRegister 3
+Pop
+Push register3 " "
+Less2
+Not
+Not
+If loc0565
+Push register3 "\\"
+Equals2
+PushDuplicate
+If loc0540
+Pop
+Push register3 "\""
+Equals2
+loc0540:Not
+If loc0553
+Push register1 "\\"
+Add2
+StoreRegister 1
+Pop
+loc0553:Push register1 register3
+Add2
+StoreRegister 1
+Pop
+Jump loc0675
+loc0565:Push register3
+StoreRegister 0
+Push "\b"
+StrictEquals
+If loc05b2
+Push register0 "\f"
+StrictEquals
+If loc05c4
+Push register0 "\n"
+StrictEquals
+If loc05d6
+Push register0 "\r"
+StrictEquals
+If loc05e8
+Push register0 "\t"
+StrictEquals
+If loc05fa
+Jump loc060c
+loc05b2:Push register1 "\\b"
+Add2
+StoreRegister 1
+Pop
+Jump loc0675
+loc05c4:Push register1 "\\f"
+Add2
+StoreRegister 1
+Pop
+Jump loc0675
+loc05d6:Push register1 "\\n"
+Add2
+StoreRegister 1
+Pop
+Jump loc0675
+loc05e8:Push register1 "\\r"
+Add2
+StoreRegister 1
+Pop
+Jump loc0675
+loc05fa:Push register1 "\\t"
+Add2
+StoreRegister 1
+Pop
+Jump loc0675
+loc060c:Push 0.0 register3 "charCodeAt"
+CallMethod
+StoreRegister 3
+Pop
+Push register1 "\\u00" 16 1 register3 16
+Divide
+Push 1 "Math"
+GetVariable
+Push "floor"
+CallMethod
+Push "toString"
+CallMethod
+Add2
+Push 16 1 register3 16
+Modulo
+Push "toString"
+CallMethod
+Add2
+Add2
+StoreRegister 1
+Pop
+loc0675:Push register2 1
+Add2
+StoreRegister 2
+Pop
+Jump loc04f8
+loc068a:Push register1 "\""
+Add2
+Return
+loc0693:Push register5
+ToString
+Return
+loc069a:Push "null"
+Return
+}
+SetMember
+Push register1 "parse"
+DefineFunction2 "" 1 13 false false true false true false true false false 0 "text"  {
+Push "text"
+GetVariable
+Push null
+Equals2
+PushDuplicate
+If loc06d7
+Pop
+Push "text"
+GetVariable
+Push ""
+Equals2
+loc06d7:Not
+If loc06e2
+Push null
+Return
+loc06e2:Push "at" 0.0
+DefineLocal
+Push "ch" " "
+DefineLocal
+Push "_value"
+DefineLocal2
+Push "_error"
+DefineFunction2 "" 1 6 false false true false true false true false false 5 "m"  {
+Push "name" "JSONError" "message" register5 "at" "at"
+GetVariable
+Push 1
+Subtract
+Push "text" "text"
+GetVariable
+Push 4
+InitObject
+Throw
+}
+DefineLocal
+Push "_next"
+DefineFunction "" 0  {
+Push "ch" "at"
+GetVariable
+Push 1 "text"
+GetVariable
+Push "charAt"
+CallMethod
+SetVariable
+Push "at" "at"
+GetVariable
+Push 1
+Add2
+SetVariable
+Push "ch"
+GetVariable
+Return
+}
+DefineLocal
+Push "_white"
+DefineFunction "" 0  {
+loc078c:Push "ch"
+GetVariable
+Not
+If loc08f8
+Push "ch"
+GetVariable
+Push " "
+Greater
+Not
+Not
+If loc07c0
+Push 0.0 "_next"
+CallFunction
+Pop
+Jump loc08f3
+loc07c0:Push "ch"
+GetVariable
+Push "/"
+Equals2
+Not
+If loc08ee
+Push 0.0 "_next"
+CallFunction
+StoreRegister 0
+Push "/"
+StrictEquals
+If loc0802
+Push register0 "*"
+StrictEquals
+If loc084b
+Jump loc08db
+loc0802:Push 0.0 "_next"
+CallFunction
+PushDuplicate
+Not
+If loc0826
+Pop
+Push "ch"
+GetVariable
+Push "\n"
+Equals2
+Not
+loc0826:PushDuplicate
+Not
+If loc083b
+Pop
+Push "ch"
+GetVariable
+Push "\r"
+Equals2
+Not
+loc083b:Not
+If loc0846
+Jump loc0802
+loc0846:Jump loc08e9
+loc084b:Push 0.0 "_next"
+CallFunction
+Pop
+loc085b:Push "ch"
+GetVariable
+Not
+If loc08c3
+Push "ch"
+GetVariable
+Push "*"
+Equals2
+Not
+If loc08ae
+Push 0.0 "_next"
+CallFunction
+Push "/"
+Equals2
+Not
+If loc08a9
+Push 0.0 "_next"
+CallFunction
+Pop
+Jump loc08d6
+loc08a9:Jump loc08be
+loc08ae:Push 0.0 "_next"
+CallFunction
+Pop
+loc08be:Jump loc08d1
+loc08c3:Push "Unterminated comment" 1 "_error"
+CallFunction
+Pop
+loc08d1:Jump loc085b
+loc08d6:Jump loc08e9
+loc08db:Push "Syntax error" 1 "_error"
+CallFunction
+Pop
+loc08e9:Jump loc08f3
+loc08ee:Jump loc08f8
+loc08f3:Jump loc078c
+}
+loc08f8:DefineLocal
+Push "_string"
+DefineFunction2 "" 0 6 false false true false true false true false false  {
+Push undefined
+StoreRegister 4
+Pop
+Push ""
+StoreRegister 1
+Pop
+Push undefined
+StoreRegister 3
+Pop
+Push undefined
+StoreRegister 2
+Pop
+Push false
+StoreRegister 5
+Pop
+Push "ch"
+GetVariable
+Push "\""
+Equals2
+Not
+If loc0b5c
+loc094a:Push 0.0 "_next"
+CallFunction
+Not
+If loc0b5c
+Push "ch"
+GetVariable
+Push "\""
+Equals2
+Not
+If loc0987
+Push 0.0 "_next"
+CallFunction
+Pop
+Push register1
+Return
+loc0987:Push "ch"
+GetVariable
+Push "\\"
+Equals2
+Not
+If loc0b49
+Push 0.0 "_next"
+CallFunction
+StoreRegister 0
+Push "b"
+StrictEquals
+If loc09fd
+Push register0 "f"
+StrictEquals
+If loc0a0f
+Push register0 "n"
+StrictEquals
+If loc0a21
+Push register0 "r"
+StrictEquals
+If loc0a33
+Push register0 "t"
+StrictEquals
+If loc0a45
+Push register0 "u"
+StrictEquals
+If loc0a57
+Jump loc0b36
+loc09fd:Push register1 "\b"
+Add2
+StoreRegister 1
+Pop
+Jump loc0b44
+loc0a0f:Push register1 "\f"
+Add2
+StoreRegister 1
+Pop
+Jump loc0b44
+loc0a21:Push register1 "\n"
+Add2
+StoreRegister 1
+Pop
+Jump loc0b44
+loc0a33:Push register1 "\r"
+Add2
+StoreRegister 1
+Pop
+Jump loc0b44
+loc0a45:Push register1 "\t"
+Add2
+StoreRegister 1
+Pop
+Jump loc0b44
+loc0a57:Push 0.0
+StoreRegister 2
+Pop
+Push 0.0
+StoreRegister 4
+Pop
+loc0a79:Push register4 4
+Less2
+Not
+If loc0afc
+Push 16 0.0 "_next"
+CallFunction
+Push 2 "parseInt"
+CallFunction
+StoreRegister 3
+Pop
+Push register3 1 "isFinite"
+CallFunction
+Not
+Not
+If loc0ad1
+Push true
+StoreRegister 5
+Pop
+Jump loc0afc
+loc0ad1:Push register2 16
+Multiply
+Push register3
+Add2
+StoreRegister 2
+Pop
+Push register4 1
+Add2
+StoreRegister 4
+Pop
+Jump loc0a79
+loc0afc:Push register5
+Not
+If loc0b16
+Push false
+StoreRegister 5
+Pop
+Jump loc0b44
+loc0b16:Push register1 register2 1 "String"
+GetVariable
+Push "fromCharCode"
+CallMethod
+Add2
+StoreRegister 1
+Pop
+Jump loc0b44
+loc0b36:Push register1 "ch"
+GetVariable
+Add2
+StoreRegister 1
+Pop
+loc0b44:Jump loc0b57
+loc0b49:Push register1 "ch"
+GetVariable
+Add2
+StoreRegister 1
+Pop
+loc0b57:Jump loc094a
+loc0b5c:Push "Bad string" 1 "_error"
+CallFunction
+Pop
+}
+DefineLocal
+Push "_array"
+DefineFunction2 "" 0 2 false false true false true false true false false  {
+Push 0.0
+InitArray
+StoreRegister 1
+Pop
+Push "ch"
+GetVariable
+Push "["
+Equals2
+Not
+If loc0c85
+Push 0.0 "_next"
+CallFunction
+Pop
+Push 0.0 "_white"
+CallFunction
+Pop
+Push "ch"
+GetVariable
+Push "]"
+Equals2
+Not
+If loc0be7
+Push 0.0 "_next"
+CallFunction
+Pop
+Push register1
+Return
+loc0be7:Push "ch"
+GetVariable
+Not
+If loc0c85
+Push 0.0 "_value"
+CallFunction
+Push 1 register1 "push"
+CallMethod
+Pop
+Push 0.0 "_white"
+CallFunction
+Pop
+Push "ch"
+GetVariable
+Push "]"
+Equals2
+Not
+If loc0c48
+Push 0.0 "_next"
+CallFunction
+Pop
+Push register1
+Return
+loc0c48:Push "ch"
+GetVariable
+Push ","
+Equals2
+Not
+Not
+If loc0c60
+Jump loc0c85
+loc0c60:Push 0.0 "_next"
+CallFunction
+Pop
+Push 0.0 "_white"
+CallFunction
+Pop
+Jump loc0be7
+loc0c85:Push "Bad array" 1 "_error"
+CallFunction
+Pop
+}
+DefineLocal
+Push "_object"
+DefineFunction2 "" 0 3 false false true false true false true false false  {
+Push undefined
+StoreRegister 2
+Pop
+Push 0.0
+InitObject
+StoreRegister 1
+Pop
+Push "ch"
+GetVariable
+Push "{"
+Equals2
+Not
+If loc0dfa
+Push 0.0 "_next"
+CallFunction
+Pop
+Push 0.0 "_white"
+CallFunction
+Pop
+Push "ch"
+GetVariable
+Push "}"
+Equals2
+Not
+If loc0d19
+Push 0.0 "_next"
+CallFunction
+Pop
+Push register1
+Return
+loc0d19:Push "ch"
+GetVariable
+Not
+If loc0dfa
+Push 0.0 "_string"
+CallFunction
+StoreRegister 2
+Pop
+Push 0.0 "_white"
+CallFunction
+Pop
+Push "ch"
+GetVariable
+Push ":"
+Equals2
+Not
+Not
+If loc0d61
+Jump loc0dfa
+loc0d61:Push 0.0 "_next"
+CallFunction
+Pop
+Push register1 register2 0.0 "_value"
+CallFunction
+SetMember
+Push 0.0 "_white"
+CallFunction
+Pop
+Push "ch"
+GetVariable
+Push "}"
+Equals2
+Not
+If loc0dbd
+Push 0.0 "_next"
+CallFunction
+Pop
+Push register1
+Return
+loc0dbd:Push "ch"
+GetVariable
+Push ","
+Equals2
+Not
+Not
+If loc0dd5
+Jump loc0dfa
+loc0dd5:Push 0.0 "_next"
+CallFunction
+Pop
+Push 0.0 "_white"
+CallFunction
+Pop
+Jump loc0d19
+loc0dfa:Push "Bad object" 1 "_error"
+CallFunction
+Pop
+}
+DefineLocal
+Push "_number"
+DefineFunction2 "" 0 3 false false true false true false true false false  {
+Push ""
+StoreRegister 1
+Pop
+Push undefined
+StoreRegister 2
+Pop
+Push "ch"
+GetVariable
+Push "-"
+Equals2
+Not
+If loc0e58
+Push "-"
+StoreRegister 1
+Pop
+Push 0.0 "_next"
+CallFunction
+Pop
+loc0e58:Push "ch"
+GetVariable
+Push "0"
+Less2
+Not
+PushDuplicate
+Not
+If loc0e7a
+Pop
+Push "ch"
+GetVariable
+Push "9"
+Greater
+Not
+loc0e7a:Not
+If loc0ea3
+Push register1 "ch"
+GetVariable
+Add2
+StoreRegister 1
+Pop
+Push 0.0 "_next"
+CallFunction
+Pop
+Jump loc0e58
+loc0ea3:Push "ch"
+GetVariable
+Push "."
+Equals2
+Not
+If loc0f14
+Push register1 "."
+Add2
+StoreRegister 1
+Pop
+loc0ec2:Push 0.0 "_next"
+CallFunction
+PushDuplicate
+Not
+If loc0ee6
+Pop
+Push "ch"
+GetVariable
+Push "0"
+Less2
+Not
+loc0ee6:PushDuplicate
+Not
+If loc0efb
+Pop
+Push "ch"
+GetVariable
+Push "9"
+Greater
+Not
+loc0efb:Not
+If loc0f14
+Push register1 "ch"
+GetVariable
+Add2
+StoreRegister 1
+Pop
+Jump loc0ec2
+loc0f14:Push 1 register1
+Multiply
+StoreRegister 2
+Pop
+Push register2 1 "isFinite"
+CallFunction
+Not
+Not
+If loc0f4b
+Push "Bad number" 1 "_error"
+CallFunction
+Pop
+Jump loc0f51
+loc0f4b:Push register2
+Return
+}
+loc0f51:DefineLocal
+Push "_word"
+DefineFunction "" 0  {
+Push "ch"
+GetVariable
+StoreRegister 0
+Push "t"
+StrictEquals
+If loc0f93
+Push register0 "f"
+StrictEquals
+If loc1003
+Push register0 "n"
+StrictEquals
+If loc1090
+Jump loc10ff
+loc0f93:Push 0.0 "_next"
+CallFunction
+Push "r"
+Equals2
+PushDuplicate
+Not
+If loc0fc5
+Pop
+Push 0.0 "_next"
+CallFunction
+Push "u"
+Equals2
+loc0fc5:PushDuplicate
+Not
+If loc0fe2
+Pop
+Push 0.0 "_next"
+CallFunction
+Push "e"
+Equals2
+loc0fe2:Not
+If loc0ffe
+Push 0.0 "_next"
+CallFunction
+Pop
+Push true
+Return
+loc0ffe:Jump loc10ff
+loc1003:Push 0.0 "_next"
+CallFunction
+Push "a"
+Equals2
+PushDuplicate
+Not
+If loc1035
+Pop
+Push 0.0 "_next"
+CallFunction
+Push "l"
+Equals2
+loc1035:PushDuplicate
+Not
+If loc1052
+Pop
+Push 0.0 "_next"
+CallFunction
+Push "s"
+Equals2
+loc1052:PushDuplicate
+Not
+If loc106f
+Pop
+Push 0.0 "_next"
+CallFunction
+Push "e"
+Equals2
+loc106f:Not
+If loc108b
+Push 0.0 "_next"
+CallFunction
+Pop
+Push false
+Return
+loc108b:Jump loc10ff
+loc1090:Push 0.0 "_next"
+CallFunction
+Push "u"
+Equals2
+PushDuplicate
+Not
+If loc10c2
+Pop
+Push 0.0 "_next"
+CallFunction
+Push "l"
+Equals2
+loc10c2:PushDuplicate
+Not
+If loc10df
+Pop
+Push 0.0 "_next"
+CallFunction
+Push "l"
+Equals2
+loc10df:Not
+If loc10fa
+Push 0.0 "_next"
+CallFunction
+Pop
+Push null
+Return
+loc10fa:Jump loc10ff
+loc10ff:Push "Syntax error" 1 "_error"
+CallFunction
+Pop
+}
+DefineLocal
+Push "_value"
+DefineFunction "" 0  {
+Push 0.0 "_white"
+CallFunction
+Pop
+Push "ch"
+GetVariable
+StoreRegister 0
+Push "{"
+StrictEquals
+If loc116c
+Push register0 "["
+StrictEquals
+If loc117c
+Push register0 "\""
+StrictEquals
+If loc118c
+Push register0 "-"
+StrictEquals
+If loc119c
+Jump loc11ac
+loc116c:Push 0.0 "_object"
+CallFunction
+Return
+loc117c:Push 0.0 "_array"
+CallFunction
+Return
+loc118c:Push 0.0 "_string"
+CallFunction
+Return
+loc119c:Push 0.0 "_number"
+CallFunction
+Return
+loc11ac:Push "ch"
+GetVariable
+Push "0"
+Less2
+Not
+PushDuplicate
+Not
+If loc11ce
+Pop
+Push "ch"
+GetVariable
+Push "9"
+Greater
+Not
+loc11ce:If loc11e7
+Push 0.0 "_word"
+CallFunction
+Jump loc11f6
+loc11e7:Push 0.0 "_number"
+CallFunction
+loc11f6:Return
+}
+SetVariable
+Push 0.0 "_value"
+CallFunction
+Return
+}
+SetMember
+Push 1 null "g4"
+GetVariable
+Push "util"
+GetMember
+Push "JSON"
+GetMember
+Push "prototype"
+GetMember
+Push 3 "ASSetPropFlags"
+CallFunction
+loc1232:Pop

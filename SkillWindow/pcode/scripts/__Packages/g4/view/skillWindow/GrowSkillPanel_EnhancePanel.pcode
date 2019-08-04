@@ -1,0 +1,260 @@
+ConstantPool "_global" "g4" "Object" "view" "skillWindow" "GrowSkillPanel_EnhancePanel" "SkillWindowController" "getInstance" "registerGrowSkillPanel_EnhancePanel" "core" "G4UIComponent" "prototype" "configUI" "_mc_arrow" "mc_arrow" "_mc_prevRenderer" "mc_prevRenderer" "_mc_nextRenderer" "mc_nextRenderer" "_str_max" "$083038" "lib" "util" "UIString" "getUIString" "showGrowSkillDetailEnhance" "_visible" "_x" "mc_bg" "gotoAndStop" "tf_level" "text" "filters" "flash" "DropShadowFilter" "showGrowSkillSlotEffect" "mc_effect" "gotoAndPlay" "manager" "UISound" "play" "ASSetPropFlags"
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Not
+Not
+If loc0217
+Push "_global"
+GetVariable
+Push "g4" 0.0 "Object"
+NewObject
+SetMember
+loc0217:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "view"
+GetMember
+Not
+Not
+If loc024f
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "view" 0.0 "Object"
+NewObject
+SetMember
+loc024f:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Not
+Not
+If loc0293
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "view"
+GetMember
+Push "skillWindow" 0.0 "Object"
+NewObject
+SetMember
+loc0293:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Push "GrowSkillPanel_EnhancePanel"
+GetMember
+Not
+Not
+If loc0643
+Push "g4"
+GetVariable
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Push "GrowSkillPanel_EnhancePanel"
+DefineFunction2 "" 0 3 false false false true true false false true false  {
+Push 0.0 register2 undefined
+CallMethod
+Pop
+Push register1 1 0.0 "g4"
+GetVariable
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Push "SkillWindowController"
+GetMember
+Push "getInstance"
+CallMethod
+Push "registerGrowSkillPanel_EnhancePanel"
+CallMethod
+Pop
+}
+StoreRegister 1
+SetMember
+Push "g4"
+GetVariable
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Push "GrowSkillPanel_EnhancePanel"
+GetMember
+Push "g4"
+GetVariable
+Push "core"
+GetMember
+Push "G4UIComponent"
+GetMember
+Extends
+Push register1 "prototype"
+GetMember
+StoreRegister 2
+Pop
+Push register2 "configUI"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push register1 "_mc_arrow" register1 "mc_arrow"
+GetMember
+SetMember
+Push register1 "_mc_prevRenderer" register1 "mc_prevRenderer"
+GetMember
+SetMember
+Push register1 "_mc_nextRenderer" register1 "mc_nextRenderer"
+GetMember
+SetMember
+Push register1 "_str_max" "$083038" 1 "lib"
+GetVariable
+Push "util"
+GetMember
+Push "UIString"
+GetMember
+Push "getUIString"
+CallMethod
+SetMember
+}
+SetMember
+Push register2 "showGrowSkillDetailEnhance"
+DefineFunction2 "" 2 4 false false true false true false false true false 3 "currentLevel" 2 "nextLevel"  {
+Push register2 -1
+Equals2
+Not
+If loc04cf
+Push register1 "_mc_nextRenderer"
+GetMember
+Push "_visible" false
+SetMember
+Push register1 "_mc_arrow"
+GetMember
+Push "_visible" false
+SetMember
+Push register1 "_mc_prevRenderer"
+GetMember
+Push "_x" 68
+SetMember
+Push 2 1 register1 "_mc_prevRenderer"
+GetMember
+Push "mc_bg"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push register1 "_mc_prevRenderer"
+GetMember
+Push "tf_level"
+GetMember
+Push "text" register1 "_str_max"
+GetMember
+SetMember
+Push register1 "_mc_prevRenderer"
+GetMember
+Push "tf_level"
+GetMember
+Push "filters" false false false 0.0 2 2 2 1 8535296 90 0.0 11 "flash"
+GetVariable
+Push "filters"
+GetMember
+Push "DropShadowFilter"
+NewMethod
+Push 1
+InitArray
+SetMember
+Jump loc05be
+loc04cf:Push register1 "_mc_nextRenderer"
+GetMember
+Push "_visible" true
+SetMember
+Push register1 "_mc_arrow"
+GetMember
+Push "_visible" true
+SetMember
+Push register1 "_mc_prevRenderer"
+GetMember
+Push "_x" 0.0
+SetMember
+Push 1 1 register1 "_mc_prevRenderer"
+GetMember
+Push "mc_bg"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push register1 "_mc_prevRenderer"
+GetMember
+Push "tf_level"
+GetMember
+Push "text" register3
+ToString
+SetMember
+Push register1 "_mc_nextRenderer"
+GetMember
+Push "tf_level"
+GetMember
+Push "text" register2
+ToString
+SetMember
+Push register1 "_mc_prevRenderer"
+GetMember
+Push "tf_level"
+GetMember
+Push "filters" false false false 0.0 2 2 2 1 0.0 90 0.0 11 "flash"
+GetVariable
+Push "filters"
+GetMember
+Push "DropShadowFilter"
+NewMethod
+Push 1
+InitArray
+SetMember
+}
+loc05be:SetMember
+Push register2 "showGrowSkillSlotEffect"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push 2 1 register1 "_mc_prevRenderer"
+GetMember
+Push "mc_effect"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+Push 1213 1 "lib"
+GetVariable
+Push "manager"
+GetMember
+Push "UISound"
+GetMember
+Push "play"
+CallMethod
+Pop
+}
+SetMember
+Push 1 null "g4"
+GetVariable
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Push "GrowSkillPanel_EnhancePanel"
+GetMember
+Push "prototype"
+GetMember
+Push 3 "ASSetPropFlags"
+CallFunction
+loc0643:Pop
