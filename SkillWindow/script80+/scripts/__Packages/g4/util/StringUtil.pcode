@@ -1,0 +1,644 @@
+ConstantPool "_global" "g4" "Object" "util" "StringUtil" "prototype" "toHTMLColorFormat" "#" "toString" "isNull" "length" "trim" "" "charAt" "isWhitespace" "slice" " " "\t" "\r" "\n" "\f" "replace" "split" "join" "addZeroNumber" "0" "formatNumber" "isNaN" "Math" "abs" "floor" "-" "," "pow" "." "indexOf" "round" "0000000000000" "substr" "-0" "getOrdinalNumber" "st" "nd" "rd" "th" "reduce" "charCodeAt" "..." "substring" "getTimeString" "ceil" ":" "ASSetPropFlags"
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Not
+Not
+If loc0187
+Push "_global"
+GetVariable
+Push "g4" 0.0 "Object"
+NewObject
+SetMember
+loc0187:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "util"
+GetMember
+Not
+Not
+If loc01bf
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "util" 0.0 "Object"
+NewObject
+SetMember
+loc01bf:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "util"
+GetMember
+Push "StringUtil"
+GetMember
+Not
+Not
+If loc0c69
+Push "g4"
+GetVariable
+Push "util"
+GetMember
+Push "StringUtil"
+DefineFunction "" 0  {
+}
+StoreRegister 1
+SetMember
+Push register1 "prototype"
+GetMember
+StoreRegister 2
+Pop
+Push register1 "toHTMLColorFormat"
+DefineFunction2 "" 1 2 false false true false true false true false false 1 "color"  {
+Push "#" 16 1 register1 "toString"
+CallMethod
+Add2
+Return
+}
+SetMember
+Push register1 "isNull"
+DefineFunction2 "" 1 2 false false true false true false true false false 1 "text"  {
+Push register1 null
+Equals2
+PushDuplicate
+If loc0275
+Pop
+Push register1 "length"
+GetMember
+Push 0.0
+Equals2
+loc0275:Return
+}
+SetMember
+Push register1 "trim"
+DefineFunction2 "" 1 4 false false true false true false true false false 3 "str"  {
+Push register3 null
+Equals2
+Not
+If loc02a1
+Push ""
+Return
+loc02a1:Push 0.0
+StoreRegister 1
+Pop
+loc02b2:Push register1 1 register3 "charAt"
+CallMethod
+Push 1 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "StringUtil"
+GetMember
+Push "isWhitespace"
+CallMethod
+Not
+If loc02f4
+Push register1
+Increment
+StoreRegister 1
+Pop
+Jump loc02b2
+loc02f4:Push register3 "length"
+GetMember
+Push 1
+Subtract
+StoreRegister 2
+Pop
+loc030a:Push register2 1 register3 "charAt"
+CallMethod
+Push 1 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "StringUtil"
+GetMember
+Push "isWhitespace"
+CallMethod
+Not
+If loc034c
+Push register2
+Decrement
+StoreRegister 2
+Pop
+Jump loc030a
+loc034c:Push register2 register1
+Less2
+Not
+Not
+If loc0376
+Push register2 1
+Add2
+Push register1 2 register3 "slice"
+CallMethod
+Return
+loc0376:Push ""
+Return
+}
+SetMember
+Push register1 "isWhitespace"
+DefineFunction2 "" 1 2 false false true false true false true false false 1 "character"  {
+Push register1
+StoreRegister 0
+Push " "
+StrictEquals
+If loc03e7
+Push register0 "\t"
+StrictEquals
+If loc03e7
+Push register0 "\r"
+StrictEquals
+If loc03e7
+Push register0 "\n"
+StrictEquals
+If loc03e7
+Push register0 "\f"
+StrictEquals
+If loc03e7
+Jump loc03ed
+loc03e7:Push true
+Return
+loc03ed:Push false
+Return
+}
+SetMember
+Push register1 "replace"
+DefineFunction2 "" 3 4 false false true false true false true false false 1 "source" 3 "oldText" 2 "newText"  {
+Push register2 1 register3 1 register1 "split"
+CallMethod
+Push "join"
+CallMethod
+Return
+}
+SetMember
+Push register1 "addZeroNumber"
+DefineFunction2 "" 1 3 false false true false true false true false false 1 "value"  {
+Push register1
+ToNumber
+Push 10
+Less2
+If loc0476
+Push register1
+ToString
+Jump loc047e
+loc0476:Push "0" register1
+Add2
+loc047e:StoreRegister 2
+Pop
+Push register2
+Return
+}
+SetMember
+Push register1 "formatNumber"
+DefineFunction2 "" 4 10 false false true false true false true false false 7 "myNum" 6 "precision" 8 "keepSigFig" 9 "round"  {
+Push register7 1 "isNaN"
+CallFunction
+Not
+If loc04da
+Push "0"
+Return
+loc04da:Push register8 undefined
+Equals2
+Not
+If loc04f1
+Push false
+StoreRegister 8
+Pop
+loc04f1:Push register6 undefined
+Equals2
+Not
+If loc050f
+Push 0.0
+StoreRegister 6
+Pop
+loc050f:Push register6 1 "Math"
+GetVariable
+Push "abs"
+CallMethod
+StoreRegister 6
+Pop
+Push 0.0 register7 1 "Math"
+GetVariable
+Push "abs"
+CallMethod
+Push "toString"
+CallMethod
+ToNumber
+StoreRegister 4
+Pop
+Push register4 1 "Math"
+GetVariable
+Push "floor"
+CallMethod
+StoreRegister 4
+Pop
+Push register7 0.0
+Less2
+If loc0585
+Push ""
+Jump loc058a
+loc0585:Push "-"
+loc058a:StoreRegister 1
+Pop
+Push 0.0 register4 "toString"
+CallMethod
+Push "length"
+GetMember
+StoreRegister 3
+Pop
+Push 0.0
+StoreRegister 2
+Pop
+loc05bc:Push register2 register3
+Less2
+Not
+If loc0649
+Push register3 register2
+Subtract
+Push 3
+Modulo
+Push 0.0
+Equals2
+PushDuplicate
+Not
+If loc0600
+Pop
+Push register2 0.0
+Equals2
+Not
+loc0600:Not
+If loc0613
+Push register1 ","
+Add2
+StoreRegister 1
+Pop
+loc0613:Push register1 register2 1 0.0 register4 "toString"
+CallMethod
+Push "charAt"
+CallMethod
+Add2
+StoreRegister 1
+Pop
+Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc05bc
+loc0649:Push register6 0.0
+Equals2
+Not
+If loc0664
+Push register1
+Return
+loc0664:Push register7 1 "Math"
+GetVariable
+Push "abs"
+CallMethod
+Push register6 10 2 "Math"
+GetVariable
+Push "pow"
+CallMethod
+Multiply
+StoreRegister 5
+Pop
+Push "." 1 0.0 register5 "toString"
+CallMethod
+Push "indexOf"
+CallMethod
+Push -1
+Equals2
+Not
+Not
+If loc0703
+Push register9
+Not
+If loc06eb
+Push register5 1 "Math"
+GetVariable
+Push "round"
+CallMethod
+StoreRegister 5
+Pop
+Jump loc0703
+loc06eb:Push register5 1 "Math"
+GetVariable
+Push "floor"
+CallMethod
+StoreRegister 5
+Pop
+loc0703:Push register1 "." 0.0 register6
+Subtract
+Push 1 "0000000000000" 0.0 register5 "toString"
+CallMethod
+Add2
+Push "substr"
+CallMethod
+Add2
+Add2
+StoreRegister 1
+Pop
+Push -1 1 register1 "substr"
+CallMethod
+Push "."
+Equals2
+Not
+If loc077f
+Push -1 0.0 2 register1 "slice"
+CallMethod
+StoreRegister 1
+Pop
+Jump loc080e
+loc077f:Push register8 false
+Equals2
+Not
+If loc080e
+loc078d:Push -1 1 register1 "substr"
+CallMethod
+Push "0"
+Equals2
+Not
+If loc07d0
+Push -1 0.0 2 register1 "slice"
+CallMethod
+StoreRegister 1
+Pop
+Jump loc078d
+loc07d0:Push -1 1 register1 "substr"
+CallMethod
+Push "."
+Equals2
+Not
+If loc080e
+Push -1 0.0 2 register1 "slice"
+CallMethod
+StoreRegister 1
+Pop
+loc080e:Push register1 "-0"
+Equals2
+Not
+If loc0826
+Push "0"
+StoreRegister 1
+Pop
+loc0826:Push register1
+Return
+}
+SetMember
+Push register1 "getOrdinalNumber"
+DefineFunction2 "" 1 4 false false true false true false true false false 1 "num"  {
+Push register1 1 "Math"
+GetVariable
+Push "floor"
+CallMethod
+StoreRegister 1
+Pop
+Push register1 100
+Modulo
+StoreRegister 3
+Pop
+Push register1 10
+Modulo
+StoreRegister 2
+Pop
+Push register1 0.0
+Greater
+Not
+Not
+If loc08a4
+Push 0.0 register1 "toString"
+CallMethod
+Return
+loc08a4:Push register2 1
+Equals2
+PushDuplicate
+Not
+If loc08c3
+Pop
+Push register3 11
+Equals2
+Not
+loc08c3:Not
+If loc08e1
+Push 0.0 register1 "toString"
+CallMethod
+Push "st"
+Add2
+Return
+loc08e1:Push register2 2
+Equals2
+PushDuplicate
+Not
+If loc0900
+Pop
+Push register3 12
+Equals2
+Not
+loc0900:Not
+If loc091e
+Push 0.0 register1 "toString"
+CallMethod
+Push "nd"
+Add2
+Return
+loc091e:Push register2 3
+Equals2
+PushDuplicate
+Not
+If loc093d
+Pop
+Push register3 13
+Equals2
+Not
+loc093d:Not
+If loc095b
+Push 0.0 register1 "toString"
+CallMethod
+Push "rd"
+Add2
+Return
+loc095b:Push 0.0 register1 "toString"
+CallMethod
+Push "th"
+Add2
+Return
+}
+SetMember
+Push register1 "reduce"
+DefineFunction2 "" 3 8 false false true false true false true false false 5 "strLen" 2 "str" 6 "isCheckedByte"  {
+Push register6 undefined
+Equals2
+Not
+If loc09b9
+Push true
+StoreRegister 6
+Pop
+loc09b9:Push ""
+StoreRegister 3
+Pop
+Push register6
+Not
+If loc0a96
+Push 0.0
+StoreRegister 4
+Pop
+Push ""
+StoreRegister 7
+Pop
+Push 0.0
+StoreRegister 1
+Pop
+loc09fa:Push register1 register2 "length"
+GetMember
+Less2
+Not
+If loc0a91
+Push register4 register1 1 register2 "charCodeAt"
+CallMethod
+Push 128
+Greater
+If loc0a3b
+Push 0.5
+Jump loc0a43
+loc0a3b:Push 1
+loc0a43:Add2
+StoreRegister 4
+Pop
+Push register4 register5
+Less2
+Not
+Not
+If loc0a6a
+Push register3 "..."
+Add2
+StoreRegister 3
+Pop
+Jump loc0a91
+loc0a6a:Push register3 register1 1 register2 "charAt"
+CallMethod
+Add2
+StoreRegister 3
+Pop
+Push register1
+Increment
+StoreRegister 1
+Pop
+Jump loc09fa
+loc0a91:Jump loc0adc
+loc0a96:Push register2 "length"
+GetMember
+Push register5
+Greater
+Not
+If loc0ad2
+Push register5 0.0 2 register2 "substring"
+CallMethod
+Push "..."
+Add2
+StoreRegister 3
+Pop
+Jump loc0adc
+loc0ad2:Push register2
+StoreRegister 3
+Pop
+loc0adc:Push register3
+Return
+}
+SetMember
+Push register1 "getTimeString"
+DefineFunction2 "" 2 7 false false true false true false true false false 2 "originSeconds" 6 "isMillisecond"  {
+Push -1
+StoreRegister 1
+Pop
+Push register6 true
+Equals2
+Not
+If loc0b79
+Push register2 1000
+Modulo
+Push 10
+Divide
+Push 1 "Math"
+GetVariable
+Push "round"
+CallMethod
+StoreRegister 1
+Pop
+Push register2 1000
+Divide
+Push 1 "Math"
+GetVariable
+Push "ceil"
+CallMethod
+StoreRegister 2
+Pop
+loc0b79:Push register2 60
+Modulo
+StoreRegister 4
+Pop
+Push register2 60
+Divide
+Push 1 "Math"
+GetVariable
+Push "floor"
+CallMethod
+Push 60
+Modulo
+StoreRegister 5
+Pop
+Push register5 1 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "StringUtil"
+GetMember
+Push "addZeroNumber"
+CallMethod
+Push ":"
+Add2
+Push register4 1 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "StringUtil"
+GetMember
+Push "addZeroNumber"
+CallMethod
+Add2
+StoreRegister 3
+Pop
+Push register1 -1
+Equals2
+Not
+Not
+If loc0c39
+Push register3 ":" register1 1 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "StringUtil"
+GetMember
+Push "addZeroNumber"
+CallMethod
+Add2
+Add2
+StoreRegister 3
+Pop
+loc0c39:Push register3
+Return
+}
+SetMember
+Push 1 null "g4"
+GetVariable
+Push "util"
+GetMember
+Push "StringUtil"
+GetMember
+Push "prototype"
+GetMember
+Push 3 "ASSetPropFlags"
+CallFunction
+loc0c69:Pop

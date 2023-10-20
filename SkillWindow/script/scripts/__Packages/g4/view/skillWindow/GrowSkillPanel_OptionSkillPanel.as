@@ -37,7 +37,6 @@ class g4.view.skillWindow.GrowSkillPanel_OptionSkillPanel extends gfx.core.UICom
          _loc5_.clear();
          var _loc6_ = 0.78125;
          lib.display.DrawBitmapData.draw(_loc5_,flash.display.BitmapData.loadBitmap(_loc3_.IconPath),0,0,0,0,50,50,_loc6_,_loc6_);
-         g4.manager.TooltipManager.getInstance().removeTooltip(_loc2_);
          g4.manager.TooltipManager.getInstance().addUiTooltip(g4.view.ViewID.SKILL_WINDOW,_loc2_,_loc3_.Id,0);
          _loc4_ = _loc4_ + 1;
       }

@@ -210,7 +210,6 @@ class g4.view.skillWindow.DefaultViewPanel extends g4.core.SimpleView
       pathSkillCheck = Number(pathSkillCheck);
       this._pathSkillMc.guideFd._visible = false;
       this._pathSkillMc.timeMc._visible = true;
-      g4.manager.TooltipManager.getInstance().removeTooltip(this._pathSkillMc.pathSlot.slotHit);
       g4.manager.TooltipManager.getInstance().addUiTooltip(g4.view.ViewID.SKILL_WINDOW,this._pathSkillMc.pathSlot.slotHit,pathSkillId,0);
       this._pathSkillMc.nameFd.htmlText = pathSkillName;
       this._pathSkillMc.checkBox.checked = pathSkillCheck;

@@ -62,7 +62,7 @@ Push "SkillWindowController"
 GetMember
 Not
 Not
-If loc3009
+If loc303f
 Push "g4"
 GetVariable
 Push "view"
@@ -1175,12 +1175,12 @@ Pop
 }
 SetMember
 Push register2 "OnGame_SkillWindow_SetGrowSkillDetailSlotInfo"
-DefineFunction2 "" 6 9 false false true false true false false true false 3 "skillSlot" 7 "currentEnhance" 4 "maxEnhance" 5 "cautionMessage" 8 "desc" 6 "userLevel"  {
+DefineFunction2 "" 5 8 false false true false true false false true false 3 "skillSlot" 6 "currentEnhance" 4 "maxEnhance" 5 "cautionMessage" 7 "desc"  {
 Push register3 ""
 Equals2
 Not
 Not
-If loc24ca
+If loc24b9
 Push register3 1 "g4"
 GetVariable
 Push "util"
@@ -1199,9 +1199,7 @@ Push "SkillSlotP"
 NewMethod
 StoreRegister 2
 Pop
-Push register6
-ToNumber
-Push register5 register4 register7 register2 5 register1 "_growSkillPanel_DetailPanel"
+Push register5 register4 register6 register2 4 register1 "_growSkillPanel_DetailPanel"
 GetMember
 Push "showGrowSkillDetailSlotInfo"
 CallMethod
@@ -1215,18 +1213,18 @@ GetMember
 Push "hideBlankPanel"
 CallMethod
 Pop
-Jump loc24f0
-loc24ca:Push register1 "_growSkillPanel_DetailPanel"
+Jump loc24df
+loc24b9:Push register1 "_growSkillPanel_DetailPanel"
 GetMember
 Push "_visible" false
 SetMember
-Push register8 1 register1 "_growSkillPanel"
+Push register7 1 register1 "_growSkillPanel"
 GetMember
 Push "showBlankPanel"
 CallMethod
 Pop
 }
-loc24f0:SetMember
+loc24df:SetMember
 Push register2 "OnGame_SkillWindow_SetGrowSkillDetailEnhance"
 DefineFunction2 "" 5 10 false false true false true false false true false 5 "currentLevel" 8 "nextLevel" 6 "$abilityNames" 9 "$currentValues" 7 "$nextValues"  {
 Push register6 1 "g4"
@@ -1284,6 +1282,10 @@ GetMember
 Push "moveArrow"
 CallMethod
 Pop
+Push register1 "_growSkillPanel_MaterialPanel"
+GetMember
+Push "_visible" true
+SetMember
 }
 SetMember
 Push register2 "OnGame_SkillWindow_SetGrowSkillDetailOptionSkills"
@@ -1303,11 +1305,11 @@ Pop
 Push 0.0
 StoreRegister 2
 Pop
-loc2692:Push register2 register3 "length"
+loc2691:Push register2 register3 "length"
 GetMember
 Less2
 Not
-If loc26e3
+If loc26e2
 Push register3 register2 register3 register2
 GetMember
 Push 1 "g4"
@@ -1325,8 +1327,8 @@ Push register2
 Increment
 StoreRegister 2
 Pop
-Jump loc2692
-loc26e3:Push register3 1 register1 "_growSkillPanel_OptionSkillPanel"
+Jump loc2691
+loc26e2:Push register3 1 register1 "_growSkillPanel_OptionSkillPanel"
 GetMember
 Push "showGrowSkillDetailOptionSkills"
 CallMethod
@@ -1343,7 +1345,21 @@ SetMember
 SetMember
 Push register2 "OnGame_SkillWindow_SetGrowSkillDetailOptionSkillSelected"
 DefineFunction2 "" 1 3 false false true false true false false true false 2 "selectedIndex"  {
-Push register2 1 register1 "_growSkillPanel_OptionSkillPanel"
+Push register2 -1
+Equals2
+Not
+Not
+If loc2761
+Push register1 "_growSkillPanel_MaterialPanel"
+GetMember
+Push "_visible" true
+SetMember
+Jump loc2771
+loc2761:Push register1 "_growSkillPanel_MaterialPanel"
+GetMember
+Push "_visible" false
+SetMember
+loc2771:Push register2 1 register1 "_growSkillPanel_OptionSkillPanel"
 GetMember
 Push "showGrowSkillDetailOptionSkillSelected"
 CallMethod
@@ -1368,7 +1384,7 @@ Push register2 "OnGame_SkillWindow_SetGrowSkillDetailMaterialGroup"
 DefineFunction2 "" 3 7 false false true false true false false true false 5 "needMaterials" 4 "needGold" 6 "hasGold"  {
 Push register5 ""
 Equals2
-If loc280d
+If loc2843
 Push register5 1 "g4"
 GetVariable
 Push "util"
@@ -1377,9 +1393,9 @@ Push "JSON"
 GetMember
 Push "parse"
 CallMethod
-Jump loc2811
-loc280d:Push null
-loc2811:StoreRegister 3
+Jump loc2847
+loc2843:Push null
+loc2847:StoreRegister 3
 Pop
 Push register1 "_needMaterials" register3
 SetMember
@@ -1388,11 +1404,11 @@ SetMember
 Push 0.0
 StoreRegister 2
 Pop
-loc283b:Push register2 register3 "length"
+loc2871:Push register2 register3 "length"
 GetMember
 Less2
 Not
-If loc28c8
+If loc28fe
 Push register3 register2 register3 register2
 GetMember
 Push 1 "g4"
@@ -1427,8 +1443,8 @@ Push register2
 Increment
 StoreRegister 2
 Pop
-Jump loc283b
-loc28c8:Push register6
+Jump loc2871
+loc28fe:Push register6
 ToNumber
 Push register4
 ToNumber
@@ -1474,7 +1490,7 @@ Push register2 "OnGame_SkillWindow_SetGrowSkillOptionSlots"
 DefineFunction2 "" 3 7 false false true false true false false true false 5 "$index" 4 "$growSkillOptionSlots" 6 "$selectedIndex"  {
 Push register4 ""
 Equals2
-If loc2a31
+If loc2a67
 Push register4 1 "g4"
 GetVariable
 Push "util"
@@ -1483,18 +1499,18 @@ Push "JSON"
 GetMember
 Push "parse"
 CallMethod
-Jump loc2a35
-loc2a31:Push null
-loc2a35:StoreRegister 3
+Jump loc2a6b
+loc2a67:Push null
+loc2a6b:StoreRegister 3
 Pop
 Push 0.0
 StoreRegister 2
 Pop
-loc2a4b:Push register2 register3 "length"
+loc2a81:Push register2 register3 "length"
 GetMember
 Less2
 Not
-If loc2a9c
+If loc2ad2
 Push register3 register2 register3 register2
 GetMember
 Push 1 "g4"
@@ -1512,8 +1528,8 @@ Push register2
 Increment
 StoreRegister 2
 Pop
-Jump loc2a4b
-loc2a9c:Push register6 register3 register5 3 register1 "_growSkillPanel"
+Jump loc2a81
+loc2ad2:Push register6 register3 register5 3 register1 "_growSkillPanel"
 GetMember
 Push "showGrowSkillOptionSlots"
 CallMethod
@@ -1620,7 +1636,7 @@ GetMember
 Push true
 Equals2
 Not
-If loc2ce0
+If loc2d16
 Push "$083029" 1 "lib"
 GetVariable
 Push "util"
@@ -1641,8 +1657,8 @@ Push "getUIString"
 CallMethod
 StoreRegister 6
 Pop
-Jump loc2d28
-loc2ce0:Push "$083028" 1 "lib"
+Jump loc2d5e
+loc2d16:Push "$083028" 1 "lib"
 GetVariable
 Push "util"
 GetMember
@@ -1662,7 +1678,7 @@ Push "getUIString"
 CallMethod
 StoreRegister 6
 Pop
-loc2d28:Push 0.0 0.0 0.0 0.0 register1 "_needGold"
+loc2d5e:Push 0.0 0.0 0.0 0.0 register1 "_needGold"
 GetMember
 Push 5 "lib"
 GetVariable
@@ -1721,13 +1737,13 @@ Pop
 Push 0.0
 StoreRegister 2
 Pop
-loc2e3f:Push register2 register1 "_needMaterials"
+loc2e75:Push register2 register1 "_needMaterials"
 GetMember
 Push "length"
 GetMember
 Less2
 Not
-If loc2ee8
+If loc2f1e
 Push "g4"
 GetVariable
 Push "gameInterface"
@@ -1772,8 +1788,8 @@ Push register2
 Increment
 StoreRegister 2
 Pop
-Jump loc2e3f
-loc2ee8:Push register3 "itemSlotPs" register5
+Jump loc2e75
+loc2f1e:Push register3 "itemSlotPs" register5
 SetMember
 Push register3 "needCounts" register4
 SetMember
@@ -1847,4 +1863,4 @@ Push "prototype"
 GetMember
 Push 3 "ASSetPropFlags"
 CallFunction
-loc3009:Pop
+loc303f:Pop

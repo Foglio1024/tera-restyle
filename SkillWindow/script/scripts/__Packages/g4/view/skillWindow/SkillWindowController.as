@@ -246,12 +246,12 @@ class g4.view.skillWindow.SkillWindowController implements g4.gameInterface.ISki
    {
       this._growSkillPanel.showGrowSkillSlotSelected(selectedIndex);
    }
-   function OnGame_SkillWindow_SetGrowSkillDetailSlotInfo(skillSlot, currentEnhance, maxEnhance, cautionMessage, desc, userLevel)
+   function OnGame_SkillWindow_SetGrowSkillDetailSlotInfo(skillSlot, currentEnhance, maxEnhance, cautionMessage, desc)
    {
       if(skillSlot != "")
       {
          var _loc2_ = new g4.gameInterface.dataP.SkillSlotP(g4.util.JSON.parse(skillSlot));
-         this._growSkillPanel_DetailPanel.showGrowSkillDetailSlotInfo(_loc2_,currentEnhance,maxEnhance,cautionMessage,Number(userLevel));
+         this._growSkillPanel_DetailPanel.showGrowSkillDetailSlotInfo(_loc2_,currentEnhance,maxEnhance,cautionMessage);
          this._growSkillPanel_DetailPanel._visible = true;
          this._growSkillPanel.hideBlankPanel();
       }
@@ -272,6 +272,7 @@ class g4.view.skillWindow.SkillWindowController implements g4.gameInterface.ISki
       this._growSkillPanel_OptionSkillPanel._visible = false;
       this._growSkillPanel_EnhancePanel._visible = true;
       this._growSkillPanel_MaterialPanel.moveArrow(1);
+      this._growSkillPanel_MaterialPanel._visible = true;
    }
    function OnGame_SkillWindow_SetGrowSkillDetailOptionSkills($growSkillOptionSlots)
    {
@@ -289,6 +290,14 @@ class g4.view.skillWindow.SkillWindowController implements g4.gameInterface.ISki
    }
    function OnGame_SkillWindow_SetGrowSkillDetailOptionSkillSelected(selectedIndex)
    {
+      if(selectedIndex != -1)
+      {
+         this._growSkillPanel_MaterialPanel._visible = true;
+      }
+      else
+      {
+         this._growSkillPanel_MaterialPanel._visible = false;
+      }
       this._growSkillPanel_OptionSkillPanel.showGrowSkillDetailOptionSkillSelected(selectedIndex);
       this._growSkillPanel_MaterialPanel.moveArrow(selectedIndex);
    }

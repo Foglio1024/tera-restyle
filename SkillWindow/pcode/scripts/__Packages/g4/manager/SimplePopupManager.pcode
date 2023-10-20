@@ -1,17 +1,17 @@
-ConstantPool "_global" "g4" "Object" "manager" "SimplePopupManager" "prototype" "gameInterface" "ISimplePopupManager" "getInstance" "_instance" "init" "_container" "_simplePopupList" "Array" "_simplePopupMap" "_modelBackgroundMap" "_keyListener" "onKeyUp" "util" "Delegate" "create" "registerGameInterfaces" "OnGame_SimplePopup_Show" "model" "GameInterface" "registerGameInterface" "OnGame_SimplePopup_Hide" "simplePopup" "SimplePopupType" "parse" "JSON" "showSimplePopup" "hideSimplePopup" "g4.manager.SimplePopupManager.showSimplePopup > simplePopupType : " ", simplePopupP : " "simplePopupP" "Debug" "log" "Id" "" "fileName" "id" "_" "MovieClipUtil" "createModalBackground" "_y" "getNextHighestDepth" "createEmptyMovieClip" "push" "MovieClipLoader" "addListener" "/package/S1UIRES_SimplePopup/" "loadClip" "onLoadInit" "ISimplePopup" "getAreaSize" "_x" "Stage" "width" "x" "lib" "info" "AlignInfo" "scaleRatio" "height" "y" "_xscale" "_yscale" "apply" "UISound" "UI_OPEN" "play" "modal" "freezeGame" "lockUI" "Key" "g4.manager.SimplePopupManager.hideSimplePopup > simplePopupType : " ", id : " "length" "splice" "destroy" "unloadMovie" "removeMovieClip" "UI_CLOSE" "removeListener" "checkShowSimplePopup" "getCode" "keyCode : " "onEnterKeyUp" "onEscKeyUp" "ASSetPropFlags"
+ConstantPool "_global" "g4" "Object" "manager" "SimplePopupManager" "prototype" "getInstance" "_instance" "init" "_container" "_simplePopupList" "Array" "_simplePopupMap" "_modelBackgroundMap" "declaration" "simplePopup" "model" "MaterialItemSlotListSimplePopupModel" "showSimplePopup" "fileName" "id" "util" "MovieClipUtil" "createModalBackground" "getNextHighestDepth" "createEmptyMovieClip" "push" "MovieClipLoader" "addListener" "UIUtil" "isGFxPlayer" "/package/S1UIRES_SimplePopup/" "package/S1UIRES_SimplePopup/" "loadClip" "onLoadInit" "ISimplePopup" "getAreaSize" "_x" "Stage" "width" "x" "lib" "info" "AlignInfo" "scaleRatio" "_y" "height" "y" "_xscale" "_yscale" "$simplePopupModel" "apply" "UISound" "UI_OPEN" "play" "modal" "freezeGame" "lockUI" "hideSimplePopup" "length" "splice" "destroy" "unloadMovie" "removeMovieClip" "UI_CLOSE" "checkShowSimplePopup" "ASSetPropFlags"
 Push "_global"
 GetVariable
 Push "g4"
 GetMember
 Not
 Not
-If loc0469
+If loc0314
 Push "_global"
 GetVariable
 Push "g4" 0.0 "Object"
 NewObject
 SetMember
-loc0469:Pop
+loc0314:Pop
 Push "_global"
 GetVariable
 Push "g4"
@@ -20,7 +20,7 @@ Push "manager"
 GetMember
 Not
 Not
-If loc04a1
+If loc034c
 Push "_global"
 GetVariable
 Push "g4"
@@ -28,7 +28,7 @@ GetMember
 Push "manager" 0.0 "Object"
 NewObject
 SetMember
-loc04a1:Pop
+loc034c:Pop
 Push "_global"
 GetVariable
 Push "g4"
@@ -39,7 +39,7 @@ Push "SimplePopupManager"
 GetMember
 Not
 Not
-If loc0f99
+If loc0a97
 Push "g4"
 GetVariable
 Push "manager"
@@ -53,23 +53,6 @@ Push register1 "prototype"
 GetMember
 StoreRegister 2
 Pop
-Push "_global"
-GetVariable
-Push "g4"
-GetMember
-Push "gameInterface"
-GetMember
-Push "ISimplePopupManager"
-GetMember
-Push 1 "_global"
-GetVariable
-Push "g4"
-GetMember
-Push "manager"
-GetMember
-Push "SimplePopupManager"
-GetMember
-ImplementsOp
 Push register1 "getInstance"
 DefineFunction "" 0  {
 Push "g4"
@@ -88,7 +71,7 @@ Push "_instance"
 GetMember
 Push null
 Equals2
-If loc0584
+If loc03f9
 Push "g4"
 GetVariable
 Push "manager"
@@ -97,14 +80,14 @@ Push "SimplePopupManager"
 GetMember
 Push "_instance"
 GetMember
-Jump loc059f
-loc0584:Push 0.0 "g4"
+Jump loc0414
+loc03f9:Push 0.0 "g4"
 GetVariable
 Push "manager"
 GetMember
 Push "SimplePopupManager"
 NewMethod
-loc059f:StoreRegister 0
+loc0414:StoreRegister 0
 SetMember
 Push register0
 Return
@@ -123,161 +106,29 @@ SetMember
 Push register1 "_modelBackgroundMap" 0.0 "Object"
 NewObject
 SetMember
-Push register1 "_keyListener" 0.0 "Object"
-NewObject
-SetMember
-Push register1 "_keyListener"
-GetMember
-Push "onKeyUp" register1 "onKeyUp"
-GetMember
-Push register1 2 "g4"
-GetVariable
-Push "util"
-GetMember
-Push "Delegate"
-GetMember
-Push "create"
-CallMethod
-SetMember
-Push 0.0 register1 "registerGameInterfaces"
-CallMethod
-Pop
 }
 SetMember
-Push register2 "registerGameInterfaces"
-DefineFunction2 "" 0 2 false false true false true false false true false  {
-Push register1 "OnGame_SimplePopup_Show"
-GetMember
-Push register1 2 "g4"
-GetVariable
-Push "util"
-GetMember
-Push "Delegate"
-GetMember
-Push "create"
-CallMethod
-Push "OnGame_SimplePopup_Show" 2 "g4"
-GetVariable
-Push "model"
-GetMember
-Push "GameInterface"
-GetMember
-Push "registerGameInterface"
-CallMethod
-Pop
-Push register1 "OnGame_SimplePopup_Hide"
-GetMember
-Push register1 2 "g4"
-GetVariable
-Push "util"
-GetMember
-Push "Delegate"
-GetMember
-Push "create"
-CallMethod
-Push "OnGame_SimplePopup_Hide" 2 "g4"
-GetVariable
-Push "model"
-GetMember
-Push "GameInterface"
-GetMember
-Push "registerGameInterface"
-CallMethod
-Pop
-}
-SetMember
-Push register2 "OnGame_SimplePopup_Show"
-DefineFunction2 "" 2 6 false false true false true false false true false 4 "$simplePopupType" 5 "$simplePopupP"  {
-Push register4 1 "g4"
+Push register2 "declaration"
+DefineFunction "" 0  {
+Push "g4"
 GetVariable
 Push "simplePopup"
 GetMember
-Push "SimplePopupType"
+Push "model"
 GetMember
-Push "parse"
-CallMethod
-StoreRegister 2
-Pop
-Push register5 1 "g4"
-GetVariable
-Push "util"
+Push "MaterialItemSlotListSimplePopupModel"
 GetMember
-Push "JSON"
-GetMember
-Push "parse"
-CallMethod
-StoreRegister 3
-Pop
-Push register3 register2 2 register1 "showSimplePopup"
-CallMethod
-Pop
-}
-SetMember
-Push register2 "OnGame_SimplePopup_Hide"
-DefineFunction2 "" 2 5 false false true false true false false true false 3 "$simplePopupType" 4 "$id"  {
-Push register3 1 "g4"
-GetVariable
-Push "simplePopup"
-GetMember
-Push "SimplePopupType"
-GetMember
-Push "parse"
-CallMethod
-StoreRegister 2
-Pop
-Push register4 register2 2 register1 "hideSimplePopup"
-CallMethod
 Pop
 }
 SetMember
 Push register2 "showSimplePopup"
-DefineFunction2 "" 2 15 false true true false true false false true true 12 "simplePopupType" 0 "simplePopupP"  {
-Push "g4.manager.SimplePopupManager.showSimplePopup > simplePopupType : " register12
-Add2
-Push ", simplePopupP : "
-Add2
-Push "simplePopupP"
-GetVariable
-Add2
-Push 1 "Debug"
-GetVariable
-Push "log"
-CallMethod
+DefineFunction2 "" 2 14 false true true false true false false true true 13 "$simplePopupType" 0 "$simplePopupModel"  {
+Push register13 "fileName"
+GetMember
+StoreRegister 10
 Pop
-Push "simplePopupP"
-GetVariable
-Push "Id"
+Push register13 "id"
 GetMember
-Push null
-Equals2
-PushDuplicate
-If loc0877
-Pop
-Push "simplePopupP"
-GetVariable
-Push "Id"
-GetMember
-Push undefined
-Equals2
-loc0877:If loc088d
-Push "simplePopupP"
-GetVariable
-Push "Id"
-GetMember
-Jump loc0892
-loc088d:Push ""
-loc0892:StoreRegister 13
-Pop
-Push register12 "fileName"
-GetMember
-StoreRegister 11
-Pop
-Push register12 "id"
-GetMember
-Push "_"
-Add2
-Push register13
-Add2
 StoreRegister 4
 Pop
 Push register1 "_simplePopupMap"
@@ -287,7 +138,7 @@ GetMember
 Push null
 Equals2
 Not
-If loc0b39
+If loc0784
 Push 50 register1 "_container"
 GetMember
 Push 2 "g4"
@@ -298,16 +149,11 @@ Push "MovieClipUtil"
 GetMember
 Push "createModalBackground"
 CallMethod
-StoreRegister 8
+StoreRegister 11
 Pop
-Push register8 "_y" register8 "_y"
-GetMember
-Push 60
-Subtract
-SetMember
 Push register1 "_modelBackgroundMap"
 GetMember
-Push register4 register8
+Push register4 register11
 SetMember
 Push 0.0 register1 "_container"
 GetMember
@@ -317,37 +163,50 @@ Push register4 2 register1 "_container"
 GetMember
 Push "createEmptyMovieClip"
 CallMethod
-StoreRegister 6
+StoreRegister 5
 Pop
-Push register6 1 register1 "_simplePopupList"
+Push register5 1 register1 "_simplePopupList"
 GetMember
 Push "push"
 CallMethod
 Pop
 Push register1 "_simplePopupMap"
 GetMember
-Push register4 register6
+Push register4 register5
 SetMember
 Push 0.0 "MovieClipLoader"
 NewObject
-StoreRegister 9
+StoreRegister 8
 Pop
 Push 0.0 "Object"
 NewObject
-StoreRegister 10
+StoreRegister 9
 Pop
-Push register10 1 register9 "addListener"
+Push register9 1 register8 "addListener"
 CallMethod
 Pop
+Push 0.0 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "UIUtil"
+GetMember
+Push "isGFxPlayer"
+CallMethod
+Push true
+Equals2
+If loc061b
 Push "/package/S1UIRES_SimplePopup/"
-StoreRegister 14
+Jump loc0620
+loc061b:Push "package/S1UIRES_SimplePopup/"
+loc0620:StoreRegister 12
 Pop
-Push register6 register14 register11
+Push register5 register12 register10
 Add2
-Push 2 register9 "loadClip"
+Push 2 register8 "loadClip"
 CallMethod
 Pop
-Push register10 "onLoadInit"
+Push register9 "onLoadInit"
 DefineFunction2 "" 1 4 false false true false true false true false false 1 "target"  {
 Push "g4"
 GetVariable
@@ -424,12 +283,7 @@ GetMember
 Push 100
 Multiply
 SetMember
-Push register1 "_y" register1 "_y"
-GetMember
-Push 60
-Subtract
-SetMember
-Push "simplePopupP"
+Push "$simplePopupModel"
 GetVariable
 Push 1
 InitArray
@@ -440,8 +294,8 @@ CallMethod
 Pop
 }
 SetMember
-Jump loc0b6c
-loc0b39:Push "simplePopupP"
+Jump loc07b7
+loc0784:Push "$simplePopupModel"
 GetVariable
 Push 1 "g4"
 GetVariable
@@ -457,7 +311,7 @@ CastOp
 Push "init"
 CallMethod
 Pop
-loc0b6c:Push "lib"
+loc07b7:Push "lib"
 GetVariable
 Push "manager"
 GetMember
@@ -482,61 +336,27 @@ Pop
 Push true 1 register2 "lockUI"
 CallMethod
 Pop
-Push register1 "_keyListener"
-GetMember
-Push 1 "Key"
-GetVariable
-Push "addListener"
-CallMethod
-Pop
 }
 SetMember
 Push register2 "hideSimplePopup"
-DefineFunction2 "" 2 11 false true true false true false false true true 10 "simplePopupType" 7 "id"  {
-Push "g4.manager.SimplePopupManager.hideSimplePopup > simplePopupType : " register10
-Add2
-Push ", id : "
-Add2
-Push register7
-Add2
-Push 1 "Debug"
-GetVariable
-Push "log"
-CallMethod
-Pop
-Push register7 null
-Equals2
-PushDuplicate
-If loc0c49
-Pop
-Push register7 undefined
-Equals2
-loc0c49:Not
-If loc0c59
-Push ""
-StoreRegister 7
-Pop
-loc0c59:Push register10 "id"
+DefineFunction2 "" 1 10 false true true false true false false true true 9 "$simplePopupType"  {
+Push register9 "id"
 GetMember
-Push "_"
-Add2
-Push register7
-Add2
 StoreRegister 5
 Pop
 Push register1 "_simplePopupMap"
 GetMember
 Push register5
 GetMember
-StoreRegister 8
+StoreRegister 7
 Pop
-Push register8 null
+Push register7 null
 Equals2
 Not
-If loc0c97
+If loc086e
 Push undefined
 Return
-loc0c97:Push register1 "_simplePopupMap"
+loc086e:Push register1 "_simplePopupMap"
 GetMember
 Push register5
 GetMember
@@ -547,13 +367,13 @@ Pop
 Push 0.0
 StoreRegister 4
 Pop
-loc0cc1:Push register4 register1 "_simplePopupList"
+loc0898:Push register4 register1 "_simplePopupList"
 GetMember
 Push "length"
 GetMember
 Less2
 Not
-If loc0d3b
+If loc0912
 Push "g4"
 GetVariable
 Push "simplePopup"
@@ -570,25 +390,25 @@ CastOp
 Push register6
 Equals2
 Not
-If loc0d2b
+If loc0902
 Push 1 register4 2 register1 "_simplePopupList"
 GetMember
 Push "splice"
 CallMethod
 Pop
-Jump loc0d3b
-loc0d2b:Push register4
+Jump loc0912
+loc0902:Push register4
 Increment
 StoreRegister 4
 Pop
-Jump loc0cc1
-loc0d3b:Push 0.0 register6 "destroy"
+Jump loc0898
+loc0912:Push 0.0 register6 "destroy"
 CallMethod
 Pop
-Push 0.0 register8 "unloadMovie"
+Push 0.0 register7 "unloadMovie"
 CallMethod
 Pop
-Push 0.0 register8 "removeMovieClip"
+Push 0.0 register7 "removeMovieClip"
 CallMethod
 Pop
 Push register1 "_simplePopupMap"
@@ -604,9 +424,9 @@ Push register1 "_modelBackgroundMap"
 GetMember
 Push register5
 GetMember
-StoreRegister 9
+StoreRegister 8
 Pop
-Push 0.0 register9 "removeMovieClip"
+Push 0.0 register8 "removeMovieClip"
 CallMethod
 Pop
 Push register1 "_modelBackgroundMap"
@@ -642,7 +462,7 @@ GetMember
 Push 1
 Less2
 Not
-If loc0e69
+If loc0a26
 Push register3 "modal" false
 SetMember
 Push false 1 register2 "freezeGame"
@@ -651,15 +471,8 @@ Pop
 Push false 1 register2 "lockUI"
 CallMethod
 Pop
-Push register1 "_keyListener"
-GetMember
-Push 1 "Key"
-GetVariable
-Push "removeListener"
-CallMethod
-Pop
 }
-loc0e69:SetMember
+loc0a26:SetMember
 Push register2 "checkShowSimplePopup"
 DefineFunction2 "" 1 4 false false true false true false false true false 3 "$simplePopupType"  {
 Push register1 "_simplePopupMap"
@@ -676,54 +489,6 @@ Push register2
 Return
 }
 SetMember
-Push register2 "onKeyUp"
-DefineFunction2 "" 0 4 false false true false true false false true false  {
-Push 0.0 "Key"
-GetVariable
-Push "getCode"
-CallMethod
-StoreRegister 2
-Pop
-Push "keyCode : " register2
-Add2
-Trace
-Push "g4"
-GetVariable
-Push "simplePopup"
-GetMember
-Push "ISimplePopup"
-GetMember
-Push register1 "_simplePopupList"
-GetMember
-Push register1 "_simplePopupList"
-GetMember
-Push "length"
-GetMember
-Push 1
-Subtract
-GetMember
-Push "simplePopup"
-GetMember
-CastOp
-StoreRegister 3
-Pop
-Push register2 13
-Equals2
-Not
-If loc0f4c
-Push 0.0 register3 "onEnterKeyUp"
-CallMethod
-Pop
-Jump loc0f6f
-loc0f4c:Push register2 27
-Equals2
-Not
-If loc0f6f
-Push 0.0 register3 "onEscKeyUp"
-CallMethod
-Pop
-}
-loc0f6f:SetMember
 Push 1 null "g4"
 GetVariable
 Push "manager"
@@ -734,4 +499,4 @@ Push "prototype"
 GetMember
 Push 3 "ASSetPropFlags"
 CallFunction
-loc0f99:Pop
+loc0a97:Pop

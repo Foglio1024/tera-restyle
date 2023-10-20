@@ -1,0 +1,528 @@
+ConstantPool "_global" "g4" "Object" "view" "skillWindow" "GrowSkillPanel_GrowSkillSlot" "gfx" "core" "UIComponent" "prototype" "__get__growSkillSlotP" "_growSkillSlotP" "__get__selected" "_slotBtn" "__set__selected" "__get__mouseEnabled" "enabled" "__set__mouseEnabled" "_skillSlot" "configUI" "_tf_name" "tf_name" "_tf_enhanceLevel" "tf_enhanceLevel" "_tf_level" "tf_level" "_mc_arrow" "mc_arrow" "_optionBtn" "optionBtn" "slotBtn" "_mc_effect" "mc_effect" "_mc_modal" "mc_modal" "skillSlot" "onSkillSlotClick" "events" "EventTypes" "CLICK" "addEventListener" "onOptionBtnClick" "_visible" "setData" "skillSlotP" "Id" "ViewID" "SKILL_WINDOW" "manager" "TooltipManager" "getInstance" "addUiTooltip" "showGrowSkillSlot" "htmlText" "Lv.<font color=\'#6c7d8a\'>" "Level" "</font>" "IsShowArrow" "iconContainer" "clear" "EnhanceSkillLevel" "__set__disabled" "SelectedOptionSkillIconPath" "" "mc_lock" "flash" "display" "BitmapData" "loadBitmap" "lib" "DrawBitmapData" "draw" "text" " / " "EnhanceSkillMaxLevel" "updateSlot" "Name" "Disable" "showGrowSkillSlotEffect" "gotoAndPlay" "SkillWindowController" "ToGame_SkillWindow_SelectGrowSkill" "UISound" "play" "ToGame_SKillWIndow_SelectGrowSkillOptionButton" "growSkillSlotP" "addProperty" "mouseEnabled" "selected" "ASSetPropFlags"
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Not
+Not
+If loc046c
+Push "_global"
+GetVariable
+Push "g4" 0.0 "Object"
+NewObject
+SetMember
+loc046c:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "view"
+GetMember
+Not
+Not
+If loc04a4
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "view" 0.0 "Object"
+NewObject
+SetMember
+loc04a4:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Not
+Not
+If loc04e8
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "view"
+GetMember
+Push "skillWindow" 0.0 "Object"
+NewObject
+SetMember
+loc04e8:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Push "GrowSkillPanel_GrowSkillSlot"
+GetMember
+Not
+Not
+If loc0c94
+Push "g4"
+GetVariable
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Push "GrowSkillPanel_GrowSkillSlot"
+DefineFunction2 "" 0 2 false false false true true false true false false  {
+Push 0.0 register1 undefined
+CallMethod
+Pop
+}
+StoreRegister 1
+SetMember
+Push "g4"
+GetVariable
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Push "GrowSkillPanel_GrowSkillSlot"
+GetMember
+Push "gfx"
+GetVariable
+Push "core"
+GetMember
+Push "UIComponent"
+GetMember
+Extends
+Push register1 "prototype"
+GetMember
+StoreRegister 2
+Pop
+Push register2 "__get__growSkillSlotP"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push register1 "_growSkillSlotP"
+GetMember
+Return
+}
+SetMember
+Push register2 "__get__selected"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push 0.0 register1 "_slotBtn"
+GetMember
+Push "__get__selected"
+CallMethod
+Return
+}
+SetMember
+Push register2 "__set__selected"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "value"  {
+Push register2 1 register1 "_slotBtn"
+GetMember
+Push "__set__selected"
+CallMethod
+Pop
+Push 0.0 register1 "__get__selected"
+CallMethod
+Return
+}
+SetMember
+Push register2 "__get__mouseEnabled"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push register1 "enabled"
+GetMember
+Return
+}
+SetMember
+Push register2 "__set__mouseEnabled"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "value"  {
+Push register2 1 register1 "_slotBtn"
+GetMember
+Push "__set__mouseEnabled"
+CallMethod
+Pop
+Push register2 1 register1 "_skillSlot"
+GetMember
+Push "__set__mouseEnabled"
+CallMethod
+Pop
+Push 0.0 register1 "__get__mouseEnabled"
+CallMethod
+Return
+}
+SetMember
+Push register2 "configUI"
+DefineFunction2 "" 0 3 false false false true true false false true false  {
+Push 0.0 register2 "configUI"
+CallMethod
+Pop
+Push register1 "_tf_name" register1 "tf_name"
+GetMember
+SetMember
+Push register1 "_tf_enhanceLevel" register1 "tf_enhanceLevel"
+GetMember
+SetMember
+Push register1 "_tf_level" register1 "tf_level"
+GetMember
+SetMember
+Push register1 "_mc_arrow" register1 "mc_arrow"
+GetMember
+SetMember
+Push register1 "_optionBtn" register1 "optionBtn"
+GetMember
+SetMember
+Push register1 "_slotBtn" register1 "slotBtn"
+GetMember
+SetMember
+Push register1 "_mc_effect" register1 "mc_effect"
+GetMember
+SetMember
+Push register1 "_mc_modal" register1 "mc_modal"
+GetMember
+SetMember
+Push register1 "_skillSlot" register1 "_slotBtn"
+GetMember
+Push "skillSlot"
+GetMember
+SetMember
+Push register1 "onSkillSlotClick"
+GetMember
+Push register1 "gfx"
+GetVariable
+Push "events"
+GetMember
+Push "EventTypes"
+GetMember
+Push "CLICK"
+GetMember
+Push 3 register1 "_slotBtn"
+GetMember
+Push "addEventListener"
+CallMethod
+Pop
+Push register1 "onOptionBtnClick"
+GetMember
+Push register1 "gfx"
+GetVariable
+Push "events"
+GetMember
+Push "EventTypes"
+GetMember
+Push "CLICK"
+GetMember
+Push 3 register1 "_optionBtn"
+GetMember
+Push "addEventListener"
+CallMethod
+Pop
+Push true 1 register1 "__set__mouseEnabled"
+CallMethod
+Pop
+Push register1 "_mc_arrow"
+GetMember
+Push "_visible" false
+SetMember
+}
+SetMember
+Push register2 "setData"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "growSkillSlotP"  {
+Push register1 "_growSkillSlotP" register2
+SetMember
+Push register1 "_growSkillSlotP"
+GetMember
+Push "skillSlotP"
+GetMember
+Push 1 register1 "_skillSlot"
+GetMember
+Push "setData"
+CallMethod
+Pop
+Push 0.0 register1 "_growSkillSlotP"
+GetMember
+Push "skillSlotP"
+GetMember
+Push "Id"
+GetMember
+Push register1 "_slotBtn"
+GetMember
+Push "g4"
+GetVariable
+Push "view"
+GetMember
+Push "ViewID"
+GetMember
+Push "SKILL_WINDOW"
+GetMember
+Push 4 0.0 "g4"
+GetVariable
+Push "manager"
+GetMember
+Push "TooltipManager"
+GetMember
+Push "getInstance"
+CallMethod
+Push "addUiTooltip"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "showGrowSkillSlot"
+DefineFunction2 "" 0 4 false false true false true false false true false  {
+Push register1 "_tf_level"
+GetMember
+Push "htmlText" "Lv.<font color=\'#6c7d8a\'>" register1 "_growSkillSlotP"
+GetMember
+Push "skillSlotP"
+GetMember
+Push "Level"
+GetMember
+Add2
+Push "</font>"
+Add2
+SetMember
+Push register1 "_mc_arrow"
+GetMember
+Push "_visible" register1 "_growSkillSlotP"
+GetMember
+Push "IsShowArrow"
+GetMember
+SetMember
+Push register1 "_optionBtn"
+GetMember
+Push "iconContainer"
+GetMember
+StoreRegister 2
+Pop
+Push 0.0 register2 "clear"
+CallMethod
+Pop
+Push register1 "_growSkillSlotP"
+GetMember
+Push "EnhanceSkillLevel"
+GetMember
+Push -1
+Equals2
+Not
+If loc0a0f
+Push false 1 register1 "_optionBtn"
+GetMember
+Push "__set__disabled"
+CallMethod
+Pop
+Push register1 "_optionBtn"
+GetMember
+Push "tf_level"
+GetMember
+Push "_visible" false
+SetMember
+Push 0.34375
+StoreRegister 3
+Pop
+Push register1 "_growSkillSlotP"
+GetMember
+Push "SelectedOptionSkillIconPath"
+GetMember
+Push ""
+Equals2
+Not
+If loc0967
+Push register1 "_optionBtn"
+GetMember
+Push "mc_lock"
+GetMember
+Push "_visible" true
+SetMember
+Jump loc09fa
+loc0967:Push register1 "_optionBtn"
+GetMember
+Push "mc_lock"
+GetMember
+Push "_visible" false
+SetMember
+Push register3 register3 22 22 0.0 0.0 0.0 0.0 register1 "_growSkillSlotP"
+GetMember
+Push "SelectedOptionSkillIconPath"
+GetMember
+Push 1 "flash"
+GetVariable
+Push "display"
+GetMember
+Push "BitmapData"
+GetMember
+Push "loadBitmap"
+CallMethod
+Push register2 10 "lib"
+GetVariable
+Push "display"
+GetMember
+Push "DrawBitmapData"
+GetMember
+Push "draw"
+CallMethod
+Pop
+loc09fa:Push register1 "_tf_enhanceLevel"
+GetMember
+Push "_visible" false
+SetMember
+Jump loc0aae
+loc0a0f:Push true 1 register1 "_optionBtn"
+GetMember
+Push "__set__disabled"
+CallMethod
+Pop
+Push register1 "_optionBtn"
+GetMember
+Push "mc_lock"
+GetMember
+Push "_visible" false
+SetMember
+Push register1 "_optionBtn"
+GetMember
+Push "tf_level"
+GetMember
+Push "_visible" true
+SetMember
+Push register1 "_optionBtn"
+GetMember
+Push "tf_level"
+GetMember
+Push "text" register1 "_growSkillSlotP"
+GetMember
+Push "EnhanceSkillLevel"
+GetMember
+SetMember
+Push register1 "_tf_enhanceLevel"
+GetMember
+Push "_visible" true
+SetMember
+Push register1 "_tf_enhanceLevel"
+GetMember
+Push "text" register1 "_growSkillSlotP"
+GetMember
+Push "EnhanceSkillLevel"
+GetMember
+Push " / "
+Add2
+Push register1 "_growSkillSlotP"
+GetMember
+Push "EnhanceSkillMaxLevel"
+GetMember
+Add2
+SetMember
+loc0aae:Push 0.0 register1 "_skillSlot"
+GetMember
+Push "updateSlot"
+CallMethod
+Pop
+Push register1 "_tf_name"
+GetMember
+Push "text" register1 "_growSkillSlotP"
+GetMember
+Push "skillSlotP"
+GetMember
+Push "Name"
+GetMember
+SetMember
+Push register1 "_mc_modal"
+GetMember
+Push "_visible" register1 "_growSkillSlotP"
+GetMember
+Push "skillSlotP"
+GetMember
+Push "Disable"
+GetMember
+SetMember
+}
+SetMember
+Push register2 "showGrowSkillSlotEffect"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push 2 1 register1 "_mc_effect"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "onSkillSlotClick"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push register1 "_growSkillSlotP"
+GetMember
+Push "skillSlotP"
+GetMember
+Push "Id"
+GetMember
+Push 1 0.0 "g4"
+GetVariable
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Push "SkillWindowController"
+GetMember
+Push "getInstance"
+CallMethod
+Push "ToGame_SkillWindow_SelectGrowSkill"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "onOptionBtnClick"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push 4001 1 "lib"
+GetVariable
+Push "manager"
+GetMember
+Push "UISound"
+GetMember
+Push "play"
+CallMethod
+Pop
+Push register1 "_growSkillSlotP"
+GetMember
+Push "skillSlotP"
+GetMember
+Push "Id"
+GetMember
+Push 1 0.0 "g4"
+GetVariable
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Push "SkillWindowController"
+GetMember
+Push "getInstance"
+CallMethod
+Push "ToGame_SKillWIndow_SelectGrowSkillOptionButton"
+CallMethod
+Pop
+}
+SetMember
+DefineFunction "" 0  {
+}
+Push register2 "__get__growSkillSlotP"
+GetMember
+Push "growSkillSlotP" 3 register2 "addProperty"
+CallMethod
+Push register2 "__set__mouseEnabled"
+GetMember
+Push register2 "__get__mouseEnabled"
+GetMember
+Push "mouseEnabled" 3 register2 "addProperty"
+CallMethod
+Push register2 "__set__selected"
+GetMember
+Push register2 "__get__selected"
+GetMember
+Push "selected" 3 register2 "addProperty"
+CallMethod
+Push 1 null "g4"
+GetVariable
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Push "GrowSkillPanel_GrowSkillSlot"
+GetMember
+Push "prototype"
+GetMember
+Push 3 "ASSetPropFlags"
+CallFunction
+loc0c94:Pop

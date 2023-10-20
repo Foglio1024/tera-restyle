@@ -1,17 +1,17 @@
-ConstantPool "_global" "g4" "Object" "core" "G4UIComponent" "_eventDispatcher" "EventDispatcher" "MovieClip" "prototype" "addEventListener" "removeEventListener" "dispatchEvent" "removeAllEventListener" "onLoad" "onLoadImpl" "initialized" "__width" "isNaN" "_width" "__height" "_height" "configUI" "validateNow" "_focused" "Selection" "getFocus" "gfx" "managers" "FocusHandler" "__get__instance" "onSetFocus" "createInstance" "attachMovie" "invalidate" "__get__disabled" "_disabled" "__set__disabled" "enabled" "useHandCursor" "__get__visible" "_visible" "__set__visible" "hide" "show" "__get__width" "__set__width" "setSize" "__get__height" "__set__height" "sizeIsInvalid" "__get__focused" "__set__focused" "setFocus" "changeFocus" "focusOut" "focusIn" "__get__displayFocus" "_displayFocus" "__set__displayFocus" "handleInput" "length" "slice" "invalidationIntervalID" "setInterval" "clearInterval" "draw" "toString" "[Scaleform UIComponent " "_name" "]" "dispatchEventToGame" "_isConfigUIComplete" "initSize" "_xscale" "_yscale" "onMouseWheel" "_ymouse" "_xmouse" "hitTest" "Mouse" "getTopMostEntity" "scrollWheel" "_parent" "disabled" "addProperty" "displayFocus" "focused" "height" "visible" "width" "ASSetPropFlags"
+ConstantPool "_global" "g4" "Object" "core" "G4UIComponent" "_eventDispatcher" "EventDispatcher" "MovieClip" "prototype" "addEventListener" "removeEventListener" "removeEventListenerByScope" "dispatchEvent" "removeAllEventListener" "onLoad" "onLoadImpl" "initialized" "__width" "isNaN" "_width" "__height" "_height" "configUI" "validateNow" "_focused" "Selection" "getFocus" "gfx" "managers" "FocusHandler" "__get__instance" "onSetFocus" "createInstance" "attachMovie" "invalidate" "__get__disabled" "_disabled" "__set__disabled" "enabled" "useHandCursor" "__get__visible" "_visible" "__set__visible" "hide" "show" "__get__width" "__set__width" "setSize" "__get__height" "__set__height" "sizeIsInvalid" "__get__focused" "__set__focused" "setFocus" "changeFocus" "focusOut" "focusIn" "__get__displayFocus" "_displayFocus" "__set__displayFocus" "handleInput" "length" "slice" "invalidationIntervalID" "setInterval" "clearInterval" "draw" "toString" "[Scaleform UIComponent " "_name" "]" "dispatchEventToGame" "__handleEvent" "flash" "external" "ExternalInterface" "call" "_isConfigUIComplete" "initSize" "_xscale" "_yscale" "onMouseWheel" "_ymouse" "_xmouse" "hitTest" "Mouse" "getTopMostEntity" "scrollWheel" "_parent" "disabled" "addProperty" "displayFocus" "focused" "height" "visible" "width" "ASSetPropFlags"
 Push "_global"
 GetVariable
 Push "g4"
 GetMember
 Not
 Not
-If loc0432
+If loc0481
 Push "_global"
 GetVariable
 Push "g4" 0.0 "Object"
 NewObject
 SetMember
-loc0432:Pop
+loc0481:Pop
 Push "_global"
 GetVariable
 Push "g4"
@@ -20,7 +20,7 @@ Push "core"
 GetMember
 Not
 Not
-If loc046a
+If loc04b9
 Push "_global"
 GetVariable
 Push "g4"
@@ -28,7 +28,7 @@ GetMember
 Push "core" 0.0 "Object"
 NewObject
 SetMember
-loc046a:Pop
+loc04b9:Pop
 Push "_global"
 GetVariable
 Push "g4"
@@ -39,7 +39,7 @@ Push "G4UIComponent"
 GetMember
 Not
 Not
-If loc1084
+If loc114a
 Push "g4"
 GetVariable
 Push "core"
@@ -82,10 +82,19 @@ Pop
 }
 SetMember
 Push register2 "removeEventListener"
+DefineFunction2 "" 3 5 false false true false true false false true false 2 "eventType" 4 "scope" 3 "callBack"  {
+Push register3 register4 register2 3 register1 "_eventDispatcher"
+GetMember
+Push "removeEventListener"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "removeEventListenerByScope"
 DefineFunction2 "" 2 4 false false true false true false false true false 2 "eventType" 3 "scope"  {
 Push register3 register2 2 register1 "_eventDispatcher"
 GetMember
-Push "removeEventListener"
+Push "removeEventListenerByScope"
 CallMethod
 Pop
 }
@@ -120,28 +129,28 @@ DefineFunction2 "" 0 2 false false true false true false false true false  {
 Push register1 "initialized"
 GetMember
 Not
-If loc0640
+If loc06d8
 Push undefined
 Return
-loc0640:Push register1 "__width"
+loc06d8:Push register1 "__width"
 GetMember
 Push 1 "isNaN"
 CallFunction
 Not
-If loc0666
+If loc06fe
 Push register1 "__width" register1 "_width"
 GetMember
 SetMember
-loc0666:Push register1 "__height"
+loc06fe:Push register1 "__height"
 GetMember
 Push 1 "isNaN"
 CallFunction
 Not
-If loc068c
+If loc0724
 Push register1 "__height" register1 "_height"
 GetMember
 SetMember
-loc068c:Push register1 "initialized" true
+loc0724:Push register1 "initialized" true
 SetMember
 Push 0.0 register1 "configUI"
 CallMethod
@@ -153,7 +162,7 @@ Push register1 "_focused"
 GetMember
 PushDuplicate
 Not
-If loc06e4
+If loc077c
 Pop
 Push 0.0 "Selection"
 GetVariable
@@ -161,8 +170,8 @@ Push "getFocus"
 CallMethod
 Push null
 Equals2
-loc06e4:Not
-If loc071a
+loc077c:Not
+If loc07b2
 Push register1 null 2 0.0 "gfx"
 GetVariable
 Push "managers"
@@ -175,7 +184,7 @@ Push "onSetFocus"
 CallMethod
 Pop
 }
-loc071a:SetMember
+loc07b2:SetMember
 Push register1 "createInstance"
 DefineFunction2 "" 5 7 false false true false true false true false false 6 "context" 3 "symbol" 2 "name" 5 "depth" 4 "initObj"  {
 Push register4 register5 register2 register3 4 register6 "attachMovie"
@@ -185,11 +194,11 @@ Pop
 Push register1 "invalidate"
 GetMember
 Not
-If loc078e
+If loc0826
 Push 0.0 register1 "invalidate"
 CallMethod
 Pop
-loc078e:Push register1
+loc0826:Push register1
 Return
 }
 SetMember
@@ -232,24 +241,24 @@ GetMember
 Push register2
 Equals2
 Not
-If loc085d
+If loc08f5
 Push undefined
 Return
-loc085d:Push register1 "_visible" register2
+loc08f5:Push register1 "_visible" register2
 SetMember
 Push register1 "initialized"
 GetMember
 Not
 Not
-If loc087b
+If loc0913
 Push undefined
 Return
-loc087b:Push register2
-If loc088f
+loc0913:Push register2
+If loc0927
 Push "hide"
-Jump loc0894
-loc088f:Push "show"
-loc0894:StoreRegister 3
+Jump loc092c
+loc0927:Push "show"
+loc092c:StoreRegister 3
 Pop
 Push register1 1
 InitArray
@@ -273,11 +282,11 @@ DefineFunction2 "" 1 3 false false true false true false false true false 2 "val
 Push register1 "__height"
 GetMember
 PushDuplicate
-If loc0913
+If loc09ab
 Pop
 Push register1 "_height"
 GetMember
-loc0913:Push register2 2 register1 "setSize"
+loc09ab:Push register2 2 register1 "setSize"
 CallMethod
 Pop
 Push 0.0 register1 "__get__width"
@@ -297,11 +306,11 @@ DefineFunction2 "" 1 3 false false true false true false false true false 2 "val
 Push register2 register1 "__width"
 GetMember
 PushDuplicate
-If loc0984
+If loc0a1c
 Pop
 Push register1 "_width"
 GetMember
-loc0984:Push 2 register1 "setSize"
+loc0a1c:Push 2 register1 "setSize"
 CallMethod
 Pop
 Push 0.0 register1 "__get__height"
@@ -317,17 +326,17 @@ Push register2
 Equals2
 PushDuplicate
 Not
-If loc09ea
+If loc0a82
 Pop
 Push register1 "__height"
 GetMember
 Push register3
 Equals2
-loc09ea:Not
-If loc09f5
+loc0a82:Not
+If loc0a8d
 Push undefined
 Return
-loc09f5:Push register1 "__width" register2
+loc0a8d:Push register1 "__width" register2
 SetMember
 Push register1 "__height" register3
 SetMember
@@ -351,16 +360,16 @@ Push register2 register1 "_focused"
 GetMember
 Equals2
 Not
-If loc0a71
+If loc0b09
 Push undefined
 Return
-loc0a71:Push register1 "_focused" register2
+loc0b09:Push register1 "_focused" register2
 SetMember
 Push register2
 Not
 PushDuplicate
 Not
-If loc0aa4
+If loc0b3c
 Pop
 Push 0.0 "Selection"
 GetVariable
@@ -368,18 +377,18 @@ Push "getFocus"
 CallMethod
 Push register1
 Equals2
-loc0aa4:Not
-If loc0ac2
+loc0b3c:Not
+If loc0b5a
 Push null 1 "Selection"
 GetVariable
 Push "setFocus"
 CallMethod
 Pop
-Jump loc0b05
-loc0ac2:Push register2
+Jump loc0b9d
+loc0b5a:Push register2
 PushDuplicate
 Not
-If loc0aeb
+If loc0b83
 Pop
 Push 0.0 "Selection"
 GetVariable
@@ -388,22 +397,22 @@ CallMethod
 Push register1
 Equals2
 Not
-loc0aeb:Not
-If loc0b05
+loc0b83:Not
+If loc0b9d
 Push register1 1 "Selection"
 GetVariable
 Push "setFocus"
 CallMethod
 Pop
-loc0b05:Push 0.0 register1 "changeFocus"
+loc0b9d:Push 0.0 register1 "changeFocus"
 CallMethod
 Pop
 Push register2
-If loc0b2b
+If loc0bc3
 Push "focusOut"
-Jump loc0b30
-loc0b2b:Push "focusIn"
-loc0b30:StoreRegister 3
+Jump loc0bc8
+loc0bc3:Push "focusIn"
+loc0bc8:StoreRegister 3
 Pop
 Push register1 1
 InitArray
@@ -428,10 +437,10 @@ Push register2 register1 "_displayFocus"
 GetMember
 Equals2
 Not
-If loc0bae
+If loc0c46
 Push undefined
 Return
-loc0bae:Push register1 "_displayFocus" register2
+loc0c46:Push register1 "_displayFocus" register2
 SetMember
 Push 0.0 register1 "changeFocus"
 CallMethod
@@ -448,14 +457,14 @@ Equals2
 Not
 PushDuplicate
 Not
-If loc0c2a
+If loc0cc2
 Pop
 Push register1 "length"
 GetMember
 Push 0.0
 Greater
-loc0c2a:Not
-If loc0c74
+loc0cc2:Not
+If loc0d0c
 Push 1 1 register1 "slice"
 CallMethod
 Push register3 2 register1 0.0
@@ -466,10 +475,10 @@ StoreRegister 2
 Pop
 Push register2
 Not
-If loc0c74
+If loc0d0c
 Push register2
 Return
-loc0c74:Push false
+loc0d0c:Push false
 Return
 }
 SetMember
@@ -478,10 +487,10 @@ DefineFunction2 "" 0 2 false false true false true false false true false  {
 Push register1 "invalidationIntervalID"
 GetMember
 Not
-If loc0ca0
+If loc0d38
 Push undefined
 Return
-loc0ca0:Push register1 "invalidationIntervalID" 1 "validateNow" register1 3 "setInterval"
+loc0d38:Push register1 "invalidationIntervalID" 1 "validateNow" register1 3 "setInterval"
 CallFunction
 SetMember
 }
@@ -500,13 +509,13 @@ Push register1 "initialized"
 GetMember
 Not
 Not
-If loc0d0f
+If loc0da7
 Push 0.0 register1 "onLoadImpl"
 CallMethod
 Pop
 Push undefined
 Return
-loc0d0f:Push 0.0 register1 "draw"
+loc0da7:Push 0.0 register1 "draw"
 CallMethod
 Pop
 Push register1 "sizeIsInvalid" false
@@ -524,7 +533,18 @@ Return
 }
 SetMember
 Push register2 "dispatchEventToGame"
-DefineFunction "" 1 "event"  {
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "event"  {
+Push register2 register1 "_name"
+GetMember
+Push "__handleEvent" 3 "flash"
+GetVariable
+Push "external"
+GetMember
+Push "ExternalInterface"
+GetMember
+Push "call"
+CallMethod
+Pop
 }
 SetMember
 Push register2 "configUI"
@@ -539,25 +559,25 @@ Push register1 "__width"
 GetMember
 Push 0.0
 Equals2
-If loc0dbd
+If loc0e83
 Push register1 "__width"
 GetMember
-Jump loc0dc5
-loc0dbd:Push register1 "_width"
+Jump loc0e8b
+loc0e83:Push register1 "_width"
 GetMember
-loc0dc5:StoreRegister 3
+loc0e8b:StoreRegister 3
 Pop
 Push register1 "__height"
 GetMember
 Push 0.0
 Equals2
-If loc0df1
+If loc0eb7
 Push register1 "__height"
 GetMember
-Jump loc0df9
-loc0df1:Push register1 "_height"
+Jump loc0ebf
+loc0eb7:Push register1 "_height"
 GetMember
-loc0df9:StoreRegister 2
+loc0ebf:StoreRegister 2
 Pop
 Push register1 "_xscale" register1 "_yscale" 100
 StoreRegister 0
@@ -583,7 +603,7 @@ Push 0.0 register1 "__get__visible"
 CallMethod
 PushDuplicate
 Not
-If loc0ea5
+If loc0f6b
 Pop
 Push true register2 "_ymouse"
 GetMember
@@ -591,38 +611,38 @@ Push register2 "_xmouse"
 GetMember
 Push 3 register1 "hitTest"
 CallMethod
-loc0ea5:Not
-If loc0f2c
+loc0f6b:Not
+If loc0ff2
 Push 0.0 "Mouse"
 GetVariable
 Push "getTopMostEntity"
 CallMethod
 StoreRegister 3
 Pop
-loc0ec5:Push register3
+loc0f8b:Push register3
 Not
-If loc0f2c
+If loc0ff2
 Push register3 register1
 Equals2
 Not
-If loc0f1a
+If loc0fe0
 Push register4 0.0
 Greater
-If loc0eff
+If loc0fc5
 Push -1
-Jump loc0f07
-loc0eff:Push 1
-loc0f07:Push 1 register1 "scrollWheel"
+Jump loc0fcd
+loc0fc5:Push 1
+loc0fcd:Push 1 register1 "scrollWheel"
 CallMethod
 Pop
-Jump loc0f2c
-loc0f1a:Push register3 "_parent"
+Jump loc0ff2
+loc0fe0:Push register3 "_parent"
 GetMember
 StoreRegister 3
 Pop
-Jump loc0ec5
+Jump loc0f8b
 }
-loc0f2c:SetMember
+loc0ff2:SetMember
 Push register2 "scrollWheel"
 DefineFunction "" 1 "delta"  {
 }
@@ -689,4 +709,4 @@ Push "prototype"
 GetMember
 Push 3 "ASSetPropFlags"
 CallFunction
-loc1084:Pop
+loc114a:Pop

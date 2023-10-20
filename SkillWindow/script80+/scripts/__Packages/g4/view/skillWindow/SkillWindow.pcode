@@ -1,0 +1,4262 @@
+ConstantPool "_global" "g4" "Object" "view" "skillWindow" "SkillWindow" "SkillWindowController" "getInstance" "registerSkillWindow" "_defaultViewPanel" "container_mc" "defaultViewPanel" "DefaultViewPanel" "_totalViewPanel" "totalViewPanel" "TotalViewPanel" "core" "View" "prototype" "getUIName" "ViewID" "SKILL_WINDOW" "configGameInterface" "registerGameInterface" "util" "Delegate" "create" "registerGameInterfaces" "configUI" "_container_mc" "__get__targetMovieClip" "_tabBtn" "tabBtn" "tab" "_skillState0" "$082052" "lib" "UIString" "getUIString" "_skillState1" "$082053" "_secondStr" "$101068" "_growSkillPanel" "growSkillPanel" "_visible" "_bottomButtonGroup" "bottomButtonGroup" "_coolTimeManager" "CoolTimeManger" "viewBtn_0" "id" "viewBtn_1" "saveBtn_" "setMouseEventSaveBtn" "$082049" "setMouseEvent" "$082050" "setViewMode" "setViewBtn" "pathBtn" "txtBtn" "ToGame_SkillWindow_Path" "setRelease" "resetCrestBtn" "ToGame_SkillWindow_Reset" "recommendCrestBtn" "ToGame_SkillWindow_Recommend" "lock_mc" "UIDrager" "setData" "title_txt" "textColor" "info" "TextColor" "UI_TITLE_ACTIVE" "scope" "pathSkillMc" "SkillWindow__pathSlot" "slotHit" "onPress" "_pressedSkillSlot" "onDragOut" "_parent" "TEX" "StartIconDrag" "__get__pathSkillMc" "checkBox" "onChanged" "ToGame_SkillWindow_ChangePathSkillCheck" "timeMc" "focusMc" "textFd" "ExtTextField" "exceptComma" "onEnterKey" "_bChangePathTime" "Selection" "setFocus" "text" "" "timeText" "ToGame_SkillWindow_ChangePathTime" "onKillFocusEvent" "closeBtn" "TxtBtn" "ToGame_SkillWindow_CloseUI" "ToGame_SkillWindow_Init" "_tabButtons" "_tabButtonGroup" "component" "ButtonGroup" "push" "addButton" "setStateSaveBtn" "btnState" "_pressedSaveBtn" "gotoAndStop" "setRollOverSaveBtn" "setRollOutSaveBtn" "setPressSaveBtn" "setReleaseSaveBtn" "setReleaseOutsideSaveBtn" "onRollOver" "onRollOut" "onRelease" "manager" "UISound" "MAIN_BTN" "play" "ToGame_SkillWindow_ChangeCrestSaveBtn" "onReleaseOutside" "clearTag" "tabTag_" "removeMovieClip" "tabLength" "createTag" "MovieClip" "getNextHighestDepth" "tagBox" "attachMovie" "tabBtn0" "_xscale" "_yscale" "txt" "_x" "TAB_WIDTH" "_width" "_y" "hitTestDisable" "_curViewMode" "viewBtn_" "btn" "message" "TooltipManager" "showMessageTooltip" "hideTooltip" "clearSkillContainer" "ToGame_SkillWindow_ChangeViewMode" "setCrest" "_bChange" "__get__skillListContainer" "shift" "_slotPrefix" "createSlot" "clearCrest" "undefined" "descFd" "setText" "length" "CREST_INFO_COUNT" "setCrestSlot" "disableMc" "disable" "disableMc_" "skillState" "crest__" "crestSlot" "CREST_SLOT_WIDTH" "clearCrestSlot" "slotIndex" "crestIndex" "crestId" "crestRealId" "crestState" "point" "grade" "disableTEX" "overMc" "gradeMc" "pointFd" "CREST_STATE_INACTIVE" "_crestArray" "arrayIndex" "setStateOnCrestSlot" "CREST_STATE_ACTIVE" "CREST_STATE_LOCK" "0x707070" "0xC9C9C9" "lockMc" "lockBg" "lineMc" "bg" "inactiveMc" "img" "DrawBitmap" "draw" "isLock" "showUiTooltip" "crestNewEffect" "gotoAndPlay" "ToGame_SkillWindow_ChangeCrestState" "changeCrestState" "totalPoint" "currentPoint" "CREST_STATE_DISABLE" "setSkill" "Index" "clearSkill" "Id" "Name" "Img" "flash" "display" "BitmapData" "loadBitmap" "Disable" "State" "Num" "Remain" "Total" "Awaken" "Boolean" "OnGame_SkillWindow_CoolTime" "skillId" "<font color=\'#deb200\'>" "</font>" "nameFd" "htmlText" "awaken" "DrawBitmapData" "-1" "numFd" "setSkillState" "stateMc_" "slotStateMc_" "awakenEffect_" "awakenEffect" "clear" "effectMc" "coolTimeMc" "removeCoolTimeInstance" "activeMc" "noticeFd" "getSelectedButtonIndex" "noticeIcon" "MAX_CREST" "changeCrestArrayIndex" "splice" "slot_mode" "SLOT_WIDTH" "SLOT_HEIGTH_MODE_1" "SLOT_HEIGHT_MODE_0" "slot" "pressMc" "slotName" "SKILLSLOT" "trackAsMenu" "verticalAutoSize" "center" "_releasedSkillSlot" "ToGame_SkillWindow_SelectSkill" "GetName" "_name" "movieclip" "clearPathSkill" "OnGameEventShowWindow" "toLowerCase" "_bWidgetOpen" "gbUIMode" "ShortCut2" "OnGameEvent" "OnGameEventChangeUIMode" "_rightClicked" "_rightClickedTarget" "drag" "_targetIndex" "OnGame_SkillWindow_SetCrestSaveBtn" "\t" "ExtString" "split" "OnGame_SkillWindow_SetTab" "addMessageTooltip" "removeTooltip" "__set__label" "__set__disabled" "onTabButtonGroupClick" "gfx" "events" "EventTypes" "ITEM_CLICK" "addEventListener" "setSelectedButtonIndex" "OnGame_SkillWindow_SetGuideText" "OnGame_SkillWindow_SetViewMode" "OnGame_SkillWindow_SetSkill" "_height" "__get__skillListScroll" "__set__pageSize" "JSON" "parse" "gameInterface" "dataP" "SkillSlotP" "OnGame_SkillWindow_SetCrest" "\n" "#b40000" "#80e71c" "<font color=\'" "\'>" "</font>/" "coolTime" "slotCoolTimeMc" "iconName" "setCoolTime" "addCoolTimeInstance" "OnGame_SkillWindow_SetToggle" "slotActiveMc" "OnGame_MouseDown" "ToGame_SkillWindow_UseSlot" "OnGame_MouseUp" "ToGame_SkillWindow_SelectTab" "TAB_HEIGHT" "SkillWindow__" "ASSetPropFlags"
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Not
+Not
+If loc106a
+Push "_global"
+GetVariable
+Push "g4" 0.0 "Object"
+NewObject
+SetMember
+loc106a:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "view"
+GetMember
+Not
+Not
+If loc10a2
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "view" 0.0 "Object"
+NewObject
+SetMember
+loc10a2:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Not
+Not
+If loc10e6
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "view"
+GetMember
+Push "skillWindow" 0.0 "Object"
+NewObject
+SetMember
+loc10e6:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Push "SkillWindow"
+GetMember
+Not
+Not
+If loc5567
+Push "g4"
+GetVariable
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Push "SkillWindow"
+DefineFunction2 "" 1 4 false false false true true false false true false 3 "$targetMovie"  {
+Push register3 1 register2 undefined
+CallMethod
+Pop
+Push register1 1 0.0 "g4"
+GetVariable
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Push "SkillWindowController"
+GetMember
+Push "getInstance"
+CallMethod
+Push "registerSkillWindow"
+CallMethod
+Pop
+Push register1 "_defaultViewPanel" register3 "container_mc"
+GetMember
+Push "defaultViewPanel"
+GetMember
+Push 1 "g4"
+GetVariable
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Push "DefaultViewPanel"
+NewMethod
+SetMember
+Push register1 "_totalViewPanel" register3 "container_mc"
+GetMember
+Push "totalViewPanel"
+GetMember
+Push 1 "g4"
+GetVariable
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Push "TotalViewPanel"
+NewMethod
+SetMember
+}
+StoreRegister 1
+SetMember
+Push "g4"
+GetVariable
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Push "SkillWindow"
+GetMember
+Push "g4"
+GetVariable
+Push "core"
+GetMember
+Push "View"
+GetMember
+Extends
+Push register1 "prototype"
+GetMember
+StoreRegister 2
+Pop
+Push register2 "getUIName"
+DefineFunction "" 0  {
+Push "g4"
+GetVariable
+Push "view"
+GetMember
+Push "ViewID"
+GetMember
+Push "SKILL_WINDOW"
+GetMember
+Return
+}
+SetMember
+Push register2 "configGameInterface"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push register1 "registerGameInterface"
+GetMember
+Push register1 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+Push 1 0.0 "g4"
+GetVariable
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Push "SkillWindowController"
+GetMember
+Push "getInstance"
+CallMethod
+Push "registerGameInterfaces"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "configUI"
+DefineFunction2 "" 0 14 false false true false true false false true true  {
+Push register1 "_container_mc" 0.0 register1 "__get__targetMovieClip"
+CallMethod
+Push "container_mc"
+GetMember
+SetMember
+Push register1 "_tabBtn" register1 "_container_mc"
+GetMember
+Push "tabBtn"
+GetMember
+Push "tab"
+GetMember
+SetMember
+Push register1 "_skillState0" "$082052" 1 "lib"
+GetVariable
+Push "util"
+GetMember
+Push "UIString"
+GetMember
+Push "getUIString"
+CallMethod
+SetMember
+Push register1 "_skillState1" "$082053" 1 "lib"
+GetVariable
+Push "util"
+GetMember
+Push "UIString"
+GetMember
+Push "getUIString"
+CallMethod
+SetMember
+Push register1 "_secondStr" "$101068" 1 "lib"
+GetVariable
+Push "util"
+GetMember
+Push "UIString"
+GetMember
+Push "getUIString"
+CallMethod
+SetMember
+Push register1 "_growSkillPanel" register1 "_container_mc"
+GetMember
+Push "growSkillPanel"
+GetMember
+SetMember
+Push register1 "_growSkillPanel"
+GetMember
+Push "_visible" false
+SetMember
+Push register1 "_bottomButtonGroup" register1 "_container_mc"
+GetMember
+Push "bottomButtonGroup"
+GetMember
+SetMember
+Push register1 "_coolTimeManager" 0.0 "lib"
+GetVariable
+Push "util"
+GetMember
+Push "CoolTimeManger"
+GetMember
+Push "getInstance"
+CallMethod
+SetMember
+Push 0.0 register1 "__get__targetMovieClip"
+CallMethod
+Push "_visible" false
+SetMember
+Push register1 "_bottomButtonGroup"
+GetMember
+Push "viewBtn_0"
+GetMember
+Push "id" 0.0
+SetMember
+Push register1 "_bottomButtonGroup"
+GetMember
+Push "viewBtn_1"
+GetMember
+Push "id" 1
+SetMember
+Push 1
+StoreRegister 3
+Pop
+loc141e:Push register3 6
+Less2
+Not
+If loc146f
+Push register1 "_bottomButtonGroup"
+GetMember
+Push "saveBtn_" register3
+Add2
+GetMember
+StoreRegister 5
+Pop
+Push register5 "id" register3
+SetMember
+Push register5 1 register1 "setMouseEventSaveBtn"
+CallMethod
+Pop
+Push register3
+Increment
+StoreRegister 3
+Pop
+Jump loc141e
+loc146f:Push "$082049" 1 "lib"
+GetVariable
+Push "util"
+GetMember
+Push "UIString"
+GetMember
+Push "getUIString"
+CallMethod
+Push register1 "_bottomButtonGroup"
+GetMember
+Push "viewBtn_0"
+GetMember
+Push 2 register1 "setMouseEvent"
+CallMethod
+Pop
+Push "$082050" 1 "lib"
+GetVariable
+Push "util"
+GetMember
+Push "UIString"
+GetMember
+Push "getUIString"
+CallMethod
+Push register1 "_bottomButtonGroup"
+GetMember
+Push "viewBtn_1"
+GetMember
+Push 2 register1 "setMouseEvent"
+CallMethod
+Pop
+Push 0.0 register1 "setViewMode"
+CallMethod
+Pop
+Push 0.0 register1 "setViewBtn"
+CallMethod
+Pop
+Push register1 "_bottomButtonGroup"
+GetMember
+Push "pathBtn"
+GetMember
+Push "txtBtn"
+GetMember
+StoreRegister 13
+Pop
+Push 0.0 "g4"
+GetVariable
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Push "SkillWindowController"
+GetMember
+Push "getInstance"
+CallMethod
+Push "ToGame_SkillWindow_Path"
+GetMember
+Push 1 register13 "setRelease"
+CallMethod
+Pop
+Push register1 "_bottomButtonGroup"
+GetMember
+Push "resetCrestBtn"
+GetMember
+Push "txtBtn"
+GetMember
+StoreRegister 11
+Pop
+Push 0.0 "g4"
+GetVariable
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Push "SkillWindowController"
+GetMember
+Push "getInstance"
+CallMethod
+Push "ToGame_SkillWindow_Reset"
+GetMember
+Push 1 register11 "setRelease"
+CallMethod
+Pop
+Push register1 "_bottomButtonGroup"
+GetMember
+Push "recommendCrestBtn"
+GetMember
+Push "txtBtn"
+GetMember
+StoreRegister 12
+Pop
+Push 0.0 "g4"
+GetVariable
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Push "SkillWindowController"
+GetMember
+Push "getInstance"
+CallMethod
+Push "ToGame_SkillWindow_Recommend"
+GetMember
+Push 1 register12 "setRelease"
+CallMethod
+Pop
+Push register1 "_container_mc"
+GetMember
+Push "lock_mc"
+GetMember
+Push 0.0 register1 "__get__targetMovieClip"
+CallMethod
+Push 0.0 register1 "getUIName"
+CallMethod
+Push 3 register1 "_container_mc"
+GetMember
+Push "UIDrager"
+GetMember
+Push "setData"
+CallMethod
+Pop
+Push register1 "_container_mc"
+GetMember
+Push "title_txt"
+GetMember
+Push "textColor" "lib"
+GetVariable
+Push "info"
+GetMember
+Push "TextColor"
+GetMember
+Push "UI_TITLE_ACTIVE"
+GetMember
+SetMember
+Push "scope" register1
+DefineLocal
+Push register1 "_container_mc"
+GetMember
+Push "pathSkillMc"
+GetMember
+Push "SkillWindow__pathSlot"
+GetMember
+Push "slotHit"
+GetMember
+Push "onPress"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push "scope"
+GetVariable
+Push "_pressedSkillSlot" register1
+SetMember
+}
+SetMember
+Push register1 "_container_mc"
+GetMember
+Push "pathSkillMc"
+GetMember
+Push "SkillWindow__pathSlot"
+GetMember
+Push "slotHit"
+GetMember
+Push "onDragOut"
+DefineFunction2 "" 0 4 false false true false true false false true true  {
+Push register1 "scope"
+GetVariable
+Push "_pressedSkillSlot"
+GetMember
+Equals2
+Not
+If loc1731
+Push register1 "_parent"
+GetMember
+Push "TEX"
+GetMember
+StoreRegister 3
+Pop
+Push register3 undefined
+Equals2
+Not
+Not
+If loc1731
+Push register3 register1 "_parent"
+GetMember
+Push 2 register2 "StartIconDrag"
+CallMethod
+Pop
+}
+loc1731:SetMember
+Push 0.0 register1 "_defaultViewPanel"
+GetMember
+Push "__get__pathSkillMc"
+CallMethod
+Push "checkBox"
+GetMember
+Push "onChanged"
+DefineFunction2 "" 1 2 false false true false true false true false false 1 "changed"  {
+Push register1 1 0.0 "g4"
+GetVariable
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Push "SkillWindowController"
+GetMember
+Push "getInstance"
+CallMethod
+Push "ToGame_SkillWindow_ChangePathSkillCheck"
+CallMethod
+Pop
+}
+SetMember
+Push 0.0 register1 "_defaultViewPanel"
+GetMember
+Push "__get__pathSkillMc"
+CallMethod
+Push "timeMc"
+GetMember
+Push "focusMc"
+GetMember
+Push 1 0.0 register1 "_defaultViewPanel"
+GetMember
+Push "__get__pathSkillMc"
+CallMethod
+Push "timeMc"
+GetMember
+Push "textFd"
+GetMember
+Push 3 "lib"
+GetVariable
+Push "util"
+GetMember
+Push "ExtTextField"
+NewMethod
+StoreRegister 7
+Pop
+Push register7 "exceptComma" true
+SetMember
+Push register7 "onEnterKey"
+DefineFunction2 "" 0 4 false false true false true false false true false  {
+Push "scope"
+GetVariable
+Push "_bChangePathTime" false
+SetMember
+Push null 1 "Selection"
+GetVariable
+Push "setFocus"
+CallMethod
+Pop
+Push register1 "text"
+GetMember
+ToNumber
+StoreRegister 3
+Pop
+Push ""
+StoreRegister 2
+Pop
+Push register3 "NaN"
+GetVariable
+Equals2
+Not
+If loc18d6
+Push 0.0 "scope"
+GetVariable
+Push "_defaultViewPanel"
+GetMember
+Push "__get__pathSkillMc"
+CallMethod
+Push "timeMc"
+GetMember
+Push "timeText"
+GetMember
+StoreRegister 2
+Pop
+Push 0.0 "scope"
+GetVariable
+Push "_defaultViewPanel"
+GetMember
+Push "__get__pathSkillMc"
+CallMethod
+Push "timeMc"
+GetMember
+Push "textFd"
+GetMember
+Push "text" register2 "scope"
+GetVariable
+Push "_secondStr"
+GetMember
+Add2
+SetMember
+Jump loc1955
+loc18d6:Push register1 "text"
+GetMember
+StoreRegister 2
+Pop
+Push 0.0 "scope"
+GetVariable
+Push "_defaultViewPanel"
+GetMember
+Push "__get__pathSkillMc"
+CallMethod
+Push "timeMc"
+GetMember
+Push "timeText" register2
+SetMember
+Push register1 "text" register2 "scope"
+GetVariable
+Push "_secondStr"
+GetMember
+Add2
+SetMember
+Push register2 1 0.0 "g4"
+GetVariable
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Push "SkillWindowController"
+GetMember
+Push "getInstance"
+CallMethod
+Push "ToGame_SkillWindow_ChangePathTime"
+CallMethod
+Pop
+}
+loc1955:SetMember
+Push register7 "onKillFocusEvent"
+DefineFunction2 "" 0 4 false false true false true false false true false  {
+Push "scope"
+GetVariable
+Push "_bChangePathTime" false
+SetMember
+Push register1 "text"
+GetMember
+ToNumber
+StoreRegister 3
+Pop
+Push ""
+StoreRegister 2
+Pop
+Push register3 "NaN"
+GetVariable
+Equals2
+Not
+If loc1a0a
+Push 0.0 "scope"
+GetVariable
+Push "_defaultViewPanel"
+GetMember
+Push "__get__pathSkillMc"
+CallMethod
+Push "timeMc"
+GetMember
+Push "timeText"
+GetMember
+StoreRegister 2
+Pop
+Push 0.0 "scope"
+GetVariable
+Push "_defaultViewPanel"
+GetMember
+Push "__get__pathSkillMc"
+CallMethod
+Push "timeMc"
+GetMember
+Push "textFd"
+GetMember
+Push "text" register2 "scope"
+GetVariable
+Push "_secondStr"
+GetMember
+Add2
+SetMember
+Jump loc1a89
+loc1a0a:Push register1 "text"
+GetMember
+StoreRegister 2
+Pop
+Push 0.0 "scope"
+GetVariable
+Push "_defaultViewPanel"
+GetMember
+Push "__get__pathSkillMc"
+CallMethod
+Push "timeMc"
+GetMember
+Push "timeText" register2
+SetMember
+Push register1 "text" register2 "scope"
+GetVariable
+Push "_secondStr"
+GetMember
+Add2
+SetMember
+Push register2 1 0.0 "g4"
+GetVariable
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Push "SkillWindowController"
+GetMember
+Push "getInstance"
+CallMethod
+Push "ToGame_SkillWindow_ChangePathTime"
+CallMethod
+Pop
+}
+loc1a89:SetMember
+Push 0.0 register1 "_defaultViewPanel"
+GetMember
+Push "__get__pathSkillMc"
+CallMethod
+Push "timeMc"
+GetMember
+Push "textFd"
+GetMember
+Push "onChanged"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push "scope"
+GetVariable
+Push "_bChangePathTime" true
+SetMember
+Push register1 "text"
+GetMember
+ToNumber
+Push 99
+Greater
+Not
+If loc1afa
+Push register1 "text" 99 "scope"
+GetVariable
+Push "_secondStr"
+GetMember
+Add2
+SetMember
+}
+loc1afa:SetMember
+Push register1 "_container_mc"
+GetMember
+Push "closeBtn"
+GetMember
+Push 1 "lib"
+GetVariable
+Push "util"
+GetMember
+Push "TxtBtn"
+NewMethod
+StoreRegister 10
+Pop
+Push 0.0 "g4"
+GetVariable
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Push "SkillWindowController"
+GetMember
+Push "getInstance"
+CallMethod
+Push "ToGame_SkillWindow_CloseUI"
+GetMember
+Push 1 register10 "setRelease"
+CallMethod
+Pop
+Push 0.0 0.0 "g4"
+GetVariable
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Push "SkillWindowController"
+GetMember
+Push "getInstance"
+CallMethod
+Push "ToGame_SkillWindow_Init"
+CallMethod
+Pop
+Push register1 "_tabButtons" 0.0
+InitArray
+SetMember
+Push register1 "_tabButtonGroup" 0.0 "g4"
+GetVariable
+Push "component"
+GetMember
+Push "ButtonGroup"
+NewMethod
+SetMember
+Push 0.0
+StoreRegister 3
+Pop
+loc1bda:Push register3 4
+Less2
+Not
+If loc1c3d
+Push register1 "_container_mc"
+GetMember
+Push "tabBtn" register3
+Add2
+GetMember
+StoreRegister 4
+Pop
+Push register4 1 register1 "_tabButtons"
+GetMember
+Push "push"
+CallMethod
+Pop
+Push register4 1 register1 "_tabButtonGroup"
+GetMember
+Push "addButton"
+CallMethod
+Pop
+Push register3
+Increment
+StoreRegister 3
+Pop
+Jump loc1bda
+}
+loc1c3d:SetMember
+Push register2 "setStateSaveBtn"
+DefineFunction2 "" 2 5 false false true false true false false true false 4 "targetBtn" 2 "btnState"  {
+Push register2
+ToNumber
+StoreRegister 2
+Pop
+Push register4 "btnState" register2
+SetMember
+Push register2 0.0
+Equals2
+If loc1c9b
+Push 1
+Jump loc1ca3
+loc1c9b:Push 4
+loc1ca3:StoreRegister 3
+Pop
+Push register2 2
+Equals2
+Not
+If loc1cd0
+Push 5
+StoreRegister 3
+Pop
+Push register1 "_pressedSaveBtn" register4
+SetMember
+loc1cd0:Push register3 1 register4 "gotoAndStop"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "setMouseEventSaveBtn"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "targetBtn"  {
+Push register2 1 register1 "setRollOverSaveBtn"
+CallMethod
+Pop
+Push register2 1 register1 "setRollOutSaveBtn"
+CallMethod
+Pop
+Push register2 1 register1 "setPressSaveBtn"
+CallMethod
+Pop
+Push register2 1 register1 "setReleaseSaveBtn"
+CallMethod
+Pop
+Push register2 1 register1 "setReleaseOutsideSaveBtn"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "setRollOverSaveBtn"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "targetBtn"  {
+Push register2 "onRollOver"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push 2 1 register1 "gotoAndStop"
+CallMethod
+Pop
+}
+SetMember
+}
+SetMember
+Push register2 "setRollOutSaveBtn"
+DefineFunction2 "" 1 4 false false true false true false false true false 3 "targetBtn"  {
+Push "scope" register1
+DefineLocal
+Push register3 "onRollOut"
+DefineFunction2 "" 0 3 false false true false true false false true false  {
+Push register1 "btnState"
+GetMember
+Push 1
+Equals2
+If loc1ded
+Push 4
+Jump loc1df5
+loc1ded:Push 1
+loc1df5:StoreRegister 2
+Pop
+Push "scope"
+GetVariable
+Push "_pressedSaveBtn"
+GetMember
+Push register1
+Equals2
+If loc1e1b
+Push register2
+Jump loc1e23
+loc1e1b:Push 5
+loc1e23:StoreRegister 2
+Pop
+Push register2 1 register1 "gotoAndStop"
+CallMethod
+Pop
+}
+SetMember
+}
+SetMember
+Push register2 "setPressSaveBtn"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "targetBtn"  {
+Push register2 "onPress"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push 3 1 register1 "gotoAndStop"
+CallMethod
+Pop
+}
+SetMember
+}
+SetMember
+Push register2 "setReleaseSaveBtn"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "targetBtn"  {
+Push "scope" register1
+DefineLocal
+Push register2 "onRelease"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push "scope"
+GetVariable
+Push "_pressedSaveBtn"
+GetMember
+Push register1
+Equals2
+Not
+If loc1ed2
+Push undefined
+Return
+loc1ed2:Push "lib"
+GetVariable
+Push "manager"
+GetMember
+Push "UISound"
+GetMember
+Push "MAIN_BTN"
+GetMember
+Push 1 "lib"
+GetVariable
+Push "manager"
+GetMember
+Push "UISound"
+GetMember
+Push "play"
+CallMethod
+Pop
+Push "scope"
+GetVariable
+Push "_pressedSaveBtn" register1
+SetMember
+Push register1 "id"
+GetMember
+Push 1 0.0 "g4"
+GetVariable
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Push "SkillWindowController"
+GetMember
+Push "getInstance"
+CallMethod
+Push "ToGame_SkillWindow_ChangeCrestSaveBtn"
+CallMethod
+Pop
+}
+SetMember
+}
+SetMember
+Push register2 "setReleaseOutsideSaveBtn"
+DefineFunction2 "" 1 4 false false true false true false false true false 3 "targetBtn"  {
+Push "scope" register1
+DefineLocal
+Push register3 "onReleaseOutside"
+DefineFunction2 "" 0 3 false false true false true false false true false  {
+Push register1 "btnState"
+GetMember
+Push 1
+Equals2
+If loc1fad
+Push 1
+Jump loc1fb5
+loc1fad:Push 5
+loc1fb5:StoreRegister 2
+Pop
+Push "scope"
+GetVariable
+Push "_pressedSaveBtn"
+GetMember
+Push register1
+Equals2
+If loc1fdb
+Push register2
+Jump loc1fe3
+loc1fdb:Push 3
+loc1fe3:StoreRegister 2
+Pop
+Push register2 1 register1 "gotoAndStop"
+CallMethod
+Pop
+}
+SetMember
+}
+SetMember
+Push register2 "clearTag"
+DefineFunction2 "" 1 6 false false true false true false false true false 5 "index"  {
+Push register5 undefined
+Equals2
+Not
+Not
+If loc205c
+Push register1 "_container_mc"
+GetMember
+Push "tabTag_" register5
+Add2
+GetMember
+StoreRegister 4
+Pop
+Push register4 undefined
+Equals2
+Not
+Not
+If loc2057
+Push 0.0 register4 "removeMovieClip"
+CallMethod
+Pop
+loc2057:Push undefined
+Return
+loc205c:Push 0.0
+StoreRegister 2
+Pop
+loc206d:Push register2 register1 "tabLength"
+GetMember
+Less2
+Not
+If loc20c4
+Push register1 "_container_mc"
+GetMember
+Push "tabTag_" register2
+Add2
+GetMember
+StoreRegister 3
+Pop
+Push register3 undefined
+Equals2
+Not
+Not
+If loc20b4
+Push 0.0 register3 "removeMovieClip"
+CallMethod
+Pop
+loc20b4:Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc206d
+}
+loc20c4:SetMember
+Push register2 "createTag"
+DefineFunction2 "" 2 6 false false true false true false false true false 4 "index" 5 "tagNum"  {
+Push 0.0 "MovieClip"
+GetVariable
+Push register1 "_container_mc"
+GetMember
+Push "tabTag_" register4
+Add2
+GetMember
+CastOp
+Push "removeMovieClip"
+CallMethod
+Pop
+Push register5 -1
+Equals2
+Not
+If loc2124
+Push undefined
+Return
+loc2124:Push 0.0 register1 "_container_mc"
+GetMember
+Push "getNextHighestDepth"
+CallMethod
+Push "tabTag_" register4
+Add2
+Push "tagBox" 3 register1 "_container_mc"
+GetMember
+Push "attachMovie"
+CallMethod
+StoreRegister 2
+Pop
+Push register1 "_container_mc"
+GetMember
+Push "tabBtn0"
+GetMember
+StoreRegister 3
+Pop
+Push register2 "_xscale" register2 "_yscale" 80
+StoreRegister 0
+SetMember
+Push register0
+SetMember
+Push register2 "txt"
+GetMember
+Push "text" register5
+SetMember
+Push register2 "_x" register3 "_x"
+GetMember
+Push register1 "TAB_WIDTH"
+GetMember
+Push register4 1
+Add2
+Multiply
+Add2
+Push register2 "_width"
+GetMember
+Subtract
+SetMember
+Push register2 "_y" register3 "_y"
+GetMember
+Push 7
+Subtract
+SetMember
+Push register2 "hitTestDisable" true
+SetMember
+}
+SetMember
+Push register2 "setViewBtn"
+DefineFunction2 "" 0 5 false false true false true false false true false  {
+Push register1 "_curViewMode"
+GetMember
+Not
+ToNumber
+StoreRegister 3
+Pop
+Push register1 "_bottomButtonGroup"
+GetMember
+Push "viewBtn_" register3
+Add2
+GetMember
+StoreRegister 4
+Pop
+Push register1 "_bottomButtonGroup"
+GetMember
+Push "viewBtn_" register1 "_curViewMode"
+GetMember
+Add2
+GetMember
+StoreRegister 2
+Pop
+Push 1 1 register4 "gotoAndStop"
+CallMethod
+Pop
+Push 3 1 register2 "gotoAndStop"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "setMouseEvent"
+DefineFunction2 "" 2 3 false false true false true false false true false 0 "btn" 0 "message"  {
+Push "scope" register1
+DefineLocal
+Push "btn"
+GetVariable
+Push "onRollOver"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push 2 1 register1 "gotoAndStop"
+CallMethod
+Pop
+Push "message"
+GetVariable
+Push "btn"
+GetVariable
+Push 2 0.0 "g4"
+GetVariable
+Push "manager"
+GetMember
+Push "TooltipManager"
+GetMember
+Push "getInstance"
+CallMethod
+Push "showMessageTooltip"
+CallMethod
+Pop
+}
+SetMember
+Push "btn"
+GetVariable
+Push "onRollOut"
+DefineFunction2 "" 0 3 false false true false true false false true false  {
+Push register1 "id"
+GetMember
+Push "scope"
+GetVariable
+Push "_curViewMode"
+GetMember
+Equals2
+If loc2326
+Push 1
+Jump loc232e
+loc2326:Push 3
+loc232e:StoreRegister 2
+Pop
+Push register2 1 register1 "gotoAndStop"
+CallMethod
+Pop
+Push 0.0 0.0 "g4"
+GetVariable
+Push "manager"
+GetMember
+Push "TooltipManager"
+GetMember
+Push "getInstance"
+CallMethod
+Push "hideTooltip"
+CallMethod
+Pop
+}
+SetMember
+Push "btn"
+GetVariable
+Push "onPress"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push 3 1 register1 "gotoAndStop"
+CallMethod
+Pop
+}
+SetMember
+Push "btn"
+GetVariable
+Push "onRelease"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push "scope"
+GetVariable
+Push "_curViewMode"
+GetMember
+Push register1 "id"
+GetMember
+Equals2
+Not
+If loc23d5
+Push undefined
+Return
+loc23d5:Push "lib"
+GetVariable
+Push "manager"
+GetMember
+Push "UISound"
+GetMember
+Push "MAIN_BTN"
+GetMember
+Push 1 "lib"
+GetVariable
+Push "manager"
+GetMember
+Push "UISound"
+GetMember
+Push "play"
+CallMethod
+Pop
+Push "scope"
+GetVariable
+Push "_curViewMode" register1 "id"
+GetMember
+SetMember
+Push 0.0 "scope"
+GetVariable
+Push "clearSkillContainer"
+CallMethod
+Pop
+Push register1 "id"
+GetMember
+Push 1 0.0 "g4"
+GetVariable
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Push "SkillWindowController"
+GetMember
+Push "getInstance"
+CallMethod
+Push "ToGame_SkillWindow_ChangeViewMode"
+CallMethod
+Pop
+Push 0.0 "scope"
+GetVariable
+Push "setViewMode"
+CallMethod
+Pop
+Push 0.0 "scope"
+GetVariable
+Push "setViewBtn"
+CallMethod
+Pop
+}
+SetMember
+Push "btn"
+GetVariable
+Push "onReleaseOutside"
+DefineFunction2 "" 0 3 false false true false true false false true false  {
+Push register1 "id"
+GetMember
+Push "scope"
+GetVariable
+Push "_curViewMode"
+GetMember
+Equals2
+If loc24d7
+Push 1
+Jump loc24df
+loc24d7:Push 3
+loc24df:StoreRegister 2
+Pop
+Push register2 1 register1 "gotoAndStop"
+CallMethod
+Pop
+Push 0.0 0.0 "g4"
+GetVariable
+Push "manager"
+GetMember
+Push "TooltipManager"
+GetMember
+Push "getInstance"
+CallMethod
+Push "hideTooltip"
+CallMethod
+Pop
+}
+SetMember
+}
+SetMember
+Push register2 "setCrest"
+DefineFunction2 "" 1 12 false false true false true false false true false 5 "info"  {
+Push register1 "_bChange" false
+SetMember
+Push register1 "_curViewMode"
+GetMember
+Push 0.0
+Equals2
+If loc257f
+Push 0.0 register1 "_totalViewPanel"
+GetMember
+Push "__get__skillListContainer"
+CallMethod
+Jump loc2596
+loc257f:Push 0.0 register1 "_defaultViewPanel"
+GetMember
+Push "__get__skillListContainer"
+CallMethod
+loc2596:StoreRegister 11
+Pop
+Push 0.0 register5 "shift"
+CallMethod
+StoreRegister 10
+Pop
+Push register11 register1 "_slotPrefix"
+GetMember
+Push register10
+Add2
+GetMember
+StoreRegister 7
+Pop
+Push register7 undefined
+Equals2
+Not
+If loc25ef
+Push register10 register11 2 register1 "createSlot"
+CallMethod
+StoreRegister 7
+Pop
+Jump loc25ff
+loc25ef:Push register7 1 register1 "clearCrest"
+CallMethod
+Pop
+loc25ff:Push 0.0 register5 "shift"
+CallMethod
+StoreRegister 9
+Pop
+Push register9 ""
+Equals2
+Not
+PushDuplicate
+Not
+If loc262e
+Pop
+Push register9 undefined
+Equals2
+Not
+loc262e:PushDuplicate
+Not
+If loc263f
+Pop
+Push register9 "undefined"
+Equals2
+Not
+loc263f:PushDuplicate
+Not
+If loc264f
+Pop
+Push register9 null
+Equals2
+Not
+loc264f:Not
+If loc2670
+Push register9 1 register7 "descFd"
+GetMember
+Push "setText"
+CallMethod
+Pop
+Jump loc2720
+loc2670:Push 0.0
+StoreRegister 3
+Pop
+loc2681:Push register3 register5 "length"
+GetMember
+Less2
+Not
+If loc2720
+Push register3 register1 "CREST_INFO_COUNT"
+GetMember
+Divide
+ToInteger
+StoreRegister 6
+Pop
+Push 0.0
+InitArray
+StoreRegister 4
+Pop
+Push 0.0
+StoreRegister 2
+Pop
+loc26c6:Push register2 register1 "CREST_INFO_COUNT"
+GetMember
+Less2
+Not
+If loc26f7
+Push register4 register2 register5 register3 register2
+Add2
+GetMember
+SetMember
+Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc26c6
+loc26f7:Push register4 register6 register7 3 register1 "setCrestSlot"
+CallMethod
+Pop
+Push register3 register1 "CREST_INFO_COUNT"
+GetMember
+Add2
+StoreRegister 3
+Pop
+Jump loc2681
+loc2720:Push register7 "disableMc"
+GetMember
+StoreRegister 8
+Pop
+Push register7 "disable"
+GetMember
+Not
+If loc2860
+Push register8 undefined
+Equals2
+Not
+If loc2778
+Push 0.0 register7 "getNextHighestDepth"
+CallMethod
+Push "disableMc" "disableMc_" register1 "_curViewMode"
+GetMember
+Add2
+Push 3 register7 "attachMovie"
+CallMethod
+StoreRegister 8
+Pop
+loc2778:Push register8 "hitTestDisable" true
+SetMember
+Push register8 "_x" 4
+SetMember
+Push register8 "_y" 4
+SetMember
+Push register8 "disableMc"
+GetMember
+Push "_x" 0.0
+SetMember
+Push register8 "disableMc"
+GetMember
+Push "_width" register1 "_curViewMode"
+GetMember
+Push 0.0
+Equals2
+If loc27e4
+Push 258
+Jump loc27ec
+loc27e4:Push 181
+loc27ec:SetMember
+Push register8 "_visible" true
+SetMember
+Push register7 "skillState"
+GetMember
+Push 1
+Greater
+Not
+If loc285b
+Push register8 "disableMc"
+GetMember
+Push "_x" 39
+SetMember
+Push register8 "disableMc"
+GetMember
+Push "_width" register1 "_curViewMode"
+GetMember
+Push 0.0
+Equals2
+If loc2852
+Push 219
+Jump loc285a
+loc2852:Push 142
+loc285a:SetMember
+loc285b:Jump loc2880
+loc2860:Push register8 undefined
+Equals2
+Not
+Not
+If loc2880
+Push 0.0 register8 "removeMovieClip"
+CallMethod
+Pop
+}
+loc2880:SetMember
+Push register2 "setCrestSlot"
+DefineFunction2 "" 3 18 false false true false true false false true false 7 "parentSlot" 8 "crestIndex" 3 "crestData"  {
+Push register7 "crest__" register8
+Add2
+GetMember
+StoreRegister 2
+Pop
+Push register2 undefined
+Equals2
+Not
+If loc294b
+Push 0.0 register7 "getNextHighestDepth"
+CallMethod
+Push "crest__" register8
+Add2
+Push "crestSlot" 3 register7 "attachMovie"
+CallMethod
+StoreRegister 2
+Pop
+Push 49 193 2
+InitArray
+StoreRegister 9
+Pop
+Push register9 register1 "_curViewMode"
+GetMember
+GetMember
+StoreRegister 12
+Pop
+Push register2 "_x" register12 register1 "CREST_SLOT_WIDTH"
+GetMember
+Push register8
+Multiply
+Add2
+SetMember
+Push register2 "_y" 6
+SetMember
+loc294b:Push register2 1 register1 "clearCrestSlot"
+CallMethod
+Pop
+Push register7 "slotIndex"
+GetMember
+StoreRegister 10
+Pop
+Push register3 0.0
+GetMember
+StoreRegister 11
+Pop
+Push register3 1
+GetMember
+StoreRegister 16
+Pop
+Push register3 2
+GetMember
+StoreRegister 14
+Pop
+Push register3 3
+GetMember
+StoreRegister 15
+Pop
+Push register3 4
+GetMember
+ToNumber
+StoreRegister 5
+Pop
+Push register3 5
+GetMember
+ToNumber
+StoreRegister 4
+Pop
+Push register3 6
+GetMember
+ToNumber
+StoreRegister 6
+Pop
+Push register2 "_visible" true
+SetMember
+Push register2 "slotIndex" register10
+SetMember
+Push register2 "crestIndex" register8
+SetMember
+Push register2 "crestId" register11
+SetMember
+Push register2 "crestRealId" register16
+SetMember
+Push register2 "crestState" register5
+SetMember
+Push register2 "point" register6
+SetMember
+Push register2 "grade" register4
+SetMember
+Push register2 "TEX" register14
+SetMember
+Push register2 "disableTEX" register15
+SetMember
+Push register2 "overMc"
+GetMember
+Push "_visible" false
+SetMember
+Push register4 0.0
+Greater
+If loc2a71
+Push false
+Jump loc2a76
+loc2a71:Push true
+loc2a76:StoreRegister 17
+Pop
+Push register2 "gradeMc"
+GetMember
+Push "_visible" register17
+SetMember
+Push register4 1 register2 "gradeMc"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push register2 "pointFd"
+GetMember
+Push "text" register6
+SetMember
+Push register5 register1 "CREST_STATE_INACTIVE"
+GetMember
+Equals2
+Not
+If loc2af4
+Push register2 1 register1 "_crestArray"
+GetMember
+Push "push"
+CallMethod
+Push 1
+Subtract
+StoreRegister 13
+Pop
+Push register2 "arrayIndex" register13
+SetMember
+Jump loc2b04
+loc2af4:Push register2 1 register1 "setStateOnCrestSlot"
+CallMethod
+Pop
+}
+loc2b04:SetMember
+Push register2 "setStateOnCrestSlot"
+DefineFunction2 "" 1 12 false false true false true false false true false 2 "target"  {
+Push register2 "crestState"
+GetMember
+StoreRegister 5
+Pop
+Push register2 "grade"
+GetMember
+StoreRegister 11
+Pop
+Push register5 register1 "CREST_STATE_ACTIVE"
+GetMember
+Equals2
+If loc2b53
+Push false
+Jump loc2b58
+loc2b53:Push true
+loc2b58:StoreRegister 3
+Pop
+Push register5 register1 "CREST_STATE_LOCK"
+GetMember
+Equals2
+If loc2b77
+Push false
+Jump loc2b7c
+loc2b77:Push true
+loc2b7c:StoreRegister 7
+Pop
+Push register5 register1 "CREST_STATE_ACTIVE"
+GetMember
+Equals2
+If loc2b9b
+Push false
+Jump loc2ba0
+loc2b9b:Push true
+loc2ba0:StoreRegister 10
+Pop
+Push register5 register1 "CREST_STATE_INACTIVE"
+GetMember
+Equals2
+If loc2bbf
+Push false
+Jump loc2bc4
+loc2bbf:Push true
+loc2bc4:StoreRegister 8
+Pop
+Push register11 0.0
+Greater
+If loc2bea
+Push 1
+Jump loc2bf2
+loc2bea:Push 2
+loc2bf2:StoreRegister 4
+Pop
+Push register5 register1 "CREST_STATE_INACTIVE"
+GetMember
+Equals2
+PushDuplicate
+If loc2c14
+Pop
+Push register5 register1 "CREST_STATE_ACTIVE"
+GetMember
+Equals2
+loc2c14:If loc2c26
+Push register2 "disableTEX"
+GetMember
+Jump loc2c2e
+loc2c26:Push register2 "TEX"
+GetMember
+loc2c2e:StoreRegister 9
+Pop
+Push register5 register1 "CREST_STATE_INACTIVE"
+GetMember
+Equals2
+PushDuplicate
+If loc2c50
+Pop
+Push register5 register1 "CREST_STATE_ACTIVE"
+GetMember
+Equals2
+loc2c50:If loc2c5f
+Push "0x707070"
+Jump loc2c64
+loc2c5f:Push "0xC9C9C9"
+loc2c64:StoreRegister 6
+Pop
+Push register2 "lockMc"
+GetMember
+Push "_visible" register7
+SetMember
+Push register2 "lockBg"
+GetMember
+Push "_visible" register3
+Not
+SetMember
+Push register2 "lineMc"
+GetMember
+Push "_visible" register10
+SetMember
+Push register2 "bg"
+GetMember
+Push "_visible" register3
+SetMember
+Push register2 "inactiveMc"
+GetMember
+Push "_visible" register8
+SetMember
+Push register4 1 register2 "bg"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push register4 1 register2 "lockBg"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push register2 "pointFd"
+GetMember
+Push "textColor" register6
+SetMember
+Push 24 24 register9 register2 "img"
+GetMember
+Push 4 "lib"
+GetVariable
+Push "util"
+GetMember
+Push "DrawBitmap"
+GetMember
+Push "draw"
+CallMethod
+Pop
+Push register2 "isLock" register5 register1 "CREST_STATE_INACTIVE"
+GetMember
+Equals2
+PushDuplicate
+If loc2d49
+Pop
+Push register5 register1 "CREST_STATE_ACTIVE"
+GetMember
+Equals2
+loc2d49:Not
+SetMember
+Push register2 "slotHit"
+GetMember
+Push "onRollOver"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push 1 register1 "_parent"
+GetMember
+Push "crestRealId"
+GetMember
+Push register1 "g4"
+GetVariable
+Push "view"
+GetMember
+Push "ViewID"
+GetMember
+Push "SKILL_WINDOW"
+GetMember
+Push 4 0.0 "g4"
+GetVariable
+Push "manager"
+GetMember
+Push "TooltipManager"
+GetMember
+Push "getInstance"
+CallMethod
+Push "showUiTooltip"
+CallMethod
+Pop
+Push register1 "_parent"
+GetMember
+Push "isLock"
+GetMember
+Push true
+Equals2
+Not
+If loc2ddc
+Push undefined
+Return
+loc2ddc:Push register1 "_parent"
+GetMember
+Push "overMc"
+GetMember
+Push "_visible" true
+SetMember
+}
+SetMember
+Push register2 "slotHit"
+GetMember
+Push "onRollOut"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push 0.0 0.0 "g4"
+GetVariable
+Push "manager"
+GetMember
+Push "TooltipManager"
+GetMember
+Push "getInstance"
+CallMethod
+Push "hideTooltip"
+CallMethod
+Pop
+Push register1 "_parent"
+GetMember
+Push "isLock"
+GetMember
+Push true
+Equals2
+Not
+If loc2e5b
+Push undefined
+Return
+loc2e5b:Push register1 "_parent"
+GetMember
+Push "overMc"
+GetMember
+Push "_visible" false
+SetMember
+}
+SetMember
+Push register2 "slotHit"
+GetMember
+Push "onDragOut"
+DefineFunction "" 0  {
+Push 0.0 0.0 "g4"
+GetVariable
+Push "manager"
+GetMember
+Push "TooltipManager"
+GetMember
+Push "getInstance"
+CallMethod
+Push "hideTooltip"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "slotHit"
+GetMember
+Push "onPress"
+DefineFunction "" 0  {
+}
+SetMember
+Push register2 "slotHit"
+GetMember
+Push "onRelease"
+DefineFunction2 "" 0 3 false false true false true false false true false  {
+Push register1 "_parent"
+GetMember
+Push "isLock"
+GetMember
+Push true
+Equals2
+Not
+If loc2f06
+Push undefined
+Return
+loc2f06:Push "lib"
+GetVariable
+Push "manager"
+GetMember
+Push "UISound"
+GetMember
+Push "MAIN_BTN"
+GetMember
+Push 1 "lib"
+GetVariable
+Push "manager"
+GetMember
+Push "UISound"
+GetMember
+Push "play"
+CallMethod
+Pop
+Push register1 "_parent"
+GetMember
+Push "crestState"
+GetMember
+StoreRegister 2
+Pop
+Push register2 register1 "CREST_STATE_INACTIVE"
+GetMember
+Equals2
+Not
+If loc2f7f
+Push 2 1 register1 "_parent"
+GetMember
+Push "crestNewEffect"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+loc2f7f:Push register1 "_parent"
+GetMember
+Push 1 0.0 "g4"
+GetVariable
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Push "SkillWindowController"
+GetMember
+Push "getInstance"
+CallMethod
+Push "ToGame_SkillWindow_ChangeCrestState"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "slotHit"
+GetMember
+Push "onReleaseOutside"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push register1 "_parent"
+GetMember
+Push "isLock"
+GetMember
+Push true
+Equals2
+Not
+If loc2ff2
+Push undefined
+Return
+loc2ff2:Push register1 "_parent"
+GetMember
+Push "overMc"
+GetMember
+Push "_visible" false
+SetMember
+}
+SetMember
+}
+SetMember
+Push register2 "changeCrestState"
+DefineFunction2 "" 1 6 false false true false true false false true false 4 "target"  {
+Push register4 "point"
+GetMember
+StoreRegister 3
+Pop
+Push register1 "totalPoint"
+GetMember
+Push register1 "currentPoint"
+GetMember
+Subtract
+StoreRegister 2
+Pop
+Push register4 "crestState"
+GetMember
+StoreRegister 5
+Pop
+Push register4 "crestState" register3 register2
+Greater
+Not
+If loc3073
+Push register1 "CREST_STATE_DISABLE"
+GetMember
+Jump loc307b
+loc3073:Push register1 "CREST_STATE_INACTIVE"
+GetMember
+loc307b:SetMember
+Push register1 "_bChange"
+GetMember
+Push false
+Equals2
+Not
+If loc30b2
+Push register1 "_bChange" register3 register2
+Greater
+Not
+If loc30ac
+Push false
+Jump loc30b1
+loc30ac:Push true
+loc30b1:SetMember
+}
+loc30b2:SetMember
+Push register2 "setSkill"
+DefineFunction2 "" 1 17 false false true false true false false true false 3 "skillSlotP"  {
+Push register1 "_curViewMode"
+GetMember
+Push 0.0
+Equals2
+If loc3107
+Push 0.0 register1 "_totalViewPanel"
+GetMember
+Push "__get__skillListContainer"
+CallMethod
+Jump loc311e
+loc3107:Push 0.0 register1 "_defaultViewPanel"
+GetMember
+Push "__get__skillListContainer"
+CallMethod
+loc311e:StoreRegister 9
+Pop
+Push register3 "Index"
+GetMember
+StoreRegister 4
+Pop
+Push register9 register1 "_slotPrefix"
+GetMember
+Push register4
+Add2
+GetMember
+StoreRegister 2
+Pop
+Push register2 undefined
+Equals2
+Not
+If loc316e
+Push register4 register9 2 register1 "createSlot"
+CallMethod
+StoreRegister 2
+Pop
+Jump loc317e
+loc316e:Push register2 1 register1 "clearSkill"
+CallMethod
+Pop
+loc317e:Push register3 "Id"
+GetMember
+StoreRegister 15
+Pop
+Push register3 "Name"
+GetMember
+StoreRegister 8
+Pop
+Push register3 "Img"
+GetMember
+StoreRegister 7
+Pop
+Push register7 1 "flash"
+GetVariable
+Push "display"
+GetMember
+Push "BitmapData"
+GetMember
+Push "loadBitmap"
+CallMethod
+StoreRegister 14
+Pop
+Push register3 "Disable"
+GetMember
+ToNumber
+StoreRegister 11
+Pop
+Push register3 "State"
+GetMember
+ToNumber
+StoreRegister 6
+Pop
+Push register3 "Num"
+GetMember
+ToNumber
+StoreRegister 5
+Pop
+Push register3 "Remain"
+GetMember
+StoreRegister 16
+Pop
+Push register3 "Total"
+GetMember
+StoreRegister 12
+Pop
+Push register3 "Awaken"
+GetMember
+ToNumber
+Push 1 "Boolean"
+CallFunction
+StoreRegister 10
+Pop
+Push register12 register16 register4 3 register1 "OnGame_SkillWindow_CoolTime"
+CallMethod
+Pop
+Push register2 "slotIndex" register4
+SetMember
+Push register2 "skillId" register15
+SetMember
+Push register10
+If loc3262
+Push register8
+Jump loc3270
+loc3262:Push "<font color=\'#deb200\'>" register8
+Add2
+Push "</font>"
+Add2
+loc3270:StoreRegister 13
+Pop
+Push register2 "nameFd"
+GetMember
+Push "htmlText" register13
+SetMember
+Push register2 "disable" register11
+SetMember
+Push register2 "skillState" register6
+SetMember
+Push register2 "TEX" register7
+SetMember
+Push register2 "awaken" register10
+SetMember
+Push 0.59 38 38 0.0 0.0 0.0 0.0 register14 register2 "img"
+GetMember
+Push 9 "lib"
+GetVariable
+Push "display"
+GetMember
+Push "DrawBitmapData"
+GetMember
+Push "draw"
+CallMethod
+Pop
+Push register6 2
+Equals2
+Not
+If loc3344
+Push register2 "nameFd"
+GetMember
+Push "htmlText" register2 "nameFd"
+GetMember
+Push "htmlText"
+GetMember
+Push register1 "_skillState0"
+GetMember
+Add2
+SetMember
+Jump loc3377
+loc3344:Push register6 3
+Equals2
+Not
+If loc3377
+Push register2 "nameFd"
+GetMember
+Push "htmlText" register2 "nameFd"
+GetMember
+Push "htmlText"
+GetMember
+Push register1 "_skillState1"
+GetMember
+Add2
+SetMember
+loc3377:Push register5 undefined
+Equals2
+Not
+PushDuplicate
+Not
+If loc3390
+Pop
+Push register5 ""
+Equals2
+Not
+loc3390:PushDuplicate
+Not
+If loc33a1
+Pop
+Push register5 "-1"
+Equals2
+Not
+loc33a1:Not
+If loc33b7
+Push register2 "numFd"
+GetMember
+Push "text" register5
+SetMember
+}
+loc33b7:SetMember
+Push register2 "setSkillState"
+DefineFunction2 "" 1 10 false false true false true false false true false 6 "slotIndex"  {
+Push register1 "_curViewMode"
+GetMember
+Push 0.0
+Equals2
+If loc340b
+Push 0.0 register1 "_totalViewPanel"
+GetMember
+Push "__get__skillListContainer"
+CallMethod
+Jump loc3422
+loc340b:Push 0.0 register1 "_defaultViewPanel"
+GetMember
+Push "__get__skillListContainer"
+CallMethod
+loc3422:StoreRegister 5
+Pop
+Push register5 register1 "_slotPrefix"
+GetMember
+Push register6
+Add2
+GetMember
+StoreRegister 3
+Pop
+Push register3 "skillState"
+GetMember
+StoreRegister 2
+Pop
+Push register3 "awaken"
+GetMember
+StoreRegister 8
+Pop
+Push 1 register2
+Less2
+If loc3471
+Push register2
+Jump loc3479
+loc3471:Push 2
+loc3479:StoreRegister 2
+Pop
+Push register8
+If loc3492
+Push register2
+Jump loc349f
+loc3492:Push register2 50
+Add2
+ToNumber
+ToString
+loc349f:StoreRegister 9
+Pop
+Push register5 "stateMc_" register6
+Add2
+GetMember
+StoreRegister 4
+Pop
+Push register4 undefined
+Equals2
+Not
+Not
+If loc34d4
+Push 0.0 register4 "removeMovieClip"
+CallMethod
+Pop
+loc34d4:Push register2 0.0
+Greater
+Not
+If loc35a2
+Push 0.0 register5 "getNextHighestDepth"
+CallMethod
+Push "stateMc_" register6
+Add2
+Push "slotStateMc_" register9
+Add2
+Push 3 register5 "attachMovie"
+CallMethod
+StoreRegister 4
+Pop
+Push register4 "_x" register2 1
+Greater
+If loc354a
+Push register3 "_x"
+GetMember
+Push 1.5
+Add2
+Jump loc355b
+loc354a:Push register3 "_x"
+GetMember
+Push 1
+Add2
+loc355b:SetMember
+Push register4 "_y" register2 1
+Greater
+If loc3586
+Push register3 "_y"
+GetMember
+Push 1
+Add2
+Jump loc3597
+loc3586:Push register3 "_y"
+GetMember
+Push 1
+Add2
+loc3597:SetMember
+Push register4 "hitTestDisable" true
+SetMember
+loc35a2:Push register2 1
+Equals2
+PushDuplicate
+Not
+If loc35ba
+Pop
+Push register8
+loc35ba:Not
+If loc3607
+Push 0.0 register5 "getNextHighestDepth"
+CallMethod
+Push "awakenEffect_" register6
+Add2
+Push "awakenEffect" 3 register5 "attachMovie"
+CallMethod
+StoreRegister 7
+Pop
+Push register7 "_x" register3 "_x"
+GetMember
+SetMember
+Push register7 "_y" register3 "_y"
+GetMember
+SetMember
+}
+loc3607:SetMember
+Push register2 "clearSkill"
+DefineFunction2 "" 1 7 false false true false true false false true false 2 "target"  {
+Push register2 "slotIndex"
+GetMember
+StoreRegister 6
+Pop
+Push 0.0 register2 "clear"
+CallMethod
+Pop
+Push register2 "skillId"
+Delete
+Pop
+Push register2 "nameFd"
+GetMember
+Push "htmlText" ""
+SetMember
+Push register2 "numFd"
+GetMember
+Push "text" ""
+SetMember
+Push register2 "effectMc"
+GetMember
+Push "coolTimeMc"
+GetMember
+StoreRegister 3
+Pop
+Push register3 undefined
+Equals2
+Not
+Not
+If loc36b3
+Push register3 1 register1 "_coolTimeManager"
+GetMember
+Push "removeCoolTimeInstance"
+CallMethod
+Pop
+Push 0.0 register3 "removeMovieClip"
+CallMethod
+Pop
+loc36b3:Push register2 "effectMc"
+GetMember
+Push "activeMc"
+GetMember
+StoreRegister 5
+Pop
+Push register5 undefined
+Equals2
+Not
+Not
+If loc36e6
+Push 0.0 register5 "removeMovieClip"
+CallMethod
+Pop
+loc36e6:Push register2 "_parent"
+GetMember
+Push "stateMc_" register6
+Add2
+GetMember
+StoreRegister 4
+Pop
+Push register4 undefined
+Equals2
+Not
+Not
+If loc371c
+Push 0.0 register4 "removeMovieClip"
+CallMethod
+Pop
+}
+loc371c:SetMember
+Push register2 "setViewMode"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push register1 "_container_mc"
+GetMember
+Push "noticeFd"
+GetMember
+Push "_visible" 0.0 register1 "_tabButtonGroup"
+GetMember
+Push "getSelectedButtonIndex"
+CallMethod
+Push 2
+Equals2
+Not
+PushDuplicate
+Not
+If loc3771
+Pop
+Push register1 "_curViewMode"
+GetMember
+Not
+loc3771:SetMember
+Push register1 "_container_mc"
+GetMember
+Push "noticeIcon"
+GetMember
+Push "_visible" 0.0 register1 "_tabButtonGroup"
+GetMember
+Push "getSelectedButtonIndex"
+CallMethod
+Push 2
+Equals2
+Not
+PushDuplicate
+Not
+If loc37b4
+Pop
+Push register1 "_curViewMode"
+GetMember
+Not
+loc37b4:SetMember
+Push register1 "_curViewMode"
+GetMember
+Push 1 register1 "_defaultViewPanel"
+GetMember
+Push "setViewMode"
+CallMethod
+Pop
+Push 0.0 register1 "_totalViewPanel"
+GetMember
+Push "__get__targetMovieClip"
+CallMethod
+Push "_visible" register1 "_curViewMode"
+GetMember
+ToNumber
+Push 1
+Equals2
+SetMember
+}
+SetMember
+Push register2 "clearCrest"
+DefineFunction2 "" 1 5 false false true false true false false true false 4 "target"  {
+Push register4 "descFd"
+GetMember
+Push "htmlText" ""
+SetMember
+Push 0.0
+StoreRegister 2
+Pop
+loc3839:Push register2 register1 "MAX_CREST"
+GetMember
+Less2
+Not
+If loc3889
+Push register4 "crest__" register2
+Add2
+GetMember
+StoreRegister 3
+Pop
+Push register3 undefined
+Equals2
+Not
+Not
+If loc3879
+Push register3 1 register1 "clearCrestSlot"
+CallMethod
+Pop
+loc3879:Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc3839
+}
+loc3889:SetMember
+Push register2 "changeCrestArrayIndex"
+DefineFunction2 "" 0 5 false false true false true false false true false  {
+Push register1 "_crestArray"
+GetMember
+Push "length"
+GetMember
+StoreRegister 4
+Pop
+Push 0.0
+StoreRegister 2
+Pop
+loc38c1:Push register2 register4
+Less2
+Not
+If loc38fc
+Push register1 "_crestArray"
+GetMember
+Push register2
+GetMember
+StoreRegister 3
+Pop
+Push register3 "arrayIndex" register2
+SetMember
+Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc38c1
+}
+loc38fc:SetMember
+Push register2 "clearCrestSlot"
+DefineFunction2 "" 1 4 false false true false true false false true false 2 "slot"  {
+Push register2 "arrayIndex"
+GetMember
+Push undefined
+Equals2
+Not
+Not
+If loc3965
+Push register2 "arrayIndex"
+GetMember
+StoreRegister 3
+Pop
+Push 1 register3 2 register1 "_crestArray"
+GetMember
+Push "splice"
+CallMethod
+Pop
+Push 0.0 register1 "changeCrestArrayIndex"
+CallMethod
+Pop
+loc3965:Push register2 "pointFd"
+GetMember
+Push "text" ""
+SetMember
+Push register2 "gradeMc"
+GetMember
+Push "_visible" false
+SetMember
+Push register2 "lockMc"
+GetMember
+Push "_visible" false
+SetMember
+Push register2 "lockBg"
+GetMember
+Push "_visible" false
+SetMember
+Push register2 "inactiveMc"
+GetMember
+Push "_visible" false
+SetMember
+Push register2 "bg"
+GetMember
+Push "_visible" true
+SetMember
+Push register2 "_visible" false
+SetMember
+Push register2 "slotIndex"
+Delete
+Pop
+Push register2 "crestIndex"
+Delete
+Pop
+Push register2 "crestId"
+Delete
+Pop
+Push register2 "crestRealId"
+Delete
+Pop
+Push register2 "point"
+Delete
+Pop
+Push register2 "grade"
+Delete
+Pop
+Push register2 "TEX"
+Delete
+Pop
+Push register2 "disableTEX"
+Delete
+Pop
+Push register2 "arrayIndex"
+Delete
+Pop
+}
+SetMember
+Push register2 "createSlot"
+DefineFunction2 "" 2 9 false false true false true false false true true 8 "container" 3 "slotIndex"  {
+Push "slot_mode" register1 "_curViewMode"
+GetMember
+Add2
+StoreRegister 6
+Pop
+Push register1 "_curViewMode"
+GetMember
+Push 0.0
+Equals2
+If loc3a8e
+Push register3 3
+Modulo
+Push register1 "SLOT_WIDTH"
+GetMember
+Multiply
+Jump loc3a9a
+loc3a8e:Push 0.0
+loc3a9a:StoreRegister 7
+Pop
+Push register1 "_curViewMode"
+GetMember
+Push 0.0
+Equals2
+If loc3ad4
+Push register3 3
+Divide
+ToInteger
+Push register1 "SLOT_HEIGTH_MODE_1"
+GetMember
+Multiply
+Jump loc3ae0
+loc3ad4:Push register3 register1 "SLOT_HEIGHT_MODE_0"
+GetMember
+Multiply
+loc3ae0:StoreRegister 5
+Pop
+Push "slot" 0.0 register8 "getNextHighestDepth"
+CallMethod
+Push register1 "_slotPrefix"
+GetMember
+Push register3
+Add2
+Push register6 3 register8 "attachMovie"
+CallMethod
+DefineLocal
+Push "slot"
+GetVariable
+Push "_x" register7
+SetMember
+Push "slot"
+GetVariable
+Push "_y" register5
+SetMember
+Push "slot"
+GetVariable
+Push "overMc"
+GetMember
+Push "_visible" false
+SetMember
+Push "slot"
+GetVariable
+Push "pressMc"
+GetMember
+Push "_visible" false
+SetMember
+Push "slot"
+GetVariable
+Push "disableMc"
+GetMember
+Push "_visible" false
+SetMember
+Push "slot"
+GetVariable
+Push "numFd"
+GetMember
+Push "text" ""
+SetMember
+Push "slot"
+GetVariable
+Push "slotHit"
+GetMember
+Push "slotName" "SKILLSLOT"
+SetMember
+Push "slot"
+GetVariable
+Push "slotHit"
+GetMember
+Push "trackAsMenu" true
+SetMember
+Push "slot"
+GetVariable
+Push "descFd"
+GetMember
+Push "verticalAutoSize" "center"
+SetMember
+Push "slot"
+GetVariable
+Push "nameFd"
+GetMember
+Push "verticalAutoSize" "center"
+SetMember
+Push "scope" register1
+DefineLocal
+Push "slot"
+GetVariable
+Push "slotHit"
+GetMember
+Push "onRollOver"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push 0.0 register1 "_parent"
+GetMember
+Push "skillId"
+GetMember
+Push "slot"
+GetVariable
+Push "slotHit"
+GetMember
+Push "g4"
+GetVariable
+Push "view"
+GetMember
+Push "ViewID"
+GetMember
+Push "SKILL_WINDOW"
+GetMember
+Push 4 0.0 "g4"
+GetVariable
+Push "manager"
+GetMember
+Push "TooltipManager"
+GetMember
+Push "getInstance"
+CallMethod
+Push "showUiTooltip"
+CallMethod
+Pop
+Push register1 "_parent"
+GetMember
+Push "disable"
+GetMember
+PushDuplicate
+Not
+If loc3ca1
+Pop
+Push register1 "_parent"
+GetMember
+Push "skillState"
+GetMember
+Push 2
+Equals2
+Not
+loc3ca1:Not
+If loc3cac
+Push undefined
+Return
+loc3cac:Push register1 "_parent"
+GetMember
+Push "overMc"
+GetMember
+Push "_visible" true
+SetMember
+}
+SetMember
+Push "slot"
+GetVariable
+Push "slotHit"
+GetMember
+Push "onRollOut"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push 0.0 0.0 "g4"
+GetVariable
+Push "manager"
+GetMember
+Push "TooltipManager"
+GetMember
+Push "getInstance"
+CallMethod
+Push "hideTooltip"
+CallMethod
+Pop
+Push register1 "_parent"
+GetMember
+Push "disable"
+GetMember
+PushDuplicate
+Not
+If loc3d3f
+Pop
+Push register1 "_parent"
+GetMember
+Push "skillState"
+GetMember
+Push 2
+Equals2
+Not
+loc3d3f:Not
+If loc3d4a
+Push undefined
+Return
+loc3d4a:Push register1 "_parent"
+GetMember
+Push "overMc"
+GetMember
+Push "_visible" false
+SetMember
+}
+SetMember
+Push "slot"
+GetVariable
+Push "slotHit"
+GetMember
+Push "onReleaseOutside"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push register1 "_parent"
+GetMember
+Push "overMc"
+GetMember
+Push "_visible" false
+SetMember
+Push "scope"
+GetVariable
+Push "_releasedSkillSlot"
+GetMember
+Push register1
+Equals2
+Not
+If loc3db2
+Push undefined
+Return
+loc3db2:Push register1 "_parent"
+GetMember
+Push "pressMc"
+GetMember
+Push "_visible" false
+SetMember
+}
+SetMember
+Push "slot"
+GetVariable
+Push "slotHit"
+GetMember
+Push "onPress"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push register1 "_parent"
+GetMember
+Push "disable"
+GetMember
+PushDuplicate
+Not
+If loc3e15
+Pop
+Push register1 "_parent"
+GetMember
+Push "skillState"
+GetMember
+Push 2
+Equals2
+Not
+loc3e15:Not
+If loc3e20
+Push undefined
+Return
+loc3e20:Push "scope"
+GetVariable
+Push "_pressedSkillSlot" register1
+SetMember
+Push register1 "_parent"
+GetMember
+Push "pressMc"
+GetMember
+Push "_visible" true
+SetMember
+}
+SetMember
+Push "slot"
+GetVariable
+Push "slotHit"
+GetMember
+Push "onRelease"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push register1 "_parent"
+GetMember
+Push "disable"
+GetMember
+PushDuplicate
+Not
+If loc3e91
+Pop
+Push register1 "_parent"
+GetMember
+Push "skillState"
+GetMember
+Push 2
+Equals2
+Not
+loc3e91:Not
+If loc3e9c
+Push undefined
+Return
+loc3e9c:Push "lib"
+GetVariable
+Push "manager"
+GetMember
+Push "UISound"
+GetMember
+Push "MAIN_BTN"
+GetMember
+Push 1 "lib"
+GetVariable
+Push "manager"
+GetMember
+Push "UISound"
+GetMember
+Push "play"
+CallMethod
+Pop
+Push "scope"
+GetVariable
+Push "_releasedSkillSlot"
+GetMember
+Push "_parent"
+GetMember
+Push "pressMc"
+GetMember
+Push "_visible" false
+SetMember
+Push "scope"
+GetVariable
+Push "_releasedSkillSlot" register1
+SetMember
+Push "scope"
+GetVariable
+Push "_pressedSkillSlot"
+GetMember
+Push register1
+Equals2
+Not
+If loc3f6a
+Push register1 "_parent"
+GetMember
+Push "slotIndex"
+GetMember
+Push 1 0.0 "g4"
+GetVariable
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Push "SkillWindowController"
+GetMember
+Push "getInstance"
+CallMethod
+Push "ToGame_SkillWindow_SelectSkill"
+CallMethod
+Pop
+Push "scope"
+GetVariable
+Push "_pressedSkillSlot" null
+SetMember
+}
+loc3f6a:SetMember
+Push "slot"
+GetVariable
+Push "slotHit"
+GetMember
+Push "onDragOut"
+DefineFunction2 "" 0 4 false false true false true false false true true  {
+Push 0.0 0.0 "g4"
+GetVariable
+Push "manager"
+GetMember
+Push "TooltipManager"
+GetMember
+Push "getInstance"
+CallMethod
+Push "hideTooltip"
+CallMethod
+Pop
+Push register1 "scope"
+GetVariable
+Push "_pressedSkillSlot"
+GetMember
+Equals2
+Not
+If loc4007
+Push register1 "_parent"
+GetMember
+Push "TEX"
+GetMember
+StoreRegister 3
+Pop
+Push register3 undefined
+Equals2
+Not
+Not
+If loc4007
+Push register3 register1 "_parent"
+GetMember
+Push 2 register2 "StartIconDrag"
+CallMethod
+Pop
+loc4007:Push register1 "scope"
+GetVariable
+Push "_releasedSkillSlot"
+GetMember
+Equals2
+Not
+Not
+If loc4035
+Push register1 "_parent"
+GetMember
+Push "pressMc"
+GetMember
+Push "_visible" false
+SetMember
+loc4035:Push register1 "_parent"
+GetMember
+Push "overMc"
+GetMember
+Push "_visible" false
+SetMember
+Push 0.0 0.0 "g4"
+GetVariable
+Push "manager"
+GetMember
+Push "TooltipManager"
+GetMember
+Push "getInstance"
+CallMethod
+Push "hideTooltip"
+CallMethod
+Pop
+}
+SetMember
+Push "slot"
+GetVariable
+Push "slotHit"
+GetMember
+Push "GetName"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push register1 "_parent"
+GetMember
+Push "_name"
+GetMember
+Return
+}
+SetMember
+Push "slot"
+GetVariable
+Return
+}
+SetMember
+Push register2 "clearSkillContainer"
+DefineFunction2 "" 0 4 false false true false true false false true false  {
+Push register1 "_crestArray" 0.0
+InitArray
+SetMember
+Push register1 "_pressedSkillSlot" null
+SetMember
+Push register1 "_releasedSkillSlot" null
+SetMember
+Push register1 "_curViewMode"
+GetMember
+Push 0.0
+Equals2
+If loc4122
+Push 0.0 register1 "_totalViewPanel"
+GetMember
+Push "__get__skillListContainer"
+CallMethod
+Jump loc4139
+loc4122:Push 0.0 register1 "_defaultViewPanel"
+GetMember
+Push "__get__skillListContainer"
+CallMethod
+loc4139:StoreRegister 2
+Pop
+Push register2
+Enumerate2
+loc4144:StoreRegister 0
+Push null
+Equals2
+If loc418f
+Push register0
+StoreRegister 3
+Pop
+Push register2 register3
+GetMember
+TypeOf
+Push "movieclip"
+Equals2
+Not
+If loc418a
+Push 0.0 register2 register3
+GetMember
+Push "removeMovieClip"
+CallMethod
+Pop
+loc418a:Jump loc4144
+loc418f:Push register1 "_curViewMode"
+GetMember
+Push 0.0
+Equals2
+Not
+If loc41d9
+Push true 1 register1 "_defaultViewPanel"
+GetMember
+Push "clearPathSkill"
+CallMethod
+Pop
+Push 0.0 register1 "_defaultViewPanel"
+GetMember
+Push "clearSkillContainer"
+CallMethod
+Pop
+}
+loc41d9:SetMember
+Push register2 "OnGameEventShowWindow"
+DefineFunction2 "" 2 6 false true true false true false false true true 4 "widgetName" 5 "bShow"  {
+Push 0.0 register4 "toLowerCase"
+CallMethod
+Push 0.0 0.0 register1 "getUIName"
+CallMethod
+Push "toLowerCase"
+CallMethod
+Equals2
+Not
+If loc42fc
+Push register1 "_bWidgetOpen" register5
+SetMember
+Push register3 "gbUIMode"
+GetMember
+PushDuplicate
+Not
+If loc425f
+Pop
+Push register1 "_bWidgetOpen"
+GetMember
+loc425f:Not
+If loc42cc
+Push 0.0 register1 "__get__targetMovieClip"
+CallMethod
+Push "_visible" true
+SetMember
+Push register1 "_container_mc"
+GetMember
+Push "lock_mc"
+GetMember
+Push "_x" 739
+SetMember
+Push register1 "_container_mc"
+GetMember
+Push "lock_mc"
+GetMember
+Push "_y" 7
+SetMember
+Push true "ShortCut2" "OnGameEventShowWindow" 3 register2 "OnGameEvent"
+CallMethod
+Pop
+Jump loc42fc
+loc42cc:Push 0.0 register1 "__get__targetMovieClip"
+CallMethod
+Push "_visible" false
+SetMember
+Push false "ShortCut2" "OnGameEventShowWindow" 3 register2 "OnGameEvent"
+CallMethod
+Pop
+}
+loc42fc:SetMember
+Push register2 "OnGameEventChangeUIMode"
+DefineFunction2 "" 1 3 false false true false true false false true true 0 "bShow"  {
+Push register2 "gbUIMode"
+GetMember
+PushDuplicate
+Not
+If loc4331
+Pop
+Push register1 "_bWidgetOpen"
+GetMember
+loc4331:Not
+If loc4355
+Push 0.0 register1 "__get__targetMovieClip"
+CallMethod
+Push "_visible" true
+SetMember
+Jump loc43b9
+loc4355:Push 0.0 register1 "__get__targetMovieClip"
+CallMethod
+Push "_visible" false
+SetMember
+Push register1 "_rightClicked"
+GetMember
+Not
+If loc43b9
+Push register1 "_rightClicked" false
+SetMember
+Push register1 "_rightClickedTarget"
+GetMember
+Push "drag" true
+SetMember
+Push register1 "_targetIndex"
+GetMember
+Push undefined
+Equals2
+Not
+Not
+If loc43af
+loc43af:Push register1 "_rightClickedTarget" null
+SetMember
+}
+loc43b9:SetMember
+Push register2 "OnGame_SkillWindow_SetCrestSaveBtn"
+DefineFunction2 "" 1 6 false false true false true false false true false 5 "btnParam"  {
+Push "\t" register5 2 "lib"
+GetVariable
+Push "util"
+GetMember
+Push "ExtString"
+GetMember
+Push "split"
+CallMethod
+StoreRegister 4
+Pop
+Push 0.0
+StoreRegister 2
+Pop
+loc4411:Push register2 register4 "length"
+GetMember
+Less2
+Not
+If loc4469
+Push register2 1
+Add2
+StoreRegister 3
+Pop
+Push register4 register2
+GetMember
+Push register1 "_bottomButtonGroup"
+GetMember
+Push "saveBtn_" register3
+Add2
+GetMember
+Push 2 register1 "setStateSaveBtn"
+CallMethod
+Pop
+Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc4411
+}
+loc4469:SetMember
+Push register2 "OnGame_SkillWindow_SetTab"
+DefineFunction2 "" 5 12 false false true false true false false true false 6 "tabNames" 7 "tagNums" 8 "isAvtices" 11 "selectedTab" 9 "tooltipMessages"  {
+Push 0.0 register1 "clearTag"
+CallMethod
+Pop
+Push register1 "_container_mc"
+GetMember
+Push "tabBtn"
+GetMember
+StoreRegister 10
+Pop
+Push 0.0 register1 "_container_mc"
+GetMember
+Push "tabBtn"
+GetMember
+Push "clear"
+CallMethod
+Pop
+Push 0.0
+StoreRegister 5
+Pop
+loc450d:Push register5 register6 "length"
+GetMember
+Less2
+Not
+If loc463d
+Push register1 "_container_mc"
+GetMember
+Push "tabBtn" register5
+Add2
+GetMember
+StoreRegister 3
+Pop
+Push register9 register5
+GetMember
+StoreRegister 2
+Pop
+Push register2 null
+Equals2
+Not
+PushDuplicate
+Not
+If loc4559
+Pop
+Push register2 undefined
+Equals2
+Not
+loc4559:PushDuplicate
+Not
+If loc456a
+Pop
+Push register2 "undefined"
+Equals2
+Not
+loc456a:PushDuplicate
+Not
+If loc457b
+Pop
+Push register2 ""
+Equals2
+Not
+loc457b:Not
+If loc45b8
+Push register2 register3 2 0.0 "g4"
+GetVariable
+Push "manager"
+GetMember
+Push "TooltipManager"
+GetMember
+Push "getInstance"
+CallMethod
+Push "addMessageTooltip"
+CallMethod
+Pop
+Jump loc45e8
+loc45b8:Push register3 1 0.0 "g4"
+GetVariable
+Push "manager"
+GetMember
+Push "TooltipManager"
+GetMember
+Push "getInstance"
+CallMethod
+Push "removeTooltip"
+CallMethod
+Pop
+loc45e8:Push register6 register5
+GetMember
+Push 1 register3 "__set__label"
+CallMethod
+Pop
+Push register8 register5
+GetMember
+Not
+Push 1 register3 "__set__disabled"
+CallMethod
+Pop
+Push register3 1 register1 "_tabButtons"
+GetMember
+Push "push"
+CallMethod
+Pop
+Push register5
+Increment
+StoreRegister 5
+Pop
+Jump loc450d
+loc463d:Push register1 "onTabButtonGroupClick"
+GetMember
+Push register1 "gfx"
+GetVariable
+Push "events"
+GetMember
+Push "EventTypes"
+GetMember
+Push "ITEM_CLICK"
+GetMember
+Push 3 register1 "_tabButtonGroup"
+GetMember
+Push "addEventListener"
+CallMethod
+Pop
+Push register11 1 register1 "_tabButtonGroup"
+GetMember
+Push "setSelectedButtonIndex"
+CallMethod
+Pop
+Push 0.0
+StoreRegister 5
+Pop
+loc46a1:Push register5 register6 "length"
+GetMember
+Less2
+Not
+If loc4712
+Push register7 register5
+GetMember
+ToNumber
+StoreRegister 4
+Pop
+Push register4 undefined
+Equals2
+Not
+PushDuplicate
+Not
+If loc46d9
+Pop
+Push register4 ""
+Equals2
+Not
+loc46d9:PushDuplicate
+Not
+If loc46ea
+Pop
+Push register4 "undefined"
+Equals2
+Not
+loc46ea:Not
+If loc4702
+Push register4 register5 2 register1 "createTag"
+CallMethod
+Pop
+loc4702:Push register5
+Increment
+StoreRegister 5
+Pop
+Jump loc46a1
+loc4712:Push register11 2
+Equals2
+Not
+Not
+If loc477a
+Push 0.0 register1 "_defaultViewPanel"
+GetMember
+Push "__get__targetMovieClip"
+CallMethod
+Push "_visible" true
+SetMember
+Push register1 "_growSkillPanel"
+GetMember
+Push "_visible" false
+SetMember
+Push register1 "_bottomButtonGroup"
+GetMember
+Push "_visible" true
+SetMember
+Push 0.0 register1 "setViewMode"
+CallMethod
+Pop
+Jump loc47d8
+loc477a:Push 0.0 register1 "_defaultViewPanel"
+GetMember
+Push "__get__targetMovieClip"
+CallMethod
+Push "_visible" false
+SetMember
+Push 0.0 register1 "_totalViewPanel"
+GetMember
+Push "__get__targetMovieClip"
+CallMethod
+Push "_visible" false
+SetMember
+Push register1 "_growSkillPanel"
+GetMember
+Push "_visible" true
+SetMember
+Push register1 "_bottomButtonGroup"
+GetMember
+Push "_visible" false
+SetMember
+}
+loc47d8:SetMember
+Push register2 "OnGame_SkillWindow_SetGuideText"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "guideText"  {
+Push register2 ""
+Equals2
+PushDuplicate
+If loc480d
+Pop
+Push register2 undefined
+Equals2
+loc480d:PushDuplicate
+If loc481b
+Pop
+Push register2 null
+Equals2
+loc481b:PushDuplicate
+If loc482a
+Pop
+Push register2 "undefined"
+Equals2
+loc482a:Not
+If loc483a
+Push ""
+StoreRegister 2
+Pop
+loc483a:Push register1 "_container_mc"
+GetMember
+Push "noticeFd"
+GetMember
+Push "htmlText" register2
+SetMember
+}
+SetMember
+Push register2 "OnGame_SkillWindow_SetViewMode"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "viewMode"  {
+Push 0.0 register1 "clearSkillContainer"
+CallMethod
+Pop
+Push register1 "_curViewMode" register2
+ToNumber
+SetMember
+Push 0.0 register1 "setViewMode"
+CallMethod
+Pop
+Push 0.0 register1 "setViewBtn"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "OnGame_SkillWindow_SetSkill"
+DefineFunction2 "" 2 11 false false true false true false false true false 7 "skillData" 6 "selectedSlot"  {
+Push 0.0 register1 "_defaultViewPanel"
+GetMember
+Push "__get__skillListContainer"
+CallMethod
+Push "_height"
+GetMember
+StoreRegister 10
+Pop
+Push register7 undefined
+Equals2
+PushDuplicate
+If loc4915
+Pop
+Push register7 ""
+Equals2
+loc4915:PushDuplicate
+If loc4924
+Pop
+Push register7 "undefined"
+Equals2
+loc4924:PushDuplicate
+If loc4932
+Pop
+Push register7 null
+Equals2
+loc4932:Not
+If loc4992
+Push 0.0 register1 "clearSkillContainer"
+CallMethod
+Pop
+Push 0.0 register1 "_defaultViewPanel"
+GetMember
+Push "__get__skillListContainer"
+CallMethod
+Push "_height"
+GetMember
+Push 1 0.0 register1 "_defaultViewPanel"
+GetMember
+Push "__get__skillListScroll"
+CallMethod
+Push "__set__pageSize"
+CallMethod
+Pop
+Push undefined
+Return
+loc4992:Push register7 1 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "JSON"
+GetMember
+Push "parse"
+CallMethod
+StoreRegister 5
+Pop
+Push 0.0
+InitArray
+StoreRegister 4
+Pop
+Push 0.0
+StoreRegister 3
+Pop
+loc49db:Push register3 register5 "length"
+GetMember
+Less2
+Not
+If loc4a6b
+Push register5 register3
+GetMember
+Push 1 "g4"
+GetVariable
+Push "gameInterface"
+GetMember
+Push "dataP"
+GetMember
+Push "SkillSlotP"
+NewMethod
+StoreRegister 2
+Pop
+Push register2 "State"
+GetMember
+ToNumber
+Push 0.0
+Greater
+Not
+If loc4a4b
+Push register2 "Index"
+GetMember
+Push 1 register4 "push"
+CallMethod
+Pop
+loc4a4b:Push register2 1 register1 "setSkill"
+CallMethod
+Pop
+Push register3
+Increment
+StoreRegister 3
+Pop
+Jump loc49db
+loc4a6b:Push 0.0
+StoreRegister 3
+Pop
+loc4a7c:Push register3 register4 "length"
+GetMember
+Less2
+Not
+If loc4ab3
+Push register4 register3
+GetMember
+Push 1 register1 "setSkillState"
+CallMethod
+Pop
+Push register3
+Increment
+StoreRegister 3
+Pop
+Jump loc4a7c
+loc4ab3:Push register1 "_curViewMode"
+GetMember
+Push 0.0
+Equals2
+Not
+If loc4bbc
+Push 0.0 register1 "_defaultViewPanel"
+GetMember
+Push "__get__skillListContainer"
+CallMethod
+Push "_height"
+GetMember
+StoreRegister 9
+Pop
+Push register10 register9
+Equals2
+Not
+Not
+If loc4b27
+Push register9 1 0.0 register1 "_defaultViewPanel"
+GetMember
+Push "__get__skillListScroll"
+CallMethod
+Push "__set__pageSize"
+CallMethod
+Pop
+loc4b27:Push register6 "undefined"
+Equals2
+Not
+PushDuplicate
+Not
+If loc4b40
+Pop
+Push register6 undefined
+Equals2
+Not
+loc4b40:PushDuplicate
+Not
+If loc4b51
+Pop
+Push register6 ""
+Equals2
+Not
+loc4b51:PushDuplicate
+Not
+If loc4b61
+Pop
+Push register6 null
+Equals2
+Not
+loc4b61:Not
+If loc4bbc
+Push register6
+ToNumber
+StoreRegister 6
+Pop
+Push 0.0 register1 "_defaultViewPanel"
+GetMember
+Push "__get__skillListContainer"
+CallMethod
+Push register1 "_slotPrefix"
+GetMember
+Push register6
+Add2
+GetMember
+StoreRegister 8
+Pop
+Push register1 "_releasedSkillSlot" register8 "slotHit"
+GetMember
+SetMember
+Push register8 "pressMc"
+GetMember
+Push "_visible" true
+SetMember
+}
+loc4bbc:SetMember
+Push register2 "OnGame_SkillWindow_SetCrest"
+DefineFunction2 "" 3 13 false false true false true false false true false 12 "crestData" 10 "current" 11 "total"  {
+Push 0.0 register1 "_defaultViewPanel"
+GetMember
+Push "__get__skillListContainer"
+CallMethod
+Push "_height"
+GetMember
+StoreRegister 9
+Pop
+Push register1 "currentPoint" register10
+ToNumber
+SetMember
+Push register1 "totalPoint" register11
+ToNumber
+SetMember
+Push "\n" register12 2 "lib"
+GetVariable
+Push "util"
+GetMember
+Push "ExtString"
+GetMember
+Push "split"
+CallMethod
+StoreRegister 5
+Pop
+Push register5 "length"
+GetMember
+StoreRegister 6
+Pop
+Push 0.0
+StoreRegister 2
+Pop
+loc4c6b:Push register2 register6
+Less2
+Not
+If loc4cc8
+Push "\t" register5 register2
+GetMember
+Push 2 "lib"
+GetVariable
+Push "util"
+GetMember
+Push "ExtString"
+GetMember
+Push "split"
+CallMethod
+StoreRegister 4
+Pop
+Push register4 1 register1 "setCrest"
+CallMethod
+Pop
+Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc4c6b
+loc4cc8:Push 0.0
+StoreRegister 2
+Pop
+loc4cd9:Push register2 register1 "_crestArray"
+GetMember
+Push "length"
+GetMember
+Less2
+Not
+If loc4d3d
+Push register1 "_crestArray"
+GetMember
+Push register2
+GetMember
+StoreRegister 3
+Pop
+Push register3 "arrayIndex" register2
+SetMember
+Push register3 1 register1 "changeCrestState"
+CallMethod
+Pop
+Push register3 1 register1 "setStateOnCrestSlot"
+CallMethod
+Pop
+Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc4cd9
+loc4d3d:Push register1 "_curViewMode"
+GetMember
+Push 0.0
+Equals2
+Not
+If loc4dcd
+Push 0.0 register1 "_defaultViewPanel"
+GetMember
+Push "__get__skillListContainer"
+CallMethod
+Push "_height"
+GetMember
+StoreRegister 8
+Pop
+Push register9 register8
+Equals2
+Not
+Not
+If loc4dcd
+Push 0.0 register1 "_defaultViewPanel"
+GetMember
+Push "__get__skillListContainer"
+CallMethod
+Push "_height"
+GetMember
+Push 1 0.0 register1 "_defaultViewPanel"
+GetMember
+Push "__get__skillListScroll"
+CallMethod
+Push "__set__pageSize"
+CallMethod
+Pop
+loc4dcd:Push register1 "_bChange"
+GetMember
+If loc4de5
+Push "#b40000"
+Jump loc4deb
+loc4de5:Push "#80e71c"
+loc4deb:StoreRegister 7
+Pop
+Push register1 "_bottomButtonGroup"
+GetMember
+Push "pointFd"
+GetMember
+Push "htmlText" "<font color=\'" register7
+Add2
+Push "\'>"
+Add2
+Push register10
+Add2
+Push "</font>/"
+Add2
+Push register11
+Add2
+SetMember
+}
+SetMember
+Push register2 "OnGame_SkillWindow_CoolTime"
+DefineFunction2 "" 3 10 false false true false true false false true false 6 "slotIndex" 5 "remain" 4 "total"  {
+Push register6
+ToNumber
+StoreRegister 6
+Pop
+Push register5
+ToNumber
+StoreRegister 5
+Pop
+Push register4
+ToNumber
+StoreRegister 4
+Pop
+Push register1 "_curViewMode"
+GetMember
+Push 0.0
+Equals2
+If loc4ea8
+Push 0.0 register1 "_totalViewPanel"
+GetMember
+Push "__get__skillListContainer"
+CallMethod
+Jump loc4ebf
+loc4ea8:Push 0.0 register1 "_defaultViewPanel"
+GetMember
+Push "__get__skillListContainer"
+CallMethod
+loc4ebf:StoreRegister 9
+Pop
+Push register9 register1 "_slotPrefix"
+GetMember
+Push register6
+Add2
+GetMember
+StoreRegister 3
+Pop
+Push register3 "slotHit"
+GetMember
+Push "_x"
+GetMember
+StoreRegister 8
+Pop
+Push register3 "slotHit"
+GetMember
+Push "_y"
+GetMember
+StoreRegister 7
+Pop
+Push register3 "coolTimeMc"
+GetMember
+StoreRegister 2
+Pop
+Push register5 0.0
+Greater
+Not
+PushDuplicate
+If loc4f34
+Pop
+Push register4 0.0
+Greater
+Not
+loc4f34:Not
+If loc4f7c
+Push register2 "coolTime"
+GetMember
+Push undefined
+Equals2
+Not
+Not
+If loc4f77
+Push register2 1 register1 "_coolTimeManager"
+GetMember
+Push "removeCoolTimeInstance"
+CallMethod
+Pop
+Push 0.0 register2 "removeMovieClip"
+CallMethod
+Pop
+loc4f77:Jump loc502b
+loc4f7c:Push register2 undefined
+Equals2
+Not
+If loc5001
+Push 0.0 register3 "getNextHighestDepth"
+CallMethod
+Push "coolTimeMc" "slotCoolTimeMc" 3 register3 "attachMovie"
+CallMethod
+StoreRegister 2
+Pop
+Push register2 "iconName" ""
+SetMember
+Push register2 "_xscale" register2 "_yscale" 80
+StoreRegister 0
+SetMember
+Push register0
+SetMember
+Push register2 "_x" register8 2
+Subtract
+SetMember
+Push register2 "_y" register7 1
+Subtract
+SetMember
+Push register2 "hitTestDisable" true
+SetMember
+loc5001:Push register4 register5 2 register2 "setCoolTime"
+CallMethod
+Pop
+Push register2 1 register1 "_coolTimeManager"
+GetMember
+Push "addCoolTimeInstance"
+CallMethod
+Pop
+}
+loc502b:SetMember
+Push register2 "OnGame_SkillWindow_SetToggle"
+DefineFunction2 "" 2 9 false false true false true false false true false 4 "slotIndex" 7 "bTrue"  {
+Push register4
+ToNumber
+StoreRegister 4
+Pop
+Push register7
+ToNumber
+StoreRegister 7
+Pop
+Push register1 "_curViewMode"
+GetMember
+Push 0.0
+Equals2
+If loc509d
+Push 0.0 register1 "_totalViewPanel"
+GetMember
+Push "__get__skillListContainer"
+CallMethod
+Jump loc50b4
+loc509d:Push 0.0 register1 "_defaultViewPanel"
+GetMember
+Push "__get__skillListContainer"
+CallMethod
+loc50b4:StoreRegister 8
+Pop
+Push register8 register1 "_slotPrefix"
+GetMember
+Push register4
+Add2
+GetMember
+StoreRegister 3
+Pop
+Push register3 "slotHit"
+GetMember
+Push "_x"
+GetMember
+StoreRegister 6
+Pop
+Push register3 "slotHit"
+GetMember
+Push "_y"
+GetMember
+StoreRegister 5
+Pop
+Push register3 "activeMc"
+GetMember
+StoreRegister 2
+Pop
+Push register7
+Not
+If loc519f
+Push register2 undefined
+Equals2
+Not
+If loc5190
+Push 0.0 register3 "getNextHighestDepth"
+CallMethod
+Push "activeMc" "slotActiveMc" 3 register3 "attachMovie"
+CallMethod
+StoreRegister 2
+Pop
+Push register2 "_xscale" register2 "_yscale" 80
+StoreRegister 0
+SetMember
+Push register0
+SetMember
+Push register2 "_x" register6 6.5
+Subtract
+SetMember
+Push register2 "_y" register5 10
+Subtract
+SetMember
+Push register2 "hitTestDisable" true
+SetMember
+Jump loc519a
+loc5190:Push register2 "_visible" true
+SetMember
+loc519a:Jump loc51bf
+loc519f:Push register2 undefined
+Equals2
+Not
+Not
+If loc51bf
+Push 0.0 register2 "removeMovieClip"
+CallMethod
+Pop
+}
+loc51bf:SetMember
+Push register2 "OnGame_MouseDown"
+DefineFunction2 "" 2 4 false false true false true false false true false 3 "button" 2 "target"  {
+Push register2 "slotName"
+GetMember
+Push "SKILLSLOT"
+Equals2
+Not
+PushDuplicate
+If loc5209
+Pop
+Push register2 "_parent"
+GetMember
+Push "disable"
+GetMember
+loc5209:Not
+If loc5214
+Push undefined
+Return
+loc5214:Push register3
+ToNumber
+Push 2
+Equals2
+Not
+If loc52b2
+Push register1 "_rightClicked" true
+SetMember
+Push register1 "_rightClickedTarget" register2 "_parent"
+GetMember
+SetMember
+Push register1 "_targetIndex" register1 "_rightClickedTarget"
+GetMember
+Push "slotIndex"
+GetMember
+SetMember
+Push register1 "_targetIndex"
+GetMember
+Push undefined
+Equals2
+Not
+Not
+If loc52b2
+Push 0.0 register1 "_targetIndex"
+GetMember
+Push 2 0.0 "g4"
+GetVariable
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Push "SkillWindowController"
+GetMember
+Push "getInstance"
+CallMethod
+Push "ToGame_SkillWindow_UseSlot"
+CallMethod
+Pop
+}
+loc52b2:SetMember
+Push register2 "OnGame_MouseUp"
+DefineFunction2 "" 2 3 false false true false true false false true false 2 "button" 0 "target"  {
+Push register2
+ToNumber
+Push 2
+Equals2
+Not
+If loc5357
+Push register1 "_rightClicked" false
+SetMember
+Push register1 "_targetIndex"
+GetMember
+Push undefined
+Equals2
+Not
+Not
+If loc534d
+Push 1 register1 "_targetIndex"
+GetMember
+Push 2 0.0 "g4"
+GetVariable
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Push "SkillWindowController"
+GetMember
+Push "getInstance"
+CallMethod
+Push "ToGame_SkillWindow_UseSlot"
+CallMethod
+Pop
+loc534d:Push register1 "_rightClickedTarget" null
+SetMember
+}
+loc5357:SetMember
+Push register2 "onTabButtonGroupClick"
+DefineFunction2 "" 1 2 false false true false true false false true false 0 "tabButton"  {
+Push 0.0 0.0 register1 "_tabButtonGroup"
+GetMember
+Push "getSelectedButtonIndex"
+CallMethod
+Push 2 0.0 "g4"
+GetVariable
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Push "SkillWindowController"
+GetMember
+Push "getInstance"
+CallMethod
+Push "ToGame_SkillWindow_SelectTab"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "CREST_STATE_INACTIVE" 0.0
+SetMember
+Push register2 "CREST_STATE_ACTIVE" 1
+SetMember
+Push register2 "CREST_STATE_LOCK" 2
+SetMember
+Push register2 "CREST_STATE_DISABLE" 3
+SetMember
+Push register2 "CREST_SLOT_WIDTH" 35.5
+SetMember
+Push register2 "CREST_INFO_COUNT" 7
+SetMember
+Push register2 "MAX_CREST" 6
+SetMember
+Push register2 "TAB_WIDTH" 92
+SetMember
+Push register2 "TAB_HEIGHT" 35
+SetMember
+Push register2 "tabLength" 0.0
+SetMember
+Push register2 "currentPoint" 0.0
+SetMember
+Push register2 "totalPoint" 0.0
+SetMember
+Push register2 "SLOT_WIDTH" 262.5
+SetMember
+Push register2 "SLOT_HEIGHT_MODE_0" 42.5
+SetMember
+Push register2 "SLOT_HEIGTH_MODE_1" 43
+SetMember
+Push register2 "_slotPrefix" "SkillWindow__"
+SetMember
+Push register2 "_bWidgetOpen" false
+SetMember
+Push register2 "_curViewMode" 0.0
+SetMember
+Push register2 "_pressedSaveBtn" null
+SetMember
+Push register2 "_bChange" false
+SetMember
+Push register2 "_rightClicked" false
+SetMember
+Push register2 "_crestArray" 0.0
+InitArray
+SetMember
+Push register2 "_targetIndex" null
+SetMember
+Push register2 "_rightClickedTarget" null
+SetMember
+Push register2 "_bChangePathTime" false
+SetMember
+Push register2 "_pressedSkillSlot" null
+SetMember
+Push register2 "_releasedSkillSlot" null
+SetMember
+Push 1 null "g4"
+GetVariable
+Push "view"
+GetMember
+Push "skillWindow"
+GetMember
+Push "SkillWindow"
+GetMember
+Push "prototype"
+GetMember
+Push 3 "ASSetPropFlags"
+CallFunction
+loc5567:Pop

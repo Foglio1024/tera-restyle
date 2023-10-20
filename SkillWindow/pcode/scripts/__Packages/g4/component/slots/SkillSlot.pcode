@@ -1,17 +1,17 @@
-ConstantPool "_global" "g4" "Object" "component" "slots" "SkillSlot" "BasicSlot" "prototype" "configUI" "_tf_num" "tf_num" "_mc_disable" "mc_disable" "_iconContainer" "iconContainer" "createEmptyMovieClip" "_visible" "_skillSlotP" "setData" "updateSlot" "gameInterface" "dataP" "SkillSlotP" "_isConfigUIComplete" "_data" "imgPath" "Img" "flash" "display" "BitmapData" "loadBitmap" "clear" "lib" "DrawBitmapData" "draw" "Num" "" "-1" "text" "Disable" "getNextHighestDepth" "swapDepths" "ASSetPropFlags"
+ConstantPool "_global" "g4" "Object" "component" "slots" "SkillSlot" "BasicSlot" "prototype" "configUI" "_tf_num" "tf_num" "_mc_disable" "mc_disable" "_iconContainer" "iconContainer" "createEmptyMovieClip" "_skillSlotP" "setData" "updateSlot" "gameInterface" "dataP" "SkillSlotP" "_isConfigUIComplete" "_visible" "imgPath" "Img" "flash" "display" "BitmapData" "loadBitmap" "clear" "lib" "DrawBitmapData" "draw" "Num" "" "-1" "text" "Disable" "getNextHighestDepth" "swapDepths" "ASSetPropFlags"
 Push "_global"
 GetVariable
 Push "g4"
 GetMember
 Not
 Not
-If loc01c3
+If loc01bd
 Push "_global"
 GetVariable
 Push "g4" 0.0 "Object"
 NewObject
 SetMember
-loc01c3:Pop
+loc01bd:Pop
 Push "_global"
 GetVariable
 Push "g4"
@@ -20,7 +20,7 @@ Push "component"
 GetMember
 Not
 Not
-If loc01fb
+If loc01f5
 Push "_global"
 GetVariable
 Push "g4"
@@ -28,7 +28,7 @@ GetMember
 Push "component" 0.0 "Object"
 NewObject
 SetMember
-loc01fb:Pop
+loc01f5:Pop
 Push "_global"
 GetVariable
 Push "g4"
@@ -39,7 +39,7 @@ Push "slots"
 GetMember
 Not
 Not
-If loc023f
+If loc0239
 Push "_global"
 GetVariable
 Push "g4"
@@ -49,7 +49,7 @@ GetMember
 Push "slots" 0.0 "Object"
 NewObject
 SetMember
-loc023f:Pop
+loc0239:Pop
 Push "_global"
 GetVariable
 Push "g4"
@@ -62,7 +62,7 @@ Push "SkillSlot"
 GetMember
 Not
 Not
-If loc060a
+If loc05ea
 Push "g4"
 GetVariable
 Push "component"
@@ -112,15 +112,13 @@ SetMember
 Push register1 "_iconContainer" 1 "iconContainer" 2 register1 "createEmptyMovieClip"
 CallMethod
 SetMember
-Push register1 "_visible" false
-SetMember
 Push register1 "_skillSlotP"
 GetMember
 Push null
 Equals2
 Not
 Not
-If loc0378
+If loc0368
 Push register1 "_skillSlotP"
 GetMember
 Push 1 register1 "setData"
@@ -130,7 +128,7 @@ Push 0.0 register1 "updateSlot"
 CallMethod
 Pop
 }
-loc0378:SetMember
+loc0368:SetMember
 Push register2 "setData"
 DefineFunction2 "" 1 4 false false false true true false false true false 3 "data"  {
 Push register1 "_skillSlotP" "g4"
@@ -149,35 +147,28 @@ GetMember
 Push false
 Equals2
 Not
-If loc03cd
+If loc03bd
 Push undefined
 Return
-loc03cd:Push register3 1 register2 "setData"
+loc03bd:Push register3 1 register2 "setData"
 CallMethod
 Pop
 }
 SetMember
 Push register2 "updateSlot"
-DefineFunction2 "" 0 3 false false true false true false false true false  {
+DefineFunction2 "" 0 4 false false false true true false false true false  {
 Push register1 "_isConfigUIComplete"
 GetMember
 Push false
 Equals2
 Not
-If loc0409
+If loc03f9
 Push undefined
 Return
-loc0409:Push register1 "_data"
-GetMember
-Push null
-Equals2
-Not
-If loc042b
-Push register1 "_visible" false
-SetMember
-Push undefined
-Return
-loc042b:Push register1 "_visible" true
+loc03f9:Push 0.0 register2 "updateSlot"
+CallMethod
+Pop
+Push register1 "_visible" true
 SetMember
 Push register1 "_iconContainer"
 GetMember
@@ -190,7 +181,7 @@ GetMember
 StrictEquals
 Not
 Not
-If loc0519
+If loc04f9
 Push register1 "_skillSlotP"
 GetMember
 Push "Img"
@@ -203,14 +194,14 @@ Push "BitmapData"
 GetMember
 Push "loadBitmap"
 CallMethod
-StoreRegister 2
+StoreRegister 3
 Pop
 Push 0.0 register1 "_iconContainer"
 GetMember
 Push "clear"
 CallMethod
 Pop
-Push 0.84375 54 54 0.0 0.0 0.0 0.0 register2 register1 "_iconContainer"
+Push 0.84375 54 54 0.0 0.0 0.0 0.0 register3 register1 "_iconContainer"
 GetMember
 Push 9 "lib"
 GetVariable
@@ -228,7 +219,7 @@ GetMember
 Push "Img"
 GetMember
 SetMember
-loc0519:Push register1 "_skillSlotP"
+loc04f9:Push register1 "_skillSlotP"
 GetMember
 Push "Num"
 GetMember
@@ -237,7 +228,7 @@ Equals2
 Not
 PushDuplicate
 Not
-If loc054a
+If loc052a
 Pop
 Push register1 "_skillSlotP"
 GetMember
@@ -246,9 +237,9 @@ GetMember
 Push ""
 Equals2
 Not
-loc054a:PushDuplicate
+loc052a:PushDuplicate
 Not
-If loc0567
+If loc0547
 Pop
 Push register1 "_skillSlotP"
 GetMember
@@ -257,8 +248,8 @@ GetMember
 Push "-1"
 Equals2
 Not
-loc0567:Not
-If loc058c
+loc0547:Not
+If loc056c
 Push register1 "_tf_num"
 GetMember
 Push "text" register1 "_skillSlotP"
@@ -267,12 +258,12 @@ Push "Num"
 GetMember
 ToString
 SetMember
-Jump loc059c
-loc058c:Push register1 "_tf_num"
+Jump loc057c
+loc056c:Push register1 "_tf_num"
 GetMember
 Push "text" ""
 SetMember
-loc059c:Push register1 "_mc_disable"
+loc057c:Push register1 "_mc_disable"
 GetMember
 Push "_visible" register1 "_skillSlotP"
 GetMember
@@ -300,4 +291,4 @@ Push "prototype"
 GetMember
 Push 3 "ASSetPropFlags"
 CallFunction
-loc060a:Pop
+loc05ea:Pop

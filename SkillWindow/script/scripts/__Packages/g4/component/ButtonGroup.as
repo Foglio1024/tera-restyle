@@ -80,7 +80,7 @@ class g4.component.ButtonGroup extends g4.core.EventDispatcher
       if(this.selectedButton != null && this.selectedButton._name != null)
       {
          this.selectedButton.__set__selected(false);
-         this.selectedButton.__set__mouseEnabled(true);
+         (g4.component.G4Button)this.selectedButton.__set__mouseEnabled(true);
       }
       this.selectedButton = button;
       if(this.selectedButton == null)
@@ -88,7 +88,7 @@ class g4.component.ButtonGroup extends g4.core.EventDispatcher
          return undefined;
       }
       this.selectedButton.__set__selected(true);
-      this.selectedButton.__set__mouseEnabled(false);
+      (g4.component.G4Button)this.selectedButton.__set__mouseEnabled(false);
       this.dispatchEvent(gfx.events.EventTypes.CHANGE,[this.selectedButton]);
    }
    function getSelectedButtonIndex()
@@ -117,10 +117,11 @@ class g4.component.ButtonGroup extends g4.core.EventDispatcher
    }
    function handleClick(button)
    {
-      if(this.selectedButton == button)
+      if(this._selectedButton == button)
       {
          return undefined;
       }
+      this._selectedButton = button;
       this.setSelectedButton(button);
       this.dispatchEvent(gfx.events.EventTypes.ITEM_CLICK,[button]);
    }

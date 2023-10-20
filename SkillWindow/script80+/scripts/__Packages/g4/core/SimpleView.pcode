@@ -1,0 +1,97 @@
+ConstantPool "_global" "g4" "Object" "core" "SimpleView" "_targetMovieClip" "gfx" "events" "EventDispatcher" "prototype" "__get__targetMovieClip" "targetMovieClip" "addProperty" "ASSetPropFlags"
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Not
+Not
+If loc00ca
+Push "_global"
+GetVariable
+Push "g4" 0.0 "Object"
+NewObject
+SetMember
+loc00ca:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "core"
+GetMember
+Not
+Not
+If loc0102
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "core" 0.0 "Object"
+NewObject
+SetMember
+loc0102:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "core"
+GetMember
+Push "SimpleView"
+GetMember
+Not
+Not
+If loc0205
+Push "g4"
+GetVariable
+Push "core"
+GetMember
+Push "SimpleView"
+DefineFunction2 "" 1 4 false false false true true false false true false 3 "targetMovieClip"  {
+Push 0.0 register2 undefined
+CallMethod
+Pop
+Push register1 "_targetMovieClip" register3
+SetMember
+}
+StoreRegister 1
+SetMember
+Push "g4"
+GetVariable
+Push "core"
+GetMember
+Push "SimpleView"
+GetMember
+Push "gfx"
+GetVariable
+Push "events"
+GetMember
+Push "EventDispatcher"
+GetMember
+Extends
+Push register1 "prototype"
+GetMember
+StoreRegister 2
+Pop
+Push register2 "__get__targetMovieClip"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push register1 "_targetMovieClip"
+GetMember
+Return
+}
+SetMember
+DefineFunction "" 0  {
+}
+Push register2 "__get__targetMovieClip"
+GetMember
+Push "targetMovieClip" 3 register2 "addProperty"
+CallMethod
+Push 1 null "g4"
+GetVariable
+Push "core"
+GetMember
+Push "SimpleView"
+GetMember
+Push "prototype"
+GetMember
+Push 3 "ASSetPropFlags"
+CallFunction
+loc0205:Pop

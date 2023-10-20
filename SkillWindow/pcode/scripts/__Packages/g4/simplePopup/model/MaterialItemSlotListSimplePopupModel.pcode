@@ -1,17 +1,17 @@
-ConstantPool "_global" "g4" "Object" "simplePopup" "model" "MaterialItemSlotListSimplePopupModel" "ASimplePopupP" "prototype" "ASSetPropFlags"
+ConstantPool "_global" "g4" "Object" "simplePopup" "model" "MaterialItemSlotListSimplePopupModel" "ASimplePopupModel" "prototype" "ASSetPropFlags"
 Push "_global"
 GetVariable
 Push "g4"
 GetMember
 Not
 Not
-If loc00a0
+If loc00a4
 Push "_global"
 GetVariable
 Push "g4" 0.0 "Object"
 NewObject
 SetMember
-loc00a0:Pop
+loc00a4:Pop
 Push "_global"
 GetVariable
 Push "g4"
@@ -20,7 +20,7 @@ Push "simplePopup"
 GetMember
 Not
 Not
-If loc00d8
+If loc00dc
 Push "_global"
 GetVariable
 Push "g4"
@@ -28,7 +28,7 @@ GetMember
 Push "simplePopup" 0.0 "Object"
 NewObject
 SetMember
-loc00d8:Pop
+loc00dc:Pop
 Push "_global"
 GetVariable
 Push "g4"
@@ -39,7 +39,7 @@ Push "model"
 GetMember
 Not
 Not
-If loc011c
+If loc0120
 Push "_global"
 GetVariable
 Push "g4"
@@ -49,7 +49,7 @@ GetMember
 Push "model" 0.0 "Object"
 NewObject
 SetMember
-loc011c:Pop
+loc0120:Pop
 Push "_global"
 GetVariable
 Push "g4"
@@ -62,7 +62,7 @@ Push "MaterialItemSlotListSimplePopupModel"
 GetMember
 Not
 Not
-If loc01e1
+If loc01e5
 Push "g4"
 GetVariable
 Push "simplePopup"
@@ -89,7 +89,7 @@ Push "g4"
 GetVariable
 Push "simplePopup"
 GetMember
-Push "ASimplePopupP"
+Push "ASimplePopupModel"
 GetMember
 Extends
 Push register1 "prototype"
@@ -108,4 +108,4 @@ Push "prototype"
 GetMember
 Push 3 "ASSetPropFlags"
 CallFunction
-loc01e1:Pop
+loc01e5:Pop

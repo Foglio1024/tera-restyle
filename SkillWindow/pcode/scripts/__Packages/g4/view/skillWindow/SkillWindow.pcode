@@ -1,17 +1,17 @@
-ConstantPool "_global" "g4" "Object" "view" "skillWindow" "SkillWindow" "SkillWindowController" "getInstance" "registerSkillWindow" "_defaultViewPanel" "container_mc" "defaultViewPanel" "DefaultViewPanel" "_totalViewPanel" "totalViewPanel" "TotalViewPanel" "core" "View" "prototype" "getUIName" "ViewID" "SKILL_WINDOW" "configGameInterface" "registerGameInterface" "util" "Delegate" "create" "registerGameInterfaces" "configUI" "_container_mc" "__get__targetMovieClip" "_tabBtn" "tabBtn" "tab" "_skillState0" "$082052" "lib" "UIString" "getUIString" "_skillState1" "$082053" "_secondStr" "$101068" "_growSkillPanel" "growSkillPanel" "_visible" "_bottomButtonGroup" "bottomButtonGroup" "_coolTimeManager" "CoolTimeManger" "viewBtn_0" "id" "viewBtn_1" "saveBtn_" "setMouseEventSaveBtn" "$082049" "setMouseEvent" "$082050" "setViewMode" "setViewBtn" "pathBtn" "txtBtn" "ToGame_SkillWindow_Path" "setRelease" "resetCrestBtn" "ToGame_SkillWindow_Reset" "recommendCrestBtn" "ToGame_SkillWindow_Recommend" "lock_mc" "UIDrager" "setData" "title_txt" "textColor" "info" "TextColor" "UI_TITLE_ACTIVE" "scope" "pathSkillMc" "SkillWindow__pathSlot" "slotHit" "onPress" "_pressedSkillSlot" "onDragOut" "_parent" "TEX" "StartIconDrag" "__get__pathSkillMc" "checkBox" "onChanged" "ToGame_SkillWindow_ChangePathSkillCheck" "timeMc" "focusMc" "textFd" "ExtTextField" "exceptComma" "onEnterKey" "_bChangePathTime" "Selection" "setFocus" "text" "" "NaN" "timeText" "ToGame_SkillWindow_ChangePathTime" "onKillFocusEvent" "closeBtn" "TxtBtn" "ToGame_SkillWindow_CloseUI" "ToGame_SkillWindow_Init" "_tabButtons" "_tabButtonGroup" "component" "ButtonGroup" "push" "addButton" "setStateSaveBtn" "btnState" "_pressedSaveBtn" "gotoAndStop" "setRollOverSaveBtn" "setRollOutSaveBtn" "setPressSaveBtn" "setReleaseSaveBtn" "setReleaseOutsideSaveBtn" "onRollOver" "onRollOut" "onRelease" "manager" "UISound" "MAIN_BTN" "play" "ToGame_SkillWindow_ChangeCrestSaveBtn" "onReleaseOutside" "clearTag" "tabTag_" "removeMovieClip" "tabLength" "createTag" "MovieClip" "getNextHighestDepth" "tagBox" "attachMovie" "tabBtn0" "_xscale" "_yscale" "txt" "_x" "TAB_WIDTH" "_width" "_y" "hitTestDisable" "_curViewMode" "viewBtn_" "btn" "message" "TooltipManager" "showMessageTooltip" "hideTooltip" "clearSkillContainer" "ToGame_SkillWindow_ChangeViewMode" "setCrest" "__get__skillListContainer" "shift" "_slotPrefix" "createSlot" "clearCrest" "undefined" "descFd" "setText" "length" "CREST_INFO_COUNT" "setCrestSlot" "disableMc" "disable" "disableMc_" "skillState" "crest__" "crestSlot" "CREST_SLOT_WIDTH" "clearCrestSlot" "slotIndex" "crestIndex" "crestId" "crestRealId" "crestState" "point" "grade" "disableTEX" "overMc" "gradeMc" "pointFd" "CREST_STATE_INACTIVE" "_crestArray" "arrayIndex" "setStateOnCrestSlot" "CREST_STATE_ACTIVE" "CREST_STATE_LOCK" "0x707070" "0xC9C9C9" "lockMc" "lockBg" "lineMc" "bg" "inactiveMc" "img" "DrawBitmap" "draw" "isLock" "showUiTooltip" "crestNewEffect" "gotoAndPlay" "ToGame_SkillWindow_ChangeCrestState" "changeCrestState" "totalPoint" "currentPoint" "CREST_STATE_DISABLE" "setSkill" "Index" "clearSkill" "Id" "Name" "Img" "flash" "display" "BitmapData" "loadBitmap" "Disable" "State" "Num" "Remain" "Total" "Awaken" "Boolean" "OnGame_SkillWindow_CoolTime" "skillId" "<font color=\'#deb200\'>" "</font>" "nameFd" "htmlText" "awaken" "DrawBitmapData" "-1" "numFd" "setSkillState" "stateMc_" "slotStateMc_" "awakenEffect_" "awakenEffect" "clear" "effectMc" "coolTimeMc" "removeCoolTimeInstance" "activeMc" "noticeFd" "getSelectedButtonIndex" "noticeIcon" "MAX_CREST" "changeCrestArrayIndex" "splice" "slot_mode" "SLOT_WIDTH" "SLOT_HEIGTH_MODE_1" "SLOT_HEIGHT_MODE_0" "slot" "pressMc" "slotName" "SKILLSLOT" "trackAsMenu" "verticalAutoSize" "center" "_releasedSkillSlot" "ToGame_SkillWindow_SelectSkill" "GetName" "_name" "movieclip" "clearPathSkill" "OnGameEventShowWindow" "toLowerCase" "_bWidgetOpen" "gbUIMode" "OnGameEventChangeUIMode" "_rightClicked" "_rightClickedTarget" "drag" "_targetIndex" "OnGame_SkillWindow_SetCrestSaveBtn" "\t" "ExtString" "split" "OnGame_SkillWindow_SetTab" "addMessageTooltip" "removeTooltip" "__set__label" "__set__disabled" "onTabButtonGroupClick" "gfx" "events" "EventTypes" "ITEM_CLICK" "addEventListener" "setSelectedButtonIndex" "OnGame_SkillWindow_SetGuideText" "OnGame_SkillWindow_SetViewMode" "OnGame_SkillWindow_SetSkill" "_height" "__get__skillListScroll" "__set__pageSize" "JSON" "parse" "gameInterface" "dataP" "SkillSlotP" "OnGame_SkillWindow_SetCrest" "\n" "#80e71c" "#b40000" "<font color=\'" "\'>" "</font>/" "coolTime" "slotCoolTimeMc" "iconName" "setCoolTime" "addCoolTimeInstance" "OnGame_SkillWindow_SetToggle" "slotActiveMc" "OnGame_MouseDown" "ToGame_SkillWindow_UseSlot" "OnGame_MouseUp" "ToGame_SkillWindow_SelectTab" "TAB_HEIGHT" "SkillWindow__" "ASSetPropFlags"
+ConstantPool "_global" "g4" "Object" "view" "skillWindow" "SkillWindow" "SkillWindowController" "getInstance" "registerSkillWindow" "_defaultViewPanel" "container_mc" "defaultViewPanel" "DefaultViewPanel" "_totalViewPanel" "totalViewPanel" "TotalViewPanel" "core" "View" "prototype" "getUIName" "ViewID" "SKILL_WINDOW" "configGameInterface" "registerGameInterface" "util" "Delegate" "create" "registerGameInterfaces" "configUI" "_container_mc" "__get__targetMovieClip" "_tabBtn" "tabBtn" "tab" "_skillState0" "$082052" "lib" "UIString" "getUIString" "_skillState1" "$082053" "_secondStr" "$101068" "_growSkillPanel" "growSkillPanel" "_visible" "_bottomButtonGroup" "bottomButtonGroup" "_coolTimeManager" "CoolTimeManger" "viewBtn_0" "id" "viewBtn_1" "saveBtn_" "setMouseEventSaveBtn" "$082049" "setMouseEvent" "$082050" "setViewMode" "setViewBtn" "pathBtn" "txtBtn" "ToGame_SkillWindow_Path" "setRelease" "resetCrestBtn" "ToGame_SkillWindow_Reset" "recommendCrestBtn" "ToGame_SkillWindow_Recommend" "lock_mc" "UIDrager" "setData" "title_txt" "textColor" "info" "TextColor" "UI_TITLE_ACTIVE" "scope" "pathSkillMc" "SkillWindow__pathSlot" "slotHit" "onPress" "_pressedSkillSlot" "onDragOut" "_parent" "TEX" "StartIconDrag" "__get__pathSkillMc" "checkBox" "onChanged" "ToGame_SkillWindow_ChangePathSkillCheck" "timeMc" "focusMc" "textFd" "ExtTextField" "exceptComma" "onEnterKey" "_bChangePathTime" "Selection" "setFocus" "text" "" "timeText" "ToGame_SkillWindow_ChangePathTime" "onKillFocusEvent" "closeBtn" "TxtBtn" "ToGame_SkillWindow_CloseUI" "ToGame_SkillWindow_Init" "_tabButtons" "_tabButtonGroup" "component" "ButtonGroup" "push" "addButton" "setStateSaveBtn" "btnState" "_pressedSaveBtn" "gotoAndStop" "setRollOverSaveBtn" "setRollOutSaveBtn" "setPressSaveBtn" "setReleaseSaveBtn" "setReleaseOutsideSaveBtn" "onRollOver" "onRollOut" "onRelease" "manager" "UISound" "MAIN_BTN" "play" "ToGame_SkillWindow_ChangeCrestSaveBtn" "onReleaseOutside" "clearTag" "tabTag_" "removeMovieClip" "tabLength" "createTag" "MovieClip" "getNextHighestDepth" "tagBox" "attachMovie" "tabBtn0" "_xscale" "_yscale" "txt" "_x" "TAB_WIDTH" "_width" "_y" "hitTestDisable" "_curViewMode" "viewBtn_" "btn" "message" "TooltipManager" "showMessageTooltip" "hideTooltip" "clearSkillContainer" "ToGame_SkillWindow_ChangeViewMode" "setCrest" "_bChange" "__get__skillListContainer" "shift" "_slotPrefix" "createSlot" "clearCrest" "undefined" "descFd" "setText" "length" "CREST_INFO_COUNT" "setCrestSlot" "disableMc" "disable" "disableMc_" "skillState" "crest__" "crestSlot" "CREST_SLOT_WIDTH" "clearCrestSlot" "slotIndex" "crestIndex" "crestId" "crestRealId" "crestState" "point" "grade" "disableTEX" "overMc" "gradeMc" "pointFd" "CREST_STATE_INACTIVE" "_crestArray" "arrayIndex" "setStateOnCrestSlot" "CREST_STATE_ACTIVE" "CREST_STATE_LOCK" "0x707070" "0xC9C9C9" "lockMc" "lockBg" "lineMc" "bg" "inactiveMc" "img" "DrawBitmap" "draw" "isLock" "showUiTooltip" "crestNewEffect" "gotoAndPlay" "ToGame_SkillWindow_ChangeCrestState" "changeCrestState" "totalPoint" "currentPoint" "CREST_STATE_DISABLE" "setSkill" "Index" "clearSkill" "Id" "Name" "Img" "flash" "display" "BitmapData" "loadBitmap" "Disable" "State" "Num" "Remain" "Total" "Awaken" "Boolean" "OnGame_SkillWindow_CoolTime" "skillId" "<font color=\'#deb200\'>" "</font>" "nameFd" "htmlText" "awaken" "DrawBitmapData" "-1" "numFd" "setSkillState" "stateMc_" "slotStateMc_" "awakenEffect_" "awakenEffect" "clear" "effectMc" "coolTimeMc" "removeCoolTimeInstance" "activeMc" "noticeFd" "getSelectedButtonIndex" "noticeIcon" "MAX_CREST" "changeCrestArrayIndex" "splice" "slot_mode" "SLOT_WIDTH" "SLOT_HEIGTH_MODE_1" "SLOT_HEIGHT_MODE_0" "slot" "pressMc" "slotName" "SKILLSLOT" "trackAsMenu" "verticalAutoSize" "center" "_releasedSkillSlot" "ToGame_SkillWindow_SelectSkill" "GetName" "_name" "movieclip" "clearPathSkill" "OnGameEventShowWindow" "toLowerCase" "_bWidgetOpen" "gbUIMode" "ShortCut2" "OnGameEvent" "OnGameEventChangeUIMode" "_rightClicked" "_rightClickedTarget" "drag" "_targetIndex" "OnGame_SkillWindow_SetCrestSaveBtn" "\t" "ExtString" "split" "OnGame_SkillWindow_SetTab" "addMessageTooltip" "removeTooltip" "__set__label" "__set__disabled" "onTabButtonGroupClick" "gfx" "events" "EventTypes" "ITEM_CLICK" "addEventListener" "setSelectedButtonIndex" "OnGame_SkillWindow_SetGuideText" "OnGame_SkillWindow_SetViewMode" "OnGame_SkillWindow_SetSkill" "_height" "__get__skillListScroll" "__set__pageSize" "JSON" "parse" "gameInterface" "dataP" "SkillSlotP" "OnGame_SkillWindow_SetCrest" "\n" "#b40000" "#80e71c" "<font color=\'" "\'>" "</font>/" "coolTime" "slotCoolTimeMc" "iconName" "setCoolTime" "addCoolTimeInstance" "OnGame_SkillWindow_SetToggle" "slotActiveMc" "OnGame_MouseDown" "ToGame_SkillWindow_UseSlot" "OnGame_MouseUp" "ToGame_SkillWindow_SelectTab" "TAB_HEIGHT" "SkillWindow__" "ASSetPropFlags"
 Push "_global"
 GetVariable
 Push "g4"
 GetMember
 Not
 Not
-If loc104f
+If loc106a
 Push "_global"
 GetVariable
 Push "g4" 0.0 "Object"
 NewObject
 SetMember
-loc104f:Pop
+loc106a:Pop
 Push "_global"
 GetVariable
 Push "g4"
@@ -20,7 +20,7 @@ Push "view"
 GetMember
 Not
 Not
-If loc1087
+If loc10a2
 Push "_global"
 GetVariable
 Push "g4"
@@ -28,7 +28,7 @@ GetMember
 Push "view" 0.0 "Object"
 NewObject
 SetMember
-loc1087:Pop
+loc10a2:Pop
 Push "_global"
 GetVariable
 Push "g4"
@@ -39,7 +39,7 @@ Push "skillWindow"
 GetMember
 Not
 Not
-If loc10cb
+If loc10e6
 Push "_global"
 GetVariable
 Push "g4"
@@ -49,7 +49,7 @@ GetMember
 Push "skillWindow" 0.0 "Object"
 NewObject
 SetMember
-loc10cb:Pop
+loc10e6:Pop
 Push "_global"
 GetVariable
 Push "g4"
@@ -62,7 +62,7 @@ Push "SkillWindow"
 GetMember
 Not
 Not
-If loc54d9
+If loc5567
 Push "g4"
 GetVariable
 Push "view"
@@ -258,10 +258,10 @@ SetMember
 Push 1
 StoreRegister 3
 Pop
-loc1403:Push register3 6
+loc141e:Push register3 6
 Less2
 Not
-If loc1454
+If loc146f
 Push register1 "_bottomButtonGroup"
 GetMember
 Push "saveBtn_" register3
@@ -278,8 +278,8 @@ Push register3
 Increment
 StoreRegister 3
 Pop
-Jump loc1403
-loc1454:Push "$082049" 1 "lib"
+Jump loc141e
+loc146f:Push "$082049" 1 "lib"
 GetVariable
 Push "util"
 GetMember
@@ -446,7 +446,7 @@ Push "_pressedSkillSlot"
 GetMember
 Equals2
 Not
-If loc1716
+If loc1731
 Push register1 "_parent"
 GetMember
 Push "TEX"
@@ -457,14 +457,14 @@ Push register3 undefined
 Equals2
 Not
 Not
-If loc1716
+If loc1731
 Push register3 register1 "_parent"
 GetMember
 Push 2 register2 "StartIconDrag"
 CallMethod
 Pop
 }
-loc1716:SetMember
+loc1731:SetMember
 Push 0.0 register1 "_defaultViewPanel"
 GetMember
 Push "__get__pathSkillMc"
@@ -537,7 +537,7 @@ Push register3 "NaN"
 GetVariable
 Equals2
 Not
-If loc18b8
+If loc18d6
 Push 0.0 "scope"
 GetVariable
 Push "_defaultViewPanel"
@@ -566,8 +566,8 @@ Push "_secondStr"
 GetMember
 Add2
 SetMember
-Jump loc1937
-loc18b8:Push register1 "text"
+Jump loc1955
+loc18d6:Push register1 "text"
 GetMember
 StoreRegister 2
 Pop
@@ -601,7 +601,7 @@ Push "ToGame_SkillWindow_ChangePathTime"
 CallMethod
 Pop
 }
-loc1937:SetMember
+loc1955:SetMember
 Push register7 "onKillFocusEvent"
 DefineFunction2 "" 0 4 false false true false true false false true false  {
 Push "scope"
@@ -620,7 +620,7 @@ Push register3 "NaN"
 GetVariable
 Equals2
 Not
-If loc19e9
+If loc1a0a
 Push 0.0 "scope"
 GetVariable
 Push "_defaultViewPanel"
@@ -649,8 +649,8 @@ Push "_secondStr"
 GetMember
 Add2
 SetMember
-Jump loc1a68
-loc19e9:Push register1 "text"
+Jump loc1a89
+loc1a0a:Push register1 "text"
 GetMember
 StoreRegister 2
 Pop
@@ -684,7 +684,7 @@ Push "ToGame_SkillWindow_ChangePathTime"
 CallMethod
 Pop
 }
-loc1a68:SetMember
+loc1a89:SetMember
 Push 0.0 register1 "_defaultViewPanel"
 GetMember
 Push "__get__pathSkillMc"
@@ -705,7 +705,7 @@ ToNumber
 Push 99
 Greater
 Not
-If loc1ad9
+If loc1afa
 Push register1 "text" 99 "scope"
 GetVariable
 Push "_secondStr"
@@ -713,7 +713,7 @@ GetMember
 Add2
 SetMember
 }
-loc1ad9:SetMember
+loc1afa:SetMember
 Push register1 "_container_mc"
 GetMember
 Push "closeBtn"
@@ -767,10 +767,10 @@ SetMember
 Push 0.0
 StoreRegister 3
 Pop
-loc1bb9:Push register3 4
+loc1bda:Push register3 4
 Less2
 Not
-If loc1c1c
+If loc1c3d
 Push register1 "_container_mc"
 GetMember
 Push "tabBtn" register3
@@ -792,9 +792,9 @@ Push register3
 Increment
 StoreRegister 3
 Pop
-Jump loc1bb9
+Jump loc1bda
 }
-loc1c1c:SetMember
+loc1c3d:SetMember
 Push register2 "setStateSaveBtn"
 DefineFunction2 "" 2 5 false false true false true false false true false 4 "targetBtn" 2 "btnState"  {
 Push register2
@@ -805,22 +805,22 @@ Push register4 "btnState" register2
 SetMember
 Push register2 0.0
 Equals2
-If loc1c7a
+If loc1c9b
 Push 1
-Jump loc1c82
-loc1c7a:Push 4
-loc1c82:StoreRegister 3
+Jump loc1ca3
+loc1c9b:Push 4
+loc1ca3:StoreRegister 3
 Pop
 Push register2 2
 Equals2
 Not
-If loc1caf
+If loc1cd0
 Push 5
 StoreRegister 3
 Pop
 Push register1 "_pressedSaveBtn" register4
 SetMember
-loc1caf:Push register3 1 register4 "gotoAndStop"
+loc1cd0:Push register3 1 register4 "gotoAndStop"
 CallMethod
 Pop
 }
@@ -865,11 +865,11 @@ Push register1 "btnState"
 GetMember
 Push 1
 Equals2
-If loc1dcc
+If loc1ded
 Push 4
-Jump loc1dd4
-loc1dcc:Push 1
-loc1dd4:StoreRegister 2
+Jump loc1df5
+loc1ded:Push 1
+loc1df5:StoreRegister 2
 Pop
 Push "scope"
 GetVariable
@@ -877,11 +877,11 @@ Push "_pressedSaveBtn"
 GetMember
 Push register1
 Equals2
-If loc1dfa
+If loc1e1b
 Push register2
-Jump loc1e02
-loc1dfa:Push 5
-loc1e02:StoreRegister 2
+Jump loc1e23
+loc1e1b:Push 5
+loc1e23:StoreRegister 2
 Pop
 Push register2 1 register1 "gotoAndStop"
 CallMethod
@@ -914,10 +914,10 @@ GetMember
 Push register1
 Equals2
 Not
-If loc1eb1
+If loc1ed2
 Push undefined
 Return
-loc1eb1:Push "lib"
+loc1ed2:Push "lib"
 GetVariable
 Push "manager"
 GetMember
@@ -967,11 +967,11 @@ Push register1 "btnState"
 GetMember
 Push 1
 Equals2
-If loc1f8c
+If loc1fad
 Push 1
-Jump loc1f94
-loc1f8c:Push 5
-loc1f94:StoreRegister 2
+Jump loc1fb5
+loc1fad:Push 5
+loc1fb5:StoreRegister 2
 Pop
 Push "scope"
 GetVariable
@@ -979,11 +979,11 @@ Push "_pressedSaveBtn"
 GetMember
 Push register1
 Equals2
-If loc1fba
+If loc1fdb
 Push register2
-Jump loc1fc2
-loc1fba:Push 3
-loc1fc2:StoreRegister 2
+Jump loc1fe3
+loc1fdb:Push 3
+loc1fe3:StoreRegister 2
 Pop
 Push register2 1 register1 "gotoAndStop"
 CallMethod
@@ -998,7 +998,7 @@ Push register5 undefined
 Equals2
 Not
 Not
-If loc203b
+If loc205c
 Push register1 "_container_mc"
 GetMember
 Push "tabTag_" register5
@@ -1010,20 +1010,20 @@ Push register4 undefined
 Equals2
 Not
 Not
-If loc2036
+If loc2057
 Push 0.0 register4 "removeMovieClip"
 CallMethod
 Pop
-loc2036:Push undefined
+loc2057:Push undefined
 Return
-loc203b:Push 0.0
+loc205c:Push 0.0
 StoreRegister 2
 Pop
-loc204c:Push register2 register1 "tabLength"
+loc206d:Push register2 register1 "tabLength"
 GetMember
 Less2
 Not
-If loc20a3
+If loc20c4
 Push register1 "_container_mc"
 GetMember
 Push "tabTag_" register2
@@ -1035,17 +1035,17 @@ Push register3 undefined
 Equals2
 Not
 Not
-If loc2093
+If loc20b4
 Push 0.0 register3 "removeMovieClip"
 CallMethod
 Pop
-loc2093:Push register2
+loc20b4:Push register2
 Increment
 StoreRegister 2
 Pop
-Jump loc204c
+Jump loc206d
 }
-loc20a3:SetMember
+loc20c4:SetMember
 Push register2 "createTag"
 DefineFunction2 "" 2 6 false false true false true false false true false 4 "index" 5 "tagNum"  {
 Push 0.0 "MovieClip"
@@ -1062,10 +1062,10 @@ Pop
 Push register5 -1
 Equals2
 Not
-If loc2103
+If loc2124
 Push undefined
 Return
-loc2103:Push 0.0 register1 "_container_mc"
+loc2124:Push 0.0 register1 "_container_mc"
 GetMember
 Push "getNextHighestDepth"
 CallMethod
@@ -1183,11 +1183,11 @@ GetVariable
 Push "_curViewMode"
 GetMember
 Equals2
-If loc2305
+If loc2326
 Push 1
-Jump loc230d
-loc2305:Push 3
-loc230d:StoreRegister 2
+Jump loc232e
+loc2326:Push 3
+loc232e:StoreRegister 2
 Pop
 Push register2 1 register1 "gotoAndStop"
 CallMethod
@@ -1226,10 +1226,10 @@ Push register1 "id"
 GetMember
 Equals2
 Not
-If loc23b4
+If loc23d5
 Push undefined
 Return
-loc23b4:Push "lib"
+loc23d5:Push "lib"
 GetVariable
 Push "manager"
 GetMember
@@ -1294,11 +1294,11 @@ GetVariable
 Push "_curViewMode"
 GetMember
 Equals2
-If loc24b6
+If loc24d7
 Push 1
-Jump loc24be
-loc24b6:Push 3
-loc24be:StoreRegister 2
+Jump loc24df
+loc24d7:Push 3
+loc24df:StoreRegister 2
 Pop
 Push register2 1 register1 "gotoAndStop"
 CallMethod
@@ -1320,21 +1320,23 @@ SetMember
 SetMember
 Push register2 "setCrest"
 DefineFunction2 "" 1 12 false false true false true false false true false 5 "info"  {
+Push register1 "_bChange" false
+SetMember
 Push register1 "_curViewMode"
 GetMember
 Push 0.0
 Equals2
-If loc2554
+If loc257f
 Push 0.0 register1 "_totalViewPanel"
 GetMember
 Push "__get__skillListContainer"
 CallMethod
-Jump loc256b
-loc2554:Push 0.0 register1 "_defaultViewPanel"
+Jump loc2596
+loc257f:Push 0.0 register1 "_defaultViewPanel"
 GetMember
 Push "__get__skillListContainer"
 CallMethod
-loc256b:StoreRegister 11
+loc2596:StoreRegister 11
 Pop
 Push 0.0 register5 "shift"
 CallMethod
@@ -1350,16 +1352,16 @@ Pop
 Push register7 undefined
 Equals2
 Not
-If loc25c4
+If loc25ef
 Push register10 register11 2 register1 "createSlot"
 CallMethod
 StoreRegister 7
 Pop
-Jump loc25d4
-loc25c4:Push register7 1 register1 "clearCrest"
+Jump loc25ff
+loc25ef:Push register7 1 register1 "clearCrest"
 CallMethod
 Pop
-loc25d4:Push 0.0 register5 "shift"
+loc25ff:Push 0.0 register5 "shift"
 CallMethod
 StoreRegister 9
 Pop
@@ -1368,41 +1370,41 @@ Equals2
 Not
 PushDuplicate
 Not
-If loc2603
+If loc262e
 Pop
 Push register9 undefined
 Equals2
 Not
-loc2603:PushDuplicate
+loc262e:PushDuplicate
 Not
-If loc2614
+If loc263f
 Pop
 Push register9 "undefined"
 Equals2
 Not
-loc2614:PushDuplicate
+loc263f:PushDuplicate
 Not
-If loc2624
+If loc264f
 Pop
 Push register9 null
 Equals2
 Not
-loc2624:Not
-If loc2645
+loc264f:Not
+If loc2670
 Push register9 1 register7 "descFd"
 GetMember
 Push "setText"
 CallMethod
 Pop
-Jump loc26f5
-loc2645:Push 0.0
+Jump loc2720
+loc2670:Push 0.0
 StoreRegister 3
 Pop
-loc2656:Push register3 register5 "length"
+loc2681:Push register3 register5 "length"
 GetMember
 Less2
 Not
-If loc26f5
+If loc2720
 Push register3 register1 "CREST_INFO_COUNT"
 GetMember
 Divide
@@ -1416,11 +1418,11 @@ Pop
 Push 0.0
 StoreRegister 2
 Pop
-loc269b:Push register2 register1 "CREST_INFO_COUNT"
+loc26c6:Push register2 register1 "CREST_INFO_COUNT"
 GetMember
 Less2
 Not
-If loc26cc
+If loc26f7
 Push register4 register2 register5 register3 register2
 Add2
 GetMember
@@ -1429,8 +1431,8 @@ Push register2
 Increment
 StoreRegister 2
 Pop
-Jump loc269b
-loc26cc:Push register4 register6 register7 3 register1 "setCrestSlot"
+Jump loc26c6
+loc26f7:Push register4 register6 register7 3 register1 "setCrestSlot"
 CallMethod
 Pop
 Push register3 register1 "CREST_INFO_COUNT"
@@ -1438,19 +1440,19 @@ GetMember
 Add2
 StoreRegister 3
 Pop
-Jump loc2656
-loc26f5:Push register7 "disableMc"
+Jump loc2681
+loc2720:Push register7 "disableMc"
 GetMember
 StoreRegister 8
 Pop
 Push register7 "disable"
 GetMember
 Not
-If loc2835
+If loc2860
 Push register8 undefined
 Equals2
 Not
-If loc274d
+If loc2778
 Push 0.0 register7 "getNextHighestDepth"
 CallMethod
 Push "disableMc" "disableMc_" register1 "_curViewMode"
@@ -1460,7 +1462,7 @@ Push 3 register7 "attachMovie"
 CallMethod
 StoreRegister 8
 Pop
-loc274d:Push register8 "hitTestDisable" true
+loc2778:Push register8 "hitTestDisable" true
 SetMember
 Push register8 "_x" 4
 SetMember
@@ -1476,11 +1478,11 @@ Push "_width" register1 "_curViewMode"
 GetMember
 Push 0.0
 Equals2
-If loc27b9
+If loc27e4
 Push 258
-Jump loc27c1
-loc27b9:Push 181
-loc27c1:SetMember
+Jump loc27ec
+loc27e4:Push 181
+loc27ec:SetMember
 Push register8 "_visible" true
 SetMember
 Push register7 "skillState"
@@ -1488,7 +1490,7 @@ GetMember
 Push 1
 Greater
 Not
-If loc2830
+If loc285b
 Push register8 "disableMc"
 GetMember
 Push "_x" 39
@@ -1499,22 +1501,22 @@ Push "_width" register1 "_curViewMode"
 GetMember
 Push 0.0
 Equals2
-If loc2827
+If loc2852
 Push 219
-Jump loc282f
-loc2827:Push 142
-loc282f:SetMember
-loc2830:Jump loc2855
-loc2835:Push register8 undefined
+Jump loc285a
+loc2852:Push 142
+loc285a:SetMember
+loc285b:Jump loc2880
+loc2860:Push register8 undefined
 Equals2
 Not
 Not
-If loc2855
+If loc2880
 Push 0.0 register8 "removeMovieClip"
 CallMethod
 Pop
 }
-loc2855:SetMember
+loc2880:SetMember
 Push register2 "setCrestSlot"
 DefineFunction2 "" 3 18 false false true false true false false true false 7 "parentSlot" 8 "crestIndex" 3 "crestData"  {
 Push register7 "crest__" register8
@@ -1525,7 +1527,7 @@ Pop
 Push register2 undefined
 Equals2
 Not
-If loc2920
+If loc294b
 Push 0.0 register7 "getNextHighestDepth"
 CallMethod
 Push "crest__" register8
@@ -1551,7 +1553,7 @@ Add2
 SetMember
 Push register2 "_y" 6
 SetMember
-loc2920:Push register2 1 register1 "clearCrestSlot"
+loc294b:Push register2 1 register1 "clearCrestSlot"
 CallMethod
 Pop
 Push register7 "slotIndex"
@@ -1615,11 +1617,11 @@ Push "_visible" false
 SetMember
 Push register4 0.0
 Greater
-If loc2a46
+If loc2a71
 Push false
-Jump loc2a4b
-loc2a46:Push true
-loc2a4b:StoreRegister 17
+Jump loc2a76
+loc2a71:Push true
+loc2a76:StoreRegister 17
 Pop
 Push register2 "gradeMc"
 GetMember
@@ -1638,7 +1640,7 @@ Push register5 register1 "CREST_STATE_INACTIVE"
 GetMember
 Equals2
 Not
-If loc2ac9
+If loc2af4
 Push register2 1 register1 "_crestArray"
 GetMember
 Push "push"
@@ -1649,12 +1651,12 @@ StoreRegister 13
 Pop
 Push register2 "arrayIndex" register13
 SetMember
-Jump loc2ad9
-loc2ac9:Push register2 1 register1 "setStateOnCrestSlot"
+Jump loc2b04
+loc2af4:Push register2 1 register1 "setStateOnCrestSlot"
 CallMethod
 Pop
 }
-loc2ad9:SetMember
+loc2b04:SetMember
 Push register2 "setStateOnCrestSlot"
 DefineFunction2 "" 1 12 false false true false true false false true false 2 "target"  {
 Push register2 "crestState"
@@ -1668,78 +1670,78 @@ Pop
 Push register5 register1 "CREST_STATE_ACTIVE"
 GetMember
 Equals2
-If loc2b28
+If loc2b53
 Push false
-Jump loc2b2d
-loc2b28:Push true
-loc2b2d:StoreRegister 3
+Jump loc2b58
+loc2b53:Push true
+loc2b58:StoreRegister 3
 Pop
 Push register5 register1 "CREST_STATE_LOCK"
 GetMember
 Equals2
-If loc2b4c
+If loc2b77
 Push false
-Jump loc2b51
-loc2b4c:Push true
-loc2b51:StoreRegister 7
+Jump loc2b7c
+loc2b77:Push true
+loc2b7c:StoreRegister 7
 Pop
 Push register5 register1 "CREST_STATE_ACTIVE"
 GetMember
 Equals2
-If loc2b70
+If loc2b9b
 Push false
-Jump loc2b75
-loc2b70:Push true
-loc2b75:StoreRegister 10
+Jump loc2ba0
+loc2b9b:Push true
+loc2ba0:StoreRegister 10
 Pop
 Push register5 register1 "CREST_STATE_INACTIVE"
 GetMember
 Equals2
-If loc2b94
+If loc2bbf
 Push false
-Jump loc2b99
-loc2b94:Push true
-loc2b99:StoreRegister 8
+Jump loc2bc4
+loc2bbf:Push true
+loc2bc4:StoreRegister 8
 Pop
 Push register11 0.0
 Greater
-If loc2bbf
+If loc2bea
 Push 1
-Jump loc2bc7
-loc2bbf:Push 2
-loc2bc7:StoreRegister 4
+Jump loc2bf2
+loc2bea:Push 2
+loc2bf2:StoreRegister 4
 Pop
 Push register5 register1 "CREST_STATE_INACTIVE"
 GetMember
 Equals2
 PushDuplicate
-If loc2be9
+If loc2c14
 Pop
 Push register5 register1 "CREST_STATE_ACTIVE"
 GetMember
 Equals2
-loc2be9:If loc2bfb
+loc2c14:If loc2c26
 Push register2 "disableTEX"
 GetMember
-Jump loc2c03
-loc2bfb:Push register2 "TEX"
+Jump loc2c2e
+loc2c26:Push register2 "TEX"
 GetMember
-loc2c03:StoreRegister 9
+loc2c2e:StoreRegister 9
 Pop
 Push register5 register1 "CREST_STATE_INACTIVE"
 GetMember
 Equals2
 PushDuplicate
-If loc2c25
+If loc2c50
 Pop
 Push register5 register1 "CREST_STATE_ACTIVE"
 GetMember
 Equals2
-loc2c25:If loc2c34
+loc2c50:If loc2c5f
 Push "0x707070"
-Jump loc2c39
-loc2c34:Push "0xC9C9C9"
-loc2c39:StoreRegister 6
+Jump loc2c64
+loc2c5f:Push "0xC9C9C9"
+loc2c64:StoreRegister 6
 Pop
 Push register2 "lockMc"
 GetMember
@@ -1791,12 +1793,12 @@ Push register2 "isLock" register5 register1 "CREST_STATE_INACTIVE"
 GetMember
 Equals2
 PushDuplicate
-If loc2d1e
+If loc2d49
 Pop
 Push register5 register1 "CREST_STATE_ACTIVE"
 GetMember
 Equals2
-loc2d1e:Not
+loc2d49:Not
 SetMember
 Push register2 "slotHit"
 GetMember
@@ -1832,10 +1834,10 @@ GetMember
 Push true
 Equals2
 Not
-If loc2db1
+If loc2ddc
 Push undefined
 Return
-loc2db1:Push register1 "_parent"
+loc2ddc:Push register1 "_parent"
 GetMember
 Push "overMc"
 GetMember
@@ -1865,10 +1867,10 @@ GetMember
 Push true
 Equals2
 Not
-If loc2e30
+If loc2e5b
 Push undefined
 Return
-loc2e30:Push register1 "_parent"
+loc2e5b:Push register1 "_parent"
 GetMember
 Push "overMc"
 GetMember
@@ -1910,10 +1912,10 @@ GetMember
 Push true
 Equals2
 Not
-If loc2edb
+If loc2f06
 Push undefined
 Return
-loc2edb:Push "lib"
+loc2f06:Push "lib"
 GetVariable
 Push "manager"
 GetMember
@@ -1940,7 +1942,7 @@ Push register2 register1 "CREST_STATE_INACTIVE"
 GetMember
 Equals2
 Not
-If loc2f54
+If loc2f7f
 Push 2 1 register1 "_parent"
 GetMember
 Push "crestNewEffect"
@@ -1948,7 +1950,7 @@ GetMember
 Push "gotoAndPlay"
 CallMethod
 Pop
-loc2f54:Push register1 "_parent"
+loc2f7f:Push register1 "_parent"
 GetMember
 Push 1 0.0 "g4"
 GetVariable
@@ -1976,10 +1978,10 @@ GetMember
 Push true
 Equals2
 Not
-If loc2fc7
+If loc2ff2
 Push undefined
 Return
-loc2fc7:Push register1 "_parent"
+loc2ff2:Push register1 "_parent"
 GetMember
 Push "overMc"
 GetMember
@@ -1990,51 +1992,65 @@ SetMember
 }
 SetMember
 Push register2 "changeCrestState"
-DefineFunction2 "" 1 6 false false true false true false false true false 2 "target"  {
-Push register2 "point"
+DefineFunction2 "" 1 6 false false true false true false false true false 4 "target"  {
+Push register4 "point"
 GetMember
-StoreRegister 4
+StoreRegister 3
 Pop
 Push register1 "totalPoint"
 GetMember
 Push register1 "currentPoint"
 GetMember
 Subtract
-StoreRegister 3
+StoreRegister 2
 Pop
-Push register2 "crestState"
+Push register4 "crestState"
 GetMember
 StoreRegister 5
 Pop
-Push register2 "crestState" register4 register3
+Push register4 "crestState" register3 register2
 Greater
 Not
-If loc3048
+If loc3073
 Push register1 "CREST_STATE_DISABLE"
 GetMember
-Jump loc3050
-loc3048:Push register1 "CREST_STATE_INACTIVE"
+Jump loc307b
+loc3073:Push register1 "CREST_STATE_INACTIVE"
 GetMember
-loc3050:SetMember
+loc307b:SetMember
+Push register1 "_bChange"
+GetMember
+Push false
+Equals2
+Not
+If loc30b2
+Push register1 "_bChange" register3 register2
+Greater
+Not
+If loc30ac
+Push false
+Jump loc30b1
+loc30ac:Push true
+loc30b1:SetMember
 }
-SetMember
+loc30b2:SetMember
 Push register2 "setSkill"
 DefineFunction2 "" 1 17 false false true false true false false true false 3 "skillSlotP"  {
 Push register1 "_curViewMode"
 GetMember
 Push 0.0
 Equals2
-If loc30a6
+If loc3107
 Push 0.0 register1 "_totalViewPanel"
 GetMember
 Push "__get__skillListContainer"
 CallMethod
-Jump loc30bd
-loc30a6:Push 0.0 register1 "_defaultViewPanel"
+Jump loc311e
+loc3107:Push 0.0 register1 "_defaultViewPanel"
 GetMember
 Push "__get__skillListContainer"
 CallMethod
-loc30bd:StoreRegister 9
+loc311e:StoreRegister 9
 Pop
 Push register3 "Index"
 GetMember
@@ -2050,16 +2066,16 @@ Pop
 Push register2 undefined
 Equals2
 Not
-If loc310d
+If loc316e
 Push register4 register9 2 register1 "createSlot"
 CallMethod
 StoreRegister 2
 Pop
-Jump loc311d
-loc310d:Push register2 1 register1 "clearSkill"
+Jump loc317e
+loc316e:Push register2 1 register1 "clearSkill"
 CallMethod
 Pop
-loc311d:Push register3 "Id"
+loc317e:Push register3 "Id"
 GetMember
 StoreRegister 15
 Pop
@@ -2119,14 +2135,14 @@ SetMember
 Push register2 "skillId" register15
 SetMember
 Push register10
-If loc3201
+If loc3262
 Push register8
-Jump loc320f
-loc3201:Push "<font color=\'#deb200\'>" register8
+Jump loc3270
+loc3262:Push "<font color=\'#deb200\'>" register8
 Add2
 Push "</font>"
 Add2
-loc320f:StoreRegister 13
+loc3270:StoreRegister 13
 Pop
 Push register2 "nameFd"
 GetMember
@@ -2154,7 +2170,7 @@ Pop
 Push register6 2
 Equals2
 Not
-If loc32e3
+If loc3344
 Push register2 "nameFd"
 GetMember
 Push "htmlText" register2 "nameFd"
@@ -2165,11 +2181,11 @@ Push register1 "_skillState0"
 GetMember
 Add2
 SetMember
-Jump loc3316
-loc32e3:Push register6 3
+Jump loc3377
+loc3344:Push register6 3
 Equals2
 Not
-If loc3316
+If loc3377
 Push register2 "nameFd"
 GetMember
 Push "htmlText" register2 "nameFd"
@@ -2180,48 +2196,48 @@ Push register1 "_skillState1"
 GetMember
 Add2
 SetMember
-loc3316:Push register5 undefined
+loc3377:Push register5 undefined
 Equals2
 Not
 PushDuplicate
 Not
-If loc332f
+If loc3390
 Pop
 Push register5 ""
 Equals2
 Not
-loc332f:PushDuplicate
+loc3390:PushDuplicate
 Not
-If loc3340
+If loc33a1
 Pop
 Push register5 "-1"
 Equals2
 Not
-loc3340:Not
-If loc3356
+loc33a1:Not
+If loc33b7
 Push register2 "numFd"
 GetMember
 Push "text" register5
 SetMember
 }
-loc3356:SetMember
+loc33b7:SetMember
 Push register2 "setSkillState"
 DefineFunction2 "" 1 10 false false true false true false false true false 6 "slotIndex"  {
 Push register1 "_curViewMode"
 GetMember
 Push 0.0
 Equals2
-If loc33aa
+If loc340b
 Push 0.0 register1 "_totalViewPanel"
 GetMember
 Push "__get__skillListContainer"
 CallMethod
-Jump loc33c1
-loc33aa:Push 0.0 register1 "_defaultViewPanel"
+Jump loc3422
+loc340b:Push 0.0 register1 "_defaultViewPanel"
 GetMember
 Push "__get__skillListContainer"
 CallMethod
-loc33c1:StoreRegister 5
+loc3422:StoreRegister 5
 Pop
 Push register5 register1 "_slotPrefix"
 GetMember
@@ -2240,21 +2256,21 @@ StoreRegister 8
 Pop
 Push 1 register2
 Less2
-If loc3410
+If loc3471
 Push register2
-Jump loc3418
-loc3410:Push 2
-loc3418:StoreRegister 2
+Jump loc3479
+loc3471:Push 2
+loc3479:StoreRegister 2
 Pop
 Push register8
-If loc3431
+If loc3492
 Push register2
-Jump loc343e
-loc3431:Push register2 50
+Jump loc349f
+loc3492:Push register2 50
 Add2
 ToNumber
 ToString
-loc343e:StoreRegister 9
+loc349f:StoreRegister 9
 Pop
 Push register5 "stateMc_" register6
 Add2
@@ -2265,14 +2281,14 @@ Push register4 undefined
 Equals2
 Not
 Not
-If loc3473
+If loc34d4
 Push 0.0 register4 "removeMovieClip"
 CallMethod
 Pop
-loc3473:Push register2 0.0
+loc34d4:Push register2 0.0
 Greater
 Not
-If loc3541
+If loc35a2
 Push 0.0 register5 "getNextHighestDepth"
 CallMethod
 Push "stateMc_" register6
@@ -2285,41 +2301,41 @@ StoreRegister 4
 Pop
 Push register4 "_x" register2 1
 Greater
-If loc34e9
+If loc354a
 Push register3 "_x"
 GetMember
 Push 1.5
 Add2
-Jump loc34fa
-loc34e9:Push register3 "_x"
+Jump loc355b
+loc354a:Push register3 "_x"
 GetMember
 Push 1
 Add2
-loc34fa:SetMember
+loc355b:SetMember
 Push register4 "_y" register2 1
 Greater
-If loc3525
+If loc3586
 Push register3 "_y"
 GetMember
 Push 1
 Add2
-Jump loc3536
-loc3525:Push register3 "_y"
+Jump loc3597
+loc3586:Push register3 "_y"
 GetMember
 Push 1
 Add2
-loc3536:SetMember
+loc3597:SetMember
 Push register4 "hitTestDisable" true
 SetMember
-loc3541:Push register2 1
+loc35a2:Push register2 1
 Equals2
 PushDuplicate
 Not
-If loc3559
+If loc35ba
 Pop
 Push register8
-loc3559:Not
-If loc35a6
+loc35ba:Not
+If loc3607
 Push 0.0 register5 "getNextHighestDepth"
 CallMethod
 Push "awakenEffect_" register6
@@ -2335,7 +2351,7 @@ Push register7 "_y" register3 "_y"
 GetMember
 SetMember
 }
-loc35a6:SetMember
+loc3607:SetMember
 Push register2 "clearSkill"
 DefineFunction2 "" 1 7 false false true false true false false true false 2 "target"  {
 Push register2 "slotIndex"
@@ -2366,7 +2382,7 @@ Push register3 undefined
 Equals2
 Not
 Not
-If loc3652
+If loc36b3
 Push register3 1 register1 "_coolTimeManager"
 GetMember
 Push "removeCoolTimeInstance"
@@ -2375,7 +2391,7 @@ Pop
 Push 0.0 register3 "removeMovieClip"
 CallMethod
 Pop
-loc3652:Push register2 "effectMc"
+loc36b3:Push register2 "effectMc"
 GetMember
 Push "activeMc"
 GetMember
@@ -2385,11 +2401,11 @@ Push register5 undefined
 Equals2
 Not
 Not
-If loc3685
+If loc36e6
 Push 0.0 register5 "removeMovieClip"
 CallMethod
 Pop
-loc3685:Push register2 "_parent"
+loc36e6:Push register2 "_parent"
 GetMember
 Push "stateMc_" register6
 Add2
@@ -2400,12 +2416,12 @@ Push register4 undefined
 Equals2
 Not
 Not
-If loc36bb
+If loc371c
 Push 0.0 register4 "removeMovieClip"
 CallMethod
 Pop
 }
-loc36bb:SetMember
+loc371c:SetMember
 Push register2 "setViewMode"
 DefineFunction2 "" 0 2 false false true false true false false true false  {
 Push register1 "_container_mc"
@@ -2421,12 +2437,12 @@ Equals2
 Not
 PushDuplicate
 Not
-If loc3710
+If loc3771
 Pop
 Push register1 "_curViewMode"
 GetMember
 Not
-loc3710:SetMember
+loc3771:SetMember
 Push register1 "_container_mc"
 GetMember
 Push "noticeIcon"
@@ -2440,12 +2456,12 @@ Equals2
 Not
 PushDuplicate
 Not
-If loc3753
+If loc37b4
 Pop
 Push register1 "_curViewMode"
 GetMember
 Not
-loc3753:SetMember
+loc37b4:SetMember
 Push register1 "_curViewMode"
 GetMember
 Push 1 register1 "_defaultViewPanel"
@@ -2474,11 +2490,11 @@ SetMember
 Push 0.0
 StoreRegister 2
 Pop
-loc37d8:Push register2 register1 "MAX_CREST"
+loc3839:Push register2 register1 "MAX_CREST"
 GetMember
 Less2
 Not
-If loc3828
+If loc3889
 Push register4 "crest__" register2
 Add2
 GetMember
@@ -2488,17 +2504,17 @@ Push register3 undefined
 Equals2
 Not
 Not
-If loc3818
+If loc3879
 Push register3 1 register1 "clearCrestSlot"
 CallMethod
 Pop
-loc3818:Push register2
+loc3879:Push register2
 Increment
 StoreRegister 2
 Pop
-Jump loc37d8
+Jump loc3839
 }
-loc3828:SetMember
+loc3889:SetMember
 Push register2 "changeCrestArrayIndex"
 DefineFunction2 "" 0 5 false false true false true false false true false  {
 Push register1 "_crestArray"
@@ -2510,10 +2526,10 @@ Pop
 Push 0.0
 StoreRegister 2
 Pop
-loc3860:Push register2 register4
+loc38c1:Push register2 register4
 Less2
 Not
-If loc389b
+If loc38fc
 Push register1 "_crestArray"
 GetMember
 Push register2
@@ -2526,9 +2542,9 @@ Push register2
 Increment
 StoreRegister 2
 Pop
-Jump loc3860
+Jump loc38c1
 }
-loc389b:SetMember
+loc38fc:SetMember
 Push register2 "clearCrestSlot"
 DefineFunction2 "" 1 4 false false true false true false false true false 2 "slot"  {
 Push register2 "arrayIndex"
@@ -2537,7 +2553,7 @@ Push undefined
 Equals2
 Not
 Not
-If loc3904
+If loc3965
 Push register2 "arrayIndex"
 GetMember
 StoreRegister 3
@@ -2550,7 +2566,7 @@ Pop
 Push 0.0 register1 "changeCrestArrayIndex"
 CallMethod
 Pop
-loc3904:Push register2 "pointFd"
+loc3965:Push register2 "pointFd"
 GetMember
 Push "text" ""
 SetMember
@@ -2616,32 +2632,32 @@ Push register1 "_curViewMode"
 GetMember
 Push 0.0
 Equals2
-If loc3a2d
+If loc3a8e
 Push register3 3
 Modulo
 Push register1 "SLOT_WIDTH"
 GetMember
 Multiply
-Jump loc3a39
-loc3a2d:Push 0.0
-loc3a39:StoreRegister 7
+Jump loc3a9a
+loc3a8e:Push 0.0
+loc3a9a:StoreRegister 7
 Pop
 Push register1 "_curViewMode"
 GetMember
 Push 0.0
 Equals2
-If loc3a73
+If loc3ad4
 Push register3 3
 Divide
 ToInteger
 Push register1 "SLOT_HEIGTH_MODE_1"
 GetMember
 Multiply
-Jump loc3a7f
-loc3a73:Push register3 register1 "SLOT_HEIGHT_MODE_0"
+Jump loc3ae0
+loc3ad4:Push register3 register1 "SLOT_HEIGHT_MODE_0"
 GetMember
 Multiply
-loc3a7f:StoreRegister 5
+loc3ae0:StoreRegister 5
 Pop
 Push "slot" 0.0 register8 "getNextHighestDepth"
 CallMethod
@@ -2749,7 +2765,7 @@ Push "disable"
 GetMember
 PushDuplicate
 Not
-If loc3c40
+If loc3ca1
 Pop
 Push register1 "_parent"
 GetMember
@@ -2758,11 +2774,11 @@ GetMember
 Push 2
 Equals2
 Not
-loc3c40:Not
-If loc3c4b
+loc3ca1:Not
+If loc3cac
 Push undefined
 Return
-loc3c4b:Push register1 "_parent"
+loc3cac:Push register1 "_parent"
 GetMember
 Push "overMc"
 GetMember
@@ -2793,7 +2809,7 @@ Push "disable"
 GetMember
 PushDuplicate
 Not
-If loc3cde
+If loc3d3f
 Pop
 Push register1 "_parent"
 GetMember
@@ -2802,11 +2818,11 @@ GetMember
 Push 2
 Equals2
 Not
-loc3cde:Not
-If loc3ce9
+loc3d3f:Not
+If loc3d4a
 Push undefined
 Return
-loc3ce9:Push register1 "_parent"
+loc3d4a:Push register1 "_parent"
 GetMember
 Push "overMc"
 GetMember
@@ -2833,10 +2849,10 @@ GetMember
 Push register1
 Equals2
 Not
-If loc3d51
+If loc3db2
 Push undefined
 Return
-loc3d51:Push register1 "_parent"
+loc3db2:Push register1 "_parent"
 GetMember
 Push "pressMc"
 GetMember
@@ -2856,7 +2872,7 @@ Push "disable"
 GetMember
 PushDuplicate
 Not
-If loc3db4
+If loc3e15
 Pop
 Push register1 "_parent"
 GetMember
@@ -2865,11 +2881,11 @@ GetMember
 Push 2
 Equals2
 Not
-loc3db4:Not
-If loc3dbf
+loc3e15:Not
+If loc3e20
 Push undefined
 Return
-loc3dbf:Push "scope"
+loc3e20:Push "scope"
 GetVariable
 Push "_pressedSkillSlot" register1
 SetMember
@@ -2893,7 +2909,7 @@ Push "disable"
 GetMember
 PushDuplicate
 Not
-If loc3e30
+If loc3e91
 Pop
 Push register1 "_parent"
 GetMember
@@ -2902,11 +2918,11 @@ GetMember
 Push 2
 Equals2
 Not
-loc3e30:Not
-If loc3e3b
+loc3e91:Not
+If loc3e9c
 Push undefined
 Return
-loc3e3b:Push "lib"
+loc3e9c:Push "lib"
 GetVariable
 Push "manager"
 GetMember
@@ -2944,7 +2960,7 @@ GetMember
 Push register1
 Equals2
 Not
-If loc3f09
+If loc3f6a
 Push register1 "_parent"
 GetMember
 Push "slotIndex"
@@ -2967,7 +2983,7 @@ GetVariable
 Push "_pressedSkillSlot" null
 SetMember
 }
-loc3f09:SetMember
+loc3f6a:SetMember
 Push "slot"
 GetVariable
 Push "slotHit"
@@ -2991,7 +3007,7 @@ Push "_pressedSkillSlot"
 GetMember
 Equals2
 Not
-If loc3fa6
+If loc4007
 Push register1 "_parent"
 GetMember
 Push "TEX"
@@ -3002,27 +3018,27 @@ Push register3 undefined
 Equals2
 Not
 Not
-If loc3fa6
+If loc4007
 Push register3 register1 "_parent"
 GetMember
 Push 2 register2 "StartIconDrag"
 CallMethod
 Pop
-loc3fa6:Push register1 "scope"
+loc4007:Push register1 "scope"
 GetVariable
 Push "_releasedSkillSlot"
 GetMember
 Equals2
 Not
 Not
-If loc3fd4
+If loc4035
 Push register1 "_parent"
 GetMember
 Push "pressMc"
 GetMember
 Push "_visible" false
 SetMember
-loc3fd4:Push register1 "_parent"
+loc4035:Push register1 "_parent"
 GetMember
 Push "overMc"
 GetMember
@@ -3072,24 +3088,24 @@ Push register1 "_curViewMode"
 GetMember
 Push 0.0
 Equals2
-If loc40c1
+If loc4122
 Push 0.0 register1 "_totalViewPanel"
 GetMember
 Push "__get__skillListContainer"
 CallMethod
-Jump loc40d8
-loc40c1:Push 0.0 register1 "_defaultViewPanel"
+Jump loc4139
+loc4122:Push 0.0 register1 "_defaultViewPanel"
 GetMember
 Push "__get__skillListContainer"
 CallMethod
-loc40d8:StoreRegister 2
+loc4139:StoreRegister 2
 Pop
 Push register2
 Enumerate2
-loc40e3:StoreRegister 0
+loc4144:StoreRegister 0
 Push null
 Equals2
-If loc412e
+If loc418f
 Push register0
 StoreRegister 3
 Pop
@@ -3099,19 +3115,19 @@ TypeOf
 Push "movieclip"
 Equals2
 Not
-If loc4129
+If loc418a
 Push 0.0 register2 register3
 GetMember
 Push "removeMovieClip"
 CallMethod
 Pop
-loc4129:Jump loc40e3
-loc412e:Push register1 "_curViewMode"
+loc418a:Jump loc4144
+loc418f:Push register1 "_curViewMode"
 GetMember
 Push 0.0
 Equals2
 Not
-If loc4178
+If loc41d9
 Push true 1 register1 "_defaultViewPanel"
 GetMember
 Push "clearPathSkill"
@@ -3123,10 +3139,10 @@ Push "clearSkillContainer"
 CallMethod
 Pop
 }
-loc4178:SetMember
+loc41d9:SetMember
 Push register2 "OnGameEventShowWindow"
-DefineFunction2 "" 2 5 false false true false true false false true true 3 "widgetName" 4 "bShow"  {
-Push 0.0 register3 "toLowerCase"
+DefineFunction2 "" 2 6 false true true false true false false true true 4 "widgetName" 5 "bShow"  {
+Push 0.0 register4 "toLowerCase"
 CallMethod
 Push 0.0 0.0 register1 "getUIName"
 CallMethod
@@ -3134,19 +3150,19 @@ Push "toLowerCase"
 CallMethod
 Equals2
 Not
-If loc426d
-Push register1 "_bWidgetOpen" register4
+If loc42fc
+Push register1 "_bWidgetOpen" register5
 SetMember
-Push register2 "gbUIMode"
+Push register3 "gbUIMode"
 GetMember
 PushDuplicate
 Not
-If loc41fe
+If loc425f
 Pop
 Push register1 "_bWidgetOpen"
 GetMember
-loc41fe:Not
-If loc4254
+loc425f:Not
+If loc42cc
 Push 0.0 register1 "__get__targetMovieClip"
 CallMethod
 Push "_visible" true
@@ -3163,38 +3179,44 @@ Push "lock_mc"
 GetMember
 Push "_y" 7
 SetMember
-Jump loc426d
-loc4254:Push 0.0 register1 "__get__targetMovieClip"
+Push true "ShortCut2" "OnGameEventShowWindow" 3 register2 "OnGameEvent"
+CallMethod
+Pop
+Jump loc42fc
+loc42cc:Push 0.0 register1 "__get__targetMovieClip"
 CallMethod
 Push "_visible" false
 SetMember
+Push false "ShortCut2" "OnGameEventShowWindow" 3 register2 "OnGameEvent"
+CallMethod
+Pop
 }
-loc426d:SetMember
+loc42fc:SetMember
 Push register2 "OnGameEventChangeUIMode"
 DefineFunction2 "" 1 3 false false true false true false false true true 0 "bShow"  {
 Push register2 "gbUIMode"
 GetMember
 PushDuplicate
 Not
-If loc42a2
+If loc4331
 Pop
 Push register1 "_bWidgetOpen"
 GetMember
-loc42a2:Not
-If loc42c6
+loc4331:Not
+If loc4355
 Push 0.0 register1 "__get__targetMovieClip"
 CallMethod
 Push "_visible" true
 SetMember
-Jump loc432a
-loc42c6:Push 0.0 register1 "__get__targetMovieClip"
+Jump loc43b9
+loc4355:Push 0.0 register1 "__get__targetMovieClip"
 CallMethod
 Push "_visible" false
 SetMember
 Push register1 "_rightClicked"
 GetMember
 Not
-If loc432a
+If loc43b9
 Push register1 "_rightClicked" false
 SetMember
 Push register1 "_rightClickedTarget"
@@ -3207,11 +3229,11 @@ Push undefined
 Equals2
 Not
 Not
-If loc4320
-loc4320:Push register1 "_rightClickedTarget" null
+If loc43af
+loc43af:Push register1 "_rightClickedTarget" null
 SetMember
 }
-loc432a:SetMember
+loc43b9:SetMember
 Push register2 "OnGame_SkillWindow_SetCrestSaveBtn"
 DefineFunction2 "" 1 6 false false true false true false false true false 5 "btnParam"  {
 Push "\t" register5 2 "lib"
@@ -3227,11 +3249,11 @@ Pop
 Push 0.0
 StoreRegister 2
 Pop
-loc4382:Push register2 register4 "length"
+loc4411:Push register2 register4 "length"
 GetMember
 Less2
 Not
-If loc43da
+If loc4469
 Push register2 1
 Add2
 StoreRegister 3
@@ -3250,9 +3272,9 @@ Push register2
 Increment
 StoreRegister 2
 Pop
-Jump loc4382
+Jump loc4411
 }
-loc43da:SetMember
+loc4469:SetMember
 Push register2 "OnGame_SkillWindow_SetTab"
 DefineFunction2 "" 5 12 false false true false true false false true false 6 "tabNames" 7 "tagNums" 8 "isAvtices" 11 "selectedTab" 9 "tooltipMessages"  {
 Push 0.0 register1 "clearTag"
@@ -3274,11 +3296,11 @@ Pop
 Push 0.0
 StoreRegister 5
 Pop
-loc447e:Push register5 register6 "length"
+loc450d:Push register5 register6 "length"
 GetMember
 Less2
 Not
-If loc45ae
+If loc463d
 Push register1 "_container_mc"
 GetMember
 Push "tabBtn" register5
@@ -3295,27 +3317,27 @@ Equals2
 Not
 PushDuplicate
 Not
-If loc44ca
+If loc4559
 Pop
 Push register2 undefined
 Equals2
 Not
-loc44ca:PushDuplicate
+loc4559:PushDuplicate
 Not
-If loc44db
+If loc456a
 Pop
 Push register2 "undefined"
 Equals2
 Not
-loc44db:PushDuplicate
+loc456a:PushDuplicate
 Not
-If loc44ec
+If loc457b
 Pop
 Push register2 ""
 Equals2
 Not
-loc44ec:Not
-If loc4529
+loc457b:Not
+If loc45b8
 Push register2 register3 2 0.0 "g4"
 GetVariable
 Push "manager"
@@ -3327,8 +3349,8 @@ CallMethod
 Push "addMessageTooltip"
 CallMethod
 Pop
-Jump loc4559
-loc4529:Push register3 1 0.0 "g4"
+Jump loc45e8
+loc45b8:Push register3 1 0.0 "g4"
 GetVariable
 Push "manager"
 GetMember
@@ -3339,7 +3361,7 @@ CallMethod
 Push "removeTooltip"
 CallMethod
 Pop
-loc4559:Push register6 register5
+loc45e8:Push register6 register5
 GetMember
 Push 1 register3 "__set__label"
 CallMethod
@@ -3359,8 +3381,8 @@ Push register5
 Increment
 StoreRegister 5
 Pop
-Jump loc447e
-loc45ae:Push register1 "onTabButtonGroupClick"
+Jump loc450d
+loc463d:Push register1 "onTabButtonGroupClick"
 GetMember
 Push register1 "gfx"
 GetVariable
@@ -3383,11 +3405,11 @@ Pop
 Push 0.0
 StoreRegister 5
 Pop
-loc4612:Push register5 register6 "length"
+loc46a1:Push register5 register6 "length"
 GetMember
 Less2
 Not
-If loc4683
+If loc4712
 Push register7 register5
 GetMember
 ToNumber
@@ -3398,33 +3420,33 @@ Equals2
 Not
 PushDuplicate
 Not
-If loc464a
+If loc46d9
 Pop
 Push register4 ""
 Equals2
 Not
-loc464a:PushDuplicate
+loc46d9:PushDuplicate
 Not
-If loc465b
+If loc46ea
 Pop
 Push register4 "undefined"
 Equals2
 Not
-loc465b:Not
-If loc4673
+loc46ea:Not
+If loc4702
 Push register4 register5 2 register1 "createTag"
 CallMethod
 Pop
-loc4673:Push register5
+loc4702:Push register5
 Increment
 StoreRegister 5
 Pop
-Jump loc4612
-loc4683:Push register11 2
+Jump loc46a1
+loc4712:Push register11 2
 Equals2
 Not
 Not
-If loc46eb
+If loc477a
 Push 0.0 register1 "_defaultViewPanel"
 GetMember
 Push "__get__targetMovieClip"
@@ -3442,8 +3464,8 @@ SetMember
 Push 0.0 register1 "setViewMode"
 CallMethod
 Pop
-Jump loc4749
-loc46eb:Push 0.0 register1 "_defaultViewPanel"
+Jump loc47d8
+loc477a:Push 0.0 register1 "_defaultViewPanel"
 GetMember
 Push "__get__targetMovieClip"
 CallMethod
@@ -3464,32 +3486,32 @@ GetMember
 Push "_visible" false
 SetMember
 }
-loc4749:SetMember
+loc47d8:SetMember
 Push register2 "OnGame_SkillWindow_SetGuideText"
 DefineFunction2 "" 1 3 false false true false true false false true false 2 "guideText"  {
 Push register2 ""
 Equals2
 PushDuplicate
-If loc477e
+If loc480d
 Pop
 Push register2 undefined
 Equals2
-loc477e:PushDuplicate
-If loc478c
+loc480d:PushDuplicate
+If loc481b
 Pop
 Push register2 null
 Equals2
-loc478c:PushDuplicate
-If loc479b
+loc481b:PushDuplicate
+If loc482a
 Pop
 Push register2 "undefined"
 Equals2
-loc479b:Not
-If loc47ab
+loc482a:Not
+If loc483a
 Push ""
 StoreRegister 2
 Pop
-loc47ab:Push register1 "_container_mc"
+loc483a:Push register1 "_container_mc"
 GetMember
 Push "noticeFd"
 GetMember
@@ -3526,22 +3548,22 @@ Pop
 Push register7 undefined
 Equals2
 PushDuplicate
-If loc4886
+If loc4915
 Pop
 Push register7 ""
 Equals2
-loc4886:PushDuplicate
-If loc4895
+loc4915:PushDuplicate
+If loc4924
 Pop
 Push register7 "undefined"
 Equals2
-loc4895:PushDuplicate
-If loc48a3
+loc4924:PushDuplicate
+If loc4932
 Pop
 Push register7 null
 Equals2
-loc48a3:Not
-If loc4903
+loc4932:Not
+If loc4992
 Push 0.0 register1 "clearSkillContainer"
 CallMethod
 Pop
@@ -3560,7 +3582,7 @@ CallMethod
 Pop
 Push undefined
 Return
-loc4903:Push register7 1 "g4"
+loc4992:Push register7 1 "g4"
 GetVariable
 Push "util"
 GetMember
@@ -3577,11 +3599,11 @@ Pop
 Push 0.0
 StoreRegister 3
 Pop
-loc494c:Push register3 register5 "length"
+loc49db:Push register3 register5 "length"
 GetMember
 Less2
 Not
-If loc49dc
+If loc4a6b
 Push register5 register3
 GetMember
 Push 1 "g4"
@@ -3600,28 +3622,28 @@ ToNumber
 Push 0.0
 Greater
 Not
-If loc49bc
+If loc4a4b
 Push register2 "Index"
 GetMember
 Push 1 register4 "push"
 CallMethod
 Pop
-loc49bc:Push register2 1 register1 "setSkill"
+loc4a4b:Push register2 1 register1 "setSkill"
 CallMethod
 Pop
 Push register3
 Increment
 StoreRegister 3
 Pop
-Jump loc494c
-loc49dc:Push 0.0
+Jump loc49db
+loc4a6b:Push 0.0
 StoreRegister 3
 Pop
-loc49ed:Push register3 register4 "length"
+loc4a7c:Push register3 register4 "length"
 GetMember
 Less2
 Not
-If loc4a24
+If loc4ab3
 Push register4 register3
 GetMember
 Push 1 register1 "setSkillState"
@@ -3631,13 +3653,13 @@ Push register3
 Increment
 StoreRegister 3
 Pop
-Jump loc49ed
-loc4a24:Push register1 "_curViewMode"
+Jump loc4a7c
+loc4ab3:Push register1 "_curViewMode"
 GetMember
 Push 0.0
 Equals2
 Not
-If loc4b2d
+If loc4bbc
 Push 0.0 register1 "_defaultViewPanel"
 GetMember
 Push "__get__skillListContainer"
@@ -3650,7 +3672,7 @@ Push register10 register9
 Equals2
 Not
 Not
-If loc4a98
+If loc4b27
 Push register9 1 0.0 register1 "_defaultViewPanel"
 GetMember
 Push "__get__skillListScroll"
@@ -3658,32 +3680,32 @@ CallMethod
 Push "__set__pageSize"
 CallMethod
 Pop
-loc4a98:Push register6 "undefined"
+loc4b27:Push register6 "undefined"
 Equals2
 Not
 PushDuplicate
 Not
-If loc4ab1
+If loc4b40
 Pop
 Push register6 undefined
 Equals2
 Not
-loc4ab1:PushDuplicate
+loc4b40:PushDuplicate
 Not
-If loc4ac2
+If loc4b51
 Pop
 Push register6 ""
 Equals2
 Not
-loc4ac2:PushDuplicate
+loc4b51:PushDuplicate
 Not
-If loc4ad2
+If loc4b61
 Pop
 Push register6 null
 Equals2
 Not
-loc4ad2:Not
-If loc4b2d
+loc4b61:Not
+If loc4bbc
 Push register6
 ToNumber
 StoreRegister 6
@@ -3707,7 +3729,7 @@ GetMember
 Push "_visible" true
 SetMember
 }
-loc4b2d:SetMember
+loc4bbc:SetMember
 Push register2 "OnGame_SkillWindow_SetCrest"
 DefineFunction2 "" 3 13 false false true false true false false true false 12 "crestData" 10 "current" 11 "total"  {
 Push 0.0 register1 "_defaultViewPanel"
@@ -3741,10 +3763,10 @@ Pop
 Push 0.0
 StoreRegister 2
 Pop
-loc4bdc:Push register2 register6
+loc4c6b:Push register2 register6
 Less2
 Not
-If loc4c39
+If loc4cc8
 Push "\t" register5 register2
 GetMember
 Push 2 "lib"
@@ -3764,17 +3786,17 @@ Push register2
 Increment
 StoreRegister 2
 Pop
-Jump loc4bdc
-loc4c39:Push 0.0
+Jump loc4c6b
+loc4cc8:Push 0.0
 StoreRegister 2
 Pop
-loc4c4a:Push register2 register1 "_crestArray"
+loc4cd9:Push register2 register1 "_crestArray"
 GetMember
 Push "length"
 GetMember
 Less2
 Not
-If loc4cae
+If loc4d3d
 Push register1 "_crestArray"
 GetMember
 Push register2
@@ -3793,13 +3815,13 @@ Push register2
 Increment
 StoreRegister 2
 Pop
-Jump loc4c4a
-loc4cae:Push register1 "_curViewMode"
+Jump loc4cd9
+loc4d3d:Push register1 "_curViewMode"
 GetMember
 Push 0.0
 Equals2
 Not
-If loc4d3e
+If loc4dcd
 Push 0.0 register1 "_defaultViewPanel"
 GetMember
 Push "__get__skillListContainer"
@@ -3812,7 +3834,7 @@ Push register9 register8
 Equals2
 Not
 Not
-If loc4d3e
+If loc4dcd
 Push 0.0 register1 "_defaultViewPanel"
 GetMember
 Push "__get__skillListContainer"
@@ -3826,21 +3848,15 @@ CallMethod
 Push "__set__pageSize"
 CallMethod
 Pop
-loc4d3e:Push "#80e71c"
-StoreRegister 7
-Pop
-Push register1 "currentPoint"
+loc4dcd:Push register1 "_bChange"
 GetMember
-Push register1 "totalPoint"
-GetMember
-Less2
-Not
-Not
-If loc4d6c
+If loc4de5
 Push "#b40000"
-StoreRegister 7
+Jump loc4deb
+loc4de5:Push "#80e71c"
+loc4deb:StoreRegister 7
 Pop
-loc4d6c:Push register1 "_bottomButtonGroup"
+Push register1 "_bottomButtonGroup"
 GetMember
 Push "pointFd"
 GetMember
@@ -3875,17 +3891,17 @@ Push register1 "_curViewMode"
 GetMember
 Push 0.0
 Equals2
-If loc4e24
+If loc4ea8
 Push 0.0 register1 "_totalViewPanel"
 GetMember
 Push "__get__skillListContainer"
 CallMethod
-Jump loc4e3b
-loc4e24:Push 0.0 register1 "_defaultViewPanel"
+Jump loc4ebf
+loc4ea8:Push 0.0 register1 "_defaultViewPanel"
 GetMember
 Push "__get__skillListContainer"
 CallMethod
-loc4e3b:StoreRegister 9
+loc4ebf:StoreRegister 9
 Pop
 Push register9 register1 "_slotPrefix"
 GetMember
@@ -3914,20 +3930,20 @@ Push register5 0.0
 Greater
 Not
 PushDuplicate
-If loc4eb0
+If loc4f34
 Pop
 Push register4 0.0
 Greater
 Not
-loc4eb0:Not
-If loc4ef8
+loc4f34:Not
+If loc4f7c
 Push register2 "coolTime"
 GetMember
 Push undefined
 Equals2
 Not
 Not
-If loc4ef3
+If loc4f77
 Push register2 1 register1 "_coolTimeManager"
 GetMember
 Push "removeCoolTimeInstance"
@@ -3936,11 +3952,11 @@ Pop
 Push 0.0 register2 "removeMovieClip"
 CallMethod
 Pop
-loc4ef3:Jump loc4fa7
-loc4ef8:Push register2 undefined
+loc4f77:Jump loc502b
+loc4f7c:Push register2 undefined
 Equals2
 Not
-If loc4f7d
+If loc5001
 Push 0.0 register3 "getNextHighestDepth"
 CallMethod
 Push "coolTimeMc" "slotCoolTimeMc" 3 register3 "attachMovie"
@@ -3962,7 +3978,7 @@ Subtract
 SetMember
 Push register2 "hitTestDisable" true
 SetMember
-loc4f7d:Push register4 register5 2 register2 "setCoolTime"
+loc5001:Push register4 register5 2 register2 "setCoolTime"
 CallMethod
 Pop
 Push register2 1 register1 "_coolTimeManager"
@@ -3971,7 +3987,7 @@ Push "addCoolTimeInstance"
 CallMethod
 Pop
 }
-loc4fa7:SetMember
+loc502b:SetMember
 Push register2 "OnGame_SkillWindow_SetToggle"
 DefineFunction2 "" 2 9 false false true false true false false true false 4 "slotIndex" 7 "bTrue"  {
 Push register4
@@ -3986,17 +4002,17 @@ Push register1 "_curViewMode"
 GetMember
 Push 0.0
 Equals2
-If loc5019
+If loc509d
 Push 0.0 register1 "_totalViewPanel"
 GetMember
 Push "__get__skillListContainer"
 CallMethod
-Jump loc5030
-loc5019:Push 0.0 register1 "_defaultViewPanel"
+Jump loc50b4
+loc509d:Push 0.0 register1 "_defaultViewPanel"
 GetMember
 Push "__get__skillListContainer"
 CallMethod
-loc5030:StoreRegister 8
+loc50b4:StoreRegister 8
 Pop
 Push register8 register1 "_slotPrefix"
 GetMember
@@ -4023,11 +4039,11 @@ StoreRegister 2
 Pop
 Push register7
 Not
-If loc511b
+If loc519f
 Push register2 undefined
 Equals2
 Not
-If loc510c
+If loc5190
 Push 0.0 register3 "getNextHighestDepth"
 CallMethod
 Push "activeMc" "slotActiveMc" 3 register3 "attachMovie"
@@ -4047,20 +4063,20 @@ Subtract
 SetMember
 Push register2 "hitTestDisable" true
 SetMember
-Jump loc5116
-loc510c:Push register2 "_visible" true
+Jump loc519a
+loc5190:Push register2 "_visible" true
 SetMember
-loc5116:Jump loc513b
-loc511b:Push register2 undefined
+loc519a:Jump loc51bf
+loc519f:Push register2 undefined
 Equals2
 Not
 Not
-If loc513b
+If loc51bf
 Push 0.0 register2 "removeMovieClip"
 CallMethod
 Pop
 }
-loc513b:SetMember
+loc51bf:SetMember
 Push register2 "OnGame_MouseDown"
 DefineFunction2 "" 2 4 false false true false true false false true false 3 "button" 2 "target"  {
 Push register2 "slotName"
@@ -4069,22 +4085,22 @@ Push "SKILLSLOT"
 Equals2
 Not
 PushDuplicate
-If loc5185
+If loc5209
 Pop
 Push register2 "_parent"
 GetMember
 Push "disable"
 GetMember
-loc5185:Not
-If loc5190
+loc5209:Not
+If loc5214
 Push undefined
 Return
-loc5190:Push register3
+loc5214:Push register3
 ToNumber
 Push 2
 Equals2
 Not
-If loc522e
+If loc52b2
 Push register1 "_rightClicked" true
 SetMember
 Push register1 "_rightClickedTarget" register2 "_parent"
@@ -4101,7 +4117,7 @@ Push undefined
 Equals2
 Not
 Not
-If loc522e
+If loc52b2
 Push 0.0 register1 "_targetIndex"
 GetMember
 Push 2 0.0 "g4"
@@ -4118,7 +4134,7 @@ Push "ToGame_SkillWindow_UseSlot"
 CallMethod
 Pop
 }
-loc522e:SetMember
+loc52b2:SetMember
 Push register2 "OnGame_MouseUp"
 DefineFunction2 "" 2 3 false false true false true false false true false 2 "button" 0 "target"  {
 Push register2
@@ -4126,7 +4142,7 @@ ToNumber
 Push 2
 Equals2
 Not
-If loc52d3
+If loc5357
 Push register1 "_rightClicked" false
 SetMember
 Push register1 "_targetIndex"
@@ -4135,7 +4151,7 @@ Push undefined
 Equals2
 Not
 Not
-If loc52c9
+If loc534d
 Push 1 register1 "_targetIndex"
 GetMember
 Push 2 0.0 "g4"
@@ -4151,10 +4167,10 @@ CallMethod
 Push "ToGame_SkillWindow_UseSlot"
 CallMethod
 Pop
-loc52c9:Push register1 "_rightClickedTarget" null
+loc534d:Push register1 "_rightClickedTarget" null
 SetMember
 }
-loc52d3:SetMember
+loc5357:SetMember
 Push register2 "onTabButtonGroupClick"
 DefineFunction2 "" 1 2 false false true false true false false true false 0 "tabButton"  {
 Push 0.0 0.0 register1 "_tabButtonGroup"
@@ -4214,6 +4230,8 @@ Push register2 "_curViewMode" 0.0
 SetMember
 Push register2 "_pressedSaveBtn" null
 SetMember
+Push register2 "_bChange" false
+SetMember
 Push register2 "_rightClicked" false
 SetMember
 Push register2 "_crestArray" 0.0
@@ -4241,4 +4259,4 @@ Push "prototype"
 GetMember
 Push 3 "ASSetPropFlags"
 CallFunction
-loc54d9:Pop
+loc5567:Pop

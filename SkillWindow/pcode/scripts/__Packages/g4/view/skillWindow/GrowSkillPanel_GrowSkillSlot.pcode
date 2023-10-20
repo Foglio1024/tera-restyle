@@ -1,17 +1,17 @@
-ConstantPool "_global" "g4" "Object" "view" "skillWindow" "GrowSkillPanel_GrowSkillSlot" "gfx" "core" "UIComponent" "prototype" "__get__growSkillSlotP" "_growSkillSlotP" "__get__selected" "_slotBtn" "__set__selected" "__get__mouseEnabled" "enabled" "__set__mouseEnabled" "_skillSlot" "configUI" "_tf_name" "tf_name" "_tf_enhanceLevel" "tf_enhanceLevel" "_tf_level" "tf_level" "_mc_arrow" "mc_arrow" "_optionBtn" "optionBtn" "slotBtn" "_mc_effect" "mc_effect" "_mc_modal" "mc_modal" "skillSlot" "onSkillSlotClick" "events" "EventTypes" "CLICK" "addEventListener" "onOptionBtnClick" "_visible" "setData" "skillSlotP" "manager" "TooltipManager" "getInstance" "removeTooltip" "Id" "ViewID" "SKILL_WINDOW" "addUiTooltip" "showGrowSkillSlot" "htmlText" "Lv.<font color=\'#6c7d8a\'>" "Level" "</font>" "IsShowArrow" "iconContainer" "clear" "EnhanceSkillLevel" "__set__disabled" "SelectedOptionSkillIconPath" "" "mc_lock" "flash" "display" "BitmapData" "loadBitmap" "lib" "DrawBitmapData" "draw" "text" " / " "EnhanceSkillMaxLevel" "$083038" "util" "UIString" "getUIString" "mc_bg" "gotoAndStop" "filters" "DropShadowFilter" "updateSlot" "Name" "Disable" "showGrowSkillSlotEffect" "gotoAndPlay" "SkillWindowController" "ToGame_SkillWindow_SelectGrowSkill" "UISound" "play" "ToGame_SKillWIndow_SelectGrowSkillOptionButton" "growSkillSlotP" "addProperty" "mouseEnabled" "selected" "ASSetPropFlags"
+ConstantPool "_global" "g4" "Object" "view" "skillWindow" "GrowSkillPanel_GrowSkillSlot" "gfx" "core" "UIComponent" "prototype" "__get__growSkillSlotP" "_growSkillSlotP" "__get__selected" "_slotBtn" "__set__selected" "__get__mouseEnabled" "enabled" "__set__mouseEnabled" "_skillSlot" "configUI" "_tf_name" "tf_name" "_tf_enhanceLevel" "tf_enhanceLevel" "_tf_level" "tf_level" "_mc_arrow" "mc_arrow" "_optionBtn" "optionBtn" "slotBtn" "_mc_effect" "mc_effect" "_mc_modal" "mc_modal" "skillSlot" "onSkillSlotClick" "events" "EventTypes" "CLICK" "addEventListener" "onOptionBtnClick" "_visible" "setData" "skillSlotP" "Id" "ViewID" "SKILL_WINDOW" "manager" "TooltipManager" "getInstance" "addUiTooltip" "showGrowSkillSlot" "htmlText" "Lv.<font color=\'#6c7d8a\'>" "Level" "</font>" "IsShowArrow" "iconContainer" "clear" "EnhanceSkillLevel" "__set__disabled" "SelectedOptionSkillIconPath" "" "mc_lock" "flash" "display" "BitmapData" "loadBitmap" "lib" "DrawBitmapData" "draw" "text" " / " "EnhanceSkillMaxLevel" "updateSlot" "Name" "Disable" "showGrowSkillSlotEffect" "gotoAndPlay" "SkillWindowController" "ToGame_SkillWindow_SelectGrowSkill" "UISound" "play" "ToGame_SKillWIndow_SelectGrowSkillOptionButton" "growSkillSlotP" "addProperty" "mouseEnabled" "selected" "ASSetPropFlags"
 Push "_global"
 GetVariable
 Push "g4"
 GetMember
 Not
 Not
-If loc04c7
+If loc046c
 Push "_global"
 GetVariable
 Push "g4" 0.0 "Object"
 NewObject
 SetMember
-loc04c7:Pop
+loc046c:Pop
 Push "_global"
 GetVariable
 Push "g4"
@@ -20,7 +20,7 @@ Push "view"
 GetMember
 Not
 Not
-If loc04ff
+If loc04a4
 Push "_global"
 GetVariable
 Push "g4"
@@ -28,7 +28,7 @@ GetMember
 Push "view" 0.0 "Object"
 NewObject
 SetMember
-loc04ff:Pop
+loc04a4:Pop
 Push "_global"
 GetVariable
 Push "g4"
@@ -39,7 +39,7 @@ Push "skillWindow"
 GetMember
 Not
 Not
-If loc0543
+If loc04e8
 Push "_global"
 GetVariable
 Push "g4"
@@ -49,7 +49,7 @@ GetMember
 Push "skillWindow" 0.0 "Object"
 NewObject
 SetMember
-loc0543:Pop
+loc04e8:Pop
 Push "_global"
 GetVariable
 Push "g4"
@@ -62,7 +62,7 @@ Push "GrowSkillPanel_GrowSkillSlot"
 GetMember
 Not
 Not
-If loc0e8d
+If loc0c94
 Push "g4"
 GetVariable
 Push "view"
@@ -234,19 +234,6 @@ GetMember
 Push "setData"
 CallMethod
 Pop
-Push register1 "_slotBtn"
-GetMember
-Push 1 0.0 "g4"
-GetVariable
-Push "manager"
-GetMember
-Push "TooltipManager"
-GetMember
-Push "getInstance"
-CallMethod
-Push "removeTooltip"
-CallMethod
-Pop
 Push 0.0 register1 "_growSkillSlotP"
 GetMember
 Push "skillSlotP"
@@ -313,7 +300,7 @@ GetMember
 Push -1
 Equals2
 Not
-If loc0a9f
+If loc0a0f
 Push false 1 register1 "_optionBtn"
 GetMember
 Push "__set__disabled"
@@ -335,15 +322,15 @@ GetMember
 Push ""
 Equals2
 Not
-If loc09f7
+If loc0967
 Push register1 "_optionBtn"
 GetMember
 Push "mc_lock"
 GetMember
 Push "_visible" true
 SetMember
-Jump loc0a8a
-loc09f7:Push register1 "_optionBtn"
+Jump loc09fa
+loc0967:Push register1 "_optionBtn"
 GetMember
 Push "mc_lock"
 GetMember
@@ -370,12 +357,12 @@ GetMember
 Push "draw"
 CallMethod
 Pop
-loc0a8a:Push register1 "_tf_enhanceLevel"
+loc09fa:Push register1 "_tf_enhanceLevel"
 GetMember
 Push "_visible" false
 SetMember
-Jump loc0ca7
-loc0a9f:Push true 1 register1 "_optionBtn"
+Jump loc0aae
+loc0a0f:Push true 1 register1 "_optionBtn"
 GetMember
 Push "__set__disabled"
 CallMethod
@@ -391,6 +378,15 @@ GetMember
 Push "tf_level"
 GetMember
 Push "_visible" true
+SetMember
+Push register1 "_optionBtn"
+GetMember
+Push "tf_level"
+GetMember
+Push "text" register1 "_growSkillSlotP"
+GetMember
+Push "EnhanceSkillLevel"
+GetMember
 SetMember
 Push register1 "_tf_enhanceLevel"
 GetMember
@@ -410,82 +406,7 @@ Push "EnhanceSkillMaxLevel"
 GetMember
 Add2
 SetMember
-Push register1 "_growSkillSlotP"
-GetMember
-Push "EnhanceSkillLevel"
-GetMember
-Push register1 "_growSkillSlotP"
-GetMember
-Push "EnhanceSkillMaxLevel"
-GetMember
-Less2
-Not
-Not
-If loc0bfe
-Push register1 "_optionBtn"
-GetMember
-Push "tf_level"
-GetMember
-Push "text" "$083038" 1 "lib"
-GetVariable
-Push "util"
-GetMember
-Push "UIString"
-GetMember
-Push "getUIString"
-CallMethod
-SetMember
-Push 2 1 register1 "_optionBtn"
-GetMember
-Push "mc_bg"
-GetMember
-Push "gotoAndStop"
-CallMethod
-Pop
-Push register1 "_optionBtn"
-GetMember
-Push "tf_level"
-GetMember
-Push "filters" false false false 0.0 2 2 2 1 8535296 90 0.0 11 "flash"
-GetVariable
-Push "filters"
-GetMember
-Push "DropShadowFilter"
-NewMethod
-Push 1
-InitArray
-SetMember
-Jump loc0ca7
-loc0bfe:Push register1 "_optionBtn"
-GetMember
-Push "tf_level"
-GetMember
-Push "text" register1 "_growSkillSlotP"
-GetMember
-Push "EnhanceSkillLevel"
-GetMember
-SetMember
-Push 1 1 register1 "_optionBtn"
-GetMember
-Push "mc_bg"
-GetMember
-Push "gotoAndStop"
-CallMethod
-Pop
-Push register1 "_optionBtn"
-GetMember
-Push "tf_level"
-GetMember
-Push "filters" false false false 0.0 2 2 2 1 0.0 90 0.0 11 "flash"
-GetVariable
-Push "filters"
-GetMember
-Push "DropShadowFilter"
-NewMethod
-Push 1
-InitArray
-SetMember
-loc0ca7:Push 0.0 register1 "_skillSlot"
+loc0aae:Push 0.0 register1 "_skillSlot"
 GetMember
 Push "updateSlot"
 CallMethod
@@ -604,4 +525,4 @@ Push "prototype"
 GetMember
 Push 3 "ASSetPropFlags"
 CallFunction
-loc0e8d:Pop
+loc0c94:Pop

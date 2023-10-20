@@ -1,17 +1,17 @@
-ConstantPool "_global" "g4" "Object" "core" "EventDispatcher" "prototype" "addEventListener" "_listeners" "indexOfListener" "eventType" "scope" "callBack" "push" "removeEventListener" "length" "splice" "dispatchEvent" "apply" "removeAllEventListener" "ASSetPropFlags"
+ConstantPool "_global" "g4" "Object" "core" "EventDispatcher" "prototype" "addEventListener" "_listeners" "indexOfListener" "eventType" "scope" "callBack" "push" "removeEventListener" "splice" "removeEventListenerByScope" "indexOfListenerByScope" "dispatchEvent" "length" "apply" "removeAllEventListener" "ASSetPropFlags"
 Push "_global"
 GetVariable
 Push "g4"
 GetMember
 Not
 Not
-If loc0107
+If loc0139
 Push "_global"
 GetVariable
 Push "g4" 0.0 "Object"
 NewObject
 SetMember
-loc0107:Pop
+loc0139:Pop
 Push "_global"
 GetVariable
 Push "g4"
@@ -20,7 +20,7 @@ Push "core"
 GetMember
 Not
 Not
-If loc013f
+If loc0171
 Push "_global"
 GetVariable
 Push "g4"
@@ -28,7 +28,7 @@ GetMember
 Push "core" 0.0 "Object"
 NewObject
 SetMember
-loc013f:Pop
+loc0171:Pop
 Push "_global"
 GetVariable
 Push "g4"
@@ -39,7 +39,7 @@ Push "EventDispatcher"
 GetMember
 Not
 Not
-If loc0515
+If loc0679
 Push "g4"
 GetVariable
 Push "core"
@@ -60,33 +60,33 @@ GetMember
 Push null
 Equals2
 Not
-If loc01df
+If loc0211
 Push register1 "_listeners" 0.0 "Object"
 NewObject
 SetMember
-loc01df:Push register1 "_listeners"
+loc0211:Push register1 "_listeners"
 GetMember
 Push register2
 GetMember
 Push null
 Equals2
 Not
-If loc0210
+If loc0242
 Push register1 "_listeners"
 GetMember
 Push register2 0.0
 InitArray
 SetMember
-loc0210:Push register4 register1 "_listeners"
+loc0242:Push register3 register4 register1 "_listeners"
 GetMember
 Push register2
 GetMember
-Push 2 register1 "indexOfListener"
+Push 3 register1 "indexOfListener"
 CallMethod
 Push -1
 Equals2
 Not
-If loc026b
+If loc029f
 Push "eventType" register2 "scope" register4 "callBack" register3 3
 InitObject
 Push 1 register1 "_listeners"
@@ -97,39 +97,63 @@ Push "push"
 CallMethod
 Pop
 }
-loc026b:SetMember
+loc029f:SetMember
 Push register2 "removeEventListener"
-DefineFunction2 "" 2 7 false false true false true false false true false 5 "eventType" 6 "scope"  {
+DefineFunction2 "" 3 7 false false true false true false false true false 4 "eventType" 6 "scope" 5 "callBack"  {
 Push register1 "_listeners"
 GetMember
-Push register5
+Push register4
 GetMember
 StoreRegister 2
 Pop
 Push register2 null
 Equals2
 Not
-If loc02b5
+If loc02f3
 Push undefined
 Return
-loc02b5:Push register6 register2 2 register1 "indexOfListener"
+loc02f3:Push register5 register6 register2 3 register1 "indexOfListener"
 CallMethod
 StoreRegister 3
-Pop
-Push register2 "length"
-GetMember
-StoreRegister 4
 Pop
 Push register3 -1
 Equals2
 Not
 Not
-If loc02ff
+If loc0332
 Push 1 register3 2 register2 "splice"
 CallMethod
 Pop
 }
-loc02ff:SetMember
+loc0332:SetMember
+Push register2 "removeEventListenerByScope"
+DefineFunction2 "" 2 6 false false true false true false false true false 4 "eventType" 5 "scope"  {
+Push register1 "_listeners"
+GetMember
+Push register4
+GetMember
+StoreRegister 2
+Pop
+Push register2 null
+Equals2
+Not
+If loc037c
+Push undefined
+Return
+loc037c:Push register5 register2 2 register1 "indexOfListenerByScope"
+CallMethod
+StoreRegister 3
+Pop
+Push register3 -1
+Equals2
+Not
+Not
+If loc03b9
+Push 1 register3 2 register2 "splice"
+CallMethod
+Pop
+}
+loc03b9:SetMember
 Push register2 "dispatchEvent"
 DefineFunction2 "" 2 9 false false true false true false false true false 8 "eventType" 7 "params"  {
 Push register1 "_listeners"
@@ -141,11 +165,11 @@ Pop
 Push 0.0
 StoreRegister 2
 Pop
-loc0349:Push register2 register6 "length"
+loc0403:Push register2 register6 "length"
 GetMember
 Less2
 Not
-If loc03a3
+If loc045d
 Push register6 register2
 GetMember
 StoreRegister 3
@@ -165,18 +189,18 @@ Push register2
 Increment
 StoreRegister 2
 Pop
-Jump loc0349
+Jump loc0403
 }
-loc03a3:SetMember
+loc045d:SetMember
 Push register2 "removeAllEventListener"
 DefineFunction2 "" 1 8 false false true false true false false true false 6 "scope"  {
 Push register1 "_listeners"
 GetMember
 Enumerate2
-loc03c6:StoreRegister 0
+loc0480:StoreRegister 0
 Push null
 Equals2
-If loc0461
+If loc051b
 Push register0
 StoreRegister 7
 Pop
@@ -193,13 +217,13 @@ Pop
 Push -1
 StoreRegister 2
 Pop
-loc040b:Push register2
+loc04c5:Push register2
 Increment
 StoreRegister 2
 Push register5
 Less2
 Not
-If loc045c
+If loc0516
 Push register3 register2
 GetMember
 StoreRegister 4
@@ -209,15 +233,56 @@ GetMember
 Push register6
 Equals2
 Not
-If loc0457
+If loc0511
 Push 1 register2 2 register3 "splice"
 CallMethod
 Pop
-loc0457:Jump loc040b
-loc045c:Jump loc03c6
+loc0511:Jump loc04c5
+loc0516:Jump loc0480
 }
-loc0461:SetMember
+loc051b:SetMember
 Push register2 "indexOfListener"
+DefineFunction2 "" 3 7 false false true false true false true false false 4 "listeners" 6 "scope" 5 "callBack"  {
+Push register4 "length"
+GetMember
+StoreRegister 3
+Pop
+Push -1
+StoreRegister 2
+Pop
+loc0564:Push register2
+Increment
+StoreRegister 2
+Push register3
+Less2
+Not
+If loc05bc
+Push register4 register2
+GetMember
+StoreRegister 1
+Pop
+Push register1 "scope"
+GetMember
+Push register6
+Equals2
+PushDuplicate
+Not
+If loc05ab
+Pop
+Push register1 "callBack"
+GetMember
+Push register5
+Equals2
+loc05ab:Not
+If loc05b7
+Push register2
+Return
+loc05b7:Jump loc0564
+loc05bc:Push -1
+Return
+}
+SetMember
+Push register2 "indexOfListenerByScope"
 DefineFunction2 "" 2 6 false false true false true false true false false 4 "listeners" 5 "scope"  {
 Push register4 "length"
 GetMember
@@ -226,13 +291,13 @@ Pop
 Push -1
 StoreRegister 1
 Pop
-loc04a0:Push register1
+loc0604:Push register1
 Increment
 StoreRegister 1
 Push register3
 Less2
 Not
-If loc04e2
+If loc0646
 Push register4 register1
 GetMember
 StoreRegister 2
@@ -242,11 +307,11 @@ GetMember
 Push register5
 Equals2
 Not
-If loc04dd
+If loc0641
 Push register1
 Return
-loc04dd:Jump loc04a0
-loc04e2:Push -1
+loc0641:Jump loc0604
+loc0646:Push -1
 Return
 }
 SetMember
@@ -260,4 +325,4 @@ Push "prototype"
 GetMember
 Push 3 "ASSetPropFlags"
 CallFunction
-loc0515:Pop
+loc0679:Pop

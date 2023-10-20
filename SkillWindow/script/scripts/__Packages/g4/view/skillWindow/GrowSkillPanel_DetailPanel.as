@@ -19,7 +19,7 @@ class g4.view.skillWindow.GrowSkillPanel_DetailPanel extends gfx.core.UIComponen
       this._functionBtn.addEventListener(gfx.events.EventTypes.CLICK,this,this.onFunctionBtnClick);
       g4.manager.TooltipManager.getInstance().addMessageTooltip(this._mc_enhanceHit,lib.util.UIString.getUIString("$083021"));
    }
-   function showGrowSkillDetailSlotInfo(skillSlotP, currentEnhance, maxEnhance, cautionMessage, userLevel)
+   function showGrowSkillDetailSlotInfo(skillSlotP, currentEnhance, maxEnhance, cautionMessage)
    {
       this._skillSlotP = skillSlotP;
       this._skillSlot.setData(skillSlotP);
@@ -34,10 +34,8 @@ class g4.view.skillWindow.GrowSkillPanel_DetailPanel extends gfx.core.UIComponen
          this._tf_enhance._visible = true;
          this._tf_enhance.htmlText = "<font color=\'#ffffff\'>" + currentEnhance + "</font> / " + maxEnhance;
       }
-      var _loc3_ = skillSlotP.Level <= userLevel?"#6c7d8a":"#ea0000";
-      this._tf_level.htmlText = "<font color=\'" + _loc3_ + "\'>Lv." + skillSlotP.Level + "</font>";
+      this._tf_level.htmlText = "Lv.<font color=\'#6c7d8a\'>" + skillSlotP.Level + "</font>";
       this._tf_cautionMessage.htmlText = cautionMessage;
-      g4.manager.TooltipManager.getInstance().removeTooltip(this._skillSlot);
       g4.manager.TooltipManager.getInstance().addUiTooltip(g4.view.ViewID.SKILL_WINDOW,this._skillSlot,this._skillSlotP.Id,0);
    }
    function showGrowSkillFunctionButton(buttonName, isDisable)

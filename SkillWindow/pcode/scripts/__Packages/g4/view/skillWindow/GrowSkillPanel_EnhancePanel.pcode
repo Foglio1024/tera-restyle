@@ -1,17 +1,17 @@
-ConstantPool "_global" "g4" "Object" "view" "skillWindow" "GrowSkillPanel_EnhancePanel" "SkillWindowController" "getInstance" "registerGrowSkillPanel_EnhancePanel" "core" "G4UIComponent" "prototype" "configUI" "_mc_arrow" "mc_arrow" "_mc_prevRenderer" "mc_prevRenderer" "_mc_nextRenderer" "mc_nextRenderer" "_str_max" "$083038" "lib" "util" "UIString" "getUIString" "showGrowSkillDetailEnhance" "_visible" "_x" "mc_bg" "gotoAndStop" "tf_level" "text" "filters" "flash" "DropShadowFilter" "showGrowSkillSlotEffect" "mc_effect" "gotoAndPlay" "manager" "UISound" "play" "ASSetPropFlags"
+ConstantPool "_global" "g4" "Object" "view" "skillWindow" "GrowSkillPanel_EnhancePanel" "SkillWindowController" "getInstance" "registerGrowSkillPanel_EnhancePanel" "core" "G4UIComponent" "prototype" "configUI" "_mc_arrow" "mc_arrow" "_mc_prevRenderer" "mc_prevRenderer" "_mc_nextRenderer" "mc_nextRenderer" "showGrowSkillDetailEnhance" "tf_level" "text" "_visible" "_x" "showGrowSkillSlotEffect" "mc_effect" "gotoAndPlay" "lib" "manager" "UISound" "play" "ASSetPropFlags"
 Push "_global"
 GetVariable
 Push "g4"
 GetMember
 Not
 Not
-If loc0217
+If loc01bb
 Push "_global"
 GetVariable
 Push "g4" 0.0 "Object"
 NewObject
 SetMember
-loc0217:Pop
+loc01bb:Pop
 Push "_global"
 GetVariable
 Push "g4"
@@ -20,7 +20,7 @@ Push "view"
 GetMember
 Not
 Not
-If loc024f
+If loc01f3
 Push "_global"
 GetVariable
 Push "g4"
@@ -28,7 +28,7 @@ GetMember
 Push "view" 0.0 "Object"
 NewObject
 SetMember
-loc024f:Pop
+loc01f3:Pop
 Push "_global"
 GetVariable
 Push "g4"
@@ -39,7 +39,7 @@ Push "skillWindow"
 GetMember
 Not
 Not
-If loc0293
+If loc0237
 Push "_global"
 GetVariable
 Push "g4"
@@ -49,7 +49,7 @@ GetMember
 Push "skillWindow" 0.0 "Object"
 NewObject
 SetMember
-loc0293:Pop
+loc0237:Pop
 Push "_global"
 GetVariable
 Push "g4"
@@ -62,7 +62,7 @@ Push "GrowSkillPanel_EnhancePanel"
 GetMember
 Not
 Not
-If loc0643
+If loc049a
 Push "g4"
 GetVariable
 Push "view"
@@ -120,82 +120,10 @@ SetMember
 Push register1 "_mc_nextRenderer" register1 "mc_nextRenderer"
 GetMember
 SetMember
-Push register1 "_str_max" "$083038" 1 "lib"
-GetVariable
-Push "util"
-GetMember
-Push "UIString"
-GetMember
-Push "getUIString"
-CallMethod
-SetMember
 }
 SetMember
 Push register2 "showGrowSkillDetailEnhance"
 DefineFunction2 "" 2 4 false false true false true false false true false 3 "currentLevel" 2 "nextLevel"  {
-Push register2 -1
-Equals2
-Not
-If loc04cf
-Push register1 "_mc_nextRenderer"
-GetMember
-Push "_visible" false
-SetMember
-Push register1 "_mc_arrow"
-GetMember
-Push "_visible" false
-SetMember
-Push register1 "_mc_prevRenderer"
-GetMember
-Push "_x" 68
-SetMember
-Push 2 1 register1 "_mc_prevRenderer"
-GetMember
-Push "mc_bg"
-GetMember
-Push "gotoAndStop"
-CallMethod
-Pop
-Push register1 "_mc_prevRenderer"
-GetMember
-Push "tf_level"
-GetMember
-Push "text" register1 "_str_max"
-GetMember
-SetMember
-Push register1 "_mc_prevRenderer"
-GetMember
-Push "tf_level"
-GetMember
-Push "filters" false false false 0.0 2 2 2 1 8535296 90 0.0 11 "flash"
-GetVariable
-Push "filters"
-GetMember
-Push "DropShadowFilter"
-NewMethod
-Push 1
-InitArray
-SetMember
-Jump loc05be
-loc04cf:Push register1 "_mc_nextRenderer"
-GetMember
-Push "_visible" true
-SetMember
-Push register1 "_mc_arrow"
-GetMember
-Push "_visible" true
-SetMember
-Push register1 "_mc_prevRenderer"
-GetMember
-Push "_x" 0.0
-SetMember
-Push 1 1 register1 "_mc_prevRenderer"
-GetMember
-Push "mc_bg"
-GetMember
-Push "gotoAndStop"
-CallMethod
-Pop
 Push register1 "_mc_prevRenderer"
 GetMember
 Push "tf_level"
@@ -210,21 +138,37 @@ GetMember
 Push "text" register2
 ToString
 SetMember
+Push register2 -1
+Equals2
+Not
+If loc03de
+Push register1 "_mc_nextRenderer"
+GetMember
+Push "_visible" false
+SetMember
+Push register1 "_mc_arrow"
+GetMember
+Push "_visible" false
+SetMember
 Push register1 "_mc_prevRenderer"
 GetMember
-Push "tf_level"
+Push "_x" 68
+SetMember
+Jump loc0415
+loc03de:Push register1 "_mc_nextRenderer"
 GetMember
-Push "filters" false false false 0.0 2 2 2 1 0.0 90 0.0 11 "flash"
-GetVariable
-Push "filters"
+Push "_visible" true
+SetMember
+Push register1 "_mc_arrow"
 GetMember
-Push "DropShadowFilter"
-NewMethod
-Push 1
-InitArray
+Push "_visible" true
+SetMember
+Push register1 "_mc_prevRenderer"
+GetMember
+Push "_x" 0.0
 SetMember
 }
-loc05be:SetMember
+loc0415:SetMember
 Push register2 "showGrowSkillSlotEffect"
 DefineFunction2 "" 0 2 false false true false true false false true false  {
 Push 2 1 register1 "_mc_prevRenderer"
@@ -257,4 +201,4 @@ Push "prototype"
 GetMember
 Push 3 "ASSetPropFlags"
 CallFunction
-loc0643:Pop
+loc049a:Pop

@@ -1,17 +1,17 @@
-ConstantPool "_global" "g4" "Object" "component" "slots" "BasicSlot" "clickabled" "__set__mouseEnabled" "core" "G4UIComponent" "prototype" "__get__data" "_data" "__get__mouseEnabled" "enabled" "useHandCursor" "configUI" "setData" "updateSlot" "_visible" "onRollOver" "gfx" "events" "EventTypes" "ROLL_OVER" "dispatchEvent" "onRollOut" "ROLL_OUT" "onRelease" "CLICK" "onDragOut" "DRAG_OUT" "onPress" "PRESS" "onReleaseOutside" "RELEASE_OUTSIDE" "data" "addProperty" "mouseEnabled" "ASSetPropFlags"
+ConstantPool "_global" "g4" "Object" "component" "slots" "BasicSlot" "__set__mouseEnabled" "core" "G4UIComponent" "prototype" "__get__data" "_data" "__get__mouseEnabled" "enabled" "useHandCursor" "configUI" "setData" "updateSlot" "_visible" "onRollOver" "gfx" "events" "EventTypes" "ROLL_OVER" "dispatchEvent" "onRollOut" "ROLL_OUT" "onRelease" "CLICK" "onDragOut" "DRAG_OUT" "onReleaseOutside" "RELEASE_OUTSIDE" "data" "addProperty" "mouseEnabled" "ASSetPropFlags"
 Push "_global"
 GetVariable
 Push "g4"
 GetMember
 Not
 Not
-If loc01c4
+If loc01ab
 Push "_global"
 GetVariable
 Push "g4" 0.0 "Object"
 NewObject
 SetMember
-loc01c4:Pop
+loc01ab:Pop
 Push "_global"
 GetVariable
 Push "g4"
@@ -20,7 +20,7 @@ Push "component"
 GetMember
 Not
 Not
-If loc01fc
+If loc01e3
 Push "_global"
 GetVariable
 Push "g4"
@@ -28,7 +28,7 @@ GetMember
 Push "component" 0.0 "Object"
 NewObject
 SetMember
-loc01fc:Pop
+loc01e3:Pop
 Push "_global"
 GetVariable
 Push "g4"
@@ -39,7 +39,7 @@ Push "slots"
 GetMember
 Not
 Not
-If loc0240
+If loc0227
 Push "_global"
 GetVariable
 Push "g4"
@@ -49,7 +49,7 @@ GetMember
 Push "slots" 0.0 "Object"
 NewObject
 SetMember
-loc0240:Pop
+loc0227:Pop
 Push "_global"
 GetVariable
 Push "g4"
@@ -62,7 +62,7 @@ Push "BasicSlot"
 GetMember
 Not
 Not
-If loc05fe
+If loc0583
 Push "g4"
 GetVariable
 Push "component"
@@ -74,8 +74,6 @@ DefineFunction2 "" 0 3 false false false true true false false true false  {
 Push 0.0 register2 undefined
 CallMethod
 Pop
-Push register1 "clickabled" true
-SetMember
 Push true 1 register1 "__set__mouseEnabled"
 CallMethod
 Pop
@@ -146,13 +144,13 @@ GetMember
 Push null
 Equals2
 Not
-If loc03e4
+If loc03c1
 Push register1 "_visible" false
 SetMember
 Push undefined
 Return
 }
-loc03e4:SetMember
+loc03c1:SetMember
 Push register2 "onRollOver"
 DefineFunction2 "" 0 2 false false true false true false false true false  {
 Push register1 1
@@ -189,12 +187,6 @@ Pop
 SetMember
 Push register2 "onRelease"
 DefineFunction2 "" 0 2 false false true false true false false true false  {
-Push register1 "clickabled"
-GetMember
-Push true
-Equals2
-Not
-If loc04c4
 Push register1 1
 InitArray
 Push "gfx"
@@ -209,7 +201,7 @@ Push 2 register1 "dispatchEvent"
 CallMethod
 Pop
 }
-loc04c4:SetMember
+SetMember
 Push register2 "onDragOut"
 DefineFunction2 "" 0 2 false false true false true false false true false  {
 Push register1 1
@@ -221,23 +213,6 @@ GetMember
 Push "EventTypes"
 GetMember
 Push "DRAG_OUT"
-GetMember
-Push 2 register1 "dispatchEvent"
-CallMethod
-Pop
-}
-SetMember
-Push register2 "onPress"
-DefineFunction2 "" 0 2 false false true false true false false true false  {
-Push register1 1
-InitArray
-Push "gfx"
-GetVariable
-Push "events"
-GetMember
-Push "EventTypes"
-GetMember
-Push "PRESS"
 GetMember
 Push 2 register1 "dispatchEvent"
 CallMethod
@@ -285,4 +260,4 @@ Push "prototype"
 GetMember
 Push 3 "ASSetPropFlags"
 CallFunction
-loc05fe:Pop
+loc0583:Pop

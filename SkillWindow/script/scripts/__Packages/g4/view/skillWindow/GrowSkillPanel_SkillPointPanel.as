@@ -35,7 +35,7 @@ class g4.view.skillWindow.GrowSkillPanel_SkillPointPanel extends gfx.core.UIComp
       var _loc2_ = currentPoint != -1?String(currentPoint):"-";
       this._tf_remainSkillPointValue.text = _loc2_;
       this._tf_remainSkillPointTitle._x = 623 - this._tf_remainSkillPointValue.textWidth - 10;
-      this._tf_totalSkillPoint.htmlText = lib.util.UIString.getUIString("$083032") + " <img src=\'SkillPointIcon\' width=\'16\' height=\'14\' vspace=\'0\'><font color=\'#f1b410\'>" + maxPoint + "</font>";
+      this._tf_totalSkillPoint.htmlText = lib.util.UIString.getUIString("$083032") + " <img src=\'SkillPointIcon.png\' width=\'16\' height=\'14\' vspace=\'0\'><font color=\'#f1b410\'>" + maxPoint + "</font>";
       this._mc_hit._width = this._tf_totalSkillPoint.textWidth + 10;
    }
 }

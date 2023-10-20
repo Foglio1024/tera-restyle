@@ -3,7 +3,6 @@ class g4.component.slots.BasicSlot extends g4.core.G4UIComponent
    function BasicSlot()
    {
       super();
-      this.clickabled = true;
       this.__set__mouseEnabled(true);
    }
    function __get__data()
@@ -46,18 +45,11 @@ class g4.component.slots.BasicSlot extends g4.core.G4UIComponent
    }
    function onRelease()
    {
-      if(this.clickabled == true)
-      {
-         this.dispatchEvent(gfx.events.EventTypes.CLICK,[this]);
-      }
+      this.dispatchEvent(gfx.events.EventTypes.CLICK,[this]);
    }
    function onDragOut()
    {
       this.dispatchEvent(gfx.events.EventTypes.DRAG_OUT,[this]);
-   }
-   function onPress()
-   {
-      this.dispatchEvent(gfx.events.EventTypes.PRESS,[this]);
    }
    function onReleaseOutside()
    {

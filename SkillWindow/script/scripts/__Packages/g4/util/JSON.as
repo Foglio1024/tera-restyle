@@ -101,7 +101,7 @@ class g4.util.JSON
    }
    static function parse(text)
    {
-      if(text == null || text == "")
+      if(text == "")
       {
          return null;
       }

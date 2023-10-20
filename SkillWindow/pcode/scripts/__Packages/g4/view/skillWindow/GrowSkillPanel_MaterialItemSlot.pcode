@@ -1,17 +1,17 @@
-ConstantPool "_global" "g4" "Object" "view" "skillWindow" "GrowSkillPanel_MaterialItemSlot" "core" "G4UIComponent" "prototype" "configUI" "_itemSlot" "itemSlot" "_tf_amount" "tf_amount" "_growSkillDetailMaterialP" "setData" "showMaterialItemSlot" "_isConfigUIComplete" "itemSlotP" "manager" "TooltipManager" "getInstance" "removeTooltip" "Id" "ViewID" "SKILL_WINDOW" "addUiTooltip" "updateSlot" "HasCount" "NeedCount" "ffffff" "ff0000" "htmlText" "<font color=\'#" "\'>" "</font>/" "ASSetPropFlags"
+ConstantPool "_global" "g4" "Object" "view" "skillWindow" "GrowSkillPanel_MaterialItemSlot" "core" "G4UIComponent" "prototype" "configUI" "_itemSlot" "itemSlot" "_tf_amount" "tf_amount" "_growSkillDetailMaterialP" "setData" "showMaterialItemSlot" "_isConfigUIComplete" "itemSlotP" "Id" "ViewID" "SKILL_WINDOW" "manager" "TooltipManager" "getInstance" "addUiTooltip" "updateSlot" "HasCount" "NeedCount" "ffffff" "ff0000" "htmlText" "<font color=\'#" "\'>" "</font>/" "ASSetPropFlags"
 Push "_global"
 GetVariable
 Push "g4"
 GetMember
 Not
 Not
-If loc01ca
+If loc01bc
 Push "_global"
 GetVariable
 Push "g4" 0.0 "Object"
 NewObject
 SetMember
-loc01ca:Pop
+loc01bc:Pop
 Push "_global"
 GetVariable
 Push "g4"
@@ -20,7 +20,7 @@ Push "view"
 GetMember
 Not
 Not
-If loc0202
+If loc01f4
 Push "_global"
 GetVariable
 Push "g4"
@@ -28,7 +28,7 @@ GetMember
 Push "view" 0.0 "Object"
 NewObject
 SetMember
-loc0202:Pop
+loc01f4:Pop
 Push "_global"
 GetVariable
 Push "g4"
@@ -39,7 +39,7 @@ Push "skillWindow"
 GetMember
 Not
 Not
-If loc0246
+If loc0238
 Push "_global"
 GetVariable
 Push "g4"
@@ -49,7 +49,7 @@ GetMember
 Push "skillWindow" 0.0 "Object"
 NewObject
 SetMember
-loc0246:Pop
+loc0238:Pop
 Push "_global"
 GetVariable
 Push "g4"
@@ -62,7 +62,7 @@ Push "GrowSkillPanel_MaterialItemSlot"
 GetMember
 Not
 Not
-If loc0554
+If loc0511
 Push "g4"
 GetVariable
 Push "view"
@@ -113,7 +113,7 @@ Push null
 Equals2
 Not
 Not
-If loc0356
+If loc0348
 Push register1 "_growSkillDetailMaterialP"
 GetMember
 Push 1 register1 "setData"
@@ -123,7 +123,7 @@ Push 0.0 register1 "showMaterialItemSlot"
 CallMethod
 Pop
 }
-loc0356:SetMember
+loc0348:SetMember
 Push register2 "setData"
 DefineFunction2 "" 1 3 false false true false true false false true false 2 "growSkillDetailMaterialP"  {
 Push register1 "_growSkillDetailMaterialP" register2
@@ -133,10 +133,10 @@ GetMember
 Push false
 Equals2
 Not
-If loc03a6
+If loc0398
 Push undefined
 Return
-loc03a6:Push register1 "_growSkillDetailMaterialP"
+loc0398:Push register1 "_growSkillDetailMaterialP"
 GetMember
 Push "itemSlotP"
 GetMember
@@ -147,19 +147,6 @@ CallMethod
 Pop
 Push register1 "_growSkillDetailMaterialP" register2
 SetMember
-Push register1 "_itemSlot"
-GetMember
-Push 1 0.0 "g4"
-GetVariable
-Push "manager"
-GetMember
-Push "TooltipManager"
-GetMember
-Push "getInstance"
-CallMethod
-Push "removeTooltip"
-CallMethod
-Pop
 Push 2 register1 "_growSkillDetailMaterialP"
 GetMember
 Push "itemSlotP"
@@ -196,10 +183,10 @@ GetMember
 Push false
 Equals2
 Not
-If loc0499
+If loc0456
 Push undefined
 Return
-loc0499:Push 0.0 register1 "_itemSlot"
+loc0456:Push 0.0 register1 "_itemSlot"
 GetMember
 Push "updateSlot"
 CallMethod
@@ -213,11 +200,11 @@ GetMember
 Push "NeedCount"
 GetMember
 Less2
-If loc04dd
+If loc049a
 Push "ffffff"
-Jump loc04e2
-loc04dd:Push "ff0000"
-loc04e2:StoreRegister 2
+Jump loc049f
+loc049a:Push "ff0000"
+loc049f:StoreRegister 2
 Pop
 Push register1 "_tf_amount"
 GetMember
@@ -252,4 +239,4 @@ Push "prototype"
 GetMember
 Push 3 "ASSetPropFlags"
 CallFunction
-loc0554:Pop
+loc0511:Pop

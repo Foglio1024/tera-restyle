@@ -1,17 +1,17 @@
-ConstantPool "_global" "g4" "Object" "view" "skillWindow" "DefaultViewPanel" "SkillWindowController" "getInstance" "registerDefaultViewPanel" "_titleFd_0" "titleFd_0" "_titleFd_1" "titleFd_1" "_titleFd_2" "titleFd_2" "_defaultFd" "defaultFd" "_skillInfoMc" "skillInfoMc" "_pathSkillMc" "pathSkillMc" "_skillListScroll" "skillListScroll" "_skillListContainer" "skillListContainer" "_skillListMask" "skillListMask" "textFdContainer" "onScroll" "_y" "infoTextY" "_infoScroll" "infoScroll" "_height" "__set__pageSize" "__set__rowHeight" "infoMask" "__set__displaySize" "setWheel" "addListener" "TextFormat" "tabStops" "infoFd_0" "setNewTextFormat" "infoFd_1" "infoFd_2" "infoFd_3" "verticalAutoSize" "center" "_activeStr" "$081005" "lib" "util" "UIString" "getUIString" "_passiveStr" "$081006" "skillListY" "pathSlot" "slotHit" "GetName" "_parent" "_name" "ToGame_SkillWindow_PopUp" "Delegate" "create" "TxtBtn" "btn" "txtBtn" "setRelease" "core" "SimpleView" "prototype" "__get__popUpFocus" "_popUpFocus" "__get__pathSkillMc" "__get__skillInfoMc" "__get__skillListScroll" "__get__skillListContainer" "clearSkillContainer" "_visible" "htmlText" "" "nameFd" "activeFd" "skillIcon" "clear" "setSkillInfo" "undefined" "clearPathSkill" "infoFd" "_width" "0x80B5DE" "0xFF5A00" "textColor" "section" "ExtString" "findTag" "<" "indexOf" ">" "length" "substring" "infoFd_" "styleSheet" "toolTipStyle" "<section" "slice" "textHeight" "flash" "display" "BitmapData" "loadBitmap" "DrawBitmapData" "draw" "setViewMode" "setTitleText" "text" "setDefaultText" "setPathSkill" "guideFd" "timeMc" "manager" "TooltipManager" "removeTooltip" "ViewID" "SKILL_WINDOW" "addUiTooltip" "checkBox" "checked" "img" "TEX" "textFd" "$101068" "type" "input" "selectable" "timeText" "addProperty" "popUpFocus" "ASSetPropFlags"
+ConstantPool "_global" "g4" "Object" "view" "skillWindow" "DefaultViewPanel" "SkillWindowController" "getInstance" "registerDefaultViewPanel" "_titleFd_0" "titleFd_0" "_titleFd_1" "titleFd_1" "_titleFd_2" "titleFd_2" "_defaultFd" "defaultFd" "_skillInfoMc" "skillInfoMc" "_pathSkillMc" "pathSkillMc" "_skillListScroll" "skillListScroll" "_skillListContainer" "skillListContainer" "_skillListMask" "skillListMask" "textFdContainer" "onScroll" "_y" "infoTextY" "_infoScroll" "infoScroll" "_height" "__set__pageSize" "__set__rowHeight" "infoMask" "__set__displaySize" "setWheel" "addListener" "TextFormat" "tabStops" "infoFd_0" "setNewTextFormat" "infoFd_1" "infoFd_2" "infoFd_3" "verticalAutoSize" "center" "_activeStr" "$081005" "lib" "util" "UIString" "getUIString" "_passiveStr" "$081006" "skillListY" "pathSlot" "slotHit" "GetName" "_parent" "_name" "ToGame_SkillWindow_PopUp" "Delegate" "create" "TxtBtn" "btn" "txtBtn" "setRelease" "core" "SimpleView" "prototype" "__get__popUpFocus" "_popUpFocus" "__get__pathSkillMc" "__get__skillInfoMc" "__get__skillListScroll" "__get__skillListContainer" "clearSkillContainer" "_visible" "htmlText" "" "nameFd" "activeFd" "skillIcon" "clear" "setSkillInfo" "undefined" "clearPathSkill" "infoFd" "_width" "0x80B5DE" "0xFF5A00" "textColor" "section" "ExtString" "findTag" "<" "indexOf" ">" "length" "substring" "infoFd_" "styleSheet" "toolTipStyle" "<section" "slice" "textHeight" "flash" "display" "BitmapData" "loadBitmap" "DrawBitmapData" "draw" "setViewMode" "setTitleText" "text" "setDefaultText" "setPathSkill" "guideFd" "timeMc" "ViewID" "SKILL_WINDOW" "manager" "TooltipManager" "addUiTooltip" "checkBox" "checked" "img" "TEX" "textFd" "$101068" "type" "input" "selectable" "timeText" "addProperty" "popUpFocus" "ASSetPropFlags"
 Push "_global"
 GetVariable
 Push "g4"
 GetMember
 Not
 Not
-If loc060a
+If loc05fc
 Push "_global"
 GetVariable
 Push "g4" 0.0 "Object"
 NewObject
 SetMember
-loc060a:Pop
+loc05fc:Pop
 Push "_global"
 GetVariable
 Push "g4"
@@ -20,7 +20,7 @@ Push "view"
 GetMember
 Not
 Not
-If loc0642
+If loc0634
 Push "_global"
 GetVariable
 Push "g4"
@@ -28,7 +28,7 @@ GetMember
 Push "view" 0.0 "Object"
 NewObject
 SetMember
-loc0642:Pop
+loc0634:Pop
 Push "_global"
 GetVariable
 Push "g4"
@@ -39,7 +39,7 @@ Push "skillWindow"
 GetMember
 Not
 Not
-If loc0686
+If loc0678
 Push "_global"
 GetVariable
 Push "g4"
@@ -49,7 +49,7 @@ GetMember
 Push "skillWindow" 0.0 "Object"
 NewObject
 SetMember
-loc0686:Pop
+loc0678:Pop
 Push "_global"
 GetVariable
 Push "g4"
@@ -62,7 +62,7 @@ Push "DefaultViewPanel"
 GetMember
 Not
 Not
-If loc1a26
+If loc19d7
 Push "g4"
 GetVariable
 Push "view"
@@ -516,22 +516,22 @@ SetMember
 Push register15 undefined
 Equals2
 PushDuplicate
-If loc0dd9
+If loc0dcb
 Pop
 Push register15 "undefined"
 Equals2
-loc0dd9:PushDuplicate
-If loc0de8
+loc0dcb:PushDuplicate
+If loc0dda
 Pop
 Push register15 ""
 Equals2
-loc0de8:PushDuplicate
-If loc0df6
+loc0dda:PushDuplicate
+If loc0de8
 Pop
 Push register15 null
 Equals2
-loc0df6:Not
-If loc0e3d
+loc0de8:Not
+If loc0e2f
 Push register1 "_popUpFocus" ""
 SetMember
 Push register1 "_skillInfoMc"
@@ -547,7 +547,7 @@ CallMethod
 Pop
 Push undefined
 Return
-loc0e3d:Push true 1 register1 "clearPathSkill"
+loc0e2f:Push true 1 register1 "clearPathSkill"
 CallMethod
 Pop
 Push register1 "_skillInfoMc"
@@ -578,20 +578,20 @@ GetMember
 Push "htmlText" register27
 SetMember
 Push register16
-If loc0ed6
+If loc0ec8
 Push register1 "_passiveStr"
 GetMember
-Jump loc0ede
-loc0ed6:Push register1 "_activeStr"
+Jump loc0ed0
+loc0ec8:Push register1 "_activeStr"
 GetMember
-loc0ede:StoreRegister 20
+loc0ed0:StoreRegister 20
 Pop
 Push register16
-If loc0ef7
+If loc0ee9
 Push "0x80B5DE"
-Jump loc0efc
-loc0ef7:Push "0xFF5A00"
-loc0efc:StoreRegister 19
+Jump loc0eee
+loc0ee9:Push "0xFF5A00"
+loc0eee:StoreRegister 19
 Pop
 Push register1 "_skillInfoMc"
 GetMember
@@ -674,10 +674,10 @@ Pop
 Push 0.0
 StoreRegister 6
 Pop
-loc1061:Push register6 4
+loc1053:Push register6 4
 Less2
 Not
-If loc10c1
+If loc10b3
 Push register8 "infoFd_" register6
 Add2
 GetMember
@@ -689,24 +689,24 @@ Push register6 register11
 Less2
 Not
 Not
-If loc10b1
+If loc10a3
 Push register8 "infoFd_" register6
 Add2
 GetMember
 Push "_visible" false
 SetMember
-loc10b1:Push register6
+loc10a3:Push register6
 Increment
 StoreRegister 6
 Pop
-Jump loc1061
-loc10c1:Push 0.0
+Jump loc1053
+loc10b3:Push 0.0
 StoreRegister 6
 Pop
-loc10d2:Push register6 register11
+loc10c4:Push register6 register11
 Less2
 Not
-If loc11e8
+If loc11da
 Push register8 "infoFd_" register6
 Add2
 GetMember
@@ -728,17 +728,17 @@ Pop
 Push register4 undefined
 Equals2
 PushDuplicate
-If loc1149
+If loc113b
 Pop
 Push register4 -1
 Equals2
-loc1149:Not
-If loc115c
+loc113b:Not
+If loc114e
 Push register12 "length"
 GetMember
 StoreRegister 4
 Pop
-loc115c:Push register4 register10 2 register12 "slice"
+loc114e:Push register4 register10 2 register12 "slice"
 CallMethod
 StoreRegister 13
 Pop
@@ -773,11 +773,11 @@ Push register6
 Increment
 StoreRegister 6
 Pop
-Jump loc10d2
-loc11e8:Push register7 175
+Jump loc10c4
+loc11da:Push register7 175
 Greater
 Not
-If loc12f9
+If loc12eb
 Push register8 "infoFd_0"
 GetMember
 Push "_y"
@@ -790,10 +790,10 @@ Pop
 Push 0.0
 StoreRegister 6
 Pop
-loc122e:Push register6 register11
+loc1220:Push register6 register11
 Less2
 Not
-If loc12ca
+If loc12bc
 Push register8 "infoFd_" register6
 Add2
 GetMember
@@ -830,8 +830,8 @@ Push register6
 Increment
 StoreRegister 6
 Pop
-Jump loc122e
-loc12ca:Push register7 20
+Jump loc1220
+loc12bc:Push register7 20
 Add2
 Push 1 register1 "_infoScroll"
 GetMember
@@ -842,7 +842,7 @@ Push register1 "_infoScroll"
 GetMember
 Push "_visible" true
 SetMember
-loc12f9:Push register26 1 "flash"
+loc12eb:Push register26 1 "flash"
 GetVariable
 Push "display"
 GetMember
@@ -884,7 +884,7 @@ Push "_visible" register21
 SetMember
 Push register28
 Not
-If loc1422
+If loc1414
 Push register1 "_skillInfoMc"
 GetMember
 Push "btn"
@@ -894,7 +894,7 @@ SetMember
 Push register1 "_popUpFocus" register15
 SetMember
 }
-loc1422:SetMember
+loc1414:SetMember
 Push register2 "setViewMode"
 DefineFunction2 "" 1 3 false false true false true false false true false 2 "curViewMode"  {
 Push register1 "_skillListContainer"
@@ -990,23 +990,6 @@ Push "timeMc"
 GetMember
 Push "_visible" true
 SetMember
-Push register1 "_pathSkillMc"
-GetMember
-Push "pathSlot"
-GetMember
-Push "slotHit"
-GetMember
-Push 1 0.0 "g4"
-GetVariable
-Push "manager"
-GetMember
-Push "TooltipManager"
-GetMember
-Push "getInstance"
-CallMethod
-Push "removeTooltip"
-CallMethod
-Pop
 Push 0.0 register6 register1 "_pathSkillMc"
 GetMember
 Push "pathSlot"
@@ -1125,7 +1108,7 @@ Push register2 "clearPathSkill"
 DefineFunction2 "" 1 3 false false true false true false false true false 2 "bDeleteSkillIcon"  {
 Push register2
 Not
-If loc188e
+If loc183f
 Push register1 "_pathSkillMc"
 GetMember
 Push "skillIcon"
@@ -1140,7 +1123,7 @@ GetMember
 Push "clear"
 CallMethod
 Pop
-loc188e:Push 0.0 register1 "_pathSkillMc"
+loc183f:Push 0.0 register1 "_pathSkillMc"
 GetMember
 Push "pathSlot"
 GetMember
@@ -1240,4 +1223,4 @@ Push "prototype"
 GetMember
 Push 3 "ASSetPropFlags"
 CallFunction
-loc1a26:Pop
+loc19d7:Pop

@@ -48,7 +48,6 @@ class g4.view.skillWindow.GrowSkillPanel_GrowSkillSlot extends gfx.core.UICompon
    {
       this._growSkillSlotP = growSkillSlotP;
       this._skillSlot.setData(this._growSkillSlotP.skillSlotP);
-      g4.manager.TooltipManager.getInstance().removeTooltip(this._slotBtn);
       g4.manager.TooltipManager.getInstance().addUiTooltip(g4.view.ViewID.SKILL_WINDOW,this._slotBtn,this._growSkillSlotP.skillSlotP.Id,0);
    }
    function showGrowSkillSlot()
@@ -78,20 +77,9 @@ class g4.view.skillWindow.GrowSkillPanel_GrowSkillSlot extends gfx.core.UICompon
          this._optionBtn.__set__disabled(true);
          this._optionBtn.mc_lock._visible = false;
          this._optionBtn.tf_level._visible = true;
+         this._optionBtn.tf_level.text = this._growSkillSlotP.EnhanceSkillLevel;
          this._tf_enhanceLevel._visible = true;
          this._tf_enhanceLevel.text = this._growSkillSlotP.EnhanceSkillLevel + " / " + this._growSkillSlotP.EnhanceSkillMaxLevel;
-         if(this._growSkillSlotP.EnhanceSkillLevel >= this._growSkillSlotP.EnhanceSkillMaxLevel)
-         {
-            this._optionBtn.tf_level.text = lib.util.UIString.getUIString("$083038");
-            this._optionBtn.mc_bg.gotoAndStop(2);
-            this._optionBtn.tf_level.filters = [new flash.filters.DropShadowFilter(0,90,8535296,1,2,2,2,0,false,false,false)];
-         }
-         else
-         {
-            this._optionBtn.tf_level.text = this._growSkillSlotP.EnhanceSkillLevel;
-            this._optionBtn.mc_bg.gotoAndStop(1);
-            this._optionBtn.tf_level.filters = [new flash.filters.DropShadowFilter(0,90,0,1,2,2,2,0,false,false,false)];
-         }
       }
       this._skillSlot.updateSlot();
       this._tf_name.text = this._growSkillSlotP.skillSlotP.Name;

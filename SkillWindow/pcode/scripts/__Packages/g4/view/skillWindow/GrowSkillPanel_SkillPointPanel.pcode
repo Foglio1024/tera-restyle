@@ -1,17 +1,17 @@
-ConstantPool "_global" "g4" "Object" "view" "skillWindow" "GrowSkillPanel_SkillPointPanel" "gfx" "core" "UIComponent" "prototype" "configUI" "_tf_totalSkillPoint" "tf_totalSkillPoint" "_tf_remainSkillPointValue" "tf_remainSkillPointValue" "_tf_remainSkillPointTitle" "tf_remainSkillPointTitle" "_tf_percent" "tf_percent" "_mc_gauge" "mc_gauge" "_mc_gaugeHit" "mc_gaugeHit" "_mc_hit" "mc_hit" "text" "$083033" "lib" "util" "UIString" "getUIString" "$083022" "getUIString2" "manager" "TooltipManager" "getInstance" "addMessageTooltip" "_xscale" "" "setSkillPoint" "setSkillPointExp" "Math" "round" "%" "$083023" "{currentExp}" "StringUtil" "replace" "{maxExp}" "{percent}" "-" "_x" "textWidth" "htmlText" "$083032" " <img src=\'SkillPointIcon\' width=\'16\' height=\'14\' vspace=\'0\'><font color=\'#f1b410\'>" "</font>" "_width" "ASSetPropFlags"
+ConstantPool "_global" "g4" "Object" "view" "skillWindow" "GrowSkillPanel_SkillPointPanel" "gfx" "core" "UIComponent" "prototype" "configUI" "_tf_totalSkillPoint" "tf_totalSkillPoint" "_tf_remainSkillPointValue" "tf_remainSkillPointValue" "_tf_remainSkillPointTitle" "tf_remainSkillPointTitle" "_tf_percent" "tf_percent" "_mc_gauge" "mc_gauge" "_mc_gaugeHit" "mc_gaugeHit" "_mc_hit" "mc_hit" "text" "$083033" "lib" "util" "UIString" "getUIString" "$083022" "getUIString2" "manager" "TooltipManager" "getInstance" "addMessageTooltip" "_xscale" "" "setSkillPoint" "setSkillPointExp" "Math" "round" "%" "$083023" "{currentExp}" "StringUtil" "replace" "{maxExp}" "{percent}" "-" "_x" "textWidth" "htmlText" "$083032" " <img src=\'SkillPointIcon.png\' width=\'16\' height=\'14\' vspace=\'0\'><font color=\'#f1b410\'>" "</font>" "_width" "ASSetPropFlags"
 Push "_global"
 GetVariable
 Push "g4"
 GetMember
 Not
 Not
-If loc02f0
+If loc02f4
 Push "_global"
 GetVariable
 Push "g4" 0.0 "Object"
 NewObject
 SetMember
-loc02f0:Pop
+loc02f4:Pop
 Push "_global"
 GetVariable
 Push "g4"
@@ -20,7 +20,7 @@ Push "view"
 GetMember
 Not
 Not
-If loc0328
+If loc032c
 Push "_global"
 GetVariable
 Push "g4"
@@ -28,7 +28,7 @@ GetMember
 Push "view" 0.0 "Object"
 NewObject
 SetMember
-loc0328:Pop
+loc032c:Pop
 Push "_global"
 GetVariable
 Push "g4"
@@ -39,7 +39,7 @@ Push "skillWindow"
 GetMember
 Not
 Not
-If loc036c
+If loc0370
 Push "_global"
 GetVariable
 Push "g4"
@@ -49,7 +49,7 @@ GetMember
 Push "skillWindow" 0.0 "Object"
 NewObject
 SetMember
-loc036c:Pop
+loc0370:Pop
 Push "_global"
 GetVariable
 Push "g4"
@@ -62,7 +62,7 @@ Push "GrowSkillPanel_SkillPointPanel"
 GetMember
 Not
 Not
-If loc07c0
+If loc07c4
 Push "g4"
 GetVariable
 Push "view"
@@ -168,7 +168,7 @@ Push register2 "setSkillPointExp"
 DefineFunction2 "" 2 6 false false true false true false false true false 4 "currentExp" 5 "maxExp"  {
 Push register4 0.0
 Equals2
-If loc0597
+If loc059b
 Push register4 register5
 Divide
 Push 10000
@@ -179,9 +179,9 @@ Push "round"
 CallMethod
 Push 100
 Divide
-Jump loc05a3
-loc0597:Push 0.0
-loc05a3:StoreRegister 3
+Jump loc05a7
+loc059b:Push 0.0
+loc05a7:StoreRegister 3
 Pop
 Push register1 "_mc_gauge"
 GetMember
@@ -257,12 +257,12 @@ Push register2 "setSkillPoint"
 DefineFunction2 "" 2 5 false false true false true false false true false 3 "currentPoint" 4 "maxPoint"  {
 Push register3 -1
 Equals2
-If loc06f0
+If loc06f4
 Push register3
 ToString
-Jump loc06f5
-loc06f0:Push "-"
-loc06f5:StoreRegister 2
+Jump loc06f9
+loc06f4:Push "-"
+loc06f9:StoreRegister 2
 Pop
 Push register1 "_tf_remainSkillPointValue"
 GetMember
@@ -288,7 +288,7 @@ Push "UIString"
 GetMember
 Push "getUIString"
 CallMethod
-Push " <img src=\'SkillPointIcon\' width=\'16\' height=\'14\' vspace=\'0\'><font color=\'#f1b410\'>"
+Push " <img src=\'SkillPointIcon.png\' width=\'16\' height=\'14\' vspace=\'0\'><font color=\'#f1b410\'>"
 Add2
 Push register4
 Add2
@@ -318,4 +318,4 @@ Push "prototype"
 GetMember
 Push 3 "ASSetPropFlags"
 CallFunction
-loc07c0:Pop
+loc07c4:Pop

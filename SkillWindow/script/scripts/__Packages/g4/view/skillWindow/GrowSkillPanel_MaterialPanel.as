@@ -20,7 +20,6 @@ class g4.view.skillWindow.GrowSkillPanel_MaterialPanel extends gfx.core.UICompon
       this._enhanceInfo = this._mc_materialItemSlotGroup.enhanceInfo;
       this._tf_currentHeader = this._enhanceInfo.tf_currentHeader;
       this._tf_nextHeader = this._enhanceInfo.tf_nextHeader;
-      this._tf_defaultDesc = this.tf_defaultDesc;
       this._tf_effectTitle.verticalAutoSize = "top";
       this._tf_effectDesc.verticalAutoSize = "top";
       this._tf_effectTitle.text = lib.util.UIString.getUIString2("$083026");
@@ -37,13 +36,9 @@ class g4.view.skillWindow.GrowSkillPanel_MaterialPanel extends gfx.core.UICompon
       this._enhanceInfo.tf_nextTitle.verticalAutoSize = "top";
       this._enhanceInfo.tf_current.verticalAutoSize = "top";
       this._enhanceInfo.tf_next.verticalAutoSize = "top";
-      this._tf_defaultDesc._visible = false;
-      this._tf_defaultDesc.verticalAlign = "center";
-      this._tf_defaultDesc.text = lib.util.UIString.getUIString2("$083037");
    }
    function showGrowSkillDetailEnhance(abilityNames, currentValues, nextValues)
    {
-      this._tf_defaultDesc._visible = false;
       this._scrollBar.__set__scroll(0);
       this._tf_effectTitle._visible = this._tf_effectDesc._visible = false;
       this._enhanceInfo._visible = true;
@@ -70,15 +65,15 @@ class g4.view.skillWindow.GrowSkillPanel_MaterialPanel extends gfx.core.UICompon
    }
    function setAbilityInfo(tf_title, tf_value, abilityNames, abilityValues)
    {
-      var _loc4_ = "";
       var _loc3_ = "";
+      var _loc6_ = "";
       var _loc2_ = 0;
       while(_loc2_ < abilityNames.length)
       {
-         _loc4_ = _loc4_ + abilityNames[_loc2_];
-         _loc3_ = _loc3_ + abilityValues[_loc2_];
-         tf_title.text = _loc4_;
-         tf_value.text = _loc3_;
+         _loc3_ = _loc3_ + abilityNames[_loc2_];
+         _loc6_ = _loc6_ + abilityValues[_loc2_];
+         tf_title.text = _loc3_;
+         tf_value.text = abilityValues[_loc2_];
          if(_loc2_ < abilityNames.length - 1)
          {
             var _loc1_ = 0;
@@ -87,7 +82,7 @@ class g4.view.skillWindow.GrowSkillPanel_MaterialPanel extends gfx.core.UICompon
                _loc1_ = tf_title.numLines - tf_value.numLines;
                while(_loc1_ > 0)
                {
-                  _loc3_ = _loc3_ + "\n";
+                  _loc6_ = _loc6_ + "\n";
                   _loc1_ = _loc1_ - 1;
                }
             }
@@ -96,34 +91,25 @@ class g4.view.skillWindow.GrowSkillPanel_MaterialPanel extends gfx.core.UICompon
                _loc1_ = tf_value.numLines - tf_title.numLines;
                while(_loc1_ > 0)
                {
-                  _loc4_ = _loc4_ + "\n";
+                  _loc3_ = _loc3_ + "\n";
                   _loc1_ = _loc1_ - 1;
                }
             }
-            _loc4_ = _loc4_ + "\n";
             _loc3_ = _loc3_ + "\n";
+            _loc6_ = _loc6_ + "\n";
          }
          _loc2_ = _loc2_ + 1;
       }
-      tf_title.text = _loc4_;
-      tf_value.text = _loc3_;
+      tf_title.text = _loc3_;
+      tf_value.text = _loc6_;
    }
    function moveArrow($index)
    {
    }
    function showGrowSkillDetailOptionSkillEffectDesc($optionSkillEffectDesc)
    {
-      if($optionSkillEffectDesc == "")
-      {
-         this._tf_defaultDesc._visible = true;
-         this._tf_effectTitle._visible = this._tf_effectDesc._visible = false;
-      }
-      else
-      {
-         this._tf_effectDesc.htmlText = $optionSkillEffectDesc;
-         this._tf_defaultDesc._visible = false;
-         this._tf_effectTitle._visible = this._tf_effectDesc._visible = true;
-      }
+      this._tf_effectDesc.htmlText = $optionSkillEffectDesc;
+      this._tf_effectTitle._visible = this._tf_effectDesc._visible = true;
       this._enhanceInfo._visible = false;
    }
    function showGrowSkillDetailMaterialGroup(tempNeedMaterials, needGold, hasGold)

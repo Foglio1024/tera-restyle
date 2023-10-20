@@ -24,7 +24,6 @@ class g4.view.skillWindow.GrowSkillPanel_MaterialItemSlot extends g4.core.G4UICo
       }
       this._itemSlot.setData(this._growSkillDetailMaterialP.itemSlotP);
       this._growSkillDetailMaterialP = growSkillDetailMaterialP;
-      g4.manager.TooltipManager.getInstance().removeTooltip(this._itemSlot);
       g4.manager.TooltipManager.getInstance().addUiTooltip(g4.view.ViewID.SKILL_WINDOW,this._itemSlot,this._growSkillDetailMaterialP.itemSlotP.Id,2);
    }
    function showMaterialItemSlot()

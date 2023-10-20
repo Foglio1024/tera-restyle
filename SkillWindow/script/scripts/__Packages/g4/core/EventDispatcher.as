@@ -13,20 +13,32 @@ class g4.core.EventDispatcher
       {
          this._listeners[eventType] = [];
       }
-      if(this.indexOfListener(this._listeners[eventType],scope) == -1)
+      if(this.indexOfListener(this._listeners[eventType],scope,callBack) == -1)
       {
          this._listeners[eventType].push({eventType:eventType,scope:scope,callBack:callBack});
       }
    }
-   function removeEventListener(eventType, scope)
+   function removeEventListener(eventType, scope, callBack)
    {
       var _loc2_ = this._listeners[eventType];
       if(_loc2_ == null)
       {
          return undefined;
       }
-      var _loc3_ = this.indexOfListener(_loc2_,scope);
-      var _loc4_ = _loc2_.length;
+      var _loc3_ = this.indexOfListener(_loc2_,scope,callBack);
+      if(_loc3_ != -1)
+      {
+         _loc2_.splice(_loc3_,1);
+      }
+   }
+   function removeEventListenerByScope(eventType, scope)
+   {
+      var _loc2_ = this._listeners[eventType];
+      if(_loc2_ == null)
+      {
+         return undefined;
+      }
+      var _loc3_ = this.indexOfListenerByScope(_loc2_,scope);
       if(_loc3_ != -1)
       {
          _loc2_.splice(_loc3_,1);
@@ -62,7 +74,21 @@ class g4.core.EventDispatcher
          }
       }
    }
-   function indexOfListener(listeners, scope)
+   function indexOfListener(listeners, scope, callBack)
+   {
+      var _loc3_ = listeners.length;
+      var _loc2_ = -1;
+      while((_loc2_ = _loc2_ + 1) < _loc3_)
+      {
+         var _loc1_ = listeners[_loc2_];
+         if(_loc1_.scope == scope && _loc1_.callBack == callBack)
+         {
+            return _loc2_;
+         }
+      }
+      return -1;
+   }
+   function indexOfListenerByScope(listeners, scope)
    {
       var _loc3_ = listeners.length;
       var _loc1_ = -1;

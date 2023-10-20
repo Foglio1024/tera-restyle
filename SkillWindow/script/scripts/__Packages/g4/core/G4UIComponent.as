@@ -17,9 +17,13 @@ class g4.core.G4UIComponent extends MovieClip
    {
       this._eventDispatcher.addEventListener(eventType,scope,callBack);
    }
-   function removeEventListener(eventType, scope)
+   function removeEventListener(eventType, scope, callBack)
    {
-      this._eventDispatcher.removeEventListener(eventType,scope);
+      this._eventDispatcher.removeEventListener(eventType,scope,callBack);
+   }
+   function removeEventListenerByScope(eventType, scope)
+   {
+      this._eventDispatcher.removeEventListenerByScope(eventType,scope);
    }
    function dispatchEvent(eventType, params)
    {
@@ -200,6 +204,7 @@ class g4.core.G4UIComponent extends MovieClip
    }
    function dispatchEventToGame(event)
    {
+      flash.external.ExternalInterface.call("__handleEvent",this._name,event);
    }
    function configUI()
    {

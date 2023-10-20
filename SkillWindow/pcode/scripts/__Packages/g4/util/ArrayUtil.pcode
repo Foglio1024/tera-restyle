@@ -1,0 +1,357 @@
+ConstantPool "_global" "g4" "Object" "util" "ArrayUtil" "prototype" "indexOf" "length" "isNaN" "function" "lastIndexOf" "Math" "min" "isExist" "removeElement" "splice" "shuffle" "Array" "random" "floor" "sortMapByKey" "key" "value" "push" "sortOn" "randomElement" "ASSetPropFlags"
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Not
+Not
+If loc0106
+Push "_global"
+GetVariable
+Push "g4" 0.0 "Object"
+NewObject
+SetMember
+loc0106:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "util"
+GetMember
+Not
+Not
+If loc013e
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "util" 0.0 "Object"
+NewObject
+SetMember
+loc013e:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "util"
+GetMember
+Push "ArrayUtil"
+GetMember
+Not
+Not
+If loc0715
+Push "g4"
+GetVariable
+Push "util"
+GetMember
+Push "ArrayUtil"
+DefineFunction "" 0  {
+}
+StoreRegister 1
+SetMember
+Push register1 "prototype"
+GetMember
+StoreRegister 2
+Pop
+Push register1 "indexOf"
+DefineFunction2 "" 3 6 false false true false true false true false false 2 "array" 5 "searchElementOrCompareFunction" 3 "fromIndex"  {
+Push register2 null
+Equals2
+PushDuplicate
+If loc01f0
+Pop
+Push register2 "length"
+GetMember
+Push 0.0
+Equals2
+loc01f0:Not
+If loc01ff
+Push -1
+Return
+loc01ff:Push register3 1 "isNaN"
+CallFunction
+Not
+If loc0223
+Push 0.0
+StoreRegister 3
+Pop
+loc0223:Push undefined
+StoreRegister 1
+Pop
+Push register2 "length"
+GetMember
+StoreRegister 4
+Pop
+Push register5
+TypeOf
+Push "function"
+Equals2
+Not
+If loc0298
+Push register3
+StoreRegister 1
+Pop
+loc0255:Push register1 register4
+Less2
+Not
+If loc0293
+Push register2 register1
+GetMember
+Push 1 register5 undefined
+CallMethod
+Not
+If loc0283
+Push register1
+Return
+loc0283:Push register1
+Increment
+StoreRegister 1
+Pop
+Jump loc0255
+loc0293:Jump loc02da
+loc0298:Push register3
+StoreRegister 1
+Pop
+loc02a2:Push register1 register4
+Less2
+Not
+If loc02da
+Push register2 register1
+GetMember
+Push register5
+StrictEquals
+Not
+If loc02ca
+Push register1
+Return
+loc02ca:Push register1
+Increment
+StoreRegister 1
+Pop
+Jump loc02a2
+loc02da:Push -1
+Return
+}
+SetMember
+Push register1 "lastIndexOf"
+DefineFunction2 "" 3 5 false false true false true false true false false 2 "array" 3 "searchElementOrCompareFunction" 4 "fromIndex"  {
+Push register2 null
+Equals2
+PushDuplicate
+If loc034b
+Pop
+Push register2 "length"
+GetMember
+Push 0.0
+Equals2
+loc034b:Not
+If loc035a
+Push -1
+Return
+loc035a:Push register4 1 "isNaN"
+CallFunction
+Not
+If loc037a
+Push 2147483647
+StoreRegister 4
+Pop
+loc037a:Push register2 "length"
+GetMember
+Push register4 2 "Math"
+GetVariable
+Push "min"
+CallMethod
+StoreRegister 1
+Pop
+Push register3
+TypeOf
+Push "function"
+Equals2
+Not
+If loc03f4
+loc03ac:Push register1
+Decrement
+StoreRegister 1
+Push 0.0
+Less2
+Not
+Not
+If loc03ef
+Push register2 register1
+GetMember
+Push 1 register3 undefined
+CallMethod
+Not
+If loc03ea
+Push register1
+Return
+loc03ea:Jump loc03ac
+loc03ef:Jump loc0431
+loc03f4:Push register1
+Decrement
+StoreRegister 1
+Push 0.0
+Less2
+Not
+Not
+If loc0431
+Push register2 register1
+GetMember
+Push register3
+StrictEquals
+Not
+If loc042c
+Push register1
+Return
+loc042c:Jump loc03f4
+loc0431:Push -1
+Return
+}
+SetMember
+Push register1 "isExist"
+DefineFunction2 "" 2 3 false false true false true false true false false 1 "array" 2 "searchElementOrCompareFunction"  {
+Push register2 register1 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "ArrayUtil"
+GetMember
+Push "indexOf"
+CallMethod
+Push -1
+Equals2
+Not
+Return
+}
+SetMember
+Push register1 "removeElement"
+DefineFunction2 "" 2 4 false false true false true false true false false 2 "array" 3 "searchElementOrCompareFunction"  {
+Push register3 register2 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "ArrayUtil"
+GetMember
+Push "indexOf"
+CallMethod
+StoreRegister 1
+Pop
+Push register1 -1
+Equals2
+Not
+If loc0516
+Push undefined
+Return
+loc0516:Push 1 register1 2 register2 "splice"
+CallMethod
+Push 0.0
+GetMember
+Return
+}
+SetMember
+Push register1 "shuffle"
+DefineFunction2 "" 1 6 false false true false true false true false false 2 "array"  {
+Push undefined
+StoreRegister 3
+Pop
+Push register2 "length"
+GetMember
+StoreRegister 5
+Pop
+Push 0.0 "Array"
+NewObject
+StoreRegister 4
+Pop
+Push 0.0
+StoreRegister 1
+Pop
+loc058d:Push register1 register5
+Less2
+Not
+If loc0601
+Push 0.0 "Math"
+GetVariable
+Push "random"
+CallMethod
+Push register2 "length"
+GetMember
+Multiply
+Push 1 "Math"
+GetVariable
+Push "floor"
+CallMethod
+StoreRegister 3
+Pop
+Push register4 register1 register2 register3
+GetMember
+SetMember
+Push 1 register3 2 register2 "splice"
+CallMethod
+Pop
+Push register1
+Increment
+StoreRegister 1
+Pop
+Jump loc058d
+loc0601:Push register4
+Return
+}
+SetMember
+Push register1 "sortMapByKey"
+DefineFunction2 "" 2 6 false false true false true false true false false 2 "mapData" 5 "options"  {
+Push 0.0
+InitArray
+StoreRegister 3
+Pop
+Push register2
+Enumerate2
+loc0644:StoreRegister 0
+Push null
+Equals2
+If loc0686
+Push register0
+StoreRegister 4
+Pop
+Push "key" register4 "value" register2 register4
+GetMember
+Push 2
+InitObject
+Push 1 register3 "push"
+CallMethod
+Pop
+Jump loc0644
+loc0686:Push register5 "key" 2 register3 "sortOn"
+CallMethod
+Pop
+Push register3
+Return
+}
+SetMember
+Push register1 "randomElement"
+DefineFunction2 "" 1 2 false false true false true false true false false 1 "array"  {
+Push register1 0.0 "Math"
+GetVariable
+Push "random"
+CallMethod
+Push register1 "length"
+GetMember
+Multiply
+Push 1 "Math"
+GetVariable
+Push "floor"
+CallMethod
+GetMember
+Return
+}
+SetMember
+Push 1 null "g4"
+GetVariable
+Push "util"
+GetMember
+Push "ArrayUtil"
+GetMember
+Push "prototype"
+GetMember
+Push 3 "ASSetPropFlags"
+CallFunction
+loc0715:Pop

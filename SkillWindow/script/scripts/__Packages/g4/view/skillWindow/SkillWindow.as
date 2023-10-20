@@ -19,6 +19,7 @@ class g4.view.skillWindow.SkillWindow extends g4.core.View
    var _bWidgetOpen = false;
    var _curViewMode = 0;
    var _pressedSaveBtn = null;
+   var _bChange = false;
    var _rightClicked = false;
    var _crestArray = [];
    var _targetIndex = null;
@@ -309,6 +310,7 @@ class g4.view.skillWindow.SkillWindow extends g4.core.View
    }
    function setCrest(info)
    {
+      this._bChange = false;
       var _loc11_ = this._curViewMode != 0?this._totalViewPanel.__get__skillListContainer():this._defaultViewPanel.__get__skillListContainer();
       var _loc10_ = info.shift();
       var _loc7_ = _loc11_[this._slotPrefix + _loc10_];
@@ -482,10 +484,14 @@ class g4.view.skillWindow.SkillWindow extends g4.core.View
    }
    function changeCrestState(target)
    {
-      var _loc4_ = target.point;
-      var _loc3_ = this.totalPoint - this.currentPoint;
+      var _loc3_ = target.point;
+      var _loc2_ = this.totalPoint - this.currentPoint;
       var _loc5_ = target.crestState;
-      target.crestState = _loc4_ > _loc3_?this.CREST_STATE_DISABLE:this.CREST_STATE_INACTIVE;
+      target.crestState = _loc3_ > _loc2_?this.CREST_STATE_DISABLE:this.CREST_STATE_INACTIVE;
+      if(this._bChange == false)
+      {
+         this._bChange = _loc3_ > _loc2_?false:true;
+      }
    }
    function setSkill(skillSlotP)
    {
@@ -762,10 +768,12 @@ class g4.view.skillWindow.SkillWindow extends g4.core.View
             this.__get__targetMovieClip()._visible = true;
             this._container_mc.lock_mc._x = 739;
             this._container_mc.lock_mc._y = 7;
+            _root.OnGameEvent("OnGameEventShowWindow","ShortCut2",true);
          }
          else
          {
             this.__get__targetMovieClip()._visible = false;
+            _root.OnGameEvent("OnGameEventShowWindow","ShortCut2",false);
          }
       }
    }
@@ -940,11 +948,7 @@ class g4.view.skillWindow.SkillWindow extends g4.core.View
             this._defaultViewPanel.__get__skillListScroll().__set__pageSize(this._defaultViewPanel.__get__skillListContainer()._height);
          }
       }
-      var _loc7_ = "#80e71c";
-      if(this.currentPoint >= this.totalPoint)
-      {
-         _loc7_ = "#b40000";
-      }
+      var _loc7_ = !this._bChange?"#b40000":"#80e71c";
       this._bottomButtonGroup.pointFd.htmlText = "<font color=\'" + _loc7_ + "\'>" + current + "</font>/" + total;
    }
    function OnGame_SkillWindow_CoolTime(slotIndex, remain, total)

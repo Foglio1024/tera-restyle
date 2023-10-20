@@ -39,7 +39,7 @@ Push "JSON"
 GetMember
 Not
 Not
-If loc1232
+If loc1220
 Push "g4"
 GetVariable
 Push "util"
@@ -344,20 +344,13 @@ Push register1 "parse"
 DefineFunction2 "" 1 13 false false true false true false true false false 0 "text"  {
 Push "text"
 GetVariable
-Push null
-Equals2
-PushDuplicate
-If loc06d7
-Pop
-Push "text"
-GetVariable
 Push ""
 Equals2
-loc06d7:Not
-If loc06e2
+Not
+If loc06d0
 Push null
 Return
-loc06e2:Push "at" 0.0
+loc06d0:Push "at" 0.0
 DefineLocal
 Push "ch" " "
 DefineLocal
@@ -397,102 +390,102 @@ Return
 DefineLocal
 Push "_white"
 DefineFunction "" 0  {
-loc078c:Push "ch"
+loc077a:Push "ch"
 GetVariable
 Not
-If loc08f8
+If loc08e6
 Push "ch"
 GetVariable
 Push " "
 Greater
 Not
 Not
-If loc07c0
+If loc07ae
 Push 0.0 "_next"
 CallFunction
 Pop
-Jump loc08f3
-loc07c0:Push "ch"
+Jump loc08e1
+loc07ae:Push "ch"
 GetVariable
 Push "/"
 Equals2
 Not
-If loc08ee
+If loc08dc
 Push 0.0 "_next"
 CallFunction
 StoreRegister 0
 Push "/"
 StrictEquals
-If loc0802
+If loc07f0
 Push register0 "*"
 StrictEquals
-If loc084b
-Jump loc08db
-loc0802:Push 0.0 "_next"
+If loc0839
+Jump loc08c9
+loc07f0:Push 0.0 "_next"
 CallFunction
 PushDuplicate
 Not
-If loc0826
+If loc0814
 Pop
 Push "ch"
 GetVariable
 Push "\n"
 Equals2
 Not
-loc0826:PushDuplicate
+loc0814:PushDuplicate
 Not
-If loc083b
+If loc0829
 Pop
 Push "ch"
 GetVariable
 Push "\r"
 Equals2
 Not
-loc083b:Not
-If loc0846
-Jump loc0802
-loc0846:Jump loc08e9
-loc084b:Push 0.0 "_next"
+loc0829:Not
+If loc0834
+Jump loc07f0
+loc0834:Jump loc08d7
+loc0839:Push 0.0 "_next"
 CallFunction
 Pop
-loc085b:Push "ch"
+loc0849:Push "ch"
 GetVariable
 Not
-If loc08c3
+If loc08b1
 Push "ch"
 GetVariable
 Push "*"
 Equals2
 Not
-If loc08ae
+If loc089c
 Push 0.0 "_next"
 CallFunction
 Push "/"
 Equals2
 Not
-If loc08a9
+If loc0897
 Push 0.0 "_next"
 CallFunction
 Pop
-Jump loc08d6
-loc08a9:Jump loc08be
-loc08ae:Push 0.0 "_next"
+Jump loc08c4
+loc0897:Jump loc08ac
+loc089c:Push 0.0 "_next"
 CallFunction
 Pop
-loc08be:Jump loc08d1
-loc08c3:Push "Unterminated comment" 1 "_error"
+loc08ac:Jump loc08bf
+loc08b1:Push "Unterminated comment" 1 "_error"
 CallFunction
 Pop
-loc08d1:Jump loc085b
-loc08d6:Jump loc08e9
-loc08db:Push "Syntax error" 1 "_error"
+loc08bf:Jump loc0849
+loc08c4:Jump loc08d7
+loc08c9:Push "Syntax error" 1 "_error"
 CallFunction
 Pop
-loc08e9:Jump loc08f3
-loc08ee:Jump loc08f8
-loc08f3:Jump loc078c
+loc08d7:Jump loc08e1
+loc08dc:Jump loc08e6
+loc08e1:Jump loc077a
 }
-loc08f8:DefineLocal
+loc08e6:DefineLocal
 Push "_string"
 DefineFunction2 "" 0 6 false false true false true false true false false  {
 Push undefined
@@ -515,85 +508,85 @@ GetVariable
 Push "\""
 Equals2
 Not
-If loc0b5c
-loc094a:Push 0.0 "_next"
+If loc0b4a
+loc0938:Push 0.0 "_next"
 CallFunction
 Not
-If loc0b5c
+If loc0b4a
 Push "ch"
 GetVariable
 Push "\""
 Equals2
 Not
-If loc0987
+If loc0975
 Push 0.0 "_next"
 CallFunction
 Pop
 Push register1
 Return
-loc0987:Push "ch"
+loc0975:Push "ch"
 GetVariable
 Push "\\"
 Equals2
 Not
-If loc0b49
+If loc0b37
 Push 0.0 "_next"
 CallFunction
 StoreRegister 0
 Push "b"
 StrictEquals
-If loc09fd
+If loc09eb
 Push register0 "f"
 StrictEquals
-If loc0a0f
+If loc09fd
 Push register0 "n"
 StrictEquals
-If loc0a21
+If loc0a0f
 Push register0 "r"
 StrictEquals
-If loc0a33
+If loc0a21
 Push register0 "t"
 StrictEquals
-If loc0a45
+If loc0a33
 Push register0 "u"
 StrictEquals
-If loc0a57
-Jump loc0b36
-loc09fd:Push register1 "\b"
+If loc0a45
+Jump loc0b24
+loc09eb:Push register1 "\b"
 Add2
 StoreRegister 1
 Pop
-Jump loc0b44
-loc0a0f:Push register1 "\f"
+Jump loc0b32
+loc09fd:Push register1 "\f"
 Add2
 StoreRegister 1
 Pop
-Jump loc0b44
-loc0a21:Push register1 "\n"
+Jump loc0b32
+loc0a0f:Push register1 "\n"
 Add2
 StoreRegister 1
 Pop
-Jump loc0b44
-loc0a33:Push register1 "\r"
+Jump loc0b32
+loc0a21:Push register1 "\r"
 Add2
 StoreRegister 1
 Pop
-Jump loc0b44
-loc0a45:Push register1 "\t"
+Jump loc0b32
+loc0a33:Push register1 "\t"
 Add2
 StoreRegister 1
 Pop
-Jump loc0b44
-loc0a57:Push 0.0
+Jump loc0b32
+loc0a45:Push 0.0
 StoreRegister 2
 Pop
 Push 0.0
 StoreRegister 4
 Pop
-loc0a79:Push register4 4
+loc0a67:Push register4 4
 Less2
 Not
-If loc0afc
+If loc0aea
 Push 16 0.0 "_next"
 CallFunction
 Push 2 "parseInt"
@@ -604,12 +597,12 @@ Push register3 1 "isFinite"
 CallFunction
 Not
 Not
-If loc0ad1
+If loc0abf
 Push true
 StoreRegister 5
 Pop
-Jump loc0afc
-loc0ad1:Push register2 16
+Jump loc0aea
+loc0abf:Push register2 16
 Multiply
 Push register3
 Add2
@@ -619,35 +612,35 @@ Push register4 1
 Add2
 StoreRegister 4
 Pop
-Jump loc0a79
-loc0afc:Push register5
+Jump loc0a67
+loc0aea:Push register5
 Not
-If loc0b16
+If loc0b04
 Push false
 StoreRegister 5
 Pop
-Jump loc0b44
-loc0b16:Push register1 register2 1 "String"
+Jump loc0b32
+loc0b04:Push register1 register2 1 "String"
 GetVariable
 Push "fromCharCode"
 CallMethod
 Add2
 StoreRegister 1
 Pop
-Jump loc0b44
-loc0b36:Push register1 "ch"
+Jump loc0b32
+loc0b24:Push register1 "ch"
 GetVariable
 Add2
 StoreRegister 1
 Pop
-loc0b44:Jump loc0b57
-loc0b49:Push register1 "ch"
+loc0b32:Jump loc0b45
+loc0b37:Push register1 "ch"
 GetVariable
 Add2
 StoreRegister 1
 Pop
-loc0b57:Jump loc094a
-loc0b5c:Push "Bad string" 1 "_error"
+loc0b45:Jump loc0938
+loc0b4a:Push "Bad string" 1 "_error"
 CallFunction
 Pop
 }
@@ -663,7 +656,7 @@ GetVariable
 Push "["
 Equals2
 Not
-If loc0c85
+If loc0c73
 Push 0.0 "_next"
 CallFunction
 Pop
@@ -675,16 +668,16 @@ GetVariable
 Push "]"
 Equals2
 Not
-If loc0be7
+If loc0bd5
 Push 0.0 "_next"
 CallFunction
 Pop
 Push register1
 Return
-loc0be7:Push "ch"
+loc0bd5:Push "ch"
 GetVariable
 Not
-If loc0c85
+If loc0c73
 Push 0.0 "_value"
 CallFunction
 Push 1 register1 "push"
@@ -698,28 +691,28 @@ GetVariable
 Push "]"
 Equals2
 Not
-If loc0c48
+If loc0c36
 Push 0.0 "_next"
 CallFunction
 Pop
 Push register1
 Return
-loc0c48:Push "ch"
+loc0c36:Push "ch"
 GetVariable
 Push ","
 Equals2
 Not
 Not
-If loc0c60
-Jump loc0c85
-loc0c60:Push 0.0 "_next"
+If loc0c4e
+Jump loc0c73
+loc0c4e:Push 0.0 "_next"
 CallFunction
 Pop
 Push 0.0 "_white"
 CallFunction
 Pop
-Jump loc0be7
-loc0c85:Push "Bad array" 1 "_error"
+Jump loc0bd5
+loc0c73:Push "Bad array" 1 "_error"
 CallFunction
 Pop
 }
@@ -738,7 +731,7 @@ GetVariable
 Push "{"
 Equals2
 Not
-If loc0dfa
+If loc0de8
 Push 0.0 "_next"
 CallFunction
 Pop
@@ -750,16 +743,16 @@ GetVariable
 Push "}"
 Equals2
 Not
-If loc0d19
+If loc0d07
 Push 0.0 "_next"
 CallFunction
 Pop
 Push register1
 Return
-loc0d19:Push "ch"
+loc0d07:Push "ch"
 GetVariable
 Not
-If loc0dfa
+If loc0de8
 Push 0.0 "_string"
 CallFunction
 StoreRegister 2
@@ -773,9 +766,9 @@ Push ":"
 Equals2
 Not
 Not
-If loc0d61
-Jump loc0dfa
-loc0d61:Push 0.0 "_next"
+If loc0d4f
+Jump loc0de8
+loc0d4f:Push 0.0 "_next"
 CallFunction
 Pop
 Push register1 register2 0.0 "_value"
@@ -789,28 +782,28 @@ GetVariable
 Push "}"
 Equals2
 Not
-If loc0dbd
+If loc0dab
 Push 0.0 "_next"
 CallFunction
 Pop
 Push register1
 Return
-loc0dbd:Push "ch"
+loc0dab:Push "ch"
 GetVariable
 Push ","
 Equals2
 Not
 Not
-If loc0dd5
-Jump loc0dfa
-loc0dd5:Push 0.0 "_next"
+If loc0dc3
+Jump loc0de8
+loc0dc3:Push 0.0 "_next"
 CallFunction
 Pop
 Push 0.0 "_white"
 CallFunction
 Pop
-Jump loc0d19
-loc0dfa:Push "Bad object" 1 "_error"
+Jump loc0d07
+loc0de8:Push "Bad object" 1 "_error"
 CallFunction
 Pop
 }
@@ -828,29 +821,29 @@ GetVariable
 Push "-"
 Equals2
 Not
-If loc0e58
+If loc0e46
 Push "-"
 StoreRegister 1
 Pop
 Push 0.0 "_next"
 CallFunction
 Pop
-loc0e58:Push "ch"
+loc0e46:Push "ch"
 GetVariable
 Push "0"
 Less2
 Not
 PushDuplicate
 Not
-If loc0e7a
+If loc0e68
 Pop
 Push "ch"
 GetVariable
 Push "9"
 Greater
 Not
-loc0e7a:Not
-If loc0ea3
+loc0e68:Not
+If loc0e91
 Push register1 "ch"
 GetVariable
 Add2
@@ -859,46 +852,46 @@ Pop
 Push 0.0 "_next"
 CallFunction
 Pop
-Jump loc0e58
-loc0ea3:Push "ch"
+Jump loc0e46
+loc0e91:Push "ch"
 GetVariable
 Push "."
 Equals2
 Not
-If loc0f14
+If loc0f02
 Push register1 "."
 Add2
 StoreRegister 1
 Pop
-loc0ec2:Push 0.0 "_next"
+loc0eb0:Push 0.0 "_next"
 CallFunction
 PushDuplicate
 Not
-If loc0ee6
+If loc0ed4
 Pop
 Push "ch"
 GetVariable
 Push "0"
 Less2
 Not
-loc0ee6:PushDuplicate
+loc0ed4:PushDuplicate
 Not
-If loc0efb
+If loc0ee9
 Pop
 Push "ch"
 GetVariable
 Push "9"
 Greater
 Not
-loc0efb:Not
-If loc0f14
+loc0ee9:Not
+If loc0f02
 Push register1 "ch"
 GetVariable
 Add2
 StoreRegister 1
 Pop
-Jump loc0ec2
-loc0f14:Push 1 register1
+Jump loc0eb0
+loc0f02:Push 1 register1
 Multiply
 StoreRegister 2
 Pop
@@ -906,15 +899,15 @@ Push register2 1 "isFinite"
 CallFunction
 Not
 Not
-If loc0f4b
+If loc0f39
 Push "Bad number" 1 "_error"
 CallFunction
 Pop
-Jump loc0f51
-loc0f4b:Push register2
+Jump loc0f3f
+loc0f39:Push register2
 Return
 }
-loc0f51:DefineLocal
+loc0f3f:DefineLocal
 Push "_word"
 DefineFunction "" 0  {
 Push "ch"
@@ -922,107 +915,107 @@ GetVariable
 StoreRegister 0
 Push "t"
 StrictEquals
-If loc0f93
+If loc0f81
 Push register0 "f"
 StrictEquals
-If loc1003
+If loc0ff1
 Push register0 "n"
 StrictEquals
-If loc1090
-Jump loc10ff
-loc0f93:Push 0.0 "_next"
+If loc107e
+Jump loc10ed
+loc0f81:Push 0.0 "_next"
 CallFunction
 Push "r"
 Equals2
 PushDuplicate
 Not
-If loc0fc5
+If loc0fb3
 Pop
 Push 0.0 "_next"
 CallFunction
 Push "u"
 Equals2
-loc0fc5:PushDuplicate
+loc0fb3:PushDuplicate
 Not
-If loc0fe2
+If loc0fd0
 Pop
 Push 0.0 "_next"
 CallFunction
 Push "e"
 Equals2
-loc0fe2:Not
-If loc0ffe
+loc0fd0:Not
+If loc0fec
 Push 0.0 "_next"
 CallFunction
 Pop
 Push true
 Return
-loc0ffe:Jump loc10ff
-loc1003:Push 0.0 "_next"
+loc0fec:Jump loc10ed
+loc0ff1:Push 0.0 "_next"
 CallFunction
 Push "a"
 Equals2
 PushDuplicate
 Not
-If loc1035
+If loc1023
 Pop
 Push 0.0 "_next"
 CallFunction
 Push "l"
 Equals2
-loc1035:PushDuplicate
+loc1023:PushDuplicate
 Not
-If loc1052
+If loc1040
 Pop
 Push 0.0 "_next"
 CallFunction
 Push "s"
 Equals2
-loc1052:PushDuplicate
+loc1040:PushDuplicate
 Not
-If loc106f
+If loc105d
 Pop
 Push 0.0 "_next"
 CallFunction
 Push "e"
 Equals2
-loc106f:Not
-If loc108b
+loc105d:Not
+If loc1079
 Push 0.0 "_next"
 CallFunction
 Pop
 Push false
 Return
-loc108b:Jump loc10ff
-loc1090:Push 0.0 "_next"
+loc1079:Jump loc10ed
+loc107e:Push 0.0 "_next"
 CallFunction
 Push "u"
 Equals2
 PushDuplicate
 Not
-If loc10c2
+If loc10b0
 Pop
 Push 0.0 "_next"
 CallFunction
 Push "l"
 Equals2
-loc10c2:PushDuplicate
+loc10b0:PushDuplicate
 Not
-If loc10df
+If loc10cd
 Pop
 Push 0.0 "_next"
 CallFunction
 Push "l"
 Equals2
-loc10df:Not
-If loc10fa
+loc10cd:Not
+If loc10e8
 Push 0.0 "_next"
 CallFunction
 Pop
 Push null
 Return
-loc10fa:Jump loc10ff
-loc10ff:Push "Syntax error" 1 "_error"
+loc10e8:Jump loc10ed
+loc10ed:Push "Syntax error" 1 "_error"
 CallFunction
 Pop
 }
@@ -1037,50 +1030,50 @@ GetVariable
 StoreRegister 0
 Push "{"
 StrictEquals
-If loc116c
+If loc115a
 Push register0 "["
 StrictEquals
-If loc117c
+If loc116a
 Push register0 "\""
 StrictEquals
-If loc118c
+If loc117a
 Push register0 "-"
 StrictEquals
-If loc119c
-Jump loc11ac
-loc116c:Push 0.0 "_object"
+If loc118a
+Jump loc119a
+loc115a:Push 0.0 "_object"
 CallFunction
 Return
-loc117c:Push 0.0 "_array"
+loc116a:Push 0.0 "_array"
 CallFunction
 Return
-loc118c:Push 0.0 "_string"
+loc117a:Push 0.0 "_string"
 CallFunction
 Return
-loc119c:Push 0.0 "_number"
+loc118a:Push 0.0 "_number"
 CallFunction
 Return
-loc11ac:Push "ch"
+loc119a:Push "ch"
 GetVariable
 Push "0"
 Less2
 Not
 PushDuplicate
 Not
-If loc11ce
+If loc11bc
 Pop
 Push "ch"
 GetVariable
 Push "9"
 Greater
 Not
-loc11ce:If loc11e7
+loc11bc:If loc11d5
 Push 0.0 "_word"
 CallFunction
-Jump loc11f6
-loc11e7:Push 0.0 "_number"
+Jump loc11e4
+loc11d5:Push 0.0 "_number"
 CallFunction
-loc11f6:Return
+loc11e4:Return
 }
 SetVariable
 Push 0.0 "_value"
@@ -1098,4 +1091,4 @@ Push "prototype"
 GetMember
 Push 3 "ASSetPropFlags"
 CallFunction
-loc1232:Pop
+loc1220:Pop

@@ -1,17 +1,17 @@
-ConstantPool "_global" "g4" "Object" "util" "MovieClipUtil" "prototype" "playMovieClip" "" "movieClip" "_currentframe" "_totalframes" "num_targetFrame" "onEnterFrame" "isNaN" "gotoAndStop" "isReverse" "prevFrame" "nextFrame" "callbackParams" "scope" "callback" "apply" "nextFrameCall" "getNextHighestDepth" "Math" "random" "createEmptyMovieClip" "_parent" "_name" "substr" "removeMovieClip" "loadClip" "container" "MovieClipLoader" "addListener" "onLoadInit" "Array" "push" "checkHadRoot" "createModalBackground" "modalBackground" "beginFill" "moveTo" "Stage" "height" "lineTo" "width" "endFill" "tabEnabled" "useHandCursor" "onRelease" "ASSetPropFlags"
+ConstantPool "_global" "g4" "Object" "util" "MovieClipUtil" "prototype" "playMovieClip" "" "movieClip" "_currentframe" "_totalframes" "num_targetFrame" "onEnterFrame" "isNaN" "gotoAndStop" "isReverse" "prevFrame" "nextFrame" "callbackParams" "callback" "apply" "nextFrameCall" "scope" "loadClip" "container" "MovieClipLoader" "addListener" "onLoadInit" "Array" "push" "checkHadRoot" "_parent" "createModalBackground" "getNextHighestDepth" "modalBackground" "createEmptyMovieClip" "beginFill" "moveTo" "Stage" "height" "lineTo" "width" "endFill" "tabEnabled" "useHandCursor" "onRelease" "ASSetPropFlags"
 Push "_global"
 GetVariable
 Push "g4"
 GetMember
 Not
 Not
-If loc0249
+If loc0220
 Push "_global"
 GetVariable
 Push "g4" 0.0 "Object"
 NewObject
 SetMember
-loc0249:Pop
+loc0220:Pop
 Push "_global"
 GetVariable
 Push "g4"
@@ -20,7 +20,7 @@ Push "util"
 GetMember
 Not
 Not
-If loc0281
+If loc0258
 Push "_global"
 GetVariable
 Push "g4"
@@ -28,7 +28,7 @@ GetMember
 Push "util" 0.0 "Object"
 NewObject
 SetMember
-loc0281:Pop
+loc0258:Pop
 Push "_global"
 GetVariable
 Push "g4"
@@ -39,7 +39,7 @@ Push "MovieClipUtil"
 GetMember
 Not
 Not
-If loc0a00
+If loc090e
 Push "g4"
 GetVariable
 Push "util"
@@ -54,60 +54,60 @@ GetMember
 StoreRegister 2
 Pop
 Push register1 "playMovieClip"
-DefineFunction2 "" 6 4 false false true false true false true false false 0 "movieClip" 3 "startFrame" 2 "targetFrame" 0 "callback" 0 "callbackParams" 0 "scope"  {
+DefineFunction2 "" 5 4 false false true false true false true false false 0 "movieClip" 3 "startFrame" 2 "targetFrame" 0 "callback" 0 "callbackParams"  {
 Push register3 null
 Equals2
 PushDuplicate
 Not
-If loc0341
+If loc0311
 Pop
 Push register3
 ToNumber
 Push -1
 Equals2
-loc0341:PushDuplicate
+loc0311:PushDuplicate
 Not
-If loc0355
+If loc0325
 Pop
 Push register3
 ToString
 Push ""
 Equals2
-loc0355:Not
-If loc036c
+loc0325:Not
+If loc033c
 Push "movieClip"
 GetVariable
 Push "_currentframe"
 GetMember
 StoreRegister 3
 Pop
-loc036c:Push register2 null
+loc033c:Push register2 null
 Equals2
 PushDuplicate
 Not
-If loc038a
+If loc035a
 Pop
 Push register2
 ToNumber
 Push -1
 Equals2
-loc038a:PushDuplicate
+loc035a:PushDuplicate
 Not
-If loc039e
+If loc036e
 Pop
 Push register2
 ToString
 Push ""
 Equals2
-loc039e:Not
-If loc03b5
+loc036e:Not
+If loc0385
 Push "movieClip"
 GetVariable
 Push "_totalframes"
 GetMember
 StoreRegister 2
 Pop
-loc03b5:Push register3
+loc0385:Push register3
 ToNumber
 StoreRegister 1
 Pop
@@ -125,7 +125,7 @@ CallFunction
 Push true
 Equals2
 Not
-If loc0416
+If loc03e6
 Push register2 1 "movieClip"
 GetVariable
 Push "gotoAndStop"
@@ -136,12 +136,12 @@ GetVariable
 Push "_currentframe"
 GetMember
 SetVariable
-loc0416:Push register1 1 "isNaN"
+loc03e6:Push register1 1 "isNaN"
 CallFunction
 Push true
 Equals2
 Not
-If loc0454
+If loc0424
 Push register3 1 "movieClip"
 GetVariable
 Push "gotoAndStop"
@@ -153,7 +153,7 @@ Push "_currentframe"
 GetMember
 StoreRegister 1
 Pop
-loc0454:Push register1 1 "movieClip"
+loc0424:Push register1 1 "movieClip"
 GetVariable
 Push "gotoAndStop"
 CallMethod
@@ -162,20 +162,20 @@ Push register1 "num_targetFrame"
 GetVariable
 Equals2
 Not
-If loc047c
+If loc044c
 Push undefined
 Return
-loc047c:Push "isReverse" "num_targetFrame"
+loc044c:Push "isReverse" "num_targetFrame"
 GetVariable
 Push 1
 Equals2
 PushDuplicate
-If loc049d
+If loc046d
 Pop
 Push register1 "num_targetFrame"
 GetVariable
 Greater
-loc049d:DefineLocal
+loc046d:DefineLocal
 Push "movieClip"
 GetVariable
 Push "onEnterFrame"
@@ -185,19 +185,19 @@ GetVariable
 Push true
 Equals2
 Not
-If loc04de
+If loc04ae
 Push 0.0 "movieClip"
 GetVariable
 Push "prevFrame"
 CallMethod
 Pop
-Jump loc04f4
-loc04de:Push 0.0 "movieClip"
+Jump loc04c4
+loc04ae:Push 0.0 "movieClip"
 GetVariable
 Push "nextFrame"
 CallMethod
 Pop
-loc04f4:Push "movieClip"
+loc04c4:Push "movieClip"
 GetVariable
 Push "_currentframe"
 GetMember
@@ -205,7 +205,7 @@ Push "num_targetFrame"
 GetVariable
 Equals2
 PushDuplicate
-If loc0523
+If loc04f3
 Pop
 Push "movieClip"
 GetVariable
@@ -213,8 +213,8 @@ Push "_currentframe"
 GetMember
 Push 1
 Equals2
-loc0523:PushDuplicate
-If loc0543
+loc04f3:PushDuplicate
+If loc0513
 Pop
 Push "movieClip"
 GetVariable
@@ -225,44 +225,26 @@ GetVariable
 Push "_totalframes"
 GetMember
 Equals2
-loc0543:Not
-If loc0574
+loc0513:Not
+If loc053f
 Push "movieClip"
 GetVariable
 Push "onEnterFrame" null
 SetMember
 Push "callbackParams"
 GetVariable
-Push "scope"
-GetVariable
-Push 2 "callback"
+Push null 2 "callback"
 GetVariable
 Push "apply"
 CallMethod
 Pop
 }
-loc0574:SetMember
+loc053f:SetMember
 }
 SetMember
 Push register1 "nextFrameCall"
-DefineFunction2 "" 4 2 false true true false true false true false false 0 "movieClip" 0 "callback" 0 "callbackParams" 0 "scope"  {
+DefineFunction "" 4 "movieClip" "callback" "callbackParams" "scope"  {
 Push "movieClip"
-GetVariable
-Push null
-Equals2
-Not
-If loc05fe
-Push "movieClip" 0.0 register1 "getNextHighestDepth"
-CallMethod
-Push "nextFrameCall" 0.0 "Math"
-GetVariable
-Push "random"
-CallMethod
-Add2
-Push 2 register1 "createEmptyMovieClip"
-CallMethod
-SetVariable
-loc05fe:Push "movieClip"
 GetVariable
 Push "onEnterFrame"
 GetMember
@@ -270,43 +252,18 @@ Push null
 Equals2
 Not
 Not
-If loc061c
+If loc0596
 Push false
 Return
-loc061c:Push "movieClip"
+loc0596:Push "movieClip"
 GetVariable
 Push "onEnterFrame"
-DefineFunction2 "" 0 2 false true true false true false true false false  {
+DefineFunction "" 0  {
 Push "movieClip"
 GetVariable
 Push "onEnterFrame" null
 SetMember
-Push "movieClip"
-GetVariable
-Push "_parent"
-GetMember
-Push register1
-Equals2
-PushDuplicate
-Not
-If loc0684
-Pop
-Push 13 0.0 2 "movieClip"
-GetVariable
-Push "_name"
-GetMember
-Push "substr"
-CallMethod
-Push "nextFrameCall"
-Equals2
-loc0684:Not
-If loc06a0
-Push 0.0 "movieClip"
-GetVariable
-Push "removeMovieClip"
-CallMethod
-Pop
-loc06a0:Push "callbackParams"
+Push "callbackParams"
 GetVariable
 Push "scope"
 GetVariable
@@ -328,11 +285,11 @@ GetVariable
 Push null
 Equals2
 Not
-If loc0723
+If loc0639
 Push "scope" "container"
 GetVariable
 SetVariable
-loc0723:Push 0.0 "Object"
+loc0639:Push 0.0 "Object"
 NewObject
 StoreRegister 2
 Pop
@@ -356,17 +313,17 @@ Push null
 Equals2
 Not
 Not
-If loc07ee
+If loc0704
 Push "callbackParams"
 GetVariable
 Push null
 Equals2
 Not
-If loc07bc
+If loc06d2
 Push "callbackParams" 0.0 "Array"
 NewObject
 SetVariable
-loc07bc:Push register1 1 "callbackParams"
+loc06d2:Push register1 1 "callbackParams"
 GetVariable
 Push "push"
 CallMethod
@@ -381,7 +338,7 @@ Push "apply"
 CallMethod
 Pop
 }
-loc07ee:SetMember
+loc0704:SetMember
 }
 SetMember
 Push register1 "checkHadRoot"
@@ -391,15 +348,15 @@ GetMember
 Push undefined
 Equals2
 Not
-If loc0836
+If loc074c
 Push register2 register1
 Equals2
-If loc0830
+If loc0746
 Push false
-Jump loc0835
-loc0830:Push true
-loc0835:Return
-loc0836:Push register2 "_parent"
+Jump loc074b
+loc0746:Push true
+loc074b:Return
+loc074c:Push register2 "_parent"
 GetMember
 Push 1 "g4"
 GetVariable
@@ -417,26 +374,26 @@ DefineFunction2 "" 3 5 false false true false true false true false false 4 "con
 Push register2 null
 Equals2
 Not
-If loc08ab
+If loc07c1
 Push 0.0 register4 "getNextHighestDepth"
 CallMethod
 StoreRegister 2
 Pop
-loc08ab:Push register3 null
+loc07c1:Push register3 null
 Equals2
 Not
-If loc08c5
+If loc07db
 Push 50
 StoreRegister 3
 Pop
-loc08c5:Push register2 "modalBackground" 2 register4 "createEmptyMovieClip"
+loc07db:Push register2 "modalBackground" 2 register4 "createEmptyMovieClip"
 CallMethod
 StoreRegister 1
 Pop
 Push register3 0.0 2 register1 "beginFill"
 CallMethod
 Pop
-Push 0.0 0.0 2 register1 "moveTo"
+Push -200 0.0 2 register1 "moveTo"
 CallMethod
 Pop
 Push "Stage"
@@ -464,7 +421,7 @@ GetMember
 Push 2 register1 "lineTo"
 CallMethod
 Pop
-Push 0.0 "Stage"
+Push -200 "Stage"
 GetVariable
 Push "width"
 GetMember
@@ -496,4 +453,4 @@ Push "prototype"
 GetMember
 Push 3 "ASSetPropFlags"
 CallFunction
-loc0a00:Pop
+loc090e:Pop

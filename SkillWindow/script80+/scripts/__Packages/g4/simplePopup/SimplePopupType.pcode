@@ -1,0 +1,124 @@
+ConstantPool "_global" "g4" "Object" "simplePopup" "SimplePopupType" "fileName" "model" "Enum" "prototype" "parse" "CONFIRM_SIMPLE_POPUP" "ConfirmSimplePopup.swf" "MATERIAL_ITEM_SLOT_LIST_SIMPLE_POPUP" "MaterialItemSlotListSimplePopup.swf" "ASSetPropFlags"
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Not
+Not
+If loc0106
+Push "_global"
+GetVariable
+Push "g4" 0.0 "Object"
+NewObject
+SetMember
+loc0106:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "simplePopup"
+GetMember
+Not
+Not
+If loc013e
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "simplePopup" 0.0 "Object"
+NewObject
+SetMember
+loc013e:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "simplePopup"
+GetMember
+Push "SimplePopupType"
+GetMember
+Not
+Not
+If loc029f
+Push "g4"
+GetVariable
+Push "simplePopup"
+GetMember
+Push "SimplePopupType"
+DefineFunction2 "" 2 5 false false false true true false false true false 4 "id" 3 "fileName"  {
+Push register4 1 register2 undefined
+CallMethod
+Pop
+Push register1 "fileName" register3
+SetMember
+}
+StoreRegister 1
+SetMember
+Push "g4"
+GetVariable
+Push "simplePopup"
+GetMember
+Push "SimplePopupType"
+GetMember
+Push "g4"
+GetVariable
+Push "model"
+GetMember
+Push "Enum"
+GetMember
+Extends
+Push register1 "prototype"
+GetMember
+StoreRegister 2
+Pop
+Push register1 "parse"
+DefineFunction2 "" 1 2 false false true false true false true false false 1 "name"  {
+Push "g4"
+GetVariable
+Push "simplePopup"
+GetMember
+Push "SimplePopupType"
+GetMember
+Push "g4"
+GetVariable
+Push "simplePopup"
+GetMember
+Push "SimplePopupType"
+GetMember
+Push register1 2 "g4"
+GetVariable
+Push "model"
+GetMember
+Push "Enum"
+GetMember
+Push "parse"
+CallMethod
+CastOp
+Return
+}
+SetMember
+Push register1 "CONFIRM_SIMPLE_POPUP" "ConfirmSimplePopup.swf" "CONFIRM_SIMPLE_POPUP" 2 "g4"
+GetVariable
+Push "simplePopup"
+GetMember
+Push "SimplePopupType"
+NewMethod
+SetMember
+Push register1 "MATERIAL_ITEM_SLOT_LIST_SIMPLE_POPUP" "MaterialItemSlotListSimplePopup.swf" "MATERIAL_ITEM_SLOT_LIST_SIMPLE_POPUP" 2 "g4"
+GetVariable
+Push "simplePopup"
+GetMember
+Push "SimplePopupType"
+NewMethod
+SetMember
+Push 1 null "g4"
+GetVariable
+Push "simplePopup"
+GetMember
+Push "SimplePopupType"
+GetMember
+Push "prototype"
+GetMember
+Push 3 "ASSetPropFlags"
+CallFunction
+loc029f:Pop

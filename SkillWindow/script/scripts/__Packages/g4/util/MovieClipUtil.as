@@ -3,7 +3,7 @@ class g4.util.MovieClipUtil
    function MovieClipUtil()
    {
    }
-   static function playMovieClip(movieClip, startFrame, targetFrame, callback, callbackParams, scope)
+   static function playMovieClip(movieClip, startFrame, targetFrame, callback, callbackParams)
    {
       if(startFrame == null && Number(startFrame) == -1 && String(startFrame) == "")
       {
@@ -45,16 +45,12 @@ class g4.util.MovieClipUtil
          if(movieClip._currentframe == num_targetFrame || movieClip._currentframe == 1 || movieClip._currentframe == movieClip._totalframes)
          {
             movieClip.onEnterFrame = null;
-            callback.apply(scope,callbackParams);
+            callback.apply(null,callbackParams);
          }
       };
    }
    static function nextFrameCall(movieClip, callback, callbackParams, scope)
    {
-      if(movieClip == null)
-      {
-         movieClip = _root.createEmptyMovieClip("nextFrameCall" + Math.random(),_root.getNextHighestDepth());
-      }
       if(movieClip.onEnterFrame != null)
       {
          return false;
@@ -62,10 +58,6 @@ class g4.util.MovieClipUtil
       movieClip.onEnterFrame = function()
       {
          movieClip.onEnterFrame = null;
-         if(movieClip._parent == _root && movieClip._name.substr(0,13) == "nextFrameCall")
-         {
-            movieClip.removeMovieClip();
-         }
          callback.apply(scope,callbackParams);
       };
       return true;
@@ -113,10 +105,10 @@ class g4.util.MovieClipUtil
       }
       var _loc1_ = container.createEmptyMovieClip("modalBackground",depth);
       _loc1_.beginFill(0,alpha);
-      _loc1_.moveTo(0,0);
+      _loc1_.moveTo(0,-200);
       _loc1_.lineTo(0,Stage.height);
       _loc1_.lineTo(Stage.width,Stage.height + Stage.height * 0.5);
-      _loc1_.lineTo(Stage.width,0);
+      _loc1_.lineTo(Stage.width,-200);
       _loc1_.endFill();
       _loc1_.tabEnabled = false;
       _loc1_.useHandCursor = false;

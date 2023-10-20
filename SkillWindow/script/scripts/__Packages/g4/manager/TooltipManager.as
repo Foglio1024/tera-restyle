@@ -130,11 +130,11 @@ class g4.manager.TooltipManager
    {
       if(mc_target instanceof g4.core.G4UIComponent)
       {
-         (g4.core.G4UIComponent)mc_target.removeEventListener(gfx.events.EventTypes.ROLL_OVER,this);
-         (g4.core.G4UIComponent)mc_target.removeEventListener(gfx.events.EventTypes.DISABLED_ROLL_OVER,this);
-         (g4.core.G4UIComponent)mc_target.removeEventListener(gfx.events.EventTypes.ROLL_OUT,this);
-         (g4.core.G4UIComponent)mc_target.removeEventListener(gfx.events.EventTypes.DISABLED_ROLL_OUT,this);
-         (g4.core.G4UIComponent)mc_target.removeEventListener(gfx.events.EventTypes.DRAG_OUT,this);
+         (g4.core.G4UIComponent)mc_target.removeEventListenerByScope(gfx.events.EventTypes.ROLL_OVER,this);
+         (g4.core.G4UIComponent)mc_target.removeEventListenerByScope(gfx.events.EventTypes.DISABLED_ROLL_OVER,this);
+         (g4.core.G4UIComponent)mc_target.removeEventListener(gfx.events.EventTypes.ROLL_OUT,this,this.hideTooltip);
+         (g4.core.G4UIComponent)mc_target.removeEventListener(gfx.events.EventTypes.DISABLED_ROLL_OUT,this,this.hideTooltip);
+         (g4.core.G4UIComponent)mc_target.removeEventListener(gfx.events.EventTypes.DRAG_OUT,this,this.hideTooltip);
       }
       else
       {

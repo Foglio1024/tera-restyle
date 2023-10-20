@@ -1,0 +1,249 @@
+ConstantPool "_global" "g4" "Object" "core" "View" "$init" "SimpleView" "prototype" "getUIName" "You must override this method!" "myListener" "__get__targetMovieClip" "$beforeRemoveMovieClip" "beforeRemoveMovieClip" "mx" "utils" "Delegate" "create" "setViewVisible" "configUI" "configCommonGameInterface" "configGameInterface" "EventBroadCaster" "addListener" "cleanUp" "creationComplete" "OnGameEventShowWindow" "registerGameInterface" "bWindowOpen" "checkUIMode" "gbUIMode" "_visible" "toLowerCase" "ASSetPropFlags"
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Not
+Not
+If loc01e5
+Push "_global"
+GetVariable
+Push "g4" 0.0 "Object"
+NewObject
+SetMember
+loc01e5:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "core"
+GetMember
+Not
+Not
+If loc021d
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "core" 0.0 "Object"
+NewObject
+SetMember
+loc021d:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "core"
+GetMember
+Push "View"
+GetMember
+Not
+Not
+If loc0620
+Push "g4"
+GetVariable
+Push "core"
+GetMember
+Push "View"
+DefineFunction2 "" 1 4 false false false true true false false true false 3 "targetMovieClip"  {
+Push register3 1 register2 undefined
+CallMethod
+Pop
+Push 0.0 register1 "$init"
+CallMethod
+Pop
+}
+StoreRegister 1
+SetMember
+Push "g4"
+GetVariable
+Push "core"
+GetMember
+Push "View"
+GetMember
+Push "g4"
+GetVariable
+Push "core"
+GetMember
+Push "SimpleView"
+GetMember
+Extends
+Push register1 "prototype"
+GetMember
+StoreRegister 2
+Pop
+Push register2 "getUIName"
+DefineFunction "" 0  {
+Push "You must override this method!"
+Trace
+Push "View"
+Return
+}
+SetMember
+Push register2 "$init"
+DefineFunction2 "" 0 3 false false true false true false false true true  {
+Push register1 "myListener" 0.0
+InitObject
+SetMember
+Push 0.0 register1 "__get__targetMovieClip"
+CallMethod
+Push "myListener" register1 "myListener"
+GetMember
+SetMember
+Push 0.0 register1 "__get__targetMovieClip"
+CallMethod
+Push "$beforeRemoveMovieClip" register1 "beforeRemoveMovieClip"
+GetMember
+Push register1 2 "mx"
+GetVariable
+Push "utils"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+SetMember
+Push false 1 register1 "setViewVisible"
+CallMethod
+Pop
+Push 0.0 register1 "configUI"
+CallMethod
+Pop
+Push 0.0 register1 "configCommonGameInterface"
+CallMethod
+Pop
+Push 0.0 register1 "configGameInterface"
+CallMethod
+Pop
+Push register2 "EventBroadCaster"
+GetMember
+Not
+If loc03c9
+Push register1 "myListener"
+GetMember
+Push 1 register2 "EventBroadCaster"
+GetMember
+Push "addListener"
+CallMethod
+Pop
+loc03c9:Push 0.0 register1 "cleanUp"
+CallMethod
+Pop
+Push 0.0 register1 "creationComplete"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "configUI"
+DefineFunction "" 0  {
+}
+SetMember
+Push register2 "configCommonGameInterface"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push register1 "OnGameEventShowWindow"
+GetMember
+Push register1 2 "mx"
+GetVariable
+Push "utils"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+Push "OnGameEventShowWindow" 2 register1 "registerGameInterface"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "configGameInterface"
+DefineFunction "" 0  {
+}
+SetMember
+Push register2 "registerGameInterface"
+DefineFunction2 "" 2 4 false false true false true false false true false 3 "methodName" 2 "callback"  {
+Push register1 "myListener"
+GetMember
+Push register3 register2
+SetMember
+}
+SetMember
+Push register2 "cleanUp"
+DefineFunction "" 0  {
+}
+SetMember
+Push register2 "setViewVisible"
+DefineFunction2 "" 1 5 false false true false true false false true true 4 "visible"  {
+Push 0.0 register1 "__get__targetMovieClip"
+CallMethod
+Push "bWindowOpen" register4
+SetMember
+Push 0.0 register1 "__get__targetMovieClip"
+CallMethod
+Push "bWindowOpen"
+GetMember
+StoreRegister 3
+Pop
+Push register1 "checkUIMode"
+GetMember
+Not
+If loc0519
+Push register3
+PushDuplicate
+Not
+If loc0514
+Pop
+Push register2 "gbUIMode"
+GetMember
+loc0514:StoreRegister 3
+Pop
+loc0519:Push register3
+Not
+If loc0542
+Push 0.0 register1 "__get__targetMovieClip"
+CallMethod
+Push "_visible" true
+SetMember
+Jump loc055b
+loc0542:Push 0.0 register1 "__get__targetMovieClip"
+CallMethod
+Push "_visible" false
+SetMember
+}
+loc055b:SetMember
+Push register2 "creationComplete"
+DefineFunction "" 0  {
+}
+SetMember
+Push register2 "beforeRemoveMovieClip"
+DefineFunction "" 0  {
+}
+SetMember
+Push register2 "OnGameEventShowWindow"
+DefineFunction2 "" 2 4 false false true false true false false true false 2 "windowName" 3 "bVisible"  {
+Push 0.0 register2 "toLowerCase"
+CallMethod
+Push 0.0 0.0 register1 "getUIName"
+CallMethod
+Push "toLowerCase"
+CallMethod
+Equals2
+Not
+If loc05ec
+Push register3 1 register1 "setViewVisible"
+CallMethod
+Pop
+}
+loc05ec:SetMember
+Push register2 "checkUIMode" false
+SetMember
+Push 1 null "g4"
+GetVariable
+Push "core"
+GetMember
+Push "View"
+GetMember
+Push "prototype"
+GetMember
+Push 3 "ASSetPropFlags"
+CallFunction
+loc0620:Pop

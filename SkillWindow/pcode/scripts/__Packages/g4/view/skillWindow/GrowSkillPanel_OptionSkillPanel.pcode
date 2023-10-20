@@ -1,17 +1,17 @@
-ConstantPool "_global" "g4" "Object" "view" "skillWindow" "GrowSkillPanel_OptionSkillPanel" "SkillWindowController" "getInstance" "registerGrowSkillPanel_OptionSkillPanel" "gfx" "core" "UIComponent" "prototype" "configUI" "_optionBtns" "optionBtn" "soundID" "onOptionBtnClick" "events" "EventTypes" "CLICK" "addEventListener" "push" "showGrowSkillDetailOptionSkills" "" "_visible" "iconContainer" "mc_lock" "IsLock" "data" "clear" "IconPath" "flash" "display" "BitmapData" "loadBitmap" "lib" "DrawBitmapData" "draw" "manager" "TooltipManager" "removeTooltip" "Id" "ViewID" "SKILL_WINDOW" "addUiTooltip" "showGrowSkillDetailOptionSkillSelected" "__set__selected" "showSkillEffect" "mc_effect" "gotoAndPlay" "UISound" "play" "gameInterface" "dataP" "GrowSkillOptionSlotP" "ToGame_SkillWindow_SelectGrowSkillOptionSkill" "ASSetPropFlags"
+ConstantPool "_global" "g4" "Object" "view" "skillWindow" "GrowSkillPanel_OptionSkillPanel" "SkillWindowController" "getInstance" "registerGrowSkillPanel_OptionSkillPanel" "gfx" "core" "UIComponent" "prototype" "configUI" "_optionBtns" "optionBtn" "soundID" "onOptionBtnClick" "events" "EventTypes" "CLICK" "addEventListener" "push" "showGrowSkillDetailOptionSkills" "" "_visible" "iconContainer" "mc_lock" "IsLock" "data" "clear" "IconPath" "flash" "display" "BitmapData" "loadBitmap" "lib" "DrawBitmapData" "draw" "Id" "ViewID" "SKILL_WINDOW" "manager" "TooltipManager" "addUiTooltip" "showGrowSkillDetailOptionSkillSelected" "__set__selected" "showSkillEffect" "mc_effect" "gotoAndPlay" "UISound" "play" "gameInterface" "dataP" "GrowSkillOptionSlotP" "ToGame_SkillWindow_SelectGrowSkillOptionSkill" "ASSetPropFlags"
 Push "_global"
 GetVariable
 Push "g4"
 GetMember
 Not
 Not
-If loc02f2
+If loc02e4
 Push "_global"
 GetVariable
 Push "g4" 0.0 "Object"
 NewObject
 SetMember
-loc02f2:Pop
+loc02e4:Pop
 Push "_global"
 GetVariable
 Push "g4"
@@ -20,7 +20,7 @@ Push "view"
 GetMember
 Not
 Not
-If loc032a
+If loc031c
 Push "_global"
 GetVariable
 Push "g4"
@@ -28,7 +28,7 @@ GetMember
 Push "view" 0.0 "Object"
 NewObject
 SetMember
-loc032a:Pop
+loc031c:Pop
 Push "_global"
 GetVariable
 Push "g4"
@@ -39,7 +39,7 @@ Push "skillWindow"
 GetMember
 Not
 Not
-If loc036e
+If loc0360
 Push "_global"
 GetVariable
 Push "g4"
@@ -49,7 +49,7 @@ GetMember
 Push "skillWindow" 0.0 "Object"
 NewObject
 SetMember
-loc036e:Pop
+loc0360:Pop
 Push "_global"
 GetVariable
 Push "g4"
@@ -62,7 +62,7 @@ Push "GrowSkillPanel_OptionSkillPanel"
 GetMember
 Not
 Not
-If loc0895
+If loc0858
 Push "g4"
 GetVariable
 Push "view"
@@ -117,10 +117,10 @@ SetMember
 Push 0.0
 StoreRegister 3
 Pop
-loc046e:Push register3 3
+loc0460:Push register3 3
 Less2
 Not
-If loc04f2
+If loc04e4
 Push register1 "optionBtn" register3
 Add2
 GetMember
@@ -150,33 +150,33 @@ Push register3
 Increment
 StoreRegister 3
 Pop
-Jump loc046e
+Jump loc0460
 }
-loc04f2:SetMember
+loc04e4:SetMember
 Push register2 "showGrowSkillDetailOptionSkills"
 DefineFunction2 "" 1 8 false false true false true false false true false 7 "$growSkillOptionSlots"  {
 Push register7 null
 Equals2
 PushDuplicate
-If loc0532
+If loc0524
 Pop
 Push register7 ""
 Equals2
-loc0532:Not
-If loc0547
+loc0524:Not
+If loc0539
 Push register1 "_visible" false
 SetMember
 Push undefined
 Return
-loc0547:Push register1 "_visible" true
+loc0539:Push register1 "_visible" true
 SetMember
 Push 0.0
 StoreRegister 4
 Pop
-loc0562:Push register4 3
+loc0554:Push register4 3
 Less2
 Not
-If loc06ee
+If loc06b1
 Push register7 register4
 GetMember
 StoreRegister 3
@@ -223,17 +223,6 @@ GetMember
 Push "draw"
 CallMethod
 Pop
-Push register2 1 0.0 "g4"
-GetVariable
-Push "manager"
-GetMember
-Push "TooltipManager"
-GetMember
-Push "getInstance"
-CallMethod
-Push "removeTooltip"
-CallMethod
-Pop
 Push 0.0 register3 "Id"
 GetMember
 Push register2 "g4"
@@ -259,18 +248,18 @@ Push register4
 Increment
 StoreRegister 4
 Pop
-Jump loc0562
+Jump loc0554
 }
-loc06ee:SetMember
+loc06b1:SetMember
 Push register2 "showGrowSkillDetailOptionSkillSelected"
 DefineFunction2 "" 1 5 false false true false true false false true false 4 "selectedIndex"  {
 Push 0.0
 StoreRegister 2
 Pop
-loc0721:Push register2 3
+loc06e4:Push register2 3
 Less2
 Not
-If loc076b
+If loc072e
 Push register1 "_optionBtns"
 GetMember
 Push register2
@@ -286,9 +275,9 @@ Push register2
 Increment
 StoreRegister 2
 Pop
-Jump loc0721
+Jump loc06e4
 }
-loc076b:SetMember
+loc072e:SetMember
 Push register2 "showSkillEffect"
 DefineFunction2 "" 1 5 false false true false true false false true false 4 "$slotIndex"  {
 Push register1 "_optionBtns"
@@ -361,4 +350,4 @@ Push "prototype"
 GetMember
 Push 3 "ASSetPropFlags"
 CallFunction
-loc0895:Pop
+loc0858:Pop

@@ -1,17 +1,17 @@
-ConstantPool "_global" "g4" "Object" "view" "skillWindow" "GrowSkillPanel_DetailPanel" "SkillWindowController" "getInstance" "registerGrowSkillPanel_DetailPanel" "gfx" "core" "UIComponent" "prototype" "configUI" "_skillSlot" "skillSlot" "_tf_skillName" "tf_skillName" "_tf_enhance" "tf_enhance" "_enhancePanel" "enhancePanel" "_functionBtn" "functionBtn" "_tf_level" "tf_level" "_mc_enhanceHit" "mc_enhanceHit" "_optionSkillPanel" "optionSkillPanel" "_tf_cautionMessage" "tf_cautionMessage" "onFunctionBtnClick" "events" "EventTypes" "CLICK" "addEventListener" "$083021" "lib" "util" "UIString" "getUIString" "manager" "TooltipManager" "addMessageTooltip" "showGrowSkillDetailSlotInfo" "_skillSlotP" "setData" "updateSlot" "text" "Name" "_visible" "htmlText" "<font color=\'#ffffff\'>" "</font> / " "Level" "#6c7d8a" "#ea0000" "<font color=\'" "\'>Lv." "</font>" "removeTooltip" "Id" "ViewID" "SKILL_WINDOW" "addUiTooltip" "showGrowSkillFunctionButton" "" "__set__disabled" "__set__label" "showMaterialItemSlotListSimplePopup" "ASSetPropFlags"
+ConstantPool "_global" "g4" "Object" "view" "skillWindow" "GrowSkillPanel_DetailPanel" "SkillWindowController" "getInstance" "registerGrowSkillPanel_DetailPanel" "gfx" "core" "UIComponent" "prototype" "configUI" "_skillSlot" "skillSlot" "_tf_skillName" "tf_skillName" "_tf_enhance" "tf_enhance" "_enhancePanel" "enhancePanel" "_functionBtn" "functionBtn" "_tf_level" "tf_level" "_mc_enhanceHit" "mc_enhanceHit" "_optionSkillPanel" "optionSkillPanel" "_tf_cautionMessage" "tf_cautionMessage" "onFunctionBtnClick" "events" "EventTypes" "CLICK" "addEventListener" "$083021" "lib" "util" "UIString" "getUIString" "manager" "TooltipManager" "addMessageTooltip" "showGrowSkillDetailSlotInfo" "_skillSlotP" "setData" "updateSlot" "text" "Name" "_visible" "htmlText" "<font color=\'#ffffff\'>" "</font> / " "Lv.<font color=\'#6c7d8a\'>" "Level" "</font>" "Id" "ViewID" "SKILL_WINDOW" "addUiTooltip" "showGrowSkillFunctionButton" "" "__set__disabled" "__set__label" "showMaterialItemSlotListSimplePopup" "ASSetPropFlags"
 Push "_global"
 GetVariable
 Push "g4"
 GetMember
 Not
 Not
-If loc03a3
+If loc038b
 Push "_global"
 GetVariable
 Push "g4" 0.0 "Object"
 NewObject
 SetMember
-loc03a3:Pop
+loc038b:Pop
 Push "_global"
 GetVariable
 Push "g4"
@@ -20,7 +20,7 @@ Push "view"
 GetMember
 Not
 Not
-If loc03db
+If loc03c3
 Push "_global"
 GetVariable
 Push "g4"
@@ -28,7 +28,7 @@ GetMember
 Push "view" 0.0 "Object"
 NewObject
 SetMember
-loc03db:Pop
+loc03c3:Pop
 Push "_global"
 GetVariable
 Push "g4"
@@ -39,7 +39,7 @@ Push "skillWindow"
 GetMember
 Not
 Not
-If loc041f
+If loc0407
 Push "_global"
 GetVariable
 Push "g4"
@@ -49,7 +49,7 @@ GetMember
 Push "skillWindow" 0.0 "Object"
 NewObject
 SetMember
-loc041f:Pop
+loc0407:Pop
 Push "_global"
 GetVariable
 Push "g4"
@@ -62,7 +62,7 @@ Push "GrowSkillPanel_DetailPanel"
 GetMember
 Not
 Not
-If loc08e9
+If loc085e
 Push "g4"
 GetVariable
 Push "view"
@@ -177,7 +177,7 @@ Pop
 }
 SetMember
 Push register2 "showGrowSkillDetailSlotInfo"
-DefineFunction2 "" 5 8 false false true false true false false true false 2 "skillSlotP" 4 "currentEnhance" 5 "maxEnhance" 6 "cautionMessage" 7 "userLevel"  {
+DefineFunction2 "" 4 6 false false true false true false false true false 2 "skillSlotP" 3 "currentEnhance" 4 "maxEnhance" 5 "cautionMessage"  {
 Push register1 "_skillSlotP" register2
 SetMember
 Push register2 1 register1 "_skillSlot"
@@ -195,45 +195,31 @@ GetMember
 Push "text" register2 "Name"
 GetMember
 SetMember
-Push register4 -1
+Push register3 -1
 Equals2
 Not
-If loc06c2
+If loc069f
 Push register1 "_tf_enhance"
 GetMember
 Push "_visible" false
 SetMember
-Jump loc06f1
-loc06c2:Push register1 "_tf_enhance"
+Jump loc06ce
+loc069f:Push register1 "_tf_enhance"
 GetMember
 Push "_visible" true
 SetMember
 Push register1 "_tf_enhance"
 GetMember
-Push "htmlText" "<font color=\'#ffffff\'>" register4
+Push "htmlText" "<font color=\'#ffffff\'>" register3
 Add2
 Push "</font> / "
 Add2
-Push register5
+Push register4
 Add2
 SetMember
-loc06f1:Push register2 "Level"
+loc06ce:Push register1 "_tf_level"
 GetMember
-Push register7
-Greater
-If loc070e
-Push "#6c7d8a"
-Jump loc0713
-loc070e:Push "#ea0000"
-loc0713:StoreRegister 3
-Pop
-Push register1 "_tf_level"
-GetMember
-Push "htmlText" "<font color=\'" register3
-Add2
-Push "\'>Lv."
-Add2
-Push register2 "Level"
+Push "htmlText" "Lv.<font color=\'#6c7d8a\'>" register2 "Level"
 GetMember
 Add2
 Push "</font>"
@@ -241,21 +227,8 @@ Add2
 SetMember
 Push register1 "_tf_cautionMessage"
 GetMember
-Push "htmlText" register6
+Push "htmlText" register5
 SetMember
-Push register1 "_skillSlot"
-GetMember
-Push 1 0.0 "g4"
-GetVariable
-Push "manager"
-GetMember
-Push "TooltipManager"
-GetMember
-Push "getInstance"
-CallMethod
-Push "removeTooltip"
-CallMethod
-Pop
 Push 0.0 register1 "_skillSlotP"
 GetMember
 Push "Id"
@@ -288,13 +261,13 @@ DefineFunction2 "" 2 4 false false true false true false false true false 2 "but
 Push register2 ""
 Equals2
 Not
-If loc0836
+If loc07ab
 Push register1 "_functionBtn"
 GetMember
 Push "_visible" false
 SetMember
-Jump loc0872
-loc0836:Push register3 1 register1 "_functionBtn"
+Jump loc07e7
+loc07ab:Push register3 1 register1 "_functionBtn"
 GetMember
 Push "__set__disabled"
 CallMethod
@@ -309,7 +282,7 @@ GetMember
 Push "_visible" true
 SetMember
 }
-loc0872:SetMember
+loc07e7:SetMember
 Push register2 "onFunctionBtnClick"
 DefineFunction "" 0  {
 Push 0.0 0.0 "g4"
@@ -339,4 +312,4 @@ Push "prototype"
 GetMember
 Push 3 "ASSetPropFlags"
 CallFunction
-loc08e9:Pop
+loc085e:Pop

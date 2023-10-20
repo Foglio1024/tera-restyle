@@ -232,8 +232,6 @@ class g4.view.ViewID
    static var MENTOR = "Mentor";
    static var EQUIPMENT_UPGRADE = "EquipmentUpgrade";
    static var OBSERVER_DAMAGE_DISPLAY = "ObserverDamageDisplay";
-   static var SERVANT_STORAGE_WINDOW = "ServantStorageWindow";
-   static var AUTO_POTION_WINDOW = "AutoPotionWindow";
    static var Abnormality = "Abnormality";
    static var AbnormalityOption = "AbnormalityOption";
    static var BFScoreResult = "BFScoreResult";
